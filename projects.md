@@ -19,8 +19,8 @@ nav-menu: true
 					<header class="major">
 						<h3>SJHS Bot</h3>
 					</header>
-					<p><a href="https://sjhsbot.js.org/" SJHS Bot</a> is a <a href="discordapp.com" Discord</a> bot for helping students at
-						a <a href="sjusd.org/san-jose-high" SJHS</a> with everyday tasks, like remembering your homework and when next class
+					<p><a href="https://sjhsbot.js.org/">SJHS Bot</a> is a <a href="discordapp.com"> Discord</a> bot for helping students at
+						a <a href="sjusd.org/san-jose-high">SJHS</a> with everyday tasks, like remembering your homework and when next class
 						starts.</p>
 					<ul class="actions">
 						<li><a href="https://sjhsbot.js.org/" class="button">Learn more</a></li>
@@ -54,7 +54,7 @@ nav-menu: true
 						<h3>Web Design</h3>
 					</header>
 					<p>Want a website made? Need design advice? I have lots of experience in graphic design, user interface, hosting, and web
-						design. Get in touch if you want to hire me.</p>
+						design. Get in touch if you want to hire me or if you want any advice.</p>
 					<ul class="actions">
 						<li><a href="webdesign" class="button">Learn More</a></li>
 					</ul>
@@ -71,7 +71,7 @@ nav-menu: true
 				<header class="major">
 					<h3>Poll Bot</h3>
 				</header>
-				<p>A <a href="discordapp.com" Discord</a> bot to integrate voting to your <a href="discordapp.com" Discord</a> server.</p>
+				<p>A <a href="discordapp.com">Discord</a> bot to integrate voting to your <a href="discordapp.com">Discord</a> server.</p>
 				<ul class="actions">
 					<li><a href="https://github.com/PizzaFox/pollbotdiscord" class="button">Learn More</a></li>
 				</ul>
