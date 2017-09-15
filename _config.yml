@@ -1,0 +1,38 @@
+# site settings
+title: Jonah Snider
+subtitle:
+email: me@jonahsnider.ninja
+description: Highschool student. Computers, programming, hacking.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+author:
+street_address:
+city: San Jose
+state: CA
+zip_code:
+country: United States of America
+phone: (669) 237-9208
+
+# homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 3
+
+# social settings
+500px_url:
+facebook_url:
+github_url: https://github.com/PizzaFox
+gitlab_url:
+keybase_url: https://keybase.io/pizzafox
+steam_url: https://steamcommunity.com/id/pizza_fox
+googleplus_url:
+instagram_url:
+linkedin_url:
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/thepizzafox
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
