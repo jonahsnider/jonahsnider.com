@@ -1,6 +1,6 @@
 # site settings
 title: Jonah Snider
-subtitle: Hi, I'm Jonah
+subtitle:
 email: me@jonahsnider.ninja
 description: Highschool student. Computers, programming, hacking.
 baseurl: "/" # the subpath of your site, e.g. /blog
