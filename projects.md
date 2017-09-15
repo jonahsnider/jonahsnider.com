@@ -64,7 +64,7 @@ nav-menu: true
 	</section>
 	<section>
 		<a href="https://github.com/PizzaFox/pollbotdiscord" class="image">
-			<img src="assets/images/vote.webp" alt="" data-position="25% 25%" data-position="center center"/>
+			<img src="assets/images/vote.webp" alt="" data-position="50% 50%" data-position="top center" />
 		</a>
 		<div class="content">
 			<div class="inner">
