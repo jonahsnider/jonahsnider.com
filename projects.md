@@ -62,20 +62,20 @@ nav-menu: true
 			</div>
 		</section>
 	</section>
-	<section>
-		<a href="https://github.com/PizzaFox/pollbotdiscord" class="image">
-			<img src="assets/images/vote.webp" alt="" data-position="50% 50%" data-position="top center" />
+			<section>
+			<a href="https://github.com/PizzaFox/pollbotdiscord" class="image">
+			<img src="assets/images/vote.webp" alt="" data-position="25% 25%" data-position="top center" />
 		</a>
-		<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3>Poll Bot</h3>
-				</header>
-				<p>A <a href="https://discordapp.com/">Discord</a> bot to integrate voting to your <a href="https://discordapp.com/">Discord</a> server.</p>
-				<ul class="actions">
-					<li><a href="https://github.com/PizzaFox/pollbotdiscord" class="button">Learn More</a></li>
-				</ul>
+			<div class="content">
+				<div class="inner">
+					<header class="major">
+						<h3>Poll Bot</h3>
+					</header>
+					<p>A <a href="https://discordapp.com/">Discord</a> bot to integrate voting to your <a href="https://discordapp.com/">Discord</a> server.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/PizzaFox/pollbotdiscord" class="button">Learn More</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 </div>
