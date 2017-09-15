@@ -12,15 +12,15 @@ nav-menu: true
 <section id="one" class="spotlights">
 		<section>
 			<a href="https://sjhsbot.js.org/" class="image">
-			<img src="assets/images/sjhs.webp" alt="SJHS Bot logo" data-position="center center" />
+			<img src="assets/images/sjhs.webp" alt="SJHS Bot logo" data-position="25% 25%" data-position="center center" />
 		</a>
 			<div class="content">
 				<div class="inner">
 					<header class="major">
 						<h3>SJHS Bot</h3>
 					</header>
-					<p><a href="https://sjhsbot.js.org/">SJHS Bot</a> is a <a href="discordapp.com"> Discord</a> bot for helping students at
-						a <a href="sjusd.org/san-jose-high">SJHS</a> with everyday tasks, like remembering your homework and when next class
+					<p><a href="https://sjhsbot.js.org/">SJHS Bot</a> is a <a href="https://discordapp.com/"> Discord</a> bot for helping students at
+						a <a href="http://sjusd.org/san-jose-high">SJHS</a> with everyday tasks, like remembering your homework and when next class
 						starts.</p>
 					<ul class="actions">
 						<li><a href="https://sjhsbot.js.org/" class="button">Learn more</a></li>
@@ -29,8 +29,8 @@ nav-menu: true
 			</div>
 		</section>
 		<section>
-			<a href="pizzafox.github.io/kscsite" class="image">
-			<img src="assets/images/ksface.webp" alt="" data-position="top center" />
+			<a href="https://pizzafox.github.io/kscsite" class="image">
+			<img src="assets/images/ksface.webp" alt="" data-position="25% 25%" data-position="top center" />
 		</a>
 			<div class="content">
 				<div class="inner">
@@ -64,14 +64,14 @@ nav-menu: true
 	</section>
 	<section>
 		<a href="https://github.com/PizzaFox/pollbotdiscord" class="image">
-			<img src="assets/images/vote.webp" alt="" data-position="25% 25%" data-position="top center"/>
+			<img src="assets/images/vote.webp" alt="" data-position="25% 25%" data-position="center center"/>
 		</a>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
 					<h3>Poll Bot</h3>
 				</header>
-				<p>A <a href="discordapp.com">Discord</a> bot to integrate voting to your <a href="discordapp.com">Discord</a> server.</p>
+				<p>A <a href="https://discordapp.com/">Discord</a> bot to integrate voting to your <a href="https://discordapp.com/">Discord</a> server.</p>
 				<ul class="actions">
 					<li><a href="https://github.com/PizzaFox/pollbotdiscord" class="button">Learn More</a></li>
 				</ul>
