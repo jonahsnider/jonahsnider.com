@@ -1,7 +1,7 @@
 ---
 title: Projects
 layout: landing
-description: 'What I do.'
+description: 'What I make.'
 image: assets/images/pic07.jpg
 nav-menu: true
 ---
@@ -9,17 +9,27 @@ nav-menu: true
 <div id="main">
 
 <!-- One -->
-<section id="one" class="spotlights">
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h2>What I do</h2>
+		</header>
+		<p>I make Discord bots with <a href="https://discord.js.org">discord.js</a>. I also make websites like these.</p>
+	</div>
+</section>
+
+<!-- Two -->
+<section id="two" class="spotlights">
 		<section>
 			<a href="https://sjhsbot.js.org/" class="image">
-			<img src="assets/images/sjhs.webp" alt="SJHS Bot logo" data-position="25% 25%" data-position="center center" />
+			<img src="assets/images/sjhs.webp" alt="SJHS Bot logo" data-position="center center" />
 		</a>
 			<div class="content">
 				<div class="inner">
 					<header class="major">
 						<h3>SJHS Bot</h3>
 					</header>
-					<p><a href="https://sjhsbot.js.org/">SJHS Bot</a> is a <a href="https://discordapp.com/"> Discord</a> bot for helping students at
+					<p><a href="https://sjhsbot.js.org/">SJHS Bot</a> is a <a href="https://discordapp.com/">Discord</a> bot for helping students at
 						a <a href="http://sjusd.org/san-jose-high">SJHS</a> with everyday tasks, like remembering your homework and when next class
 						starts.</p>
 					<ul class="actions">
@@ -30,7 +40,7 @@ nav-menu: true
 		</section>
 		<section>
 			<a href="https://pizzafox.github.io/kscsite" class="image">
-			<span class="image fit"><img src="assets/images/ksaface.webp" alt="" /></span>
+			<img src="assets/images/ksaface.webp" alt="" data-position="top center"/>
 		</a>
 			<div class="content">
 				<div class="inner">
@@ -46,7 +56,7 @@ nav-menu: true
 		</section>
 		<section>
 			<a href="webdesign" class="image">
-			<span class="image fit"><img src="assets/images/webdesign.webp" alt="" /></span>
+			<img src="assets/images/webdesign.webp" alt="" data-position="25% 25%"/>
 		</a>
 			<div class="content">
 				<div class="inner">
@@ -62,38 +72,19 @@ nav-menu: true
 			</div>
 		</section>
 	</section>
-			<section>
-			<a href="https://github.com/PizzaFox/pollbotdiscord" class="image">
-				<span class="image fit"><img src="assets/images/vote.webp" alt="" /></span>
-			</a>
-			<div class="content">
-				<div class="inner">
-					<header class="major">
-						<h3>Poll Bot</h3>
-					</header>
-					<p>A <a href="https://discordapp.com/">Discord</a> bot to integrate voting to your <a href="https://discordapp.com/">Discord</a> server.</p>
-					<ul class="actions">
-						<li><a href="https://github.com/PizzaFox/pollbotdiscord" class="button">Learn More</a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<section>
-			<a href="https://sjhsbot.js.org/" class="image">
-			<img src="assets/images/sjhs.webp" alt="SJHS Bot logo" data-position="25% 25%" data-position="center center" />
-		</a>
-			<div class="content">
-				<div class="inner">
-					<header class="major">
-						<h3>SJHS Bot</h3>
-					</header>
-					<p><a href="https://sjhsbot.js.org/">SJHS Bot</a> is a <a href="https://discordapp.com/"> Discord</a> bot for helping students at
-						a <a href="http://sjusd.org/san-jose-high">SJHS</a> with everyday tasks, like remembering your homework and when next class
-						starts.</p>
-					<ul class="actions">
-						<li><a href="https://sjhsbot.js.org/" class="button">Learn more</a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
+
+<!-- Three -->
+<section id="three">
+	<div class="inner">
+		<header class="major">
+			<h2>Other projects</h2>
+		</header>
+		<p>The above three projects are my biggest and most recent projects. Here are some of the runner-ups.</p>
+		<ul class="actions">
+			<li><a href="generic.html" class="button next">Poll Bot</a></li>
+		</ul>
+	</div>
+</section>
+</section>
+
 </div>
