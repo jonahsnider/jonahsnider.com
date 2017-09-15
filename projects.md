@@ -40,7 +40,7 @@ nav-menu: true
 		</section>
 		<section>
 			<a href="https://pizzafox.github.io/kscsite" class="image">
-			<img src="assets/images/ksaface.webp" alt="" data-position="top center"/>
+			<img src="assets/images/ksface.webp" alt="" data-position="top center"/>
 		</a>
 			<div class="content">
 				<div class="inner">
