@@ -14,6 +14,7 @@ Ethereum dropped $40 in 2 days.
 What's happening? Panic.
 China is shutting down *all* Chinese cryptocurrency exchanges. This has caused a small group of cryptocurrency investors to say
 > Oh no! I should sell my coins now before they drop too much!
+
 Then more people start selling when the price started going down.
 Then more, and more, and more.
 
