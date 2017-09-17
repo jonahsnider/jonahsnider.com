@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/pizzafox
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://jonahsnider.ninja
+  * I am pizzafox (https://keybase.io/pizzafox) on keybase.
+  * I have a public key with fingerprint E3D7 8B8F 4596 CD63 5F30  4439 E85C E1D3 1913 2409
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012078d8478babc3fbf624787afc6ae06c180e8bfbfa9a5a3b2e56a7beac7b030bf80a",
+      "fingerprint": "e3d78b8f4596cd635f304439e85ce1d319132409",
+      "host": "keybase.io",
+      "key_id": "e85ce1d319132409",
+      "kid": "010125bea4ef2c8046840f48e0a54c87d7547fb439088e149a439d7616f177ebea9b0a",
+      "uid": "45f53f29517c3f06292153689754c219",
+      "username": "pizzafox"
+    },
+    "service": {
+      "hostname": "jonahsnider.ninja",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1505621546,
+  "expire_in": 157680000,
+  "prev": "42b0bbdf1534dba83714263e66896fe2cf8c472c05a299ccb0cd79e913c89cf5",
+  "seqno": 46,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMNwAnicbVJ7UBR1HL8DZXhI3HUNDNSQLiCPLmbfj4OaEAdEYlLBRgQ69vHbuwW6
+ve4BHng+cqaUyXKimZCQERUGC8zKKWTG9BgqlTAQydBAuIaihzqJYEM19FtG/2v/
+2f199/P8zm8gOlQXqZ8tnx6NNyVH6AcDrV5d6bmFjAZEUCUfYmlAqsHyC9RIwO2x
+VisSYkFQDEcZVmJJhhV4QSRkQaZxeGB4WaR5gNIixqKAFeCc53iKJwQcUDTPCIAX
+GQElUEFmUR4xI7LisAGX06U4PFAWEBIUZGWS4mhRoglKJlCSJDjAUiLAJALjMAIn
+UQ4S7apbY8BwAu8GmYoKZ/BgXY73P/hHuWFyCqYggYyLLErSLInKJAtQniJFlpEY
+imRkAVqiLAswkuPhp8TQGC1jDAMgkROWc3uX5UhKpggZ5yiMgTtAaZzDMYqgWQ7K
+iDim+XrdwOXgXwUQ7VTq63lZ3YH4zQic1ioi0BarNXmIqFIdvN3tUCTgynQojirN
+yelSPaqo1sDfdo/HadHYHp9Tg9cBwfpQyCooDgnuEhJqgcutqA7EgkGk6FE0ZYxC
+KRpmI2kzAnY4FRewKhqCYmgWhY9mA2q1RriACoIkwxqkJPAswWAkThOAhqVoGeCi
+zIokg4soxeMcJ4oCKkoMB+CeRZYTZQrRqr3mUBGLZuXhbVDTrdgcvMfrAoi/P1C+
+QqeP1IWtDNEumS4ywvDo6j3YHLO0pfpE10cf7guZW7UrOqq4ICTlaNRvO+ebaoqD
+hsjCk5Wxu9vyEyL/MNVdutJywjxUd/6Iz0J/py+8Y9a9bQthK+LMF6+OCdM7+98c
+WndtUCiwvn4t9eQvaX8ato/pG/r0g0o/HR4Ghp3G1brbKRW1z+ZFuQo7+w7NvdVi
+//KLaMZ77m5PRvTjxT+vt0and3eedfa+8MZLueWXwqb8x/LvvTzygEwJzNpfXFiJ
+lS5Y9oqx+h/v9yxW5k76q4NtTb57M2V5U++HxmZN9ZRwW7OZd6q6Nna7kRiu/EzJ
+eP3I3rIuX3zj+tM3hldcvT8wrXcVMd3Htm36JDgmx+0yvGL95jxrib/y6YTJdNi6
+mDhvPLDUOHL81rt9Nx9rNDozJrb9WpLU0mpunjfk5BQYNt0cWESKko4feGLd9dD3
+Ov0FT53dIvRMdnsWLiSWfb2RM55K7ggGx0tu5AS+bVbXzN3Ja/l7xthkaSu1S61p
+240J/4xe9/9bbNwQOD3jjeh4uuEi3/7c5sIh663CQ6YeT7gv/Blb++GYqYyR7NHJ
+J4OXL6T9bnPvZ86wBbkHK+N7TT/07kPWtH11CqhbE2M+WOsZHUvLykpttzgyE2x7
+bst/5SY0j+Ofy/mJE/ojG5ZSJ4b3X866a00pMZavTs/e0/H9Z7NFY+ldZHLf2urd
+qz4+GlfxU9r655MCB/8Dzlq0Dg==
+=2DFr
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pizzafox
+
+==================================================================
