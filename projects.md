@@ -39,7 +39,7 @@ nav-menu: true
 			</div>
 		</section>
 		<section>
-			<a href="https://pizzafox.github.io/kscsite" class="image">
+			<a href="kscsite" class="image">
 			<img src="assets/images/ksface.webp" alt="" data-position="top center"/>
 		</a>
 			<div class="content">
@@ -49,7 +49,7 @@ nav-menu: true
 					</header>
 					<p>An interactive and responsive portfolio for Kelly Snider Consulting.</p>
 					<ul class="actions">
-						<li><a href="pizzafox.github.io/kscsite" class="button">See It</a></li>
+						<li><a href="kscsite" class="button">See It</a></li>
 					</ul>
 				</div>
 			</div>
@@ -79,9 +79,9 @@ nav-menu: true
 		<header class="major">
 			<h2>Other projects</h2>
 		</header>
-		<p>The above three projects are my biggest and most recent projects. Here are some of the runner-ups.</p>
+		<p>The above three projects are my biggest and most recent projects. Here are some of my other projects.</p>
 		<ul class="actions">
-			<li><a href="generic.html" class="button next">Poll Bot</a></li>
+			<li><a href="https://github.com/PizzaFox/pollbotdiscord" class="button next">Poll Bot</a></li>
 		</ul>
 	</div>
 </section>
