@@ -6,22 +6,21 @@
 <body>
 
     {% include header.html %}
-    
-    
-<!-- Main -->
-<div id="main" class="alt">
 
-<!-- Two -->
-<section id="two">
-	<div class="inner">
-		<header class="major">
-			<h1>{{ page.title }}</h1>
-		</header>
-	</div>
-	{% include allpoststiles.html %}
-</section>
+    <!-- Banner -->
+    <section id="banner" class="major">
+        <div class="inner">
+            <header class="major">
+                <h1>{{ page.title }}</h1>
+            </header>
+        </div>
+    </section>
 
-</div>
+    <!-- Main -->
+    <div id="main">
+        <!-- One -->
+        {% include allpoststiles.html %}
+    </div>
 
     {% include footer.html %}
 
