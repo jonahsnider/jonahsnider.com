@@ -31,6 +31,7 @@ pinterest_url:
 slack_url:
 feed_url: https://pizzafox.github.io/feed.xml
 twitter_url: https://twitter.com/thepizzafox
+bitcoin_address: 1DvaX5Jo89RBUeZLgoGojxrMWcMwFpfDv
 
 # build settings
 markdown: kramdown
