@@ -96,6 +96,8 @@
 			<li><a href="{{ site.linkedin_url }}" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
 			{% endif %} {% if site.feed_url %}
 			<li><a href="{{ site.feed_url }}" class="icon alt fa-rss" target="_blank"><span class="label">RSS Feed</span></a></li>
+			{% endif %} {% if site.bitcoin_address %}
+			<li><a href="bitcoin:{{ site.bitcoin_address }}" class="icon alt fa-bitcoin" target="_blank"><span class="label">Bitcoin Adress</span></a></li>
 			{% endif %}
 		</ul>
 		<ul class="copyright">
