@@ -15,8 +15,8 @@
 				{% endif %}        
 					<description>{{ post.description | xml_escape }}</description>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-				<link>jonahsnider.ninja/{{ post.url }}</link>
-				<guid isPermaLink="true">jonahsnider.ninja/{{ post.url }}</guid>
+				<link>jonahsnider.ninja{{ post.url }}</link>
+				<guid isPermaLink="true">jonahsnider.ninja{{ post.url }}</guid>
 			</item>
 		{% endfor %}
 	</channel>
