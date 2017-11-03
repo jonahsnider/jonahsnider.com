@@ -3,6 +3,8 @@ layout: post
 title: The Cryptocurrency Recession of 2017
 description: A $700 BTC drop in two days
 image: assets/images/bitcoin.svg
+categories: blog
+tags: bitcoin money
 ---
 
 Bitcoin dropped $700 in 2 days.
