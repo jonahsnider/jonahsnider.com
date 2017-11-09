@@ -11,7 +11,7 @@ tags: bitcoin money cryptocurrency
 Bitcoin dropped $700 in 2 days.
 Ethereum dropped $40 in 2 days.
 
-<a class="waves-effect waves-light btn" href="https://blockchain.info/charts/market-price">see the graph</a>
+<a class="waves-effect waves-light btn" href="https://blockchain.info/charts/market-price"><i class="material-icons"><i class="material-icons">show_chart</i></icon>see the graph</a>
 
 What's happening? People are panicking.
 China is shutting down *all* Chinese cryptocurrency exchanges. This has caused a small group of cryptocurrency investors to say
