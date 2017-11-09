@@ -1,17 +1,16 @@
 title: Jonah Snider
 description: > # this means to ignore newlines until "baseurl:"
   High school student. Computers, programming, hacking.
-baseurl: "/matjek-personal"
+baseurl: ""
 url: "https://pizzafox.github.io"
 permalink: /:year/:month/:day/:title
-repository: PizzaFox/matjek-personal
+repository: PizzaFox/pizzafox.github.io
 paginate: 5
 
 # MatJek specific configurations
 github_profile: "https://github.com/PizzaFox"
 user: "Jonah Snider"
 user_email: "me@jonahsnider.ninja"
-contact_url: ""
 google_tracking_id: ""
 google_site_verification: ""
 disqus_shortname: ""
