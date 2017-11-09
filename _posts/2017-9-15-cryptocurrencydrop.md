@@ -13,7 +13,7 @@ Ethereum dropped $40 in 2 days.
 
 <a class="waves-effect waves-light btn" href="https://blockchain.info/charts/market-price">see the graph</a>
 
-What's happening? People are panicing.
+What's happening? People are panicking.
 China is shutting down *all* Chinese cryptocurrency exchanges. This has caused a small group of cryptocurrency investors to say
 <blockquote>Oh no! I should sell my coins now before they drop too much!</blockquote>
 Then more people start selling when the price started going down.
