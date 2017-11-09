@@ -1,118 +1,53 @@
-<!-- Contact -->
-<section id="contact">
-	<div class="inner">
-		<section>
-			<form action="https://formspree.io/{{ site.email }}" method="POST">
-				<div class="field half first">
-					<label for="name">Name</label>
-					<input type="text" name="name" id="name" />
-				</div>
-				<div class="field half">
-					<label for="email">Email</label>
-					<input type="text" name="_replyto" id="email" />
-				</div>
-				<div class="field">
-					<label for="message">Message</label>
-					<textarea name="message" id="message" rows="6"></textarea>
-				</div>
-				<script src="https://authedmine.com/lib/captcha.min.js" async></script>
-				<div class="coinhive-captcha" data-hashes="256" data-key="TdQAFH6yjlXqvRxWyM23RRASFWhrU3lE" data-disable-elements="input[type=submit]" data-whitelabel="true"></div>
-				<ul class="actions">
-					<li><input type="submit" value="Send Message" class="special" /></li>
-					<li><input type="reset" value="Clear" /></li>
-				</ul>
-			</form>
-		</section>
-		<section class="split">
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-envelope"></span>
-					<h3>Email</h3>
-					<a href="mailto:{{ site.email }}">{{ site.email }}</a>
-				</div>
-			</section>
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-phone"></span>
-					<h3>Phone</h3>
-					<span>{{ site.phone }}</span>
-				</div>
-			</section>
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-home"></span>
-					<h3>Where</h3>
-					<span>
-					{% if site.street_address %}
-					    {{ site.street_address }}<br />
-					{% endif %}
-					{% if site.city %}
-					    {{ site.city }},
-					{% endif %}
-					{% if site.state %}
-					    {{ site.state }} 
-					{% endif %}
-					{% if site.zip_code %}
-					    {{ site.zip_code }}<br />
-					{% endif %}
-					{% if site.country %}
-					    {{ site.country }}
-					{% endif %}
-					</span>
-				</div>
-			</section>
-		</section>
-	</div>
-</section>
+    </main>
+    <footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Social Media</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://keybase.io/pizzafox">Keybase</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://steamcommunity.com/id/pizza_fox">Steam</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://twitter.com/thepizzafox">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://github.com/PizzaFox">GitHub</a></li>
+                  <li><a class="grey-text text-lighten-3" href="bitcoin:1DvaX5Jo89RBUeZLgoGojxrMWcMwFpfDv">Bitcoin</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      <div class="footer-copyright">
+        <div class="container">
+          &#xA9; {{"now" | date: "%Y"}} {{site.title}}. Theme adapted from <a href="https://github.com/ShawnTeoh/matjek">MatJek</a>.
+        </div>
+      </div>
+    </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 
-<!-- Footer -->
-<footer id="footer">
-	<div class="inner">
-		<ul class="icons">
-			{% if site.twitter_url %}
-			<li><a href="{{ site.twitter_url }}" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-			{% endif %} {% if site.googleplus_url %}
-			<li><a href="{{ site.googleplus_url }}" class="icon alt fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
-			{% endif %} {% if site.keybase_url %}
-			<li><a href="{{ site.keybase_url }}" class="icon alt fa-key" target="_blank"><span class="label">Keybase</span></a></li>
-			{% endif %} {% if site.steam_url %}
-			<li><a href="{{ site.steam_url }}" class="icon alt fa-steam" target="_blank"><span class="label">Steam</span></a></li>
-			{% endif %} {% if site.facebook_url %}
-			<li><a href="{{ site.facebook_url }}" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-			{% endif %} {% if site.instagram_url %}
-			<li><a href="{{ site.instagram_url }}" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-			{% endif %} {% if site.pinterest_url %}
-			<li><a href="{{ site.pinterest_url }}" class="icon alt fa-pinterest" target="_blank"><span class="label">Pinterest</span></a></li>
-			{% endif %} {% if site.500px_url %}
-			<li><a href="{{ site.500px_url }}" class="icon alt fa-500px" target="_blank"><span class="label">500px</span></a></li>
-			{% endif %} {% if site.gitlab_url %}
-			<li><a href="{{ site.gitlab_url }}" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
-			{% endif %} {% if site.github_url %}
-			<li><a href="{{ site.github_url }}" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-			{% endif %} {% if site.slack_url %}
-			<li><a href="{{ site.slack_url }}" class="icon alt fa-slack" target="_blank"><span class="label">Slack</span></a></li>
-			{% endif %} {% if site.linkedin_url %}
-			<li><a href="{{ site.linkedin_url }}" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-			{% endif %} {% if site.feed_url %}
-			<li><a href="{{ site.feed_url }}" class="icon alt fa-rss" target="_blank"><span class="label">RSS Feed</span></a></li>
-			{% endif %} {% if site.bitcoin_address %}
-			<li><a href="bitcoin:{{ site.bitcoin_address }}" class="icon alt fa-bitcoin" target="_blank"><span class="label">Bitcoin Adress</span></a></li>
-			{% endif %}
-		</ul>
-		<ul class="copyright">
-			<li>&copy; {{ site.title }} {{ site.subtitle }} 2017</li>
-			<li>Site by Jonah Snider, <a href="/webdesign" target="_blank">get one like it</a></li>
-		</ul>
-	</div>
-</footer>
-
-</div>
-
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="/assets/js/jquery.scrolly.min.js"></script>
-<script src="/assets/js/jquery.scrollex.min.js"></script>
-<script src="/assets/js/skel.min.js"></script>
-<script src="/assets/js/util.js"></script>
-<!--[if lte IE 8]><script src="{{ "/assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
-<script src="/assets/js/main.js "></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    {% for js in layout.js %}
+    {% if js contains "//" %}
+    <script src="{{js}}"></script>
+    {% else %}
+    <script src="{{site.baseurl}}/assets/js/{{js}}"></script>
+    {% endif %}
+    {% endfor %}
+    {% for js in page.js %}
+    {% if js contains "//" %}
+    <script src="{{js}}"></script>
+    {% else %}
+    <script src="{{site.baseurl}}/assets/js/{{js}}"></script>
+    {% endif %}
+    {% endfor %}
+    {% if site.google_tracking_id %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})
+      (window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{site.google_tracking_id}}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
+    <script src="{{site.baseurl}}/assets/js/main.js"></script>
+  </body>
+</html>

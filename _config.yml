@@ -1,40 +1,31 @@
-# site settings
 title: Jonah Snider
-subtitle:
-email: me@jonahsnider.ninja
-description: High school student. Computers, programming, hacking.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-author:
-street_address:
-city: San Jose
-state: CA
-zip_code:
-country: United States of America
-phone: +1 (408) 634-6378
+description: > # this means to ignore newlines until "baseurl:"
+  High school student. Computers, programming, hacking.
+baseurl: "/matjek-personal"
+url: "https://pizzafox.github.io"
+permalink: /:year/:month/:day/:title
+repository: PizzaFox/matjek-personal
+paginate: 5
 
-# homepage tiles
-tiles-source: posts # accepts "posts" or "pages"
-tiles-count: 3
+# MatJek specific configurations
+github_profile: "https://github.com/PizzaFox"
+user: "Jonah Snider"
+user_email: "me@jonahsnider.ninja"
+contact_url: ""
+google_tracking_id: ""
+google_site_verification: ""
+disqus_shortname: ""
 
-# social settings
-500px_url:
-facebook_url:
-github_url: https://github.com/PizzaFox
-gitlab_url:
-keybase_url: https://keybase.io/pizzafox
-steam_url: https://steamcommunity.com/id/pizza_fox
-googleplus_url:
-instagram_url:
-linkedin_url:
-pinterest_url:
-slack_url:
-feed_url: https://pizzafox.github.io/feed.xml
-twitter_url: https://twitter.com/thepizzafox
-bitcoin_address: 1DvaX5Jo89RBUeZLgoGojxrMWcMwFpfDv
-
-# build settings
+# Build settings
 markdown: kramdown
-
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
 sass:
   style: compressed
+future: true

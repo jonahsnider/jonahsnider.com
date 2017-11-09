@@ -2,18 +2,18 @@
 layout: post
 title: The Cryptocurrency Recession of 2017
 description: A $700 BTC drop in two days
+date: 2017-09-15
 image: assets/images/bitcoin.svg
 categories: blog
-tags: bitcoin money
+tags: bitcoin money cryptocurrency
 ---
 
 Bitcoin dropped $700 in 2 days.
 Ethereum dropped $40 in 2 days.
-<ul class="actions fit">
-	<li><a href="https://blockchain.info/charts/market-price?timespan=30days" class="button special icon fa-btc">See the graph</a></li>
-</ul>
 
-What's happening? Panic.
+<a class="waves-effect waves-light btn" href="https://blockchain.info/charts/market-price">see the graph</a>
+
+What's happening? People are panicing.
 China is shutting down *all* Chinese cryptocurrency exchanges. This has caused a small group of cryptocurrency investors to say
 <blockquote>Oh no! I should sell my coins now before they drop too much!</blockquote>
 Then more people start selling when the price started going down.

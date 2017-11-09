@@ -3,7 +3,8 @@ layout: page
 title: Computer Help
 description: Need help fixing a computer or getting a program to work? Fill out the form below and I'll get back to you
 image: assets/images/laptop.webp
-nav-menu: false
+categories: services
+tags: computers help support tech
 ---
 <h3>I can:</h3>
 <ul>
