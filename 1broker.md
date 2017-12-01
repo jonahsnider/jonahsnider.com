@@ -2,5 +2,5 @@
 layout: redirect
 title: Redirection
 permalink: /s
-target: https://google.com
+target: https://1broker.com/?r=36336
 ---
