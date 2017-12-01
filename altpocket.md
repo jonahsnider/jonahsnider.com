@@ -1,6 +1,6 @@
 ---
 layout: redirect
 title: Altpocket
-permalink: /s/altpocket
+permalink: /r/altpocket
 target: https://altpocket.io/?ref=Kqo2OcoOL3
 ---
