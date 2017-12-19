@@ -5,23 +5,16 @@ baseurl: ""
 url: "https://pizzafox.github.io"
 permalink: /:year/:month/:day/:title
 repository: PizzaFox/pizzafox.github.io
-paginate: 5
 
-# MatJek specific configurations
+# Extra information
 github_profile: "https://github.com/PizzaFox"
 user: "Jonah Snider"
 user_email: "me@jonahsnider.ninja"
-google_tracking_id: "UA-92827441-1"
-google_site_verification: ""
-disqus_shortname: ""
 
 # Build settings
 markdown: kramdown
 gems:
-  - jekyll-feed
-  - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock

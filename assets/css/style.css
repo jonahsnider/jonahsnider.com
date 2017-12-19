@@ -1,5 +1,5 @@
 #social-buttons:hover {
-    color: #C62828 !important;
+    color: #FF9800 !important;
 }
 #social-buttons-footer:hover {
     color: #212121 !important;
@@ -13,12 +13,12 @@
    }
    /* label focus color */
    .input-field input[type=text]:focus + label {
-     color: #42A5F5;
+     color: #43A7F7;
    }
    /* label underline focus color */
    .input-field input[type=text]:focus {
-     border-bottom: 1px solid #42A5F5;
-     box-shadow: 0 1px 0 0 #42A5F5;
+     border-bottom: 1px solid #43A7F7;
+     box-shadow: 0 1px 0 0 #43A7F7;
    }
    /* valid color */
    .input-field input[type=text].valid {
@@ -37,22 +37,12 @@
         
 /* email */ 
 .input-field input[type=email]:focus + label {
-     color: #42A5F5;
+     color: #43A7F7;
    }
    /* label underline focus color */
    .input-field input[type=email]:focus {
-     border-bottom: 1px solid #42A5F5;
-     box-shadow: 0 1px 0 0 #42A5F5;
-   }
-   /* valid color */
-   .input-field input[type=email].valid {
-     border-bottom: 1px solid #000;
-     box-shadow: 0 1px 0 0 #000;
-   }
-   /* invalid color */
-   .input-field input[type=email].invalid {
-     border-bottom: 1px solid #000;
-     box-shadow: 0 1px 0 0 #000;
+     border-bottom: 1px solid #43A7F7;
+     box-shadow: 0 1px 0 0 #43A7F7;
    }
 
 /* text area */
@@ -61,10 +51,10 @@
      
 }
 #textarea1:focus + label{ /*este es el que le da color a message*/
-  color:#42A5F5
+  color:#43A7F7
 }
 #textarea1:focus{
- border-bottom: 1px solid #42A5F5;
+ border-bottom: 1px solid #43A7F7;
 }
 
 /* resposive text */

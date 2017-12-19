@@ -1,210 +1,211 @@
 ---
+css: ["style.css", "projects.css"]
+js: ["index.js", "projects.js"]
 ---
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio materializecss</title>
-  
-  
+  <title>{{ site.title }}</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
 </head>
 
 <body>
-  <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css"></head>
-<body>
-<!-- Navbar -->
+  <!-- Navbar -->
   <a name="home"></a>
   <div class="navbar-fixed">
-<nav style="background-color: #03a9f4">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo </a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about-me">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <nav style="background-color: #43A7F7">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">{{ site.title}}</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about-me">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- NavBar end -->
+  <!-- Slider -->
+  <div class="section">
+
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="https://2.bp.blogspot.com/--_HtjWqo9F0/Vd5K_cdyICI/AAAAAAAADpE/qpOJTXGwXH4/s1600/diseno-web-4.jpg">
+          <!-- random image -->
+          <div class="caption left-align">
+            <h3 style="color: #000">Responsive Design</h3>
+            <h5 style="color: #696969" class="text-lighten-3">Multidevice Web Design</h5>
+            </br>
+            </br>
+            <a href="#contact">
+              <button style="background-color:#43A7F7" class="btn waves-effect waves-light" name="action">
+                <i class="zmdi zmdi-email"></i> Contact
+              </button>
+          </div>
+        </li>
+        <li>
+          <img src="https://4.bp.blogspot.com/-COjS_AslT-M/Vd5K_YXBpwI/AAAAAAAADpI/fRS4cPMX41A/s1600/slider2.jpg">
+          <!-- random image -->
+          <div class="caption center-align">
+            <h3 style="color: #000">DESIGNS YOUR IDEAS</h3>
+            <a href="#contact">
+          </div>
+        </li>
       </ul>
     </div>
-  </nav>
-  </div>
-<!-- NavBar end -->
-  <!-- Slider -->
-<div class="section">
 
-  <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="https://2.bp.blogspot.com/--_HtjWqo9F0/Vd5K_cdyICI/AAAAAAAADpE/qpOJTXGwXH4/s1600/diseno-web-4.jpg"> <!-- random image -->
-        <div class="caption left-align">
-          <h3 style="color: #000">Responsive Design</h3>
-          <h5 style="color: #696969" class="text-lighten-3">Multidevice Web Design</h5>
-          </br>
-        </br>
-          <a href="#contact"><button style= "background-color:#43A7F7"  class="btn waves-effect waves-light" name="action"><i class="zmdi zmdi-email"></i>  Contact
-  </button>
-        </div>
-      </li>
-      <li>
-        <img src="https://4.bp.blogspot.com/-COjS_AslT-M/Vd5K_YXBpwI/AAAAAAAADpI/fRS4cPMX41A/s1600/slider2.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3 style="color: #000">DESIGNS YOUR IDEAS</h3>
-          <a href="#contact">
-        </div>
-      </li>
-    </ul>
   </div>
-  
-</div>
-<!-- Slider -->
-<!-- About me -->
+  <!-- Slider -->
+  <!-- About me -->
   <a name="about-me"></a>
   <div class="row card-panel hoverable">
-  <div class="col s6">
-  <h3 class="">Francisco Velásquez Escobar</h3>
-    <p>Venezuelan student in computer engineering. Programmer, designer and website developers, experience in creating self-managing websites with Wordpress and Joomla, online shops e-commerce with WooCommerce, bootstrap, materializecss, content creation, writing blog posts optimized for SEO, web analytics, website optimization, SEO rankings, SEM, creating landing pages, email marketing, social media management, automation twitter search engine profile.
-      Connect with me through social networks.</p>
-  </div>
-  <div class="col s6">
-    <div class ="row">
-      <img style="max-width:40%" class="responsive-img circle" src="https://pbs.twimg.com/profile_images/571457407566356480/vZ29YePx.jpeg"/>
+    <div class="col s6">
+      <h3 class="">Hi</h3>
+      <p>I’m a high school student from Silicon Valley. Some of my hobbies are playing video games, cyber security, and programming.</p>
     </div>
-    <div class ="row">
-      <div class ="col s12">
-      <i style="color:#03a9f4" id="social-buttons" class="waves-effect waves-light zmdi zmdi-facebook-box mdc-text-light-blue zmdi-hc-3x"></i>
-      <i style="color:#03a9f4" id="social-buttons" class="waves-effect zmdi zmdi-twitter-box mdc-text-light-blue zmdi-hc-3x"></i>
-      <i style="color:#03a9f4" id="social-buttons" class="waves-effect zmdi zmdi-google-plus-box mdc-text-light-blue zmdi-hc-3x"></i>
-        <i style="color:#03a9f4" id="social-buttons" class="waves-effect zmdi zmdi-linkedin-box mdc-text-light-blue zmdi-hc-3x"></i>
-      <i style="color:#03a9f4" id="social-buttons" class="waves-effect zmdi zmdi-github-box mdc-text-light-blue zmdi-hc-3x"></i>
+    <div class="col s6">
+      <div class="row">
+        <img style="max-width:40%" class="responsive-img circle" src="https://pbs.twimg.com/profile_images/571457407566356480/vZ29YePx.jpeg"
+        />
       </div>
+      <div class="row">
+        <div class="col s12">
+          <i style="color:#43A7F7" id="social-buttons" class="waves-effect waves-light zmdi zmdi-facebook-box zmdi-hc-3x"></i>
+          <i style="color:#43A7F7" id="social-buttons" class="waves-effect zmdi zmdi-twitter-box zmdi-hc-3x"></i>
+          <i style="color:#43A7F7" id="social-buttons" class="waves-effect zmdi zmdi-google-plus-box zmdi-hc-3x"></i>
+          <i style="color:#43A7F7" id="social-buttons" class="waves-effect zmdi zmdi-linkedin-box zmdi-hc-3x"></i>
+          <i style="color:#43A7F7" id="social-buttons" class="waves-effect zmdi zmdi-key-box zmdi-hc-3x"></i>
+        </div>
       </div>
+    </div>
   </div>
-  </div>
-<!-- About me -->
+  <!-- About me -->
   <!--portfolio -->
   <a name="portfolio"></a>
   <div class="card-panel hoverable">
-  <h3 class="center-align">Check out my latest work</h3> 
-    {% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse  %}
-<div class="col s12 switch">
-  <label>
-    Show forked projects
-    <input class="fork-switch" type="checkbox" checked="1" onchange="toggleForked()">
-    <span class="lever"></span>
-  </label>
-</div>
-{% for repo in sorted_repos %}
-<div class="col s12 m6 l4" {% if repo.fork %}id="forked"{% endif %}>
-  <div class="card hoverable">
-    <div class="card-image waves-effect waves-block waves-light geopattern activator" data-pattern-id="{{repo.name}}">
-      <i class="material-icons waves-effect waves-block waves-light">more_vert</i>
-      <a class="card-title center-align valign-wrapper" style="text-decoration: none" href="{{repo.html_url}}" target="_blank">{{repo.name}}</a>
+    <h3 class="center-align">GitHub</h3>
+    {% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse %}
+    <div class="col s12 switch">
+      <label>
+        Show forked projects
+        <input class="fork-switch" type="checkbox" checked="1" onchange="toggleForked()">
+        <span class="lever"></span>
+      </label>
     </div>
-    <div class="card-content valign-wrapper center-align activator">
-      <span class="activator grey-text text-darken-1">{{repo.description}}</span>
-    </div>
-    <div class="card-reveal">
-      <div class="card-reveal-content">
-        <span class="card-title grey-text text-darken-4">Statistics<i class="material-icons right">close</i></span>
-        <span class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="{{repo.stargazers_count}} stars">
-          <i class="material-icons">star</i>
-          {{repo.stargazers_count}}
-        </span>
-        <span class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="{{repo.forks_count}} forks">
-          <i class="material-icons">call_split</i>
-          {{repo.forks_count}}
-        </span>
-        <span class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="Last updated：{{repo.updated_at}}">
-          <i class="material-icons">access_time</i>
-          <time datetime="{{repo.updated_at}}" title="{{repo.updated_at}}">{{repo.updated_at | date: '%Y-%m-%d'}}</time>
-        </span>
+    {% for repo in sorted_repos %}
+    <div class="col s12 m6 l4" {% if repo.fork %}id="forked" {% endif %}>
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light geopattern activator" data-pattern-id="{{repo.name}}">
+          <i class="material-icons waves-effect waves-block waves-light">more_vert</i>
+          <a class="card-title center-align valign-wrapper" style="text-decoration: none" href="{{repo.html_url}}" target="_blank">{{repo.name}}</a>
+        </div>
+        <div class="card-content valign-wrapper center-align activator">
+          <span class="activator grey-text text-darken-1">{{repo.description}}</span>
+        </div>
+        <div class="card-reveal">
+          <div class="card-reveal-content">
+            <span class="card-title grey-text text-darken-4">Statistics
+              <i class="material-icons right">close</i>
+            </span>
+            <span class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="{{repo.stargazers_count}} stars">
+              <i class="material-icons">star</i>
+              {{repo.stargazers_count}}
+            </span>
+            <span class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="{{repo.forks_count}} forks">
+              <i class="material-icons">call_split</i>
+              {{repo.forks_count}}
+            </span>
+            <span class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="Last updated：{{repo.updated_at}}">
+              <i class="material-icons">access_time</i>
+              <time datetime="{{repo.updated_at}}" title="{{repo.updated_at}}">{{repo.updated_at | date: '%Y-%m-%d'}}</time>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-{% endfor %}
+    {% endfor %}
   </div>
   <!--portfolio -->
   <!-- Contact -->
   <a name="contact"></a>
-    <div class="card-panel hoverable"> 
-      <div class="row">
-        <div class="col s12">
-      <h3><i style= "color:#C62828" class="zmdi zmdi-email"></i> Contact</h3>
-        </div>
-        </div>
-      <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
+  <div class="card-panel hoverable">
+    <div class="row">
+      <div class="col s12">
+        <h3>
+          <i class="zmdi zmdi-email"></i> Contact</h3>
       </div>
-      <div class="row">
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-            <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label  for="textarea1">Message</label>
-        </div>
-      </div>
-      <button style= "background-color:#C62828"  class="btn waves-effect waves-light" type="submit" name="action">Submit
-    <i class="zmdi zmdi-mail-send"></i>
-  </button>
-    </form>
+    </div>
+    <div class="row">
+        <form class="col s12" action="https://formspree.io/me@jonahsnider.ninja" method="POST">
+          <div class="row">
+              <div class="input-field col s6">
+                  <input id="name" type="text" class="validate" name="name" required="" aria-required="true">
+                  <label for="name">Name</label>
+              </div>
+              <div class="input-field col s6">
+                  <input id="email" type="email" class="validate" name="_replyto" required="" aria-required="true">
+                  <label for="email">Email</label>
+              </div>
+          </div>
+          <div class="row">
+              <div class="input-field col s12">
+                  <textarea id="message" name="message" class="materialize-textarea" required="" aria-required="true"></textarea>
+                  <label for="message">Message</label>
+              </div>
+          </div>
+          <button class="btn waves-effect waves-light orange" type="submit" name="action">Submit
+              <i class="zmdi zmdi-mail-send"></i>
+            </button>
+      </form>
+    </div>
   </div>
-  </div>
-      <!-- contact -->
-  
-  </body>
+  <!-- contact -->
+
 <!-- footer -->
-<footer style="background-color: #03a9f4" class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Francisco Velásquez Portfolio </h5>
-                <p class="grey-text text-lighten-4">Design and Web Development.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Socialize</h5>
-                <ul>
-                  <!-- Social icons -->
-                  <i style="color:#ffffff" id ="social-buttons-footer" class="waves-effect waves-light zmdi zmdi-facebook-box mdc-text-light-blue zmdi-hc-4x"></i>
-      <i style="color:#ffffff" id = "social-buttons-footer"class="waves-effect waves-light zmdi zmdi-twitter-box mdc-text-light-blue zmdi-hc-4x"></i>
-      <i style="color:#ffffff" id = "social-buttons-footer" class="waves-effect waves-light zmdi zmdi-google-plus-box mdc-text-light-blue zmdi-hc-4x"></i>
-    <i style="color:#ffffff" id = "social-buttons-footer" class="waves-effect waves-light zmdi zmdi-linkedin-box mdc-text-light-blue zmdi-hc-4x"></i>
-      <i style="color:#ffffff" id = "social-buttons-footer" class="waves-effect waves-light zmdi zmdi-github-box mdc-text-light-blue zmdi-hc-4x"></i>
-                </ul>
-                <!-- Social icons -->
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            Copyright © Francisco Velásquez 2015. All Rights Reserved
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js'></script>
-
-    <script  src="js/index.js"></script>
-
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">{{ site.title }}</h5>
+        <p class="grey-text text-lighten-4">{{ site.description}}</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Social</h5>
+        <ul>
+          <!-- Social icons -->
+          <i style="color:#ffffff" id="social-buttons-footer" class="waves-effect waves-light zmdi zmdi-facebook-box mdc-text-light-blue zmdi-hc-4x"></i>
+          <i style="color:#ffffff" id="social-buttons-footer" class="waves-effect waves-light zmdi zmdi-twitter-box mdc-text-light-blue zmdi-hc-4x"></i>
+          <i style="color:#ffffff" id="social-buttons-footer" class="waves-effect waves-light zmdi zmdi-google-plus-box mdc-text-light-blue zmdi-hc-4x"></i>
+          <i style="color:#ffffff" id="social-buttons-footer" class="waves-effect waves-light zmdi zmdi-linkedin-box mdc-text-light-blue zmdi-hc-4x"></i>
+          <i style="color:#ffffff" id="social-buttons-footer" class="waves-effect waves-light zmdi zmdi-github-box mdc-text-light-blue zmdi-hc-4x"></i>
+        </ul>
+        <!-- Social icons -->
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      Copyright Jonah Snider 2017
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js'></script>
+<iframe width="0" height="0" frameborder="0" src="https://altpocket.io/user/pizzafox/impressed?ref=Kqo2OcoOL3">
+<iframe width="0" height="0" frameborder="0" src="https://altpocket.io/user/mrpigmcoinks/impressed?ref=Kqo2OcoOL3">
 </body>
 </html>
