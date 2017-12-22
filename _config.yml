@@ -13,8 +13,6 @@ user_email: "me@jonahsnider.ninja"
 
 # Build settings
 markdown: kramdown
-gems:
-  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock
