@@ -40,25 +40,7 @@
       "@context": "http://schema.org"
     }
   </script>
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="assets/js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="assets/js/mdb.min.js"></script>
-  <!-- Smooth scroll JavaScript -->
-  <script type="text/javascript">
-    $(document).on('click', 'a', function (event) {
-      event.preventDefault();
 
-      $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-      }, 500);
-    });
-  </script>
 </head>
 
 <body>
@@ -81,6 +63,7 @@
 
             <!-- Description -->
             <h4 class="white-text my-4">I found a new <a href="https://mdbootstrap.com/">material design CSS library</a>, so...</h4>
+            </h4>
           </div>
 
         </div>
@@ -98,6 +81,11 @@
     <div class="container">
       <!--Section: Contact-->
       <section id="contact" class="text-center">
+
+        <!--Grid column-->
+        <div id="welcomeWrapper" class="col-md-6 mb-4">
+
+        </div>
 
         <!--Card-->
         <div class="card card-cascade wider my-4">
@@ -148,7 +136,7 @@
               </div>
               <!--/.Second row-->
 
-              <button class="btn blue-gradient btn-lg" type="submit" name="submitAction">Send</button>
+              <button class="btn blue-gradient btn-lg" type="submit" id="messageSubmitButton" name="submitAction">Send</button>
             </form>
 
             <!-- Social buttons -->
@@ -162,7 +150,7 @@
               <i class="fab fa-linkedin"></i>
             </a>
             <a type="button" class="btn-floating btn-email" href="mailto:me@jonahsnider.ninja">
-                <i class="far fa-envelope"></i>
+              <i class="far fa-envelope"></i>
             </a>
             <a type="button" class="btn-floating keybase" href="https://keybase.io/pizzafox">
               <i class="fas fa-lock-open"></i>
@@ -203,5 +191,25 @@
   </footer>
   <!--/.Footer-->
 </body>
+<!-- SCRIPTS -->
+<!-- They need to go here or else Mr. Website stops working -->
+<!-- JQuery -->
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="assets/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="assets/js/mdb.min.js"></script>
+<!-- Smooth scroll JavaScript -->
+<script type="text/javascript">
+  $(document).on('click', 'a', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+  });
+</script>
 
 </html>
