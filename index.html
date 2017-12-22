@@ -6,16 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Jonah Snider</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Bootstrap core CSS -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="assets/css/mdb.min.css" rel="stylesheet">
-  <!-- Google Material Design Iconic Font -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Custom styles -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
 
   <meta property="og:title" content="Jonah Snider" />
   <meta property="og:locale" content="en_US" />
@@ -24,6 +22,7 @@
   <link rel="canonical" href="http://jonahsnider.ninja" />
   <meta property="og:url" content="http://jonahsnider.ninja" />
   <meta property="og:site_name" content="Jonah Snider" />
+  <!-- Metadata -->
   <script type="application/ld+json">
     {
       "name": "Jonah Snider",
@@ -41,170 +40,168 @@
       "@context": "http://schema.org"
     }
   </script>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+  <!-- Smooth scroll JavaScript -->
+  <script type="text/javascript">
+    $(document).on('click', 'a', function (event) {
+      event.preventDefault();
+
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500);
+    });
+  </script>
 </head>
 
 <body>
-      <!--Main Navigation-->
-      <header>
-        <!--Mask-->
-        <div id="intro" class="view hm-black-light intro">
+  <!--Main Navigation-->
+  <header>
+    <!--Mask-->
+    <div id="intro" class="view hm-black-light intro">
 
-          <div class="container-fluid full-bg-img d-flex align-items-center justify-content-center">
+      <div class="container-fluid full-bg-img d-flex align-items-center justify-content-center">
 
-            <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center">
 
-              <div class="col-md-10 text-center">
+          <div class="col-md-10 text-center">
 
-                <!-- Heading -->
-                <h2 class="display-3 font-bold white-text mb-2">Under Construction</h2>
+            <!-- Heading -->
+            <h2 class="display-3 font-bold white-text mb-2">Under Construction</h2>
 
-                <!-- Divider -->
-                <hr class="hr-light">
+            <!-- Divider -->
+            <hr class="hr-light">
 
-                <!-- Description -->
-                <h4 class="white-text my-4">I found a new material design library, so...</h4>
-              </div>
-
-            </div>
-
+            <!-- Description -->
+            <h4 class="white-text my-4">I found a new material design CSS library, so...</h4>
           </div>
 
         </div>
-        <!--/.Mask-->
 
-      </header>
-      <!--Main Navigation-->
-      <br>
-      <!--Main layout-->
-      <main class="mt-5">
-        <div class="container">
-          <!--Section: Contact-->
-          <section id="contact" class="text-center">
+      </div>
 
-            <!--Card-->
-            <div class="card card-cascade wider my-4">
+    </div>
+    <!--/.Mask-->
 
-              <!--Card gradient-->
-              <div class="view gradient-card-header blue-gradient">
-                <!--Title-->
-                <h2 class="h2-responsive">Contact</h2>
-              </div>
-              <!--/Card gradient-->
+  </header>
+  <!--Main Navigation-->
+  <br>
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Contact-->
+      <section id="contact" class="text-center">
 
-              <!--Card content-->
-              <div class="card-body text-center">
-                <form action="https://formspree.io/me@jonahsnider.ninja" method="POST">
-                  <!--First row-->
-                  <div class="row">
-                    <!--First column-->
-                    <div class="col-md-6">
-                      <div class="md-form">
-                        <input type="email" id="email" name="_replyto" class="form-control validate" required>
-                        <label for="email">Email</label>
-                      </div>
-                    </div>
-                    <!--First column-->
+        <!--Card-->
+        <div class="card card-cascade wider my-4">
 
-                    <!--Second column-->
-                    <div class="col-md-6">
-                      <div class="md-form">
-                        <input type="text" name="name" id="name" class="form-control validate" required>
-                        <label for="name">Name</label>
-                      </div>
-                    </div>
-                  </div>
-                  <!--Second column-->
-                  <!--/.First row-->
-
-                  <!--Second row-->
-                  <div class="row">
-                    <!--First column-->
-                    <div class="col-md-12">
-
-                      <div class="md-form">
-                        <textarea type="text" id="message" class="md-textarea" required></textarea>
-                        <label for="message">Message</label>
-                      </div>
-
-                    </div>
-                  </div>
-                  <!--/.Second row-->
-
-                  <button class="btn blue-gradient btn-lg" type="submit" name="submitAction">Send</button>
-                </form>
-
-                <!-- Social buttons -->
-                <a type="button" class="btn-floating btn-tw" href="https://twitter.com/thepizzafox">
-                  <i class="fa fa-twitter"></i>
-                </a>
-                <a type="button" class="btn-floating btn-elegant" href="https://steamcommunity.com/id/pizza_fox">
-                  <i class="fa fa-steam"></i>
-                </a>
-                <a type="button" class="btn-floating btn-li" href="https://www.linkedin.com/in/jonahsnider/">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a type="button" class="btn-floating btn-email" href="mailto:me@jonahsnider.ninja">
-                  <i class="material-icons">email</i>
-                </a>
-                <a type="button" class="btn-floating keybase" href="https://keybase.io/pizzafox">
-                  <i class="fa fa-key"></i>
-                  </a>
-                <a type="button" class="btn-floating btn-git" href="https://github.com/PizzaFox">
-                  <i class="fa fa-github"></i>
-                </a>
-                <a type="button" class="btn-floating orange" href="bitcoin:1DvaX5Jo89RBUeZLgoGojxrMWcMwFpfDv">
-                  <i class="fa fa-bitcoin"></i>
-                </a>
-                <!-- Social buttons -->
-              </div>
-              <!--/.Card content-->
-
-            </div>
-            <!--/.Card-->
-
-          </section>
-          <!--Section: Contact-->
-
-          <hr class="my-5">
-
-        </div>
-      </main>
-      <!--Main layout-->
-
-      <!--Footer-->
-      <footer class="page-footer center-on-small-only unique-color-dark pt-0">
-
-        <!--Copyright-->
-        <div class="footer-copyright">
-          <div class="container-fluid">
-            Copyright 2017 Jonah Snider
+          <!--Card gradient-->
+          <div class="view gradient-card-header blue-gradient">
+            <!--Title-->
+            <h2 class="h2-responsive">Contact</h2>
           </div>
+          <!--/Card gradient-->
+
+          <!--Card content-->
+          <div class="card-body text-center">
+            <form action="https://formspree.io/me@jonahsnider.ninja" method="POST">
+              <!--First row-->
+              <div class="row">
+                <!--First column-->
+                <div class="col-md-6">
+                  <div class="md-form">
+                    <input type="email" id="email" name="_replyto" class="form-control validate" required>
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <!--First column-->
+
+                <!--Second column-->
+                <div class="col-md-6">
+                  <div class="md-form">
+                    <input type="text" name="name" id="name" class="form-control validate" required>
+                    <label for="name">Name</label>
+                  </div>
+                </div>
+              </div>
+              <!--Second column-->
+              <!--/.First row-->
+
+              <!--Second row-->
+              <div class="row">
+                <!--First column-->
+                <div class="col-md-12">
+
+                  <div class="md-form">
+                    <textarea type="text" id="message" class="md-textarea" required></textarea>
+                    <label for="message">Message</label>
+                  </div>
+
+                </div>
+              </div>
+              <!--/.Second row-->
+
+              <button class="btn blue-gradient btn-lg" type="submit" name="submitAction">Send</button>
+            </form>
+
+            <!-- Social buttons -->
+            <a type="button" class="btn-floating btn-tw" href="https://twitter.com/thepizzafox">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a type="button" class="btn-floating btn-git" href="https://steamcommunity.com/id/pizza_fox">
+              <i class="fab fa-steam-symbol"></i>
+            </a>
+            <a type="button" class="btn-floating btn-li" href="https://www.linkedin.com/in/jonahsnider/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a type="button" class="btn-floating btn-email" href="mailto:me@jonahsnider.ninja">
+                <i class="far fa-envelope"></i>
+            </a>
+            <a type="button" class="btn-floating keybase" href="https://keybase.io/pizzafox">
+              <i class="fas fa-lock-open"></i>
+            </a>
+            <a type="button" class="btn-floating btn-git" href="https://github.com/PizzaFox">
+              <i class="fab fa-github"></i>
+            </a>
+            <a type="button" class="btn-floating orange" href="bitcoin:1DvaX5Jo89RBUeZLgoGojxrMWcMwFpfDv">
+              <i class="fab fa-bitcoin"></i>
+            </a>
+            <!-- Social buttons -->
+          </div>
+          <!--/.Card content-->
+
         </div>
-        <!--/.Copyright-->
+        <!--/.Card-->
 
-      </footer>
-      <!--/.Footer-->
+      </section>
+      <!--Section: Contact-->
 
+      <hr class="my-5">
 
-      <!-- SCRIPTS -->
-      <!-- JQuery -->
-      <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
-      <!-- Bootstrap tooltips -->
-      <script type="text/javascript" src="assets/js/popper.min.js"></script>
-      <!-- Bootstrap core JavaScript -->
-      <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-      <!-- MDB core JavaScript -->
-      <script type="text/javascript" src="assets/js/mdb.min.js"></script>
-      <!-- Smooth scroll JavaScript -->
-      <script type="text/javascript">
-        $(document).on('click', 'a', function (event) {
-          event.preventDefault();
+    </div>
+  </main>
+  <!--Main layout-->
 
-          $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-          }, 500);
-        });
-      </script>
+  <!--Footer-->
+  <footer class="page-footer center-on-small-only unique-color-dark pt-0">
+
+    <!--Copyright-->
+    <div class="footer-copyright">
+      <div class="container-fluid">
+        Copyright 2017 Jonah Snider
+      </div>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
 </body>
 
 </html>
