@@ -6,9 +6,58 @@ header,
 }
 
 .intro {
-    background: linear-gradient(40deg,#45cafc,#303f9f)center center;
-    background-repeat: repeat;
+    background: linear-gradient(270deg, #45cafc, #303f9f);
+    background-size: 400% 400%;
+    -webkit-animation: bigGradient 30s ease infinite;
+    -moz-animation: bigGradient 30s ease infinite;
+    -o-animation: bigGradient 30s ease infinite;
+    animation: bigGradient 30s ease infinite;
+    @-webkit-keyframes bigGradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    @-moz-keyframes bigGradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    @-o-keyframes bigGradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    @keyframes bigGradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
 }
+
 
 /* Gradients */
 
@@ -103,7 +152,7 @@ header,
 /* Custom colors */
 
 .keybase {
-    color: #33a0ff;
+    background-color: #33a0ff;
 }
 
 
