@@ -8,10 +8,10 @@ header,
 .intro {
     background: linear-gradient(270deg, #45cafc, #303f9f);
     background-size: 400% 400%;
-    -webkit-animation: bigGradient 30s ease infinite;
-    -moz-animation: bigGradient 30s ease infinite;
-    -o-animation: bigGradient 30s ease infinite;
-    animation: bigGradient 30s ease infinite;
+    -webkit-animation: bigGradient 0s ease infinite;
+    -moz-animation: bigGradient 0s ease infinite;
+    -o-animation: bigGradient 0s ease infinite;
+    animation: bigGradient 0s ease infinite;
     @-webkit-keyframes bigGradient {
         0% {
             background-position: 0% 50%
