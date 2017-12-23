@@ -1,55 +1,34 @@
-    </main>
-    <footer class="page-footer teal">
-        <div class="container">
-            <div class="row">
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Social Media</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="https://keybase.io/pizzafox">Keybase</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://steamcommunity.com/id/pizza_fox">Steam</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://twitter.com/thepizzafox">Twitter</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://github.com/PizzaFox">GitHub</a></li>
-                  <li><a class="grey-text text-lighten-3" href="bitcoin:1DvaX5Jo89RBUeZLgoGojxrMWcMwFpfDv">Bitcoin</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-      <div class="footer-copyright">
-        <div class="container">
-          &#xA9; {{"now" | date: "%Y"}} {{site.title}}. Theme adapted from <a href="https://github.com/ShawnTeoh/matjek">MatJek</a>.
-        </div>
-      </div>
-    </footer>
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <iframe width="0" height="0" frameborder="0" src="https://altpocket.io/user/pizzafox/impressed?ref=Kqo2OcoOL3">
-    <iframe width="0" height="0" frameborder="0" src="https://altpocket.io/user/mrpigmcoinks/impressed?ref=Kqo2OcoOL3">
-    {% for js in layout.js %}
-    {% if js contains "//" %}
-    <script src="{{js}}"></script>
-    {% else %}
-    <script src="{{site.baseurl}}/assets/js/{{js}}"></script>
-    {% endif %}
-    {% endfor %}
-    {% for js in page.js %}
-    {% if js contains "//" %}
-    <script src="{{js}}"></script>
-    {% else %}
-    <script src="{{site.baseurl}}/assets/js/{{js}}"></script>
-    {% endif %}
-    {% endfor %}
-    {% if site.google_tracking_id %}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})
-      (window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{site.google_tracking_id}}', 'auto');
-      ga('send', 'pageview');
-    </script>
-    {% endif %}
-    <script src="{{site.baseurl}}/assets/js/main.js"></script>
-  </body>
-</html>
+<!--Footer-->
+<footer class="page-footer center-on-small-only unique-color-dark pt-0">
+  <!-- Social buttons -->
+  <a type="button" class="btn-floating btn-tw" href="https://twitter.com/thepizzafox">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a type="button" class="btn-floating btn-git" href="https://steamcommunity.com/id/pizza_fox">
+    <i class="fab fa-steam-symbol steamyboi"></i>
+  </a>
+  <a type="button" class="btn-floating btn-lg btn-li" href="https://www.linkedin.com/in/jonahsnider/">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a type="button" class="btn-floating btn-lg btn-email" href="mailto:me@jonahsnider.ninja">
+    <i class="far fa-envelope"></i>
+  </a>
+  <a type="button" class="btn-floating btn-lg btn-git" href="https://github.com/PizzaFox">
+    <i class="fab fa-github"></i>
+  </a>
+  <a type="button" class="btn-floating keybase" href="https://keybase.io/pizzafox">
+    <i class="fas fa-lock-open"></i>
+  </a>
+  <a type="button" class="btn-floating orange" href="bitcoin:1DvaX5Jo89RBUeZLgoGojxrMWcMwFpfDv">
+    <i class="fab fa-bitcoin"></i>
+  </a>
+  <!-- Social buttons -->
+  <!--Copyright-->
+  <div class="footer-copyright">
+    <div class="container-fluid">
+      Copyright 2017 Jonah Snider
+    </div>
+  </div>
+  <!--/.Copyright-->
+</footer>
+<!--/.Footer-->

@@ -1,7 +1,11 @@
-{% include header.html %}
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="container">
-  {{ content }}
-</div>
+{% include head.html %}
 
-{% include footer.html %}
+<body>
+  {{ content }} {% include footer.html %}
+</body>
+{% include scripts.html %}
+
+</html>

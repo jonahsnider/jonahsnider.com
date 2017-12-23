@@ -4,18 +4,19 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: "https://pizzafox.github.io"
 permalink: /:year/:month/:day/:title
-repository: PizzaFox/pizzafox.github.io
 
 # Extra information
 github_profile: "https://github.com/PizzaFox"
-user: "Jonah Snider"
+author: Jonah Snider
 user_email: "me@jonahsnider.ninja"
+twitter:
+  username: thepizzafox
 
 # Build settings
 markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
-sass:
-  style: compressed
+plugins:
+  - jekyll-seo-tag
 future: true
