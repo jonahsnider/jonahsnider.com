@@ -7,10 +7,11 @@ permalink: /:year/:month/:day/:title
 
 # Extra information
 github_profile: "https://github.com/PizzaFox"
-author: Jonah Snider
+author:
+  twitter:
+    username: thepizzafox
 user_email: "me@jonahsnider.ninja"
-twitter:
-  username: thepizzafox
+
 
 # Build settings
 markdown: kramdown
