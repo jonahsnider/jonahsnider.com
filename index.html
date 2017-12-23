@@ -4,32 +4,210 @@ title: Under Construction
 description: I found another material design CSS library, so...
 ---
 <header>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/images/logo/logo.png" height="30" class="d-inline-block align-top"> Jonah Snider
+      </a>
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav mr-auto smooth-scroll">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" data-offset="100">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills" data-offset="100">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects" data-offset="100">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" data-offset="100">Contact</a>
+          </li>
+        </ul>
+        <!-- Social Icon  -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a type="button" href="https://www.linkedin.com/in/jonahsnider/" class="nav-link">
+              <i class="fa fab-linkedin btn-flat btn-sm btn-li"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a type="button" class="nav-link btn-flat btn-sm btn-email" href="mailto:me@jonahsnider.ninja">
+              <i class="far fa-envelope"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a type="button" class="nav-link btn-flat btn-sm btn-git" href="https://github.com/PizzaFox">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation -->
+
   <!--Mask-->
   <div id="intro" class="view hm-black-light">
     <div class="container-fluid full-bg-img d-flex align-items-center justify-content-center">
       <div class="row d-flex justify-content-center">
         <div class="col-md-10 text-center">
           <!-- Heading -->
-          <h2 class="display-3 font-bold white-text mb-2">Under Construction</h2>
+          <h2 class="display-3 font-bold white-text mb-2 wow fadeIn">I'm Jonah Snider</h2>
 
           <!-- Divider -->
           <hr class="hr-light">
 
           <!-- Description -->
-          <h4 class="white-text my-4">I found another
-            <a class="font-bold" href="https://mdbootstrap.com/">material design CSS library</a>, so...
+          <h4 class="white-text my-4 wow fadeIn" data-wow-delay="0.4s">
+            Developer, hacker, and high school student
           </h4>
+          <a href="#about" class="btn btn-floating btn-large wow fadeIn" data-wow-delay="0.4s" data-offset="100">
+            <i class="fas fa-caret-down" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </div>
   </div>
   <!--/.Mask-->
-
 </header>
 
 <!--Main layout-->
-<main class="mt-5">
+<main>
+
   <div class="container">
+    <!-- About Section -->
+    <section id="about" class="section feature-box mb-5">
+
+      <h2 class="text-center font-up my-5 pt-5 wow fadeIn" data-wow-delay="0.2s">About
+        <strong>me</strong>
+      </h2>
+
+      <p class="section-description wow fadeIn" data-wow-delay="0.2s">I'm a developer, hacker, and high school student. I love learning and helping others with my skills. I have a passion
+        for computers and technology in general.</p>
+
+      <!-- First row -->
+      <div class="row features-big wow fadeIn" data-wow-delay="0.4s">
+
+        <!-- First column -->
+        <div class="col-md-4 mb-r">
+
+          <!--Panel-->
+          <div class="card card-body hoverable">
+            <i class="fas fa-laptop dark-grey-text" aria-hidden="true"></i>
+            <h5 class="feature-title font-up">Freelancer</h5>
+            <p class="dark-grey-text">If you want a website made or design advice, don't hesitate to contact me with your questions.</p>
+          </div>
+          <!--/.Panel-->
+
+        </div>
+        <!-- /First column -->
+
+        <!-- Second column -->
+        <div class="col-md-4 mb-r">
+
+          <div class="card card-cascade wider white-text">
+            <!--Card gradient-->
+            <div class="view gradient-card-header blue-gradient hoverable">
+              <!--Title-->
+              <i class="fas fa-code" aria-hidden="true"></i>
+            </div>
+            <!--/Card gradient-->
+
+            <!--Card content-->
+            <div class="card-body">
+              <h5 class="feature-title font-up">Developer</h5>
+              <p>I am proficient in JavaScript, specifically Node.js as well as HTML, CSS and Jekyll. I am also knowledgeable
+                in development tools like Git and Bootstrap.</p>
+            </div>
+            <!--/.Card content-->
+          </div>
+        </div>
+        <!-- /.Second column -->
+
+        <!-- Third column -->
+        <div class="col-md-4 mb-r">
+
+          <!--Panel-->
+          <div class="card card-body hoverable">
+            <i class="fas fa-edit dark-grey-text" aria-hidden="true"></i>
+            <h5 class="feature-title font-up">Designer</h5>
+            <p class="dark-grey-text">I'm experienced in the design of icons, logos, or user interfaces.</p>
+          </div>
+          <!--/.Panel-->
+        </div>
+        <!-- /.Third column -->
+      </div>
+      <!-- /.First row -->
+    </section>
+
+    <div class="container-fluid" style="background-color: #f3f3f5;">
+      <div class="container py-4 pt-4">
+
+        <!-- Skill section -->
+        <section id="skills">
+
+          <!-- First row -->
+          <div class="row py-5">
+
+            <!--First column-->
+            <div class="col-lg-12 mb-4 wow fadeIn" data-wow-delay="0.4s">
+
+              <!--Second heading-->
+              <div class="d-flex justify-content-start">
+                <h4 class="text-center font-up mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Development
+                  <strong>Skills</strong>
+                </h4>
+              </div>
+
+              <!--Description-->
+              <p class="black-text font-up font-bold" align="justify">
+                <i class="fab node-js mr-1"></i>Node.js</p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <p class="black-text font-up font-bold pt-3" align="justify">
+                <i class="fas fa-edit mr-1"></i>Design</p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <p class="black-text font-up font-bold pt-3" align="justify">
+                <i class="fab fa-css-alt mr-1"></i>CSS3</p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <p class="black-text font-up font-bold pt-3" align="justify">
+                <i class="fab fa-html5 mr-1"></i>HTML5</p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <p class="black-text font-up font-bold pt-3" align="justify">
+                <i class="fas fa-bold mr-1"></i>Bootstrap</p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <!--/First column-->
+
+          </div>
+          <!--/First row-->
+
+        </section>
+        <!-- /.Skill section -->
+
+      </div>
+    </div>
+
     <!--Section: Contact-->
     <section id="contact" class="text-center">
       <!--Card-->
