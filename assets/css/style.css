@@ -5,10 +5,12 @@ header,
     height: 100%;
 }
 
+/* Blue gradient for full screen pages */
 .intro {
     background: linear-gradient(270deg, #45cafc, #303f9f);
 }
 
+/* Custom gradient for Steam social icon */
 .steam-gradient {
     background: linear-gradient(to top, #0B87B8, #08172A)
 }
@@ -125,6 +127,5 @@ a:hover {
 .keybase {
     background-color: #33a0ff;
 }
-
 
 /* Custom colors */
