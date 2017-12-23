@@ -5,6 +5,12 @@ header,
     height: 100%;
 }
 
+/* Blockquote blue color */
+.bq-blue {
+    border-left: 3px solid #2196f3
+}
+/* Blockquote blue color */
+
 /* Navbar color */
 .top-nav-collapse {
     background-color: #2196f3;
