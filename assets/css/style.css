@@ -6,8 +6,12 @@ header,
 }
 
 /* Blue gradient for full screen pages */
-.intro {
-    background: linear-gradient(270deg, #45cafc, #303f9f);
+#intro {
+    background: linear-gradient(270deg, #45cafc, #303f9f)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Custom gradient for Steam social icon */
