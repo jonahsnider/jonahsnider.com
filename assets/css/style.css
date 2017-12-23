@@ -9,6 +9,10 @@ header,
     background: linear-gradient(270deg, #45cafc, #303f9f);
 }
 
+footer.no-margin-page-footer {
+    color: #fff
+}
+
 .steam-gradient {
     background: linear-gradient(to top, #0B87B8, #08172A)
 }
