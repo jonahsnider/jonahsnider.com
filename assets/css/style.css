@@ -28,6 +28,17 @@ header,
 
 /* Gradients */
 
+/* Blue gradient for full screen pages */
+.purple-intro {
+    background: linear-gradient(40deg,#ff6ec4,#7873f5)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Gradients */
+
 .juicy-peach-gradient {
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
