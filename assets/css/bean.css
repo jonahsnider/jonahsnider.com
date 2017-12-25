@@ -17,18 +17,6 @@ header,
 }
 /* Navbar color */
 
-/* Gradients */
-
-/* Purple gradient for full screen pages */
-#intro {
-    background: linear-gradient(40deg,#ff6ec4,#7873f5)no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-/* Gradients */
-
 /* Custom colors */
 
 .keybase {
