@@ -22,19 +22,7 @@ header,
     background-color: #2196f3;
 }
 
-
 /* Navbar color */
-
-
-/* Blue gradient for full screen pages */
-
-#intro {
-    background: linear-gradient(270deg, #45cafc, #303f9f)no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
 
 /* Gradients */
