@@ -5,17 +5,16 @@ header,
     height: 100%;
 }
 
-/* Blockquote blue color */
-.bq-purple {
-    border-left: 3px solid #9c27b0
-}
-/* Blockquote blue color */
 
 /* Navbar color */
+
 .top-nav-collapse {
     background-color: #9c27b0;
 }
+
+
 /* Navbar color */
+
 
 /* Custom colors */
 
@@ -30,5 +29,6 @@ header,
 .purple-2 {
     background-color: #7873f5;
 }
+
 
 /* Custom colors */
