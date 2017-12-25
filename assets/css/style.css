@@ -5,19 +5,29 @@ header,
     height: 100%;
 }
 
+
 /* Blockquote blue color */
+
 .bq-blue {
     border-left: 3px solid #2196f3
 }
+
+
 /* Blockquote blue color */
 
+
 /* Navbar color */
+
 .top-nav-collapse {
     background-color: #2196f3;
 }
+
+
 /* Navbar color */
 
+
 /* Blue gradient for full screen pages */
+
 #intro {
     background: linear-gradient(270deg, #45cafc, #303f9f)no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -26,7 +36,9 @@ header,
     background-size: cover;
 }
 
+
 /* Gradients */
+
 .juicy-peach-gradient {
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
@@ -110,10 +122,16 @@ header,
 .near-moon-gradient {
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 }
+
+
 /* Gradients */
 
+
 /* Custom colors */
+
 .keybase {
     background-color: #33a0ff;
 }
+
+
 /* Custom colors */
