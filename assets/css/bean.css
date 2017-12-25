@@ -1,0 +1,46 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+/* Blockquote blue color */
+.bq-purple {
+    border-left: 3px solid #9c27b0
+}
+/* Blockquote blue color */
+
+/* Navbar color */
+.top-nav-collapse {
+    background-color: #9c27b0;
+}
+/* Navbar color */
+
+/* Gradients */
+
+/* Purple gradient for full screen pages */
+#intro {
+    background: linear-gradient(40deg,#ff6ec4,#7873f5)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* Gradients */
+
+/* Custom colors */
+
+.keybase {
+    background-color: #33a0ff;
+}
+
+.purple-1 {
+    background-color: #ff6ec4;
+}
+
+.purple-2 {
+    background-color: #7873f5;
+}
+
+/* Custom colors */
