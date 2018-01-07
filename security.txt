@@ -1,0 +1,7 @@
+---
+permalink: /./wellknown/security.txt
+title: Security.txt
+description: Security contact information
+---
+Contact: me@jonahsnider.ninja
+Encryption: https://keybase.io/pizzafox/pgp_keys.asc?fingerprint=e3d78b8f4596cd635f304439e85ce1d319132409
