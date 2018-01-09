@@ -1,0 +1,6 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer-when-downgrade
+  X-XSS-Protection: 1;mode=block
+  X-Frame-Options: SAMEORIGIN
+  Content-Security-Policy-Report-Only: object-src 'self'; child-src 'self'; worker-src 'self'; font-src 'self'; img-src 'self'; connect-src 'self'; media-src 'self'; default-src 'self'; frame-src 'self'; script-src 'unsafe-eval' 'unsafe-inline' 'self'; report-uri https://reports-api.sqreen.io/browser/v0/csp-violations/csp_50bbaf8328f04cd68a52ce85b7c403bb; manifest-src 'self'; style-src 'unsafe-inline' 'self'
