@@ -21,3 +21,4 @@ exclude:
 plugins:
   - jekyll-seo-tag
 future: true
+include: [.headers]
