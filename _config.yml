@@ -1,6 +1,6 @@
 title: Jonah Snider
 description: > # this means to ignore newlines until "baseurl:"
-  High school student. Computers, programming, hacking.
+  Developer, hacker, and high school student
 baseurl: ""
 url: "https://jonahsnider.ninja"
 permalink: /:year/:month/:day/:title
