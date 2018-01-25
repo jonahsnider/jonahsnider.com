@@ -33,3 +33,4 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "redirect"}
       - {label: "Permalink", name: "permalink", widget: "hidden", default: "r/{{slug}}"}
       - {label: "Target", name: "target", widget: "string"}
+      - {label: "Title", name: "title", widget: "string", default: "Redirecting"}
