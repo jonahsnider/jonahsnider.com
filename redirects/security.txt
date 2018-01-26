@@ -1,6 +1,6 @@
 ---
 layout: redirect
 title: Redirecting to ./wellknown
-permalink: /security
+permalink: /security.txt
 target: /wellknown/security.txt
 ---
