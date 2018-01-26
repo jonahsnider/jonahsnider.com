@@ -1,6 +1,7 @@
 ---
 layout: redirect
-title: Redirection
 permalink: /r/1broker
-target: https://1broker.com/?r=36336
+target: 'https://1broker.com/?r=36336'
+title: 1Broker
 ---
+
