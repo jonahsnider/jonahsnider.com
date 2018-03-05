@@ -43,7 +43,8 @@
 			<div class="tile is-parent">
 				<article class="tile is-child box notification is-link">
 					<p class="title">Developer</p>
-					<p class="subtitle">I am proficient in JavaScript, specifically Node.js, as well as HTML and CSS. I am also experienced in Git and configuring servers.</p>
+					<p class="subtitle">I am proficient in JavaScript, specifically Node.js, as well as HTML and CSS. I am also experienced in Git and configuring
+						servers.</p>
 				</article>
 			</div>
 			<div class="tile is-parent">
@@ -58,62 +59,64 @@
 	</section>
 
 	<section netlify id="contact" class="section">
-		<div class="field is-horizontal">
-			<div class="field-label is-normal">
-				<label class="label">From</label>
-			</div>
-
-			<div class="field-body">
-				<div class="field">
-					<p class="control is-expanded has-icons-left">
-						<input class="input" type="text" placeholder="Name">
-
-						<span class="icon is-small is-left">
-							<i class="fas fa-user"></i>
-						</span>
-					</p>
+		<form>
+			<div class="field is-horizontal">
+				<div class="field-label is-normal">
+					<label class="label">From</label>
 				</div>
 
-				<div class="field">
-					<p class="control is-expanded has-icons-left">
-						<input class="input is-success" type="email" placeholder="Email">
+				<div class="field-body">
+					<div class="field">
+						<p class="control is-expanded has-icons-left">
+							<input class="input" type="text" placeholder="Name">
 
-						<span class="icon is-small is-left">
-							<i class="fas fa-envelope"></i>
-						</span>
-					</p>
-				</div>
-			</div>
-		</div>
+							<span class="icon is-small is-left">
+								<i class="fas fa-user"></i>
+							</span>
+						</p>
+					</div>
 
-		<div class="field is-horizontal">
-			<div class="field-label is-normal">
-				<label class="label">Message</label>
-			</div>
+					<div class="field">
+						<p class="control is-expanded has-icons-left">
+							<input class="input" type="email" placeholder="Email">
 
-			<div class="field-body">
-				<div class="field">
-					<div class="control">
-						<textarea class="textarea"></textarea>
+							<span class="icon is-small is-left">
+								<i class="fas fa-envelope"></i>
+							</span>
+						</p>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="field is-horizontal">
-			<div class="field-label">
-				<!-- Left empty for spacing -->
-			</div>
-			<div class="field-body">
-				<div class="field">
-					<div class="control">
-						<button type="submit" class="button is-primary">
-							Submit
-						</button>
+			<div class="field is-horizontal">
+				<div class="field-label is-normal">
+					<label class="label">Message</label>
+				</div>
+
+				<div class="field-body">
+					<div class="field">
+						<div class="control">
+							<textarea class="textarea"></textarea>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+
+			<div class="field is-horizontal">
+				<div class="field-label">
+					<!-- Left empty for spacing -->
+				</div>
+				<div class="field-body">
+					<div class="field">
+						<div class="control">
+							<button type="submit" class="button is-primary">
+								Submit
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
 	</section>
 
 	{% include footer.html %}
