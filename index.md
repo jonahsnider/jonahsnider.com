@@ -1,4 +1,5 @@
 ---
+layout: home
 title: Jonah Snider
 aboutMe:
   color: dark
@@ -8,4 +9,3 @@ aboutMe:
     make you a website or some other project please contact me.
 subtitle: Freelance full stack developer
 ---
-
