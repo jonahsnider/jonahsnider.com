@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+	{% include navbar.html %}
+
+	<section class="hero is-{{ site.data.settings.color }} section">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="title">
+					{{ page.title}}
+				</h1>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="skills">
+		<div class="tile is-ancestor">
+			<div class="tile is-parent">
+				<article class="tile is-child box notification is-primary">
+					<p class="title">Freelancer</p>
+					<p class="subtitle">I'm a freelance developer, and I'm always available for jobs.</p>
+				</article>
+			</div>
+			<div class="tile is-parent">
+				<article class="tile is-child box notification is-link">
+					<p class="title">Developer</p>
+					<p class="subtitle">I am proficient in JavaScript, specifically Node.js, as well as HTML and CSS. I am also experienced in Git and configuring
+						servers.</p>
+				</article>
+			</div>
+			<div class="tile is-parent">
+				<article class="tile is-child box notification is-success">
+					<div class="content">
+						<p class="title">Designer</p>
+						<p class="subtitle">I'm great at creating designs, whether that be a user interface, logo, or anything else.</p>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="section">
+		{% include contact.html %}
+	</section>
+
+	{% include footer.html %}
+</body>
+
+</html>
