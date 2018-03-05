@@ -2,35 +2,130 @@ backend:
   name: git-gateway
 media_folder: "assets/images"
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "_posts/blog" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "page"
-    label: "Page" # Used in the UI
-    folder: "" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "redirect"
-    label: "Redirect" # Used in the UI
-    folder: "redirects" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "redirect"}
-      - {label: "Permalink", name: "permalink", widget: "hidden", default: "r/{{slug}}"}
-      - {label: "Target", name: "target", widget: "string"}
-      - {label: "Title", name: "title", widget: "string", default: "Redirecting"}
+  #
+  # Settings
+  #
+  - name: "settings"
+    label: "Settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      # Navbar
+      - name: "navigation"
+        label: "Navigation Bar"
+        file: "_data/navigation.yml"
+        fields:
+          # Links in navbar
+          - name: "items"
+            label: "Items"
+            label_singular: "Item"
+            widget: list
+            fields:
+              # Display name
+              - label: "Title"
+                name: "title"
+                widget: "string"
+
+              # Target URL
+              - label: "URL"
+                name: "url"
+                widget: "string"
+
+      - name: "settings"
+        label: "Site Settings"
+        file: "_data/settings.yml"
+        fields:
+          # Color used in navbar, 404 pages, and the title
+          - label: "Color"
+            name: "color"
+            widget: "select"
+            options:
+              - { label: "Primary", value: "primary" }
+              - { label: "Red", value: "danger" }
+              - { label: "White", value: "light" }
+              - { label: "Black", value: "dark" }
+              - { label: "Blue", value: "link" }
+              - { label: "Cyan", value: "info" }
+              - { label: "Green", value: "success" }
+              - { label: "Yellow", value: "warning" }
+
+          # Brand text
+          - label: "Brand"
+            name: "brand"
+            widget: "string"
+   
+  #
+  # Pages
+  #
+  - name: "importantPages"
+    label: "Important Pages"
+    editor:
+      preview: false
+    delete: false
+    files:
+        # Home page
+        - label : "Home page"
+          name: "home"
+          file: "index.md"
+          fields:
+            # Jekyll layout
+            - label: "Layout"
+              name: "layout"
+              widget: "hidden"
+              default: "home"
+
+            # Title
+            - label: "Title"
+              name: "title"
+              widget: "string"
+
+            # About me
+            - label: "About me"
+              name: "aboutMe"
+              widget: "object"
+              fields:
+                - label: "Text"
+                  name: "text"
+                  widget: "string"
+
+                - label: "Color"
+                  name: "color"
+                  widget: "select"
+                  options:
+                    - { label: "Primary", value: "primary" }
+                    - { label: "Red", value: "danger" }
+                    - { label: "White", value: "light" }
+                    - { label: "Black", value: "dark" }
+                    - { label: "Blue", value: "link" }
+                    - { label: "Cyan", value: "info" }
+                    - { label: "Green", value: "success" }
+                    - { label: "Yellow", value: "warning" }
+
+            # Subtitle  
+            - label: "Subtitle"
+              name: "subtitle"
+              widget: "string"
+
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
+    description: "General pages"
+    folder: "/"
+    slug: "{{slug}}"
+    create: true
+    filter: { field: "layout", value: "page" }
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "page"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"

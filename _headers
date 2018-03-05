@@ -1,6 +1,0 @@
-/*
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: SAMEORIGIN
-  Referrer-Policy: no-referrer-when-downgrade
-  X-XSS-Protection: 1;mode=block
-  Content-Security-Policy-Report-Only: object-src 'self'; style-src https://*.cloudfront.net https://*.mozilla.org https://*.fontawesome.com 'self' 'unsafe-inline' https://*.googleapis.com; report-uri https://reports-api.sqreen.io/browser/v0/csp-violations/csp_50bbaf8328f04cd68a52ce85b7c403bb; media-src 'self'; font-src 'self' data: https://*.gstatic.com https://*.cloudfront.net https://*.fontawesome.com; img-src 'self' https://*.cloudfront.net; child-src 'self'; default-src 'self'; frame-src 'self' https://*.mozilla.org; connect-src 'self' https://*.mozilla.org; worker-src 'self'; manifest-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.mozilla.org https://*.cloudfront.net

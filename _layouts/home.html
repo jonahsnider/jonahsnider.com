@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+	{% include navbar.html %}
+
+	<section class="hero is-{{ site.data.settings.color }} is-fullheight section">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="title">
+					{{ page.title}}
+				</h1>
+				<h2 class="subtitle">
+					{{ page.subtitle }}
+				</h2>
+			</div>
+		</div>
+	</section>
+
+	<section class="hero is-{{ page.aboutMe.color }} section" id="aboutMe">
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title">
+					About me
+				</h1>
+				<h2 class="subtitle">
+					{{ page.aboutMe.text }}
+				</h2>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="skills">
+		<div class="tile is-ancestor">
+			<div class="tile is-parent">
+				<article class="tile is-child box notification is-primary">
+					<p class="title">Freelancer</p>
+					<p class="subtitle">I'm a freelance developer, and I'm always available for jobs.</p>
+				</article>
+			</div>
+			<div class="tile is-parent">
+				<article class="tile is-child box notification is-link">
+					<p class="title">Developer</p>
+					<p class="subtitle">I am proficient in JavaScript, specifically Node.js, as well as HTML and CSS. I am also experienced in Git and configuring servers.</p>
+				</article>
+			</div>
+			<div class="tile is-parent">
+				<article class="tile is-child box notification is-success">
+					<div class="content">
+						<p class="title">Designer</p>
+						<p class="subtitle">I'm great at creating designs, whether that be a user interface, logo, or anything else.</p>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<section netlify id="contact" class="section">
+		<div class="field is-horizontal">
+			<div class="field-label is-normal">
+				<label class="label">Message</label>
+			</div>
+			<div class="field-body">
+				<div class="field">
+					<div class="control">
+						<textarea class="textarea"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="field is-horizontal">
+			<div class="field-label">
+				<!-- Left empty for spacing -->
+			</div>
+			<div class="field-body">
+				<div class="field">
+					<div class="control">
+						<button type="submit" class="button is-primary">
+							Submit
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% include footer.html %}
+</body>
+
+</html>

@@ -1,17 +1,15 @@
+#
+# WEBSITE INFORMATION
+#
+
+# Website information
 title: Jonah Snider
-description: > # this means to ignore newlines until "baseurl:"
-  Developer, hacker, and high school student
-baseurl: ""
+description: Freelance full stack developer
 url: "https://jonahsnider.ninja"
-permalink: /:year/:month/:day/:title
 
-# Extra information
-github_profile: "https://github.com/PizzaFox"
-author:
-  twitter:
-    username: thepizzafox
-user_email: "me@jonahsnider.ninja"
-
+#
+# BUILD CONFIGURATION
+#
 
 # Build settings
 markdown: kramdown
@@ -20,5 +18,6 @@ exclude:
   - Gemfile.lock
 plugins:
   - jekyll-seo-tag
+  - html-proofer
 future: true
 include: ["_headers"]
