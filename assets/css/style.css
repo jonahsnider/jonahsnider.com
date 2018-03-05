@@ -1,0 +1,10 @@
+/* Remove link underline */
+a:link {
+	text-decoration: none;
+}
+
+/* Small padding for <section>s */
+section.small-padding {
+	padding-top: 1.25%;
+	padding-bottom: 1.25%;
+}

@@ -1,30 +1,23 @@
-title: Jonah Snider
-description: > # this means to ignore newlines until "baseurl:"
-  High school student. Computers, programming, hacking.
-baseurl: ""
-url: "https://pizzafox.github.io"
-permalink: /:year/:month/:day/:title
-repository: PizzaFox/pizzafox.github.io
-paginate: 5
+#
+# WEBSITE INFORMATION
+#
 
-# MatJek specific configurations
-github_profile: "https://github.com/PizzaFox"
-user: "Jonah Snider"
-user_email: "me@jonahsnider.ninja"
-google_tracking_id: "UA-92827441-1"
-google_site_verification: ""
-disqus_shortname: ""
+# Website information
+title: Jonah Snider
+description: Freelance full stack developer
+url: "https://jonahsnider.ninja"
+
+#
+# BUILD CONFIGURATION
+#
 
 # Build settings
 markdown: kramdown
-gems:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
-sass:
-  style: compressed
+plugins:
+  - jekyll-seo-tag
+  - html-proofer
 future: true
+include: ["_headers"]
