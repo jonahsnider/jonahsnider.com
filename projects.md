@@ -1,4 +1,4 @@
 ---
 layout: projects
-title: projects
+title: Projects
 ---
