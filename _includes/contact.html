@@ -1,58 +1,60 @@
-<form netlify action="/form-success" name="contact-form">
-	<div class="field is-horizontal">
-		<div class="field-label is-normal">
-			<label class="label">From</label>
-		</div>
-
-		<div class="field-body">
-			<div class="field">
-				<p class="control is-expanded has-icons-left">
-					<input class="input" type="text" id="name" name="name" placeholder="Name" required>
-
-					<span class="icon is-small is-left">
-						<i class="fas fa-user"></i>
-					</span>
-				</p>
+<div class="container">
+	<form netlify action="/form-success" name="contact-form">
+		<div class="field is-horizontal">
+			<div class="field-label is-normal">
+				<label class="label">From</label>
 			</div>
 
-			<div class="field">
-				<p class="control is-expanded has-icons-left">
-					<input class="input" type="email" id="email" name="email" placeholder="Email" required>
+			<div class="field-body">
+				<div class="field">
+					<p class="control is-expanded has-icons-left">
+						<input class="input" type="text" id="name" name="name" placeholder="Name" required>
 
-					<span class="icon is-small is-left">
-						<i class="fas fa-envelope"></i>
-					</span>
-				</p>
-			</div>
-		</div>
-	</div>
+						<span class="icon is-small is-left">
+							<i class="fas fa-user"></i>
+						</span>
+					</p>
+				</div>
 
-	<div class="field is-horizontal">
-		<div class="field-label is-normal">
-			<label class="label">Message</label>
-		</div>
+				<div class="field">
+					<p class="control is-expanded has-icons-left">
+						<input class="input" type="email" id="email" name="email" placeholder="Email" required>
 
-		<div class="field-body">
-			<div class="field">
-				<div class="control">
-					<textarea class="textarea" id="message" name="message" required></textarea>
+						<span class="icon is-small is-left">
+							<i class="fas fa-envelope"></i>
+						</span>
+					</p>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="field is-horizontal">
-		<div class="field-label">
-			<!-- Left empty for spacing -->
-		</div>
-		<div class="field-body">
-			<div class="field">
-				<div class="control">
-					<button type="submit" class="button is-primary">
-						Submit
-					</button>
+		<div class="field is-horizontal">
+			<div class="field-label is-normal">
+				<label class="label">Message</label>
+			</div>
+
+			<div class="field-body">
+				<div class="field">
+					<div class="control">
+						<textarea class="textarea" id="message" name="message" required></textarea>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</form>
+
+		<div class="field is-horizontal">
+			<div class="field-label">
+				<!-- Left empty for spacing -->
+			</div>
+			<div class="field-body">
+				<div class="field">
+					<div class="control">
+						<button type="submit" class="button is-primary">
+							Submit
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
