@@ -18,6 +18,5 @@ exclude:
   - Gemfile.lock
 plugins:
   - jekyll-seo-tag
-  - html-proofer
 future: true
 include: ["_headers"]
