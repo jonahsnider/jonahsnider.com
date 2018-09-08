@@ -29,20 +29,26 @@
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/projects.html">Projects</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/contact.html">Contact</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main class="page contact-page">
-        <section class="portfolio-block mobile-app">
-            <div class="container align-items-center">
-                <div class="row align-items-center">
-                    <div class="col-12" data-aos="fade-down" data-aos-once="true">
-                        <h3 class="text-center">Page Not Found</h3>
-                        <p class="text-center">That page couldn't be found. It might have been deleted or moved.</p>
-                    </div>
+        <section class="portfolio-block contact">
+            <div class="container">
+                <div data-aos="fade-down" data-aos-once="true" class="heading">
+                    <h2>Contact me</h2>
                 </div>
+                <form netlify="">
+                    <div class="form-group" data-aos="fade-right" data-aos-delay="150" data-aos-once="true"><label for="name">Name</label><input class="form-control item" type="text" name="name" required="" autofocus="" id="name"></div>
+                    <div class="form-group" data-aos="fade-right" data-aos-delay="250" data-aos-once="true"><label for="email">Email</label><input class="form-control item" type="email" name="email" required="" inputmode="email" id="email"></div>
+                    <div class="form-group" data-aos="fade-right" data-aos-delay="350" data-aos-once="true"><label for="message">Message</label><textarea class="form-control item" name="message" required="" id="message"></textarea></div>
+                    <div class="form-group" data-aos="fade-right" data-aos-delay="450" data-aos-once="true">
+                        <div data-netlify-recaptcha=""></div>
+                    </div>
+                    <div class="form-group" data-aos="fade-right" data-aos-delay="500" data-aos-once="true"><button class="btn btn-primary btn-block btn-lg" type="submit">Submit</button></div>
+                </form>
             </div>
         </section>
     </main>
