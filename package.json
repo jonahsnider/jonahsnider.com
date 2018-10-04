@@ -1,0 +1,17 @@
+{
+  "alias": {
+    "jquery": "./assets/js/jquery.min.js"
+  },
+  "author": "Jonah Snider <me@jonahsnider.ninja> (https://jonahsnider.ninja)",
+  "description": "Personal portfolio",
+  "devDependencies": {
+    "parcel": "1.10.1"
+  },
+  "license": "Apache-2.0",
+  "name": "jonahsnider.ninja",
+  "repository": "PizzaFox/jonahsnider.ninja",
+  "scripts": {
+    "build": "parcel build *.html --public-url https://jonahsnider.ninja/ --experimental-scope-hoisting"
+  },
+  "version": "1.0.0"
+}
