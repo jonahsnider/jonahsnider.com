@@ -1,7 +1,4 @@
 {
-  "alias": {
-    "jquery": "./assets/js/jquery.min.js"
-  },
   "author": "Jonah Snider <me@jonahsnider.ninja> (https://jonahsnider.ninja)",
   "description": "Personal portfolio",
   "devDependencies": {
