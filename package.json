@@ -2,7 +2,7 @@
   "author": "Jonah Snider <me@jonahsnider.ninja> (https://jonahsnider.ninja)",
   "description": "Personal portfolio",
   "devDependencies": {
-    "parcel": "1.12.1"
+    "parcel": "1.12.2"
   },
   "license": "Apache-2.0",
   "name": "jonahsnider.ninja",
