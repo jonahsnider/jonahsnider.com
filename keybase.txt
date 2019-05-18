@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/pizzafox
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jonahsnider.ninja
+  * I am pizzafox (https://keybase.io/pizzafox) on keybase.
+  * I have a public key ASCTnO1QuamE81UnbNv3AMqXjqUCevBF4-iAT5h0UrXh6wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012078d8478babc3fbf624787afc6ae06c180e8bfbfa9a5a3b2e56a7beac7b030bf80a",
+      "host": "keybase.io",
+      "kid": "0120939ced50b9a984f355276cdbf700ca978ea5027af045e3e8804f987452b5e1eb0a",
+      "uid": "45f53f29517c3f06292153689754c219",
+      "username": "pizzafox"
+    },
+    "merkle_root": {
+      "ctime": 1558199815,
+      "hash": "8715308ce396a84c2df2bb098d8f49c8df19a8399d66f113343854139124f7527634f3c51b3ca46ec131f20519aa5e9fe5b947510fb8c1d3e50805fdf5454427",
+      "hash_meta": "9ecd036bff59cbb186a5af9d8f397ae71bccc4e1d2b9bb39cf108a0e5b20f205",
+      "seqno": 5400074
+    },
+    "service": {
+      "entropy": "YuCl+dr2aHclkvd7aCDCniz/",
+      "hostname": "jonahsnider.ninja",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.0.1"
+  },
+  "ctime": 1558199845,
+  "expire_in": 504576000,
+  "prev": "7e54f5023bc28957e2f7f491b171e72ddbd509e2219133e8dc9f5d6968e7fe4f",
+  "seqno": 88,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgk5ztULmphPNVJ2zb9wDKl46lAnrwRePogE+YdFK14esKp3BheWxvYWTESpcCWMQgflT1AjvCiVfi9/SRsXHnLdvVCeIhkTPo3J9daWjn/k/EIFVqNXIaKFBZ3ifAax1F/YnFKYocyv4hUdpzkBRI0O+5AgHCo3NpZ8RADSZ3S0CMXD68swIFDWF1CCz0dS8MsPWJIIbAChx4y8JYhyG3twjmP4kgqVI6vuPGCkBCPip+bdaiiWuyug30DahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKGUt2NOtEU6NOlzlcKaYDEpRNC/sVp8EbA9eFDNuMIJo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pizzafox
+
+==================================================================
