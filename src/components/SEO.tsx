@@ -1,11 +1,11 @@
 import React from 'react';
 import SiteMetadata from '../../types/site-metadata';
-import { getPageTitle } from '../util/util';
+import {getPageTitle} from '../util/util';
 
 /**
  * A collection of SEO tags that use values from a site-wide or page specific config.
  */
-export default function SEO(props: { siteMetadata: SiteMetadata }): JSX.Element {
+export default function SEO(props: {siteMetadata: SiteMetadata}): JSX.Element {
 	const pageTitle = getPageTitle(props.siteMetadata);
 
 	return (
@@ -48,15 +48,19 @@ export default function SEO(props: { siteMetadata: SiteMetadata }): JSX.Element 
 						content={props.siteMetadata.title}
 					/>
 					<meta name='application-name' content={props.siteMetadata.title} />
-					<meta name='apple-mobile-web-app-title' content={props.siteMetadata.title} />
+					<meta
+						name='apple-mobile-web-app-title'
+						content={props.siteMetadata.title}
+					/>
 				</>
 			)}
-			{(props.siteMetadata.page?.title ?? props.siteMetadata.title) && <meta
-				key='openGraphTitle'
-				property='og:title'
-				content={props.siteMetadata.page?.title ?? props.siteMetadata.title}
-			/>}
-
+			{(props.siteMetadata.page?.title ?? props.siteMetadata.title) && (
+				<meta
+					key='openGraphTitle'
+					property='og:title'
+					content={props.siteMetadata.page?.title ?? props.siteMetadata.title}
+				/>
+			)}
 
 			{(props.siteMetadata.url ?? props.siteMetadata.page?.url) && (
 				<>
@@ -90,33 +94,33 @@ export default function SEO(props: { siteMetadata: SiteMetadata }): JSX.Element 
 
 			{(props.siteMetadata.page?.description ??
 				props.siteMetadata.description) && (
-					<>
-						<meta
-							key='description'
-							name='description'
-							content={
-								props.siteMetadata.page?.description ??
-								props.siteMetadata.description
-							}
-						/>
-						<meta
-							key='twitterDescription'
-							name='twitter:description'
-							content={
-								props.siteMetadata.page?.description ??
-								props.siteMetadata.description
-							}
-						/>
-						<meta
-							key='openGraphDescription'
-							property='og:description'
-							content={
-								props.siteMetadata.page?.description ??
-								props.siteMetadata.description
-							}
-						/>
-					</>
-				)}
+				<>
+					<meta
+						key='description'
+						name='description'
+						content={
+							props.siteMetadata.page?.description ??
+							props.siteMetadata.description
+						}
+					/>
+					<meta
+						key='twitterDescription'
+						name='twitter:description'
+						content={
+							props.siteMetadata.page?.description ??
+							props.siteMetadata.description
+						}
+					/>
+					<meta
+						key='openGraphDescription'
+						property='og:description'
+						content={
+							props.siteMetadata.page?.description ??
+							props.siteMetadata.description
+						}
+					/>
+				</>
+			)}
 
 			<meta property='og:type' content='website' />
 
@@ -132,9 +136,11 @@ export default function SEO(props: { siteMetadata: SiteMetadata }): JSX.Element 
 								props.siteMetadata.page?.themeColor ??
 								props.siteMetadata.themeColor
 							}
-					/>
-					<meta name='msapplication-navbutton-color' content={props.siteMetadata.themeColor}/>
-
+						/>
+						<meta
+							name='msapplication-navbutton-color'
+							content={props.siteMetadata.themeColor}
+						/>
 					</>
 				))}
 
