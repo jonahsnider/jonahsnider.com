@@ -1,51 +1,4 @@
-interface Color {
-	background: string;
-	accent: string;
-	name?: string;
-}
-
-export const colorPalettes: Color[] = [
-	{
-		name: "Blue angels",
-		accent: "#f7c730",
-		background: "#163bd2"
-	},
-	{
-		name: "Red orange",
-		accent: "#004593",
-		background: "#d37f27"
-	},
-	{
-		name: "Neon mint",
-		accent: "#9c1252",
-		background: "#66f4b0"
-	},
-	{
-		name: "Neon lime with purple",
-		accent: "#830c87",
-		background: "7ffa7b"
-	},
-	{
-		name: "Office",
-		accent: "#425874",
-		background: "#c0aa8e"
-	},
-	{
-		name: "Midnight violet with yellow green",
-		accent: "#b6db54",
-		background: "#4621a8"
-	},
-	{
-		name: "Milk tea",
-		accent: "#303130",
-		background: "#d3c8db"
-	},
-	{
-		name: "Pastel pink and black",
-		accent: "#000000",
-		background: "#ffbacc"
-	}
-];
+import SiteMetadata from '../../types/site-metadata';
 
 export function mergeDefault(def: object | any, given?: object | any): object {
 	if (!given) {
@@ -65,4 +18,25 @@ export function mergeDefault(def: object | any, given?: object | any): object {
 	}
 
 	return given;
+}
+
+/**
+ * Get the title of a page using a metadata config.
+ * @param config The config object to use for generating the title
+ * @return The title of the page
+ */
+export function getPageTitle(config: SiteMetadata): string {
+	if (config.page && config.page.title) {
+		if (config.title) {
+			return `${config.page.title}`;
+		}
+
+		return `${config.page.title} | ${config.title}`;
+	}
+
+	if (config.title) {
+		return config.title;
+	}
+
+	return '';
 }

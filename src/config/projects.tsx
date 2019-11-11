@@ -1,4 +1,5 @@
-import { ChatOption, Configure, Github, Link } from "grommet-icons";
+import {ChatOption, Configure, Github, Link} from 'grommet-icons';
+import React from 'react';
 
 /** A project I've worked on. */
 interface Project {
@@ -15,29 +16,32 @@ interface Project {
 /** Projects that I've worked on. */
 const projects: Project[] = [
 	{
-		title: "Zero Width Shortener",
+		title: 'Zero Width Shortener',
 		description:
-			"A URL shortener that uses zero-width characters. Built on Firebase serverless functions. 600+ GitHub stars and over 30,000 URLs shortened.",
-		url: "https://zws.im",
+			'A URL shortener that uses zero-width characters. Built with the Firebase functions and Firestore stack. 600+ GitHub stars and over 30,000 URLs shortened.',
+		url: 'https://zws.im',
 		icon: <Link />
 	},
 	{
-		title: "Dice",
-		description: "A general purpose utility bot for the Discord chat platform.",
-		url: "https://dice.js.org",
+		title: 'Dice',
+		description:
+			'A general purpose utility bot for the Discord chat platform. 10,000 users and more than half a million commands run.',
+		url: 'https://dice.js.org',
 		icon: <ChatOption />
 	},
 	{
-		title: "Team 581",
+		title: 'Team 581',
 		description:
-			"An student-centered robotics club that participates in the FIRST Robotics Challenge.",
-		url: "https://team581.club",
+			'An student-centered robotics club that participates in the FIRST Robotics Challenge.',
+		url: 'https://team581.club',
 		icon: <Configure />
 	},
 	{
-		title: "Various open source contributions",
-		description: "I'm very passionate about giving back to the OSS community, and as such nearly all of my work is open-sourced on GitHub.",
-		url: "https://github.com/pizzafox",
+		title: 'Various open source contributions',
+		description:
+			// eslint-disable-next-line @typescript-eslint/quotes
+			"I'm very passionate about giving back to the OSS community, and as such nearly all of my work is open-sourced on GitHub.",
+		url: 'https://github.com/pizzafox',
 		icon: <Github />
 	}
 ];

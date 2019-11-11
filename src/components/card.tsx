@@ -1,8 +1,13 @@
-import { Anchor, Box, BoxProps, Heading, Paragraph, ThemeContext } from "grommet";
-import { IconProps } from "grommet-icons";
-import React, { cloneElement, useState } from "react";
-import animationStyles from "../styles/_animate.scss";
-import { normalWeight } from "../styles/_typography.scss";
+import { Anchor, Box, BoxProps, Heading, Paragraph, ThemeContext } from 'grommet';
+import { IconProps } from 'grommet-icons';
+import { ElevationType } from 'grommet/utils';
+import React, { cloneElement, CSSProperties, useState } from 'react';
+import animationStyles from '../styles/_animate.scss';
+import typographyStyles from '../styles/_typography.scss';
+import NoHover from './no-hover';
+
+/** Base elevation for the card. */
+const baseElevation: ElevationType = 'medium';
 
 /**
  * A collection of information with a title.
@@ -20,41 +25,51 @@ function Card(props: {
 	const [hovered, setHovered] = useState(false);
 
 	const baseProps: BoxProps = {
-		direction: "column",
-		round: "small",
-		background: "accent-1",
-		pad: "small",
-		width: "medium"
+		direction: 'column',
+		round: 'small',
+		background: 'accent-1',
+		pad: 'small',
+		margin: {
+			vertical: 'small'
+		}
 	};
 
 	const card = (
 		<>
-			<Box direction="row" justify="between" align="start" responsive>
-				<Heading
-					level={3}
-					margin="none"
-					color={{ dark: "#ffffff", light: "#000000" }}
+			<Box responsive direction='row' justify='between' align='start'>
+				<ThemeContext.Extend
+					value={{
+						heading: {
+							extend: {textDecoration: hovered ? 'underline' : 'none'} as CSSProperties
+						}
+					}}
 				>
-					{props.title}
-				</Heading>
+					<Heading
+						level={3}
+						margin='none'
+						color={{dark: '#ffffff', light: '#000000'}}
+					>
+						{props.title}
+					</Heading>
+				</ThemeContext.Extend>
 				{props.icon && (
 					<Box
 						margin={{
-							left: "small",
-							bottom: "small"
+							left: 'small',
+							bottom: 'small'
 						}}
 					>
 						{cloneElement(props.icon, {
-							color: "brand",
-							size: "large"
+							color: 'brand',
+							size: 'large'
 						} as IconProps)}
 					</Box>
 				)}
 			</Box>
 
 			<Paragraph
-				color={{ dark: "#dddddd", light: "#222222" }}
-				className={normalWeight}
+				color={{dark: '#dddddd', light: '#222222'}}
+				className={typographyStyles['normal-weight']}
 			>
 				{props.children}
 			</Paragraph>
@@ -63,13 +78,11 @@ function Card(props: {
 
 	if (props.href) {
 		return (
-			<ThemeContext.Extend
-				value={{ anchor: { hover: { textDecoration: "none" } } }}
-			>
+			<NoHover>
 				<Anchor key={props.title} href={props.href}>
 					<Box
 						{...baseProps}
-						elevation={hovered ? "xlarge" : "medium"}
+						elevation={hovered ? 'xlarge' : baseElevation}
 						className={animationStyles.transition}
 						onMouseOver={() => setHovered(true)}
 						onMouseOut={() => setHovered(false)}
@@ -77,15 +90,15 @@ function Card(props: {
 						{card}
 					</Box>
 				</Anchor>
-			</ThemeContext.Extend>
-		);
-	} else {
-		return (
-			<Box {...baseProps} elevation="small">
-				{card}
-			</Box>
+			</NoHover>
 		);
 	}
+
+	return (
+		<Box {...baseProps} elevation={baseElevation}>
+			{card}
+		</Box>
+	);
 }
 
 export default Card;

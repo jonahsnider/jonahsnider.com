@@ -1,0 +1,10 @@
+{
+  "description": "Jonah Snider portfolio",
+  "display": "standalone",
+  "lang": "en-US",
+  "name": "Jonah Snider Portfolio",
+  "orientation": "any",
+  "short_name": "Jonah Snider",
+  "start_url": "/",
+  "theme_color": "#0ea0ff"
+}
