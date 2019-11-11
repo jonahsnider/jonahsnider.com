@@ -1,7 +1,7 @@
-import { Anchor, Box, BoxProps, Heading, Paragraph, ThemeContext } from 'grommet';
-import { IconProps } from 'grommet-icons';
-import { ElevationType } from 'grommet/utils';
-import React, { cloneElement, CSSProperties, useState } from 'react';
+import {Anchor, Box, BoxProps, Heading, Paragraph, ThemeContext} from 'grommet';
+import {IconProps} from 'grommet-icons';
+import {ElevationType} from 'grommet/utils';
+import React, {cloneElement, CSSProperties, useState} from 'react';
 import animationStyles from '../styles/_animate.scss';
 import typographyStyles from '../styles/_typography.scss';
 import NoHover from './no-hover';
@@ -40,7 +40,9 @@ function Card(props: {
 				<ThemeContext.Extend
 					value={{
 						heading: {
-							extend: {textDecoration: hovered ? 'underline' : 'none'} as CSSProperties
+							extend: {
+								textDecoration: hovered ? 'underline' : 'none'
+							} as CSSProperties
 						}
 					}}
 				>

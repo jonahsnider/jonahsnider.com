@@ -1,5 +1,5 @@
-import { Anchor, Box, BoxProps, ResponsiveContext } from 'grommet';
-import React, { useState } from 'react';
+import {Anchor, Box, BoxProps, ResponsiveContext} from 'grommet';
+import React, {useState} from 'react';
 import animationStyles from '../styles/_animate.scss';
 import NoHover from './no-hover';
 

@@ -1,12 +1,12 @@
-import { Grommet, grommet, ThemeValue } from 'grommet';
+import {Grommet, grommet, ThemeValue} from 'grommet';
 import Head from 'next/head';
-import React, { ReactNode } from 'react';
+import React, {ReactNode} from 'react';
 import Seo from '../components/seo';
 import siteMetadata from '../config/site-metadata';
 import animationStyles from '../styles/_animate.scss';
 // eslint-disable-next-line import/no-unassigned-import
 import '../styles/_typography.scss';
-import { getPageTitle, mergeDefault } from '../util/util';
+import {getPageTitle, mergeDefault} from '../util/util';
 
 /** Color palette to use. */
 const colorPalette = {

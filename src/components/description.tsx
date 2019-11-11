@@ -1,5 +1,5 @@
-import { Box } from 'grommet';
-import { Github, License, Mail } from 'grommet-icons';
+import {Box} from 'grommet';
+import {Github, License, Mail} from 'grommet-icons';
 import React from 'react';
 import BoxButton from './box-button';
 import ResumeButton from './resume-button';

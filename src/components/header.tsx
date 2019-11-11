@@ -1,4 +1,4 @@
-import { Box, Heading } from 'grommet';
+import {Box, Heading} from 'grommet';
 import React from 'react';
 
 function Header(): JSX.Element {
