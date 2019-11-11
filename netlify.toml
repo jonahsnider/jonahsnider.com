@@ -1,2 +1,4 @@
 [build]
-  publish = "./"
+	base = "./"
+  publish = "./out"
+	command = "npm run build; npm run export"
