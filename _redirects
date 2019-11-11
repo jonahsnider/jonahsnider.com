@@ -1,6 +1,0 @@
-# Redirect domain aliases to primary domain
-https://jonahsnider.ninja/* https://jonah.pw/:splat 301!
-https://www.jonahsnider.ninja/* https://jonah.pw/:splat 301!
-
-# Optional: Redirect default Netlify subdomain to primary domain
-https://jonahsnider.netlify.com/* https://jonah.pw/:splat 301!

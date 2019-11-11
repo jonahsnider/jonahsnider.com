@@ -2,3 +2,19 @@
 	base = "./"
   publish = "./out"
 	command = "npm run build; npm run export"
+
+# Redirect domain aliases to primary domain
+[[redirects]]
+  from = "https://jonahsnider.ninja/*"
+  to = "https://jonah.pw/:splat"
+  status = 301
+[[redirects]]
+  from = "https://www.jonahsnider.ninja/*"
+  to = "https://jonah.pw/:splat"
+  status = 301
+
+# Optional: Redirect default Netlify subdomain to primary domain
+[[redirects]]
+  from = "https://jonahsnider.netlify.com/*"
+  to = "https://jonah.pw/:splat"
+  status = 301
