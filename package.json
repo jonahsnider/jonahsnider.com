@@ -33,7 +33,8 @@
     "export": "next export",
     "dev": "next dev",
     "start": "next start",
-    "test": "xo"
+    "test": "xo",
+    "prestart": "npm run build"
   },
   "version": "2.0.0",
   "xo": {
