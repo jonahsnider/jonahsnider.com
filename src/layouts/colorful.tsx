@@ -1,4 +1,4 @@
-import {Grommet, ThemeValue} from 'grommet';
+import {Grommet} from 'grommet';
 import Head from 'next/head';
 import React, {ReactNode} from 'react';
 import Seo from '../components/seo';
@@ -14,7 +14,7 @@ const colorPalette = {
 	accent: '#000'
 };
 
-const theme: ThemeValue = {
+export const theme = {
 	name: 'jonah.pw',
 	rounding: 4,
 	spacing: 24,

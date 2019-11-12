@@ -1,5 +1,7 @@
 import {Anchor, Box, BoxProps, ResponsiveContext} from 'grommet';
 import React, {useState} from 'react';
+import {IconDefinition} from '@fortawesome/fontawesome-svg-core';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import animationStyles from '../styles/_animate.scss';
 import NoHover from './no-hover';
 
@@ -12,7 +14,7 @@ function BoxButton(props: {
 	/** Label for the box. */
 	children: string;
 	/** Icon to display in the box. */
-	icon?: JSX.Element;
+	icon?: IconDefinition;
 	/** Extra props to pass to the box. */
 	extras?: BoxProps;
 }): JSX.Element {
@@ -50,7 +52,9 @@ function BoxButton(props: {
 								color={{dark: '#ffffff', light: '#000000'}}
 								size={size === 'large' ? 'large' : 'medium'}
 								a11yTitle={props.children}
-								icon={props.icon}
+								icon={
+									props.icon && <FontAwesomeIcon icon={props.icon} size='lg' />
+								}
 								label={props.children}
 								as='span'
 							/>

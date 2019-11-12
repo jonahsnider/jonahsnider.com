@@ -1,7 +1,9 @@
-import { Anchor, Box, BoxProps, Heading, Paragraph, ThemeContext } from 'grommet';
-import { IconProps } from 'grommet-icons';
-import { ElevationType } from 'grommet/utils';
-import React, { cloneElement, CSSProperties, useState } from 'react';
+import {IconDefinition} from '@fortawesome/free-brands-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {Anchor, Box, BoxProps, Heading, Paragraph, ThemeContext} from 'grommet';
+import {ElevationType} from 'grommet/utils';
+import React, {CSSProperties, useState} from 'react';
+import {theme} from '../layouts/colorful';
 import animationStyles from '../styles/_animate.scss';
 import typographyStyles from '../styles/_typography.scss';
 import NoHover from './no-hover';
@@ -20,7 +22,7 @@ function Card(props: {
 	/** Link for more information about this card. */
 	href?: string;
 	/** An icon to display alongside the title. */
-	icon?: JSX.Element;
+	icon?: IconDefinition;
 }): JSX.Element {
 	const [hovered, setHovered] = useState(false);
 
@@ -63,10 +65,11 @@ function Card(props: {
 							bottom: 'small'
 						}}
 					>
-						{cloneElement(props.icon, {
-							color: 'brand',
-							size: 'large'
-						} as IconProps)}
+						<FontAwesomeIcon
+							icon={props.icon}
+							color={theme.global.colors.brand}
+							size='2x'
+						/>
 					</Box>
 				)}
 			</Box>

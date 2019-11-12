@@ -1,5 +1,5 @@
+import {faFile} from '@fortawesome/free-solid-svg-icons';
 import {ResponsiveContext} from 'grommet';
-import {DocumentText} from 'grommet-icons';
 import React from 'react';
 import {url as resumeUrl} from '../config/resume';
 import BoxButton from './box-button';
@@ -14,7 +14,7 @@ function ResumeButton(): JSX.Element {
 				<BoxButton
 					href={resumeUrl}
 					extras={{width: size === 'small' ? undefined : {min: 'medium'}}}
-					icon={<DocumentText />}
+					icon={faFile}
 				>
 					Resumé
 				</BoxButton>
