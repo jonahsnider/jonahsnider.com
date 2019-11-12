@@ -19,17 +19,6 @@ export default interface SiteMetadata {
 	description?: string;
 	/** Theme color of the website. */
 	themeColor?: string;
-	/** Page specific settings. */
-	page?: {
-		/** The canonical URL of the page. */
-		url?: string;
-		/** Description of the page. */
-		description?: string;
-		/** Theme color of the page. */
-		themeColor?: string;
-		/** The title of the page. */
-		title?: string;
-	};
 	/** The URl to the icon to use accross the website in meta tags. */
 	icon?: string;
 }

@@ -1,11 +1,58 @@
 {
-  "background_color": "#ffbacc",
-  "description": "Jonah Snider portfolio",
-  "display": "standalone",
-  "lang": "en-US",
-  "name": "Jonah Snider Portfolio",
-  "orientation": "any",
-  "short_name": "Jonah Snider",
-  "start_url": "/",
-  "theme_color": "#000000"
+	"background_color": "#ffbacc",
+	"description": "Jonah Snider portfolio",
+	"display": "standalone",
+	"icons": [
+		{
+			"sizes": "72x72",
+			"src": "/images/js/icon-72.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "1024x1024",
+			"src": "/images/js/js.svg",
+			"type": "image/xml+svg"
+		},
+		{
+			"sizes": "96x96",
+			"src": "/images/js/icon-96.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "128x128",
+			"src": "/images/js/icon-128.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "144x144",
+			"src": "/images/js/icon-144.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "152x152",
+			"src": "/images/js/icon-152.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "192x192",
+			"src": "/images/js/icon-192.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "384x384",
+			"src": "/images/js/icon-384.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "512x512",
+			"src": "/images/js/icon-512.png",
+			"type": "image/png"
+		}
+	],
+	"lang": "en-US",
+	"name": "Jonah Snider Portfolio",
+	"orientation": "any",
+	"short_name": "Jonah Snider",
+	"start_url": "/",
+	"theme_color": "#000000"
 }

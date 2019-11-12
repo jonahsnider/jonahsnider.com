@@ -1,12 +1,10 @@
-import {Grommet} from 'grommet';
+import { Grommet } from 'grommet';
 import Head from 'next/head';
-import React, {ReactNode} from 'react';
+import React, { ReactNode } from 'react';
 import Seo from '../components/seo';
 import siteMetadata from '../config/site-metadata';
-import animationStyles from '../styles/_animate.scss';
 // eslint-disable-next-line import/no-unassigned-import
 import '../styles/_typography.scss';
-import {getPageTitle} from '../util/util';
 
 /** Color palette to use. */
 const colorPalette = {
@@ -58,14 +56,13 @@ function Colorful(props: {
 	return (
 		<>
 			<Head>
-				<title>{getPageTitle(siteMetadata)}</title>
+				<title>{siteMetadata.title}</title>
 				<Seo siteMetadata={siteMetadata} />
 			</Head>
 
 			<Grommet
 				full
 				theme={theme}
-				className={animationStyles['fast-transition']}
 			>
 				{props.children}
 			</Grommet>

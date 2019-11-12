@@ -1,44 +1,44 @@
 import React from 'react';
 import SiteMetadata from '../../types/site-metadata';
-import {getPageTitle} from '../util/util';
 
 /**
  * A collection of SEO tags that use values from a site-wide or page specific config.
  */
 export default function SEO(props: {siteMetadata: SiteMetadata}): JSX.Element {
-	const pageTitle = getPageTitle(props.siteMetadata);
-
 	return (
 		<>
 			<link rel='manifest' href='/manifest.webmanifest' />
 
-			<meta name='mobile-web-app-capable' content='yes' />
-			<meta name='apple-mobile-web-app-capable' content='yes' />
+			{['mobile-web-app-capable', 'apple-mobile-web-app-capable'].map(name => (
+				<meta name={name} content='yes' key={name} />
+			))}
 
 			<meta name='msapplication-starturl' content='/' />
 
-			{props.siteMetadata.icon && (
-				<>
-					{/* Icon in the highest resolution we need it for */}
-					<link rel='icon' sizes='192x192' href={props.siteMetadata.icon} />
+			<link rel='icon' href='/images/js/favicon.ico' type='image/x-icon' />
 
-					{/* Reuse same icon for Safari */}
-					<link rel='apple-touch-icon' href={props.siteMetadata.icon} />
-					<link
-						rel='apple-touch-startup-image'
-						href={props.siteMetadata.icon}
-					/>
-				</>
-			)}
+			{/* A bunch of icons. */}
+			{[72, 96, 128, 144, 152, 192, 384, 512].map(dimension => [
+				<link
+					rel='icon'
+					type='image/png'
+					sizes={`${dimension}x${dimension}`}
+					href={`/images/js/icon-${dimension}.png`}
+				/>,
+				<link
+					rel='apple-touch-icon'
+					type='image/png'
+					sizes={`${dimension}x${dimension}`}
+					href={`/images/js/icon-${dimension}.png`}
+				/>
+			])}
+
+			<link rel='apple-touch-startup-image' href={props.siteMetadata.icon} />
 
 			<meta
 				name='apple-mobile-web-app-status-bar-style'
 				content='black-translucent'
 			/>
-
-			{pageTitle && (
-				<meta key='twitterTitle' name='twitter:title' content={pageTitle} />
-			)}
 
 			{props.siteMetadata.title && (
 				<>
@@ -52,27 +52,28 @@ export default function SEO(props: {siteMetadata: SiteMetadata}): JSX.Element {
 						name='apple-mobile-web-app-title'
 						content={props.siteMetadata.title}
 					/>
+					<meta key='twitterTitle' name='twitter:title' content={props.siteMetadata.title} />
 				</>
 			)}
-			{(props.siteMetadata.page?.title ?? props.siteMetadata.title) && (
+			{props.siteMetadata.title && (
 				<meta
 					key='openGraphTitle'
 					property='og:title'
-					content={props.siteMetadata.page?.title ?? props.siteMetadata.title}
+					content={props.siteMetadata.title}
 				/>
 			)}
 
-			{(props.siteMetadata.url ?? props.siteMetadata.page?.url) && (
+			{props.siteMetadata.url && (
 				<>
 					<meta
 						key='openGraphURL'
 						property='og:url'
-						content={props.siteMetadata.page?.url ?? props.siteMetadata.url}
+						content={props.siteMetadata.url}
 					/>
 					<link
 						key='canonicalURL'
 						rel='canonical'
-						href={props.siteMetadata.page?.url ?? props.siteMetadata.url}
+						href={props.siteMetadata.url}
 					/>
 				</>
 			)}
@@ -92,32 +93,22 @@ export default function SEO(props: {siteMetadata: SiteMetadata}): JSX.Element {
 				/>
 			)}
 
-			{(props.siteMetadata.page?.description ??
-				props.siteMetadata.description) && (
+			{props.siteMetadata.description && (
 				<>
 					<meta
 						key='description'
 						name='description'
-						content={
-							props.siteMetadata.page?.description ??
-							props.siteMetadata.description
-						}
+						content={props.siteMetadata.description}
 					/>
 					<meta
 						key='twitterDescription'
 						name='twitter:description'
-						content={
-							props.siteMetadata.page?.description ??
-							props.siteMetadata.description
-						}
+						content={props.siteMetadata.description}
 					/>
 					<meta
 						key='openGraphDescription'
 						property='og:description'
-						content={
-							props.siteMetadata.page?.description ??
-							props.siteMetadata.description
-						}
+						content={props.siteMetadata.description}
 					/>
 				</>
 			)}
@@ -126,23 +117,32 @@ export default function SEO(props: {siteMetadata: SiteMetadata}): JSX.Element {
 
 			<meta name='twitter:card' content='summary' />
 
-			{props.siteMetadata.page?.themeColor ||
-				(props.siteMetadata.themeColor && (
-					<>
-						<meta
-							key='themeColor'
-							name='theme-color'
-							content={
-								props.siteMetadata.page?.themeColor ??
-								props.siteMetadata.themeColor
-							}
-						/>
-						<meta
-							name='msapplication-navbutton-color'
-							content={props.siteMetadata.themeColor}
-						/>
-					</>
-				))}
+			<meta
+				name='debugging'
+				content={`theme color for the whole site: ${props.siteMetadata.themeColor}`}
+			/>
+			<meta
+				key='themeColor'
+				name='theme-color'
+				content={props.siteMetadata.themeColor}
+			/>
+			<meta
+				name='msapplication-navbutton-color'
+				content={props.siteMetadata.themeColor}
+			/>
+			{props.siteMetadata.themeColor && (
+				<>
+					<meta
+						key='themeColor'
+						name='theme-color'
+						content={props.siteMetadata.themeColor}
+					/>
+					<meta
+						name='msapplication-navbutton-color'
+						content={props.siteMetadata.themeColor}
+					/>
+				</>
+			)}
 
 			{props.siteMetadata.keywords && (
 				<meta
