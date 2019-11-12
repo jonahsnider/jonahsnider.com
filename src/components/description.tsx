@@ -1,4 +1,8 @@
-import {faGithub, faKeybase} from '@fortawesome/free-brands-svg-icons';
+import {
+	faDiscord,
+	faGithub,
+	faKeybase
+} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import {Box} from 'grommet';
 import React from 'react';
@@ -18,6 +22,8 @@ function Description(): JSX.Element {
 				<BoxButton icon={faKeybase} href='https://keybase.io/pizzafox'>
 					pizzafox@keybase
 				</BoxButton>
+				{/* Is this Discord user tag case sensitive? */}
+				<BoxButton icon={faDiscord}>PizzaFox#0075@discord</BoxButton>
 			</Box>
 			<Box direction='row-responsive' margin='large' gap='medium'>
 				<ResumeButton />
