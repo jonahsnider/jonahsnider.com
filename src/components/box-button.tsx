@@ -1,69 +1,82 @@
-import {Anchor, Box, BoxProps, ResponsiveContext} from 'grommet';
-import React, {useState} from 'react';
 import {IconDefinition} from '@fortawesome/fontawesome-svg-core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {Anchor, Box, BoxProps, ResponsiveContext, Text} from 'grommet';
+import React, {useState} from 'react';
 import animationStyles from '../styles/_animate.scss';
-import NoHover from './no-hover';
 
+// The Prettier indent rules will conflict with the TypeScript ones
+/* eslint-disable @typescript-eslint/indent */
+interface ExtraProps
+	extends BoxProps,
+		React.ClassAttributes<HTMLDivElement>,
+		React.HTMLAttributes<HTMLDivElement> {}
+
+const baseProps: ExtraProps = {
+	direction: 'column',
+	justify: 'center',
+	background: 'accent-1',
+	round: 'small',
+	width: {min: 'small'},
+	className: animationStyles.transition
+};
+
+/* eslint-enable @typescript-eslint/indent */
 /**
  * Make a button using a Box.
  */
 function BoxButton(props: {
 	/** Where the box should take you when clicked. */
-	href: string;
+	href?: string;
 	/** Label for the box. */
 	children: string;
 	/** Icon to display in the box. */
 	icon?: IconDefinition;
 	/** Extra props to pass to the box. */
-	extras?: BoxProps;
+	extras?: ExtraProps;
 }): JSX.Element {
 	const [hovered, setHovered] = useState(false);
 
-	return (
-		// Double wrapped anchor
-		// This one here actually links this whole box that we have made look like a button
-		<Anchor
-			href={props.href}
-			onMouseOver={() => setHovered(true)}
-			onMouseOut={() => setHovered(false)}
-		>
-			<ResponsiveContext.Consumer>
-				{size => (
+	const box = (
+		<ResponsiveContext.Consumer>
+			{size => (
+				<Box
+					{...baseProps}
+					{...props.extras}
+					pad={
+						size === 'small'
+							? {horizontal: 'large', vertical: 'medium'}
+							: 'small'
+					}
+					elevation={hovered ? 'xlarge' : props.href ? 'medium' : 'none'}
+				>
 					<Box
-						direction='column'
-						pad={
-							size === 'small'
-								? {horizontal: 'large', vertical: 'medium'}
-								: 'small'
-						}
-						justify='center'
-						background='accent-1'
-						round='small'
-						elevation={hovered ? 'xlarge' : 'medium'}
-						width={{min: 'small'}}
-						className={animationStyles.transition}
-						{...props.extras}
+						as='span'
+						direction='row'
+						align='center'
+						gap='small'
+						style={{display: 'inline-flex'}}
 					>
-						<NoHover>
-							{/* Second anchor */}
-							{/* This one has all the styles that we like (the inline icon especially), but no actual href */}
-							<Anchor
-								color={{dark: '#ffffff', light: '#000000'}}
-								size={size === 'large' ? 'large' : 'medium'}
-								a11yTitle={props.children}
-								icon={
-									props.icon && <FontAwesomeIcon icon={props.icon} size='lg' />
-								}
-								label={props.children}
-								as='span'
-							/>
-						</NoHover>
+						{props.icon && <FontAwesomeIcon icon={props.icon} size='lg' />}
+						<Text weight='bold'>{props.children}</Text>
 					</Box>
-				)}
-			</ResponsiveContext.Consumer>
-		</Anchor>
+				</Box>
+			)}
+		</ResponsiveContext.Consumer>
 	);
+
+	if (props.href) {
+		return (
+			<Anchor
+				href={props.href}
+				onMouseOver={() => setHovered(true)}
+				onMouseOut={() => setHovered(false)}
+			>
+				{box}
+			</Anchor>
+		);
+	}
+
+	return box;
 }
 
 export default BoxButton;
