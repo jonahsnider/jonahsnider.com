@@ -1,10 +1,11 @@
-import {Grommet} from 'grommet';
+import {Anchor, Grommet, Paragraph} from 'grommet';
 import Head from 'next/head';
 import React, {ReactNode, useEffect, useState} from 'react';
 import Seo from '../components/seo';
 import siteMetadata from '../config/site-metadata';
 // eslint-disable-next-line import/no-unassigned-import
 import '../styles/_typography.scss';
+import {useAmp} from 'next/amp';
 
 /** Color palette to use initially. */
 const baseColors = {
@@ -82,6 +83,12 @@ function Colorful(props: {
 			</Head>
 			<Grommet full theme={theme}>
 				{props.children}
+				{useAmp() && (
+					<Paragraph margin='large' color={{light: 'dark-3', dark: 'light-3'}}>
+						You are on the AMP version of this website.{' '}
+						<Anchor href={siteMetadata.url}>Original</Anchor>
+					</Paragraph>
+				)}
 			</Grommet>
 		</>
 	);
