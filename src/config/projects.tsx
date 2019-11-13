@@ -1,5 +1,5 @@
-import {faGithub, IconDefinition} from '@fortawesome/free-brands-svg-icons';
-import {faComments, faLink, faRobot} from '@fortawesome/free-solid-svg-icons';
+import { faGithub, IconDefinition } from '@fortawesome/free-brands-svg-icons';
+import { faComments, faLink, faRobot } from '@fortawesome/free-solid-svg-icons';
 
 /** A project I've worked on. */
 interface Project {
@@ -32,7 +32,7 @@ const projects: Project[] = [
 	{
 		title: 'Team 581',
 		description:
-			'An student-centered robotics club that participates in the FIRST Robotics Challenge.',
+			'A student-centered robotics club that participates in the FIRST Robotics Challenge.',
 		url: 'https://team581.club',
 		icon: faRobot
 	},
