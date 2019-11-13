@@ -1,12 +1,10 @@
-import { Grommet } from 'grommet';
+import {Grommet} from 'grommet';
 import Head from 'next/head';
-import React, { ReactNode, useEffect, useState } from 'react';
+import React, {ReactNode, useEffect, useState} from 'react';
 import Seo from '../components/seo';
 import siteMetadata from '../config/site-metadata';
 // eslint-disable-next-line import/no-unassigned-import
 import '../styles/_typography.scss';
-
-// window.matchMedia('(prefers-color-scheme: dark)')
 
 /** Color palette to use initially. */
 const baseColors = {
@@ -34,7 +32,7 @@ function Colorful(props: {
 		query.addListener(updatedQuery => {
 			setDarkThemeEnabled(updatedQuery.matches);
 		});
-	});
+	}, []);
 
 	const theme = {
 		name: 'jonah.pw',
@@ -77,7 +75,10 @@ function Colorful(props: {
 		<>
 			<Head>
 				<title>{siteMetadata.title}</title>
-				<Seo siteMetadata={siteMetadata} theme={darkThemeEnabled ? 'dark' : 'default'} />
+				<Seo
+					siteMetadata={siteMetadata}
+					theme={darkThemeEnabled ? 'dark' : 'default'}
+				/>
 			</Head>
 			<Grommet full theme={theme}>
 				{props.children}

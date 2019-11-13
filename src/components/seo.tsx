@@ -16,7 +16,7 @@ export default function SEO(props: {
 	return (
 		<>
 			{['mobile-web-app-capable', 'apple-mobile-web-app-capable'].map(name => (
-				<meta name={name} content='yes' key={name} />
+				<meta key={name} name={name} content='yes' />
 			))}
 
 			<meta name='msapplication-starturl' content='/' />
@@ -28,7 +28,10 @@ export default function SEO(props: {
 				type='image/x-icon'
 			/>
 
-			<meta property='og:image' content={`/images/js/${props.theme}/icon-512.png`} />
+			<meta
+				property='og:image'
+				content={`/images/js/${props.theme}/icon-512.png`}
+			/>
 			<meta
 				property='og:image:secure_url'
 				content={`/images/js/${props.theme}/icon-512.png`}
@@ -40,12 +43,14 @@ export default function SEO(props: {
 			{/* A bunch of icons. */}
 			{[72, 96, 128, 144, 152, 192, 384, 512].map(dimension => [
 				<link
+					key={`icon-${dimension}`}
 					rel='icon'
 					type='image/png'
 					sizes={`${dimension}x${dimension}`}
 					href={`/images/js/${props.theme}/icon-${dimension}.png`}
 				/>,
 				<link
+					key={`apple-touch-icon-${dimension}`}
 					rel='apple-touch-icon'
 					type='image/png'
 					sizes={`${dimension}x${dimension}`}

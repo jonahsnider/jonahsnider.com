@@ -1,8 +1,8 @@
-import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Anchor, Box, BoxProps, Heading, Paragraph, ThemeContext } from 'grommet';
-import { ElevationType } from 'grommet/utils';
-import React, { CSSProperties, useState } from 'react';
+import {IconDefinition} from '@fortawesome/free-brands-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {Anchor, Box, BoxProps, Heading, Paragraph, ThemeContext} from 'grommet';
+import {ElevationType} from 'grommet/utils';
+import React, {CSSProperties, useState} from 'react';
 import animationStyles from '../styles/_animate.scss';
 import typographyStyles from '../styles/_typography.scss';
 import NoHover from './no-hover';
@@ -67,9 +67,9 @@ function Card(props: {
 						<ThemeContext.Consumer>
 							{theme => (
 								<FontAwesomeIcon
-                // @ts-ignore
-                  icon={props.icon}
-                  // @ts-ignore
+									// @ts-ignore
+									icon={props.icon}
+									// @ts-ignore
 									color={theme.global.colors.brand}
 									size='2x'
 								/>

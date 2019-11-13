@@ -1,5 +1,5 @@
-import { faGithub, IconDefinition } from '@fortawesome/free-brands-svg-icons';
-import { faComments, faLink, faRobot } from '@fortawesome/free-solid-svg-icons';
+import {faGithub, IconDefinition} from '@fortawesome/free-brands-svg-icons';
+import {faComments, faLink, faRobot} from '@fortawesome/free-solid-svg-icons';
 
 /** A project I've worked on. */
 interface Project {

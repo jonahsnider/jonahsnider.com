@@ -1,6 +1,7 @@
 import {IconDefinition} from '@fortawesome/fontawesome-svg-core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {Anchor, Box, BoxProps, ResponsiveContext, Text} from 'grommet';
+import Link from 'next/link';
 import React, {useState} from 'react';
 import animationStyles from '../styles/_animate.scss';
 
@@ -33,6 +34,8 @@ function BoxButton(props: {
 	icon?: IconDefinition;
 	/** Extra props to pass to the box. */
 	extras?: ExtraProps;
+	/** If the target link is a relative path to the site. */
+	relative?: boolean;
 }): JSX.Element {
 	const [hovered, setHovered] = useState(false);
 
@@ -65,7 +68,7 @@ function BoxButton(props: {
 	);
 
 	if (props.href) {
-		return (
+		const anchorBox = (
 			<Anchor
 				href={props.href}
 				onMouseOver={() => setHovered(true)}
@@ -74,6 +77,12 @@ function BoxButton(props: {
 				{box}
 			</Anchor>
 		);
+
+		if (props.relative) {
+			return <Link href={props.href}>{anchorBox}</Link>;
+		}
+
+		return anchorBox;
 	}
 
 	return box;
