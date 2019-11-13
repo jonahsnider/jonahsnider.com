@@ -28,6 +28,15 @@ export default function SEO(props: {
 				type='image/x-icon'
 			/>
 
+			<meta property='og:image' content={`/images/js/${props.theme}/icon-512.png`} />
+			<meta
+				property='og:image:secure_url'
+				content={`/images/js/${props.theme}/icon-512.png`}
+			/>
+			<meta property='og:image:type' content='image/png' />
+			<meta property='og:image:width' content='512' />
+			<meta property='og:image:height' content='512' />
+
 			{/* A bunch of icons. */}
 			{[72, 96, 128, 144, 152, 192, 384, 512].map(dimension => [
 				<link
