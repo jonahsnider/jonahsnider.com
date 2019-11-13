@@ -1,4 +1,4 @@
-import { Box, Heading, ResponsiveContext } from 'grommet';
+import {Box, Heading, ResponsiveContext} from 'grommet';
 import React from 'react';
 import Card from '../components/card';
 import Description from '../components/description';
@@ -12,7 +12,7 @@ import Colorful from '../layouts/colorful';
 function Home(): JSX.Element {
 	return (
 		<Colorful>
-			<Header />
+			<Header title='Jonah Snider' subtitle='Full-stack developer' />
 
 			<Description />
 
