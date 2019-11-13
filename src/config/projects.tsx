@@ -1,5 +1,5 @@
-import {faGithub, IconDefinition} from '@fortawesome/free-brands-svg-icons';
-import {faComments, faLink, faRobot} from '@fortawesome/free-solid-svg-icons';
+import { faGithub, IconDefinition } from '@fortawesome/free-brands-svg-icons';
+import { faComments, faLink, faRobot } from '@fortawesome/free-solid-svg-icons';
 
 /** A project I've worked on. */
 interface Project {
@@ -25,7 +25,7 @@ const projects: Project[] = [
 	{
 		title: 'Dice',
 		description:
-			'A general purpose utility bot for the Discord chat platform. 10,000 users and more than half a million commands run.',
+			'A general purpose utility bot for the Discord chat platform. More than 10,000 total users and over half a million commands run.',
 		url: 'https://dice.js.org',
 		icon: faComments
 	},
