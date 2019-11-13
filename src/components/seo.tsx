@@ -24,17 +24,17 @@ export default function SEO(props: {
 
 			<link
 				rel='icon'
-				href={`/images/js/${props.theme}/favicon.ico`}
+				href={`${props.siteMetadata.url}/images/js/${props.theme}/favicon.ico`}
 				type='image/x-icon'
 			/>
 
 			<meta
 				property='og:image'
-				content={`/images/js/${props.theme}/icon-512.png`}
+				content={`${props.siteMetadata.url}/images/js/${props.theme}/icon-512.png`}
 			/>
 			<meta
 				property='og:image:secure_url'
-				content={`/images/js/${props.theme}/icon-512.png`}
+				content={`${props.siteMetadata.url}/images/js/${props.theme}/icon-512.png`}
 			/>
 			<meta property='og:image:type' content='image/png' />
 			<meta property='og:image:width' content='512' />
@@ -47,14 +47,14 @@ export default function SEO(props: {
 					rel='icon'
 					type='image/png'
 					sizes={`${dimension}x${dimension}`}
-					href={`/images/js/${props.theme}/icon-${dimension}.png`}
+					href={`${props.siteMetadata.url}/images/js/${props.theme}/icon-${dimension}.png`}
 				/>,
 				<link
 					key={`apple-touch-icon-${dimension}`}
 					rel='apple-touch-icon'
 					type='image/png'
 					sizes={`${dimension}x${dimension}`}
-					href={`/images/js/${props.theme}/icon-${dimension}.png`}
+					href={`${props.siteMetadata.url}/images/js/${props.theme}/icon-${dimension}.png`}
 				/>
 			])}
 
