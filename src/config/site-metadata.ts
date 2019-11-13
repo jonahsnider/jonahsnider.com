@@ -16,7 +16,9 @@ const siteMetadata: SiteMetadata = {
 		locale: 'en_US'
 	},
 	description: 'Jonah Snider - Full-stack developer',
-	themeColor: '#ffbacc'
+	themeColor: '#ffbacc',
+	accentColor: '#000000',
+	url: 'https://jonah.pw'
 };
 
 export default siteMetadata;

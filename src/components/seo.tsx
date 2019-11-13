@@ -1,21 +1,32 @@
 import React from 'react';
 import SiteMetadata from '../../types/site-metadata';
+import siteMetadata from '../config/site-metadata';
 
 /**
  * A collection of SEO tags that use values from a site-wide or page specific config.
  */
-export default function SEO(props: {siteMetadata: SiteMetadata}): JSX.Element {
+export default function SEO(props: {
+	siteMetadata: SiteMetadata;
+	theme?: 'dark' | 'default';
+}): JSX.Element {
+	// Invert colors if on dark theme
+	const themeColor =
+		props.theme === 'dark' ? siteMetadata.accentColor : siteMetadata.themeColor;
+
 	return (
 		<>
-			<link rel='manifest' href='/manifest.webmanifest' />
-
 			{['mobile-web-app-capable', 'apple-mobile-web-app-capable'].map(name => (
 				<meta name={name} content='yes' key={name} />
 			))}
 
 			<meta name='msapplication-starturl' content='/' />
+			<link rel='manifest' href={`/manifests/${props.theme}.webmanifest`} />
 
-			<link rel='icon' href='/images/js/favicon.ico' type='image/x-icon' />
+			<link
+				rel='icon'
+				href={`/images/js/${props.theme}/favicon.ico`}
+				type='image/x-icon'
+			/>
 
 			{/* A bunch of icons. */}
 			{[72, 96, 128, 144, 152, 192, 384, 512].map(dimension => [
@@ -23,13 +34,13 @@ export default function SEO(props: {siteMetadata: SiteMetadata}): JSX.Element {
 					rel='icon'
 					type='image/png'
 					sizes={`${dimension}x${dimension}`}
-					href={`/images/js/icon-${dimension}.png`}
+					href={`/images/js/${props.theme}/icon-${dimension}.png`}
 				/>,
 				<link
 					rel='apple-touch-icon'
 					type='image/png'
 					sizes={`${dimension}x${dimension}`}
-					href={`/images/js/icon-${dimension}.png`}
+					href={`/images/js/${props.theme}/icon-${dimension}.png`}
 				/>
 			])}
 
@@ -52,7 +63,11 @@ export default function SEO(props: {siteMetadata: SiteMetadata}): JSX.Element {
 						name='apple-mobile-web-app-title'
 						content={props.siteMetadata.title}
 					/>
-					<meta key='twitterTitle' name='twitter:title' content={props.siteMetadata.title} />
+					<meta
+						key='twitterTitle'
+						name='twitter:title'
+						content={props.siteMetadata.title}
+					/>
 				</>
 			)}
 			{props.siteMetadata.title && (
@@ -117,40 +132,14 @@ export default function SEO(props: {siteMetadata: SiteMetadata}): JSX.Element {
 
 			<meta name='twitter:card' content='summary' />
 
-			<meta
-				name='debugging'
-				content={`theme color for the whole site: ${props.siteMetadata.themeColor}`}
-			/>
-			<meta
-				key='themeColor'
-				name='theme-color'
-				content={props.siteMetadata.themeColor}
-			/>
-			<meta
-				name='msapplication-navbutton-color'
-				content={props.siteMetadata.themeColor}
-			/>
-			{props.siteMetadata.themeColor && (
-				<>
-					<meta
-						key='themeColor'
-						name='theme-color'
-						content={props.siteMetadata.themeColor}
-					/>
-					<meta
-						name='msapplication-navbutton-color'
-						content={props.siteMetadata.themeColor}
-					/>
-				</>
-			)}
+			<meta key='themeColor' name='theme-color' content={themeColor} />
+			<meta name='msapplication-navbutton-color' content={themeColor} />
 
-			{props.siteMetadata.keywords && (
-				<meta
-					key='keywords'
-					name='keywords'
-					content={props.siteMetadata.keywords.join(', ')}
-				/>
-			)}
+			<meta
+				key='keywords'
+				name='keywords'
+				content={props.siteMetadata.keywords.join(', ')}
+			/>
 		</>
 	);
 }

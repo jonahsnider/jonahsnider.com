@@ -77,7 +77,7 @@ function Colorful(props: {
 		<>
 			<Head>
 				<title>{siteMetadata.title}</title>
-				<Seo siteMetadata={siteMetadata} />
+				<Seo siteMetadata={siteMetadata} theme={darkThemeEnabled ? 'dark' : 'default'} />
 			</Head>
 			<Grommet full theme={theme}>
 				{props.children}

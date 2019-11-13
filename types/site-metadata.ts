@@ -3,22 +3,24 @@
  */
 export default interface SiteMetadata {
 	/** Keywords describing the site. */
-	keywords?: string[];
+	keywords: string[];
 	/** Title of the site. */
-	title?: string;
+	title: string;
 	/** Internationalization settings. */
-	i18n?: {
+	i18n: {
 		/** The language for the site. */
-		language?: string;
+		language: string;
 		/** The locale for the site. */
-		locale?: string;
+		locale: string;
 	};
 	/** The parent website URL. */
-	url?: string;
+	url: string;
 	/** Description of the website. */
-	description?: string;
+	description: string;
 	/** Theme color of the website. */
-	themeColor?: string;
-	/** The URl to the icon to use accross the website in meta tags. */
-	icon?: string;
+	themeColor: string;
+	/** Accent color of the website. */
+	accentColor: string;
+	/** The URL to the icon to use accross the website in meta tags. */
+	icon: string;
 }
