@@ -9,7 +9,7 @@ const siteMetadata: SiteMetadata = {
 		'full-stack',
 		'full-stack developer'
 	],
-	icon: '/images/js/icon-512.png',
+	icon: '/images/js/default/icon-512.png',
 	title: 'Jonah Snider',
 	i18n: {
 		language: 'EN',
