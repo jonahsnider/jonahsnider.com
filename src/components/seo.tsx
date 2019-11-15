@@ -1,5 +1,5 @@
-import React from 'react';
 import {useAmp} from 'next/amp';
+import React from 'react';
 import SiteMetadata from '../../types/site-metadata';
 import siteMetadata from '../config/site-metadata';
 
@@ -59,7 +59,10 @@ export default function SEO(props: {
 				/>
 			])}
 
-			<link rel='apple-touch-startup-image' href={props.siteMetadata.icon} />
+			<link
+				rel='apple-touch-startup-image'
+				href={`${props.siteMetadata.url}/images/js/${props.theme}/icon-512.png`}
+			/>
 
 			<meta
 				name='apple-mobile-web-app-status-bar-style'
