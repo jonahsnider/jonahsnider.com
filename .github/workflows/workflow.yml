@@ -1,0 +1,32 @@
+name: Node.js CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-18.04
+
+    steps:
+      - name: "Git checkout"
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 0
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
+      - name: Install PNPM
+        run: curl -L https://unpkg.com/@pnpm/self-installer | node
+      - name: Install dependencies
+        run: pnpm install
+      - name: Check formatting
+        run: pnpm run prettier
+      - name: Lint JavaScript
+        run: pnpm run lint
+      - name: Build for production
+        run: pnpm run build
+      - name: "Upload built site artifact"
+        uses: actions/upload-artifact@master
+        with:
+          name: built-site
+          path: public
