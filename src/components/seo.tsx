@@ -1,4 +1,3 @@
-import {useAmp} from 'next/amp';
 import React from 'react';
 import SiteMetadata from '../../types/site-metadata';
 import siteMetadata from '../config/site-metadata';
@@ -101,15 +100,6 @@ export default function SEO(props: {
 					key='openGraphURL'
 					property='og:url'
 					content={props.siteMetadata.url}
-				/>
-			)}
-
-			{/* I'm pretty sure Next.js inserts their own canonical URL and AMP gets mad when I insert mine as well */}
-			{!useAmp() && props.siteMetadata.url && (
-				<link
-					key='canonicalURL'
-					rel='canonical'
-					href={props.siteMetadata.url}
 				/>
 			)}
 
