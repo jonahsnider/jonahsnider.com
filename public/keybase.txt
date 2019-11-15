@@ -6,7 +6,7 @@ I hereby claim:
 
   * I am an admin of https://jonahsnider.ninja
   * I am pizzafox (https://keybase.io/pizzafox) on keybase.
-  * I have a public key ASA1aNdOJtPV-z41qL4MS9oC025RMMmIoc_7FECDKyECJgo
+  * I have a public key with fingerprint E3D7 8B8F 4596 CD63 5F30  4439 E85C E1D3 1913 2409
 
 To do so, I am signing this object:
 
@@ -14,39 +14,71 @@ To do so, I am signing this object:
   "body": {
     "key": {
       "eldest_kid": "012078d8478babc3fbf624787afc6ae06c180e8bfbfa9a5a3b2e56a7beac7b030bf80a",
+      "fingerprint": "e3d78b8f4596cd635f304439e85ce1d319132409",
       "host": "keybase.io",
-      "kid": "01203568d74e26d3d5fb3e35a8be0c4bda02d36e5130c988a1cffb1440832b2102260a",
+      "key_id": "e85ce1d319132409",
+      "kid": "010125bea4ef2c8046840f48e0a54c87d7547fb439088e149a439d7616f177ebea9b0a",
       "uid": "45f53f29517c3f06292153689754c219",
       "username": "pizzafox"
     },
     "merkle_root": {
-      "ctime": 1558227011,
-      "hash": "6c23f8663611d063c074a5301baa292bc35180b4bb83ab7fa6a761cc1eb15ae17dd10df60ca579972718e5a5db1ea3212e386219cc573dd762b4c92766985d14",
-      "hash_meta": "414a480cd67a34328562ecbd328362b41549ecfa701a089bc9f6686a589962cc",
-      "seqno": 5401592
+      "ctime": 1573787578,
+      "hash_meta": "10899e06422a0de876b05ccf5f9b6c255574827fb2b60ceff8c28a780a600ef6",
+      "seqno": 9627777
+    },
+    "revoke": {
+      "sig_ids": [
+        "5c394fa334869bf0cb2e1e11868316616d713c09f374c0ffcdfcb555c07afe9a0f"
+      ]
     },
     "service": {
-      "entropy": "PZl9DbZTTBShK71O0rLT5XNF",
       "hostname": "jonahsnider.ninja",
       "protocol": "https:"
     },
     "type": "web_service_binding",
-    "version": 2
+    "version": 1
   },
-  "client": {
-    "name": "keybase.io go client",
-    "version": "4.0.0"
-  },
-  "ctime": 1558227019,
-  "expire_in": 504576000,
-  "prev": "afe4db9663916701594785ba4dc82c5969b3f13bcdb27c4e3d82a92402dc02fc",
-  "seqno": 90,
+  "ctime": 1573787580,
+  "expire_in": 157680000,
+  "prev": "b83e7e57f2b6dc3cbe21948cda9915373f54caec698f676f3863eb78b89bb175",
+  "seqno": 114,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgNWjXTibT1fs+Nai+DEvaAtNuUTDJiKHP+xRAgyshAiYKp3BheWxvYWTESpcCWsQgr+TblmORZwFZR4W6TcgsWWmz8TvNsnxOPYKpJALcAvzEIFhYs88BCsyzgtMydZHyi4BFiNAqAyRaOADt26kXY4lPAgHCo3NpZ8RA7E3xH24Ett0xrbrJYPxTD0S/RRUoapYIm9atcdIvwSu3cZkZOot2FhJ8WCqcKsMr4SAeR2t/ylYI2c4dKEtkDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIK3btuCIr+PdM2TR/iSNrSaspS6a0b6ILDn21EtMpggVo3RhZ80CAqd2ZXJzaW9uAQ==
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+yMQKAnicbZN7bBVFFMZvgVaptxYoQqhE6goEKNTZ58zWQktASwLyEhC15TIzO0O3
+j7uX3dtSHhdEA4VAiQ+wFAJtIlCixYaADwihPGqVVAqhPCwoUALaSqAgRkwFdW4D
+MTHOP7Mze853vvmdmYaEnr74mPactpZBSUN7xzQdW1bsy20eeGipRBxrsZS+VCpg
+3RMrtJgXDhTYlpQuAVkBEFlIg4hgQlVOuKGIBcScGpgBg8oIMETEPjaxjlWiMN3A
+kDBMIQEqIBwBLI2WuB1cwNyQawfDQpaplhBEXNNNg1qGqnMVaJpqMqRTJluqbMqq
+ogFTJOY5XjRDmCPYY2m2I/bEItBt73/iH/sWznXhQmNcoQhoBtIA1xADWNcoghbU
+NciJKAkQYrJmYvFpQUM2uAwhE4km6fZd3C2n6VxXuWLqMhQMgKGYiqyrBjKFDFXk
+aN1ij7lBXMREdMhesgRzp1SKjJaKmFtQyAKu44SjcGnYjobIOlQFRB0icUDs5QWK
+WBiLTBkg0xRUNUXBwGIIGgTolHKdm8Sgiq7rUEOKMK4QA1DGOaIKwlAgNgBg3BA+
+PLYw6EjppqFAMYQDl5U4BSxa3LMXCGyelP6WpFPV1DhWVQ0ZJuGAir7JTJaRgVTZ
+EBgsKKsUmFyFGgWcU4tTIspTIDrPTAy4lBuJFnNLbNotHu3To/PnO0Gc5wVti7lp
+QTuYH+UYcp2wQ51C8TsvHA556VE44cWhaPwiRgKPlALEDlriqoiMEuZ6thMUsETk
+f7ghMFpipSHbZQE72L1tICBGtA4rEZIEqQwyHXIByqIqJUx0SUPUwqYpOgdVLhqH
+GTVMxA1ocBUZKiPRO2kSIkP9X5CyrAmjeIEQFfyCOFzsMily7GhOL19MvC8utkf0
+Efnie/d5/LRujk/8O/flX/teS80ofu+Hac8dkSf/lL3xYG3V7StvX6394MKYm/3e
+eZjaOOaZjw6uG7/P9Q1OZfVfnJi6p2XU3D/86prGJ/aXljZ3jQjXJa3x5qyaddK/
+NXSr39yymLQ+52PP/H5y+aD7DY1xK+/NWVWxvXJ21r75N5//5uuOFcter497xfGm
+JvoaMgIJrevJ1LisCcn3tp3e4Mb13LTyqYtXGqa3z3bu2LkHqvGhqgH1MRXJm8YO
+8W8Z4j+ydv8KZ509sldX07nd8f7qwswVw7b0ra/aceL82cx5xyebyqataa89aKm8
+lPrbtY5TG7ZPGZWw//vkSXX3Jhq9hydOzP9l5tZn/S92Dp1591TL7qTTZmvSZbrt
+TnPWw4Q/08+tbr+99zNyeRsmbVlJ467NebP89vEUOnBNZ2PqjrqdHeWjsne2TFk/
+8vriw5F3a/8qurR53r4JXY3lcdm1gzZO36WeObqnpqB6GLt45NJ3gw+Ujf10xtKP
+n6xOXHl12p6cXW0pnRUDXk3e2VXnlt1fUhP5uX/yw34xp5tmWLXgjep1/KtJOVaE
+ZZ5amHLgcy0lx+v/ZUN1YsZmOLSgsm3e6il31b7DM/wJ+XBDx61FV4cn3cho21jk
+3ImdL3074seazNb2suyFJT0SC2nlS52LHnwSWRvbPPZ++azQ+5ufPntrVwVpSlle
+M7HiBX54Ul54R8+L8Nze6x+23qi6cWHcP+VQAkg=
+=NDiB
+-----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
@@ -54,6 +86,7 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/pizzafox
 
 ==================================================================
+
 ==================================================================
 https://keybase.io/pizzafox
 --------------------------------------------------------------------
