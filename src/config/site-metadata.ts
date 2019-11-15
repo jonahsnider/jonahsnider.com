@@ -15,7 +15,8 @@ const siteMetadata: SiteMetadata = {
 		language: 'EN',
 		locale: 'en_US'
 	},
-	description: 'Jonah Snider, full-stack developer. View my portfolio or get in touch.',
+	description:
+		'Jonah Snider, full-stack developer. View my portfolio or get in touch.',
 	themeColor: '#ffbacc',
 	accentColor: '#000000',
 	url: 'https://jonah.pw'
