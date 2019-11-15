@@ -1,7 +1,7 @@
-import {Anchor, Grommet, Paragraph} from 'grommet';
+import { Anchor, Grommet, Paragraph } from 'grommet';
+import { useAmp } from 'next/amp';
 import Head from 'next/head';
-import React, {ReactNode, useEffect, useState} from 'react';
-import {useAmp} from 'next/amp';
+import React, { ReactNode, useEffect, useState } from 'react';
 import Seo from '../components/seo';
 import siteMetadata from '../config/site-metadata';
 // eslint-disable-next-line import/no-unassigned-import
@@ -9,8 +9,8 @@ import '../styles/_typography.scss';
 
 /** Color palette to use initially. */
 const baseColors = {
-	background: '#ffbacc',
-	accent: '#000'
+	background: siteMetadata.themeColor,
+	accent: siteMetadata.accentColor
 };
 
 /**
