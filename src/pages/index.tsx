@@ -18,7 +18,7 @@ function Home(): JSX.Element {
 
 			<Description />
 
-			<Heading margin={{horizontal: 'large'}}>Projects</Heading>
+			<Heading margin={{horizontal: 'large'}} as='h2'>Projects</Heading>
 
 			<ResponsiveContext.Consumer>
 				{size => (
