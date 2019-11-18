@@ -21,7 +21,7 @@
     "@types/node": "^12.12.9",
     "@types/react": "^16.9.11",
     "@typescript-eslint/eslint-plugin": "^2.7.0",
-    "@typescript-eslint/parser": "^2.7.0",
+    "@typescript-eslint/parser": "^2.8.0",
     "eslint-config-xo-react": "^0.20.0",
     "eslint-config-xo-typescript": "^0.21.0",
     "eslint-plugin-react": "^7.16.0",
