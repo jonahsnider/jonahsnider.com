@@ -1,6 +1,13 @@
 import {IconDefinition} from '@fortawesome/fontawesome-svg-core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {Anchor, Box, BoxProps, ResponsiveContext, Text} from 'grommet';
+import {
+	Anchor,
+	Box,
+	BoxProps,
+	ResponsiveContext,
+	Text,
+	ThemeContext
+} from 'grommet';
 import Link from 'next/link';
 import React, {useState} from 'react';
 import animationStyles from '../styles/_animate.scss';
@@ -69,13 +76,22 @@ function BoxButton(props: {
 
 	if (props.href) {
 		const anchorBox = (
-			<Anchor
-				href={props.href}
-				onMouseOver={() => setHovered(true)}
-				onMouseOut={() => setHovered(false)}
-			>
-				{box}
-			</Anchor>
+			<ThemeContext.Consumer>
+				{theme => (
+					<Anchor
+						href={props.href}
+						// Fix underline when on dark theme
+						color={
+							(theme as {global: {colors: {background: '#ffbacc' | '#000000'}}})
+								.global.colors.background
+						}
+						onMouseOver={() => setHovered(true)}
+						onMouseOut={() => setHovered(false)}
+					>
+						{box}
+					</Anchor>
+				)}
+			</ThemeContext.Consumer>
 		);
 
 		if (props.relative) {
