@@ -20,21 +20,27 @@ export default function SEO(props: {
 			))}
 
 			<meta name='msapplication-starturl' content='/' />
-			<link rel='manifest' href={`/manifests/${props.theme}.webmanifest`} />
+			<link
+				rel='manifest'
+				href={`/manifests/${props.theme ?? 'default'}.webmanifest`}
+			/>
 
 			<link
 				rel='icon'
-				href={`${props.siteMetadata.url}/images/js/${props.theme}/favicon.ico`}
+				href={`${props.siteMetadata.url}/images/js/${props.theme ??
+					'default'}/favicon.ico`}
 				type='image/x-icon'
 			/>
 
 			<meta
 				property='og:image'
-				content={`${props.siteMetadata.url}/images/js/${props.theme}/icon-512.png`}
+				content={`${props.siteMetadata.url}/images/js/${props.theme ??
+					'default'}/icon-512.png`}
 			/>
 			<meta
 				property='og:image:secure_url'
-				content={`${props.siteMetadata.url}/images/js/${props.theme}/icon-512.png`}
+				content={`${props.siteMetadata.url}/images/js/${props.theme ??
+					'default'}/icon-512.png`}
 			/>
 			<meta property='og:image:type' content='image/png' />
 			<meta property='og:image:width' content='512' />
@@ -47,20 +53,23 @@ export default function SEO(props: {
 					rel='icon'
 					type='image/png'
 					sizes={`${dimension}x${dimension}`}
-					href={`${props.siteMetadata.url}/images/js/${props.theme}/icon-${dimension}.png`}
+					href={`${props.siteMetadata.url}/images/js/${props.theme ??
+						'default'}/icon-${dimension}.png`}
 				/>,
 				<link
 					key={`apple-touch-icon-${dimension}`}
 					rel='apple-touch-icon'
 					type='image/png'
 					sizes={`${dimension}x${dimension}`}
-					href={`${props.siteMetadata.url}/images/js/${props.theme}/icon-${dimension}.png`}
+					href={`${props.siteMetadata.url}/images/js/${props.theme ??
+						'default'}/icon-${dimension}.png`}
 				/>
 			])}
 
 			<link
 				rel='apple-touch-startup-image'
-				href={`${props.siteMetadata.url}/images/js/${props.theme}/icon-512.png`}
+				href={`${props.siteMetadata.url}/images/js/${props.theme ??
+					'default'}/icon-512.png`}
 			/>
 
 			<meta
