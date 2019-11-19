@@ -1,55 +1,65 @@
 {
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-brands-svg-icons": "^5.11.2",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/react-fontawesome": "^0.1.7",
-    "@zeit/next-sass": "^1.0.1",
-    "grommet": "^2.8.0",
-    "next": "9.1.4",
-    "next-compose-plugins": "^2.2.0",
-    "next-offline": "^4.0.6",
-    "node-sass": "^4.13.0",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "styled-components": "^4.4.1"
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.4.4",
-    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
-    "@types/classnames": "^2.2.9",
-    "@types/node": "^12.12.9",
-    "@types/react": "^16.9.11",
-    "@typescript-eslint/eslint-plugin": "^2.8.0",
-    "@typescript-eslint/parser": "^2.8.0",
-    "eslint-config-xo-react": "^0.20.0",
-    "eslint-config-xo-typescript": "^0.22.0",
-    "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^2.3.0",
-    "typescript": "^3.7.2",
-    "xo": "^0.25.3"
-  },
-  "name": "jonah.pw",
-  "private": true,
-  "scripts": {
-    "build": "next build",
-    "export": "next export",
-    "dev": "next dev",
-    "start": "next start",
-    "test": "xo",
-    "prestart": "npm run build"
-  },
-  "version": "2.0.0",
-  "xo": {
-    "extends": [
-      "xo",
-      "xo-react",
-      "xo-typescript"
-    ],
-    "extensions": [
-      "ts",
-      "tsx"
-    ],
-    "prettier": true
-  }
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^1.2.25",
+		"@fortawesome/free-brands-svg-icons": "^5.11.2",
+		"@fortawesome/free-solid-svg-icons": "^5.11.2",
+		"@fortawesome/react-fontawesome": "^0.1.7",
+		"@zeit/next-sass": "^1.0.1",
+		"grommet": "^2.8.0",
+		"next": "9.1.4",
+		"next-compose-plugins": "^2.2.0",
+		"next-offline": "^4.0.6",
+		"node-sass": "^4.13.0",
+		"react": "16.12.0",
+		"react-dom": "16.12.0",
+		"styled-components": "^4.4.1"
+	},
+	"devDependencies": {
+		"@babel/plugin-proposal-nullish-coalescing-operator": "^7.4.4",
+		"@babel/plugin-proposal-optional-chaining": "^7.6.0",
+		"@types/classnames": "^2.2.9",
+		"@types/node": "^12.12.9",
+		"@types/react": "^16.9.11",
+		"@typescript-eslint/eslint-plugin": "^2.8.0",
+		"@typescript-eslint/parser": "^2.8.0",
+		"eslint-config-xo-react": "^0.20.0",
+		"eslint-config-xo-typescript": "^0.22.0",
+		"eslint-plugin-react": "^7.16.0",
+		"eslint-plugin-react-hooks": "^2.3.0",
+		"typescript": "^3.7.2",
+		"xo": "^0.25.3"
+	},
+	"name": "jonah.pw",
+	"private": true,
+	"scripts": {
+		"build": "next build",
+		"dev": "next dev",
+		"export": "next export",
+		"prestart": "npm run build",
+		"start": "next start",
+		"test": "xo"
+	},
+	"version": "2.0.0",
+	"xo": {
+		"extends": [
+			"xo",
+			"xo/esnext",
+			"xo/browser",
+			"xo-react",
+			"xo-typescript"
+		],
+		"extensions": [
+			"ts",
+			"tsx"
+		],
+		"overrides": [
+			{
+				"extends": [
+					"xo"
+				],
+				"files": "*.config.js"
+			}
+		],
+		"prettier": true
+	}
 }
