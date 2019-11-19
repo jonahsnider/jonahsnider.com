@@ -23,7 +23,7 @@
     "@typescript-eslint/eslint-plugin": "^2.8.0",
     "@typescript-eslint/parser": "^2.8.0",
     "eslint-config-xo-react": "^0.20.0",
-    "eslint-config-xo-typescript": "^0.21.0",
+    "eslint-config-xo-typescript": "^0.22.0",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "typescript": "^3.7.2",
