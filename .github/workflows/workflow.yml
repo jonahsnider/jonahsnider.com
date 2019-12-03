@@ -52,3 +52,11 @@ jobs:
         with:
           name: exported-site
           path: out
+      - name: Deploy to Netlify
+        uses: netlify/actions/cli@master
+        if: github.event_name == 'push' && refs/heads/master == 'refs/head/master'
+        with:
+          args: deploy --dir=out
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: 73e09ad3-b2a8-41e6-b902-8f025a5509d2
