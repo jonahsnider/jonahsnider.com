@@ -19,7 +19,7 @@
 		"@babel/plugin-proposal-optional-chaining": "^7.7.5",
 		"@types/classnames": "^2.2.9",
 		"@types/node": "^12.12.21",
-		"@types/react": "^16.9.16",
+		"@types/react": "^16.9.17",
 		"@typescript-eslint/eslint-plugin": "^2.12.0",
 		"@typescript-eslint/parser": "^2.12.0",
 		"eslint-config-xo-react": "^0.20.0",
