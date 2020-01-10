@@ -3,6 +3,7 @@
 
 import Document, {Head, Html, Main, NextScript} from 'next/document';
 import React from 'react';
+import siteMetadata from '../config/site-metadata';
 
 class MyDocument extends Document {
 	render(): JSX.Element {
@@ -13,6 +14,11 @@ class MyDocument extends Document {
 					<Main />
 					<NextScript />
 				</body>
+				<style global jsx>{`
+					body {
+						background: ${siteMetadata.themeColor};
+					}
+				`}</style>
 			</Html>
 		);
 	}
