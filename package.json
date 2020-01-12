@@ -16,7 +16,7 @@
 	},
 	"devDependencies": {
 		"@babel/plugin-proposal-nullish-coalescing-operator": "^7.7.4",
-		"@babel/plugin-proposal-optional-chaining": "^7.7.5",
+		"@babel/plugin-proposal-optional-chaining": "^7.8.0",
 		"@types/classnames": "^2.2.9",
 		"@types/node": "^13.1.6",
 		"@types/react": "^16.9.17",
