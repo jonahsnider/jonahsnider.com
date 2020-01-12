@@ -22,13 +22,13 @@ To do so, I am signing this object:
       "username": "pizzafox"
     },
     "merkle_root": {
-      "ctime": 1573787578,
-      "hash_meta": "10899e06422a0de876b05ccf5f9b6c255574827fb2b60ceff8c28a780a600ef6",
-      "seqno": 9627777
+      "ctime": 1578788751,
+      "hash_meta": "95ad0f02d6c0e469b883cd04a0ae5e091138c5f8bbbb1c7710d35dd38eb406f5",
+      "seqno": 14188336
     },
     "revoke": {
       "sig_ids": [
-        "5c394fa334869bf0cb2e1e11868316616d713c09f374c0ffcdfcb555c07afe9a0f"
+        "733cafa7d1e2932c25c7e1c8fecdf96b03f80262900e94398388894d80f8c6860f"
       ]
     },
     "service": {
@@ -38,10 +38,10 @@ To do so, I am signing this object:
     "type": "web_service_binding",
     "version": 1
   },
-  "ctime": 1573787580,
+  "ctime": 1578788750,
   "expire_in": 157680000,
-  "prev": "b83e7e57f2b6dc3cbe21948cda9915373f54caec698f676f3863eb78b89bb175",
-  "seqno": 114,
+  "prev": "999f6df9c3f9489df361a6d4d4738e6fbb4793e0d7618b8c17ca07d78c752ef0",
+  "seqno": 130,
   "tag": "signature"
 }
 
@@ -51,33 +51,33 @@ which yields the signature:
 Version: Keybase OpenPGP v2.1.3
 Comment: https://keybase.io/crypto
 
-yMQKAnicbZN7bBVFFMZvgVaptxYoQqhE6goEKNTZ58zWQktASwLyEhC15TIzO0O3
-j7uX3dtSHhdEA4VAiQ+wFAJtIlCixYaADwihPGqVVAqhPCwoUALaSqAgRkwFdW4D
-MTHOP7Mze853vvmdmYaEnr74mPactpZBSUN7xzQdW1bsy20eeGipRBxrsZS+VCpg
-3RMrtJgXDhTYlpQuAVkBEFlIg4hgQlVOuKGIBcScGpgBg8oIMETEPjaxjlWiMN3A
-kDBMIQEqIBwBLI2WuB1cwNyQawfDQpaplhBEXNNNg1qGqnMVaJpqMqRTJluqbMqq
-ogFTJOY5XjRDmCPYY2m2I/bEItBt73/iH/sWznXhQmNcoQhoBtIA1xADWNcoghbU
-NciJKAkQYrJmYvFpQUM2uAwhE4km6fZd3C2n6VxXuWLqMhQMgKGYiqyrBjKFDFXk
-aN1ij7lBXMREdMhesgRzp1SKjJaKmFtQyAKu44SjcGnYjobIOlQFRB0icUDs5QWK
-WBiLTBkg0xRUNUXBwGIIGgTolHKdm8Sgiq7rUEOKMK4QA1DGOaIKwlAgNgBg3BA+
-PLYw6EjppqFAMYQDl5U4BSxa3LMXCGyelP6WpFPV1DhWVQ0ZJuGAir7JTJaRgVTZ
-EBgsKKsUmFyFGgWcU4tTIspTIDrPTAy4lBuJFnNLbNotHu3To/PnO0Gc5wVti7lp
-QTuYH+UYcp2wQ51C8TsvHA556VE44cWhaPwiRgKPlALEDlriqoiMEuZ6thMUsETk
-f7ghMFpipSHbZQE72L1tICBGtA4rEZIEqQwyHXIByqIqJUx0SUPUwqYpOgdVLhqH
-GTVMxA1ocBUZKiPRO2kSIkP9X5CyrAmjeIEQFfyCOFzsMily7GhOL19MvC8utkf0
-Efnie/d5/LRujk/8O/flX/teS80ofu+Hac8dkSf/lL3xYG3V7StvX6394MKYm/3e
-eZjaOOaZjw6uG7/P9Q1OZfVfnJi6p2XU3D/86prGJ/aXljZ3jQjXJa3x5qyaddK/
-NXSr39yymLQ+52PP/H5y+aD7DY1xK+/NWVWxvXJ21r75N5//5uuOFcter497xfGm
-JvoaMgIJrevJ1LisCcn3tp3e4Mb13LTyqYtXGqa3z3bu2LkHqvGhqgH1MRXJm8YO
-8W8Z4j+ydv8KZ509sldX07nd8f7qwswVw7b0ra/aceL82cx5xyebyqataa89aKm8
-lPrbtY5TG7ZPGZWw//vkSXX3Jhq9hydOzP9l5tZn/S92Dp1591TL7qTTZmvSZbrt
-TnPWw4Q/08+tbr+99zNyeRsmbVlJ467NebP89vEUOnBNZ2PqjrqdHeWjsne2TFk/
-8vriw5F3a/8qurR53r4JXY3lcdm1gzZO36WeObqnpqB6GLt45NJ3gw+Ujf10xtKP
-n6xOXHl12p6cXW0pnRUDXk3e2VXnlt1fUhP5uX/yw34xp5tmWLXgjep1/KtJOVaE
-ZZ5amHLgcy0lx+v/ZUN1YsZmOLSgsm3e6il31b7DM/wJ+XBDx61FV4cn3cho21jk
-3ImdL3074seazNb2suyFJT0SC2nlS52LHnwSWRvbPPZ++azQ+5ufPntrVwVpSlle
-M7HiBX54Ul54R8+L8Nze6x+23qi6cWHcP+VQAkg=
-=NDiB
+yMQFAnicbZN7bBVFFMbvRR62ASxekJcILBYSUprZ1+xsIa1aBEJBYxAbK3KZ3Z1p
+t4/dy+7e0lJuNQaFUkUiDxuF0FIQUERSKARaA5SnbSmCpJLaVoggCkhSWggEFWcb
+SIxx/9md2XO+853fmTk+6IlAfPC3BZd/GBl6Pi7Y1BCLBhaOyl5dwmm2UcyllHB5
+pPdF8g3ieuE80+BSOMALQEEGkhSkYU0XqUahwBYKpjrEBECdR4Agje1jFctY1AQi
+Q6xoBOuKBkSgUQQwl8RR08omTsQxLY/JEtFggohKsgp1A4oyFYEkiSpBsk54Q+RV
+XhQkoLLEHNv1M5g5Dbsk2bTZHluEe+39T/xj38y5zFxIhAo6AhJEEqASIgDLko4U
+Q5ElhWqsJECI8JKK2aehQB5SXlEIS1S1Xt/RXjlJprJIBVXmFcYAQEEVeFmESGUy
+usD7daMucSxcQFh0xFy6FFO7iIslcQXEycsnYce2PR+u7pl+CC8zhAgpMs8axG5O
+uIB4mGWqMjYABYIBdUAkqGoIiboBJAwwkQlQeV5EukyRxh5eVxQeGKJsGCIimgQg
+lZkPlyy2bFZB4lmuCJkFhxTaecSv7prZjJvLpbzFKaKoY4oVgyeCKgq6IOsK4XVE
+iW5QFbLRscEJrFEAiMrYIBEhpEoGAhTpEEFAubdjfjWn0NR7xf1BPQKQa1s4x7VM
+gzjJlmnl+iAjju3Zup3Pfud4XsRN8el4xRE/fgnRwo+UwpppGeyssIxC4rimbbFe
+WOR/wYEkjhRFTIeETat3GyLAHr8OKfRJqiqFrBM2LlVCqkFFyGNoSIakMFqQapqk
+qCIB/szZSdTZYDFgxwLpiiwQCv5FUmSqHs5mooyfhb2oQ7hYw9EFfQPB+ED/fn38
+WxSIj0t4fLcG44TA9tEPC37aVl6/taMHrSor+iZzKz2X/yPasZV0CPKm1ODI01+u
+n9SU+uHBhrPrxkcuvT56XI9yo+/Kjq7n7qoH9+0p3jlwV1XGkvgB2oDSP9ZW15vD
+dnbL9bPSplVeXnQeVMxe3lnTvzLj0obyI+LhzEGXV2HY78TQa/ebEtKK2nrKsuru
+bIZ96qZcObXj9uYJL8yomtaqpJdXdV1Y88Wlwc/UZ84Lnkiv/bP81f212975ds+s
+xhktf/389PTMA427QhkbP1PWn2vLyJi7a93MhgPRwbnv3Zj6MiwbG125M/PXwjGL
+7taIL674NL9pdX5kYdWcuP7dXM+p7lGt1+uqAstzh+6/fbV5Vvr8WOIbF6aUzSvF
+ZzJwn5rj2SXD2ypJe/Gg83k77lW7keqlr4VOt8w5tKXv6tHBixOH5YYqv2t+ad/Y
+ybcmt9ZtzrR+r7CSYVu792bWyawRD5Kab6b+ItaG2u8YBcMnHeW4ZEF9qjyc/W6c
+8PfAwtRXomsqZl95svPh2SHty9smjS24Q7avTd/98Fysq5U7E5rfVRLdlHv/yqgP
+5t38eG9eTDn84P2LJ0tbvYTvbyz5fPzcI/EPZg9bkVO9eIOpnW9cdSxHLftq3NX2
+jdta0iYktNjCsiN7Gys2eisSj30ED9cWJXZeb60ZMHFtR6i7c8iyLd2H7o0xvx4y
+YubUT067A6dnObubg4nPXrt15h/mkwWe
+=ZytP
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
@@ -86,6 +86,7 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/pizzafox
 
 ==================================================================
+
 
 ==================================================================
 https://keybase.io/pizzafox
