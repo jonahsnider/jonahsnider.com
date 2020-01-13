@@ -32,6 +32,7 @@
 	"scripts": {
 		"build": "next build",
 		"dev": "next dev",
+		"preexport": "rm -rf out",
 		"export": "next export",
 		"prestart": "npm run build",
 		"start": "next start",
