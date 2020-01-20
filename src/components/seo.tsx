@@ -75,7 +75,7 @@ export default function Seo(props: {theme: Theme}): JSX.Element {
 
 			<meta name='twitter:card' content='summary' />
 
-			<meta key='props.themeColor' name='props.theme-color' content={props.theme.palette.primary.main} />
+			<meta key='themeColor' name='theme-color' content={props.theme.palette.primary.main} />
 			<meta name='msapplication-navbutton-color' content={props.theme.palette.primary.main} />
 
 			<meta key='keywords' name='keywords' content={siteMetadata.keywords.join(', ')} />
