@@ -42,7 +42,7 @@ export function SocialButtons(): JSX.Element {
 			// If you remove this fragment the entire build will fail
 			// eslint-disable-next-line react/jsx-no-useless-fragment
 			<>
-				{...social.map(info => (
+				{social.map(info => (
 					<Box key={info.text} marginY={1}>
 						<SocialButton social={info} />
 					</Box>
