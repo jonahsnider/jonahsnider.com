@@ -12,6 +12,7 @@ import Head from 'next/head';
 import React, {useMemo} from 'react';
 import Seo from './components/seo';
 import siteMetadata from './config/site-metadata';
+import {useAmp} from 'next/amp';
 
 const fontFamilies = {
 	// eslint-disable-next-line @typescript-eslint/quotes
@@ -27,6 +28,7 @@ const dark: SimplePaletteColorOptions = {light: '#2c2c2c', main: '#000000', dark
 
 export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Element}): JSX.Element => {
 	const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+	const isAMP = useAmp();
 
 	const theme = useMemo(() => {
 		return responsiveFontSizes(
@@ -45,12 +47,14 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 						'@global': {
 							'@font-face': [
 								{
-									fontFamily: 'Cascadia Code',
+									fontFamily: isAMP ? 'Fira Mono' : 'Cascadia Code',
 									fontStyle: 'normal',
 									fontDisplay: 'swap',
 									fontWeight: 400,
 									// eslint-disable-next-line @typescript-eslint/quotes
-									src: "local('Cascadia Code'),local('Cascadia Code Regular'),url('/fonts/Cascadia') format('ttf')"
+									src: isAMP
+										? undefined
+										: "local('Cascadia Code'),local('Cascadia Code Regular'),url('/fonts/Cascadia') format('ttf')"
 								}
 							]
 						}
@@ -68,8 +72,20 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 		<ThemeProvider theme={theme}>
 			<Head>
 				<title>{siteMetadata.title}</title>
-				<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap' />
-				<link rel='stylesheet' href='/fonts/Cascadia.ttf' />
+				{isAMP ? (
+					<>
+						<link
+							rel='stylesheet'
+							href='https://fonts.googleapis.com/css?family=Fira+Mono|Roboto:400,500&display=swap'
+						/>
+					</>
+				) : (
+					<>
+						<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap' />
+						<link rel='stylesheet' href='/fonts/Cascadia.ttf' />
+					</>
+				)}
+
 				<Seo theme={theme} />
 			</Head>
 			<CssBaseline />
