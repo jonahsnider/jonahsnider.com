@@ -17,13 +17,13 @@ function NotFoundPage(): JSX.Element {
 	return (
 		<JonahSniderTemplate>
 			<Header title='404' subtitle="This page couldn't be found" />
-			<Link passHref href='/'>
-				<Box width={smallScreen ? undefined : 300}>
+			<Box width={smallScreen ? undefined : 300}>
+				<Link passHref href='/'>
 					<Button fullWidth startIcon={<Home />} color='primary' size='large' variant='contained'>
 						Home
 					</Button>
-				</Box>
-			</Link>
+				</Link>
+			</Box>
 		</JonahSniderTemplate>
 	);
 }
