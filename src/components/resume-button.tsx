@@ -12,7 +12,15 @@ function ResumeButton(): JSX.Element {
 
 	return (
 		<Box width={smallScreen ? undefined : 300}>
-			<Button fullWidth startIcon={<Description />} href={url} variant='contained' color='primary' size='large'>
+			<Button
+				fullWidth
+				startIcon={<Description />}
+				href={url}
+				rel='noopener noreferrer'
+				variant='contained'
+				color='primary'
+				size='large'
+			>
 				Resumé
 			</Button>
 		</Box>

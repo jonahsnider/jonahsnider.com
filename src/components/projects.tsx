@@ -34,7 +34,13 @@ export function ProjectCard(props: {project: Project}): JSX.Element {
 
 	return (
 		<Card className={classes.card}>
-			{props.project.url ? <CardActionArea href={props.project.url}>{content}</CardActionArea> : content}
+			{props.project.url ? (
+				<CardActionArea href={props.project.url} rel='noopener noreferrer'>
+					{content}
+				</CardActionArea>
+			) : (
+				content
+			)}
 		</Card>
 	);
 }
