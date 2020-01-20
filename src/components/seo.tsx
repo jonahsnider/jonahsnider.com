@@ -1,18 +1,11 @@
 import React from 'react';
-import SiteMetadata from '../../types/site-metadata';
+import {Theme} from '@material-ui/core';
 import siteMetadata from '../config/site-metadata';
 
 /**
  * A collection of SEO tags that use values from a site-wide or page specific config.
  */
-export default function SEO(props: {
-	siteMetadata: SiteMetadata;
-	theme?: 'dark' | 'default';
-}): JSX.Element {
-	// Invert colors if on dark theme
-	const themeColor =
-		props.theme === 'dark' ? siteMetadata.accentColor : siteMetadata.themeColor;
-
+export default function Seo(props: {theme: Theme}): JSX.Element {
 	return (
 		<>
 			{['mobile-web-app-capable', 'apple-mobile-web-app-capable'].map(name => (
@@ -20,27 +13,18 @@ export default function SEO(props: {
 			))}
 
 			<meta name='msapplication-starturl' content='/' />
-			<link
-				rel='manifest'
-				href={`/manifests/${props.theme ?? 'default'}.webmanifest`}
-			/>
+			<link rel='manifest' href={`/manifests/${props.theme.palette.type}.webmanifest`} />
 
 			<link
 				rel='icon'
-				href={`${props.siteMetadata.url}/images/js/${props.theme ??
-					'default'}/favicon.ico`}
+				href={`${siteMetadata.url}/images/js/${props.theme.palette.type}/favicon.ico`}
 				type='image/x-icon'
 			/>
 
-			<meta
-				property='og:image'
-				content={`${props.siteMetadata.url}/images/js/${props.theme ??
-					'default'}/icon-512.png`}
-			/>
+			<meta property='og:image' content={`${siteMetadata.url}/images/js/${props.theme.palette.type}/icon-512.png`} />
 			<meta
 				property='og:image:secure_url'
-				content={`${props.siteMetadata.url}/images/js/${props.theme ??
-					'default'}/icon-512.png`}
+				content={`${siteMetadata.url}/images/js/${props.theme.palette.type}/icon-512.png`}
 			/>
 			<meta property='og:image:type' content='image/png' />
 			<meta property='og:image:width' content='512' />
@@ -53,112 +37,48 @@ export default function SEO(props: {
 					rel='icon'
 					type='image/png'
 					sizes={`${dimension}x${dimension}`}
-					href={`${props.siteMetadata.url}/images/js/${props.theme ??
-						'default'}/icon-${dimension}.png`}
+					href={`${siteMetadata.url}/images/js/${props.theme.palette.type}/icon-${dimension}.png`}
 				/>,
 				<link
 					key={`apple-touch-icon-${dimension}`}
 					rel='apple-touch-icon'
 					type='image/png'
 					sizes={`${dimension}x${dimension}`}
-					href={`${props.siteMetadata.url}/images/js/${props.theme ??
-						'default'}/icon-${dimension}.png`}
+					href={`${siteMetadata.url}/images/js/${props.theme.palette.type}/icon-${dimension}.png`}
 				/>
 			])}
 
 			<link
 				rel='apple-touch-startup-image'
-				href={`${props.siteMetadata.url}/images/js/${props.theme ??
-					'default'}/icon-512.png`}
+				href={`${siteMetadata.url}/images/js/${props.theme.palette.type}/icon-512.png`}
 			/>
 
-			<meta
-				name='apple-mobile-web-app-status-bar-style'
-				content='black-translucent'
-			/>
+			<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
 
-			{props.siteMetadata.title && (
-				<>
-					<meta
-						key='openGraphSiteName'
-						name='title'
-						content={props.siteMetadata.title}
-					/>
-					<meta name='application-name' content={props.siteMetadata.title} />
-					<meta
-						name='apple-mobile-web-app-title'
-						content={props.siteMetadata.title}
-					/>
-					<meta
-						key='twitterTitle'
-						name='twitter:title'
-						content={props.siteMetadata.title}
-					/>
-				</>
-			)}
-			{props.siteMetadata.title && (
-				<meta
-					key='openGraphTitle'
-					property='og:title'
-					content={props.siteMetadata.title}
-				/>
-			)}
+			<meta key='openGraphSiteName' name='title' content={siteMetadata.title} />
+			<meta name='application-name' content={siteMetadata.title} />
+			<meta name='apple-mobile-web-app-title' content={siteMetadata.title} />
+			<meta key='twitterTitle' name='twitter:title' content={siteMetadata.title} />
+			<meta key='openGraphTitle' property='og:title' content={siteMetadata.title} />
 
-			{props.siteMetadata.url && (
-				<meta
-					key='openGraphURL'
-					property='og:url'
-					content={props.siteMetadata.url}
-				/>
-			)}
+			<meta key='openGraphURL' property='og:url' content={siteMetadata.url} />
 
-			{props.siteMetadata.i18n?.language && (
-				<meta
-					key='language'
-					name='language'
-					content={props.siteMetadata.i18n.language}
-				/>
-			)}
-			{props.siteMetadata.i18n?.locale && (
-				<meta
-					key='openGraphLocale'
-					property='og:locale'
-					content={props.siteMetadata.i18n.locale}
-				/>
-			)}
+			<meta key='language' name='language' content={siteMetadata.i18n.language} />
 
-			{props.siteMetadata.description && (
-				<>
-					<meta
-						key='description'
-						name='description'
-						content={props.siteMetadata.description}
-					/>
-					<meta
-						key='twitterDescription'
-						name='twitter:description'
-						content={props.siteMetadata.description}
-					/>
-					<meta
-						key='openGraphDescription'
-						property='og:description'
-						content={props.siteMetadata.description}
-					/>
-				</>
-			)}
+			<meta key='openGraphLocale' property='og:locale' content={siteMetadata.i18n.locale} />
+
+			<meta key='description' name='description' content={siteMetadata.description} />
+			<meta key='twitterDescription' name='twitter:description' content={siteMetadata.description} />
+			<meta key='openGraphDescription' property='og:description' content={siteMetadata.description} />
 
 			<meta property='og:type' content='website' />
 
 			<meta name='twitter:card' content='summary' />
 
-			<meta key='themeColor' name='theme-color' content={themeColor} />
-			<meta name='msapplication-navbutton-color' content={themeColor} />
+			<meta key='props.themeColor' name='props.theme-color' content={props.theme.palette.primary.main} />
+			<meta name='msapplication-navbutton-color' content={props.theme.palette.primary.main} />
 
-			<meta
-				key='keywords'
-				name='keywords'
-				content={props.siteMetadata.keywords.join(', ')}
-			/>
+			<meta key='keywords' name='keywords' content={siteMetadata.keywords.join(', ')} />
 		</>
 	);
 }

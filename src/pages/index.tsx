@@ -1,50 +1,31 @@
-import {Box, Heading, ResponsiveContext} from 'grommet';
 import React from 'react';
-import Card from '../components/card';
-import Description from '../components/description';
-import Header from '../components/header';
-import projects from '../config/projects';
-import Colorful from '../layouts/colorful';
-
 export const config = {amp: 'hybrid'};
+import {Box} from '@material-ui/core';
+import Header from '../components/header';
+import {Projects} from '../components/projects';
+import ResumeButton from '../components/resume-button';
+import {SocialButtons} from '../components/social-buttons';
+import siteMetadata from '../config/site-metadata';
+import {JonahSniderTemplate} from '../template';
 
 /**
  * Home page.
  */
 function Home(): JSX.Element {
 	return (
-		<Colorful>
-			<Header title='Jonah Snider' subtitle='Full-stack developer' />
+		<JonahSniderTemplate>
+			<Header title={siteMetadata.title} subtitle='Full-stack developer' />
 
-			<Description />
+			<SocialButtons />
 
-			<Heading margin={{horizontal: 'large'}} as='h2'>
-				Projects
-			</Heading>
+			<Box marginY={3}>
+				<ResumeButton />
+			</Box>
 
-			<ResponsiveContext.Consumer>
-				{size => (
-					<Box
-						wrap
-						direction='row-responsive'
-						justify={size === 'large' ? 'between' : 'stretch'}
-						margin={{horizontal: 'large'}}
-						gap='small'
-					>
-						{projects.map(project => (
-							<Card
-								key={project.title}
-								icon={project.icon}
-								title={project.title}
-								href={project.url}
-							>
-								{project.description}
-							</Card>
-						))}
-					</Box>
-				)}
-			</ResponsiveContext.Consumer>
-		</Colorful>
+			<Header subtitle='Projects' />
+
+			<Projects />
+		</JonahSniderTemplate>
 	);
 }
 

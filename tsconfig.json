@@ -16,5 +16,5 @@
 		"target": "es5"
 	},
 	"exclude": ["node_modules"],
-	"include": ["**/*.ts", "**/*.tsx", "next.config.js", "types", "prettier.config.js"]
+	"include": ["**/*.ts", "**/*.tsx", "next.config.js", "prettier.config.js"]
 }

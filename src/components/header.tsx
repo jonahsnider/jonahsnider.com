@@ -1,27 +1,31 @@
-import {Box, Heading} from 'grommet';
 import React from 'react';
+import {Typography, makeStyles, createStyles, Theme} from '@material-ui/core';
 
-function Header(props: {title: string; subtitle?: string}): JSX.Element {
+const useStyles = makeStyles((theme: Theme) =>
+	createStyles({
+		h2: {
+			marginBottom: theme.spacing(2)
+		}
+	})
+);
+
+function Header(props: {title?: string; subtitle?: string}): JSX.Element {
+	const classes = useStyles();
+
 	return (
-		<Box
-			direction='row-responsive'
-			justify='start'
-			margin={{bottom: 'large', left: 'large'}}
-			as='header'
-		>
-			<Box direction='column' justify='end'>
-				<Heading level={1} size='xlarge' color='accent-1' margin='small'>
+		<>
+			{props.title && (
+				<Typography variant='h1' color='primary'>
 					{props.title}
-				</Heading>
-			</Box>
-			{props.subtitle && (
-				<Box direction='column' justify='end'>
-					<Heading level={2} size='large' margin='small'>
-						{props.subtitle}
-					</Heading>
-				</Box>
+				</Typography>
 			)}
-		</Box>
+
+			{props.subtitle && (
+				<Typography variant='h2' className={classes.h2}>
+					{props.subtitle}
+				</Typography>
+			)}
+		</>
 	);
 }
 

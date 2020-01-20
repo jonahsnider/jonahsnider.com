@@ -1,29 +1,31 @@
-import {faHome} from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
-import BoxButton from '../components/box-button';
+import {Button, useMediaQuery, useTheme, Box} from '@material-ui/core';
+import {Home} from '@material-ui/icons';
+import Link from 'next/link';
 import Header from '../components/header';
-import Colorful from '../layouts/colorful';
+import {JonahSniderTemplate} from '../template';
 
 export const config = {amp: 'hybrid'};
 
 /**
- * Home page.
+ * 404 page not found page.
  */
-function Home(): JSX.Element {
-	return (
-		<Colorful>
-			<Header title='404' subtitle="This page couldn't be found" />
+function NotFoundPage(): JSX.Element {
+	const theme = useTheme();
+	const smallScreen = useMediaQuery(theme.breakpoints.down('xs'));
 
-			<BoxButton
-				relative
-				icon={faHome}
-				extras={{margin: 'large', width: {max: 'medium'}}}
-				href='/'
-			>
-				Home
-			</BoxButton>
-		</Colorful>
+	return (
+		<JonahSniderTemplate>
+			<Header title='404' subtitle="This page couldn't be found" />
+			<Link passHref href='/'>
+				<Box width={smallScreen ? undefined : 300}>
+					<Button fullWidth startIcon={<Home />} color='primary' size='large' variant='contained'>
+						Home
+					</Button>
+				</Box>
+			</Link>
+		</JonahSniderTemplate>
 	);
 }
 
-export default Home;
+export default NotFoundPage;
