@@ -6,6 +6,7 @@ import ResumeButton from '../components/resume-button';
 import {SocialButtons} from '../components/social-buttons';
 import siteMetadata from '../config/site-metadata';
 import {JonahSniderTemplate} from '../template';
+
 export const config = {amp: 'hybrid'};
 
 /**
@@ -20,7 +21,7 @@ function Home(): JSX.Element {
 
 			<Box marginY={3}>
 				<Grid container spacing={1}>
-					<Grid item xs={12} sm={4}>
+					<Grid item xs={12} sm={6} md={4}>
 						<ResumeButton />
 					</Grid>
 				</Grid>

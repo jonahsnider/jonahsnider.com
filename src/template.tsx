@@ -41,7 +41,7 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 									src: isAMP
 										? undefined
 										: // eslint-disable-next-line @typescript-eslint/quotes
-										  "local('Cascadia Code'),local('Cascadia Code Regular'),url('/fonts/Cascadia') format('ttf')"
+										  `local('Cascadia Code'),local('Cascadia Code Regular'),url('${siteMetadata.url}/fonts/Cascadia') format('ttf')`
 								}
 							]
 						}
@@ -62,14 +62,10 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 				{isAMP ? (
 					<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira+Mono|Roboto:400,500&display=swap' />
 				) : (
-					<>
-						<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap' />
-						<link rel='stylesheet' href='/fonts/Cascadia.ttf' />
-					</>
+					<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap' />
 				)}
-
-				<Seo theme={theme} />
 			</Head>
+			<Seo theme={theme} />
 			<CssBaseline />
 			<Container>{props.children}</Container>
 		</ThemeProvider>

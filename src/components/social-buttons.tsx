@@ -1,4 +1,4 @@
-import {Button, createStyles, Grid, makeStyles, useMediaQuery, useTheme, Box} from '@material-ui/core';
+import {Button, createStyles, Grid, makeStyles} from '@material-ui/core';
 import React from 'react';
 import {social, SocialInfo} from '../config/personal-info';
 
@@ -30,28 +30,11 @@ export function SocialButton(props: {social: SocialInfo}): JSX.Element {
 
 export function SocialButtons(): JSX.Element {
 	const classes = useStyles();
-	const theme = useTheme();
-	const smallScreen = useMediaQuery(theme.breakpoints.down('xs'));
-
-	if (smallScreen) {
-		return (
-			// The linter says this fragment is useless
-			// If you remove this fragment the entire build will fail
-			// eslint-disable-next-line react/jsx-no-useless-fragment
-			<>
-				{social.map(info => (
-					<Box key={info.text} marginY={1}>
-						<SocialButton social={info} />
-					</Box>
-				))}
-			</>
-		);
-	}
 
 	return (
 		<Grid container className={classes.root} spacing={1} direction='row' justify='flex-start' alignItems='stretch'>
 			{social.map(info => (
-				<Grid key={info.text} item xs={12} md={3}>
+				<Grid key={info.text} item xs={12} sm={6} md={3}>
 					<SocialButton social={info} />
 				</Grid>
 			))}
