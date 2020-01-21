@@ -40,8 +40,7 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 									fontWeight: 400,
 									src: isAMP
 										? undefined
-										: // eslint-disable-next-line @typescript-eslint/quotes
-										  `local('Cascadia Code'),local('Cascadia Code Regular'),url('${siteMetadata.url}/fonts/Cascadia') format('ttf')`
+										: `local('Cascadia Code'),local('Cascadia Code Regular'),url('${siteMetadata.url}/fonts/Cascadia') format('ttf')`
 								}
 							]
 						}

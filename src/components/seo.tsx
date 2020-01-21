@@ -1,7 +1,7 @@
 import React from 'react';
 import {Theme} from '@material-ui/core';
-import siteMetadata from '../config/site-metadata';
 import Head from 'next/head';
+import siteMetadata from '../config/site-metadata';
 
 /**
  * A collection of SEO tags that use values from a site-wide or page specific config.
