@@ -4,27 +4,14 @@ import {
 	CssBaseline,
 	responsiveFontSizes,
 	ThemeProvider,
-	useMediaQuery,
-	SimplePaletteColorOptions
+	useMediaQuery
 } from '@material-ui/core';
-import {TypographyStyleOptions} from '@material-ui/core/styles/createTypography';
+import {useAmp} from 'next/amp';
 import Head from 'next/head';
 import React, {useMemo} from 'react';
 import Seo from './components/seo';
 import siteMetadata from './config/site-metadata';
-import {useAmp} from 'next/amp';
-
-const fontFamilies = {
-	// eslint-disable-next-line @typescript-eslint/quotes
-	monospace: ["'Cascadia Code'", 'monospace'].join(',')
-};
-
-const monospace: TypographyStyleOptions = {
-	fontFamily: fontFamilies.monospace
-};
-
-const pink: SimplePaletteColorOptions = {light: '#ffedff', main: '#ffbacc', dark: '#cb8a9b', contrastText: '#000000'};
-const dark: SimplePaletteColorOptions = {light: '#2c2c2c', main: '#000000', dark: '#000000', contrastText: '#ffffff'};
+import {dark, monospace, pink} from './config/theme';
 
 export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Element}): JSX.Element => {
 	const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
@@ -51,10 +38,10 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 									fontStyle: 'normal',
 									fontDisplay: 'swap',
 									fontWeight: 400,
-									// eslint-disable-next-line @typescript-eslint/quotes
 									src: isAMP
 										? undefined
-										: "local('Cascadia Code'),local('Cascadia Code Regular'),url('/fonts/Cascadia') format('ttf')"
+										: // eslint-disable-next-line @typescript-eslint/quotes
+										  "local('Cascadia Code'),local('Cascadia Code Regular'),url('/fonts/Cascadia') format('ttf')"
 								}
 							]
 						}
@@ -66,19 +53,14 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 				}
 			})
 		);
-	}, [prefersDarkMode]);
+	}, [isAMP, prefersDarkMode]);
 
 	return (
 		<ThemeProvider theme={theme}>
 			<Head>
 				<title>{siteMetadata.title}</title>
 				{isAMP ? (
-					<>
-						<link
-							rel='stylesheet'
-							href='https://fonts.googleapis.com/css?family=Fira+Mono|Roboto:400,500&display=swap'
-						/>
-					</>
+					<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira+Mono|Roboto:400,500&display=swap' />
 				) : (
 					<>
 						<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap' />

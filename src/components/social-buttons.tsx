@@ -11,20 +11,17 @@ const useStyles = makeStyles(() =>
 );
 
 export function SocialButton(props: {social: SocialInfo}): JSX.Element {
-	const theme = useTheme();
-	const smallScreen = useMediaQuery(theme.breakpoints.down('xs'));
-
 	return (
 		<Button
+			fullWidth
 			startIcon={props.social.icon}
 			href={props.social.link}
 			disableRipple={!props.social.link}
 			disableElevation={!props.social.link}
-			variant={props.social.link ? 'contained' : 'text'}
+			variant={props.social.link ? 'outlined' : 'text'}
 			component={props.social.link ? 'button' : 'div'}
 			color='primary'
 			size='large'
-			fullWidth={smallScreen}
 		>
 			{props.social.text}
 		</Button>
@@ -52,9 +49,9 @@ export function SocialButtons(): JSX.Element {
 	}
 
 	return (
-		<Grid container className={classes.root} spacing={1}>
+		<Grid container className={classes.root} spacing={1} direction='row' justify='flex-start' alignItems='stretch'>
 			{social.map(info => (
-				<Grid key={info.text} item>
+				<Grid key={info.text} item xs={12} md={3}>
 					<SocialButton social={info} />
 				</Grid>
 			))}
