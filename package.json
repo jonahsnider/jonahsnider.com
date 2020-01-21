@@ -14,7 +14,7 @@
 	"devDependencies": {
 		"@types/classnames": "^2.2.9",
 		"@types/node": "^12.12.24",
-		"@types/react": "^16.9.17",
+		"@types/react": "^16.9.18",
 		"@typescript-eslint/eslint-plugin": "^2.15.0",
 		"@typescript-eslint/parser": "^2.16.0",
 		"eslint-config-xo-react": "^0.22.0",
