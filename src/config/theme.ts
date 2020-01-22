@@ -1,14 +1,6 @@
-import {TypographyStyleOptions} from '@material-ui/core/styles/createTypography';
 import {SimplePaletteColorOptions, colors} from '@material-ui/core';
 
-const fontFamilies = {
-	// eslint-disable-next-line @typescript-eslint/quotes
-	monospace: ["'Cascadia Code'", 'monospace'].join(',')
-};
-
-export const monospace: TypographyStyleOptions = {
-	fontFamily: fontFamilies.monospace
-};
+export const customFonts = ['Cascadia Code Regular', 'Cascadia Code', 'Fira Code', 'Fira Mono'];
 
 export const pink: SimplePaletteColorOptions = {
 	light: '#ffedff',

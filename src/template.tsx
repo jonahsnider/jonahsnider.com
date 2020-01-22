@@ -11,11 +11,18 @@ import Head from 'next/head';
 import React, {useMemo} from 'react';
 import Seo from './components/seo';
 import siteMetadata from './config/site-metadata';
-import {dark, monospace, pink} from './config/theme';
+import {dark, pink, customFonts} from './config/theme';
 
 export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Element}): JSX.Element => {
 	const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 	const isAMP = useAmp();
+
+	const fontURLs = [...customFonts.map(font => `local(${font})`)];
+
+	if (!isAMP) {
+		// Load custom font if we aren't in AMP mode
+		fontURLs.push(`url('${siteMetadata.url}/fonts/Cascadia.ttf') format('ttf')`);
+	}
 
 	const theme = useMemo(() => {
 		return responsiveFontSizes(
@@ -34,21 +41,23 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 						'@global': {
 							'@font-face': [
 								{
-									fontFamily: isAMP ? 'Fira Mono' : 'Cascadia Code',
+									fontFamily: [...customFonts, 'monospace'].join(),
 									fontStyle: 'normal',
 									fontDisplay: 'swap',
 									fontWeight: 400,
-									src: isAMP
-										? undefined
-										: `local('Cascadia Code'),local('Cascadia Code Regular'),url('${siteMetadata.url}/fonts/Cascadia') format('ttf')`
+									src: fontURLs.join()
 								}
 							]
 						}
 					}
 				},
 				typography: {
-					h1: monospace,
-					h2: monospace
+					h1: {
+						fontFamily: [...customFonts, 'monospace'].join()
+					},
+					h2: {
+						fontFamily: [...customFonts, 'monospace'].join()
+					}
 				}
 			})
 		);
