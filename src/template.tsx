@@ -17,11 +17,11 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 	const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 	const isAMP = useAmp();
 
-	const fontURLs = [...customFonts.map(font => `local(${font})`)];
+	const fontURLs = customFonts.map(font => `local(${font})`);
 
 	if (!isAMP) {
 		// Load custom font if we aren't in AMP mode
-		fontURLs.push(`url('${siteMetadata.url}/fonts/Cascadia.ttf') format('ttf')`);
+		fontURLs.push(`url("${siteMetadata.url}/fonts/Cascadia.ttf") format"ttf")`);
 	}
 
 	const theme = useMemo(() => {
@@ -45,7 +45,7 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 									fontStyle: 'normal',
 									fontDisplay: 'swap',
 									fontWeight: 400,
-									src: fontURLs.join()
+									src: fontURLs.join(',\n')
 								}
 							]
 						}
