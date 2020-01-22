@@ -1,6 +1,6 @@
 import {SimplePaletteColorOptions, colors} from '@material-ui/core';
 
-export const customFonts = ['"Cascadia Code Regular"', '"Cascadia Code"', '"Fira Code"', '"Fira Mono"'];
+export const customFonts = ["'Cascadia Code Regular'", "'Cascadia Code'", "'Fira Code'", "'Fira Mono'"];
 
 export const pink: SimplePaletteColorOptions = {
 	light: '#ffedff',

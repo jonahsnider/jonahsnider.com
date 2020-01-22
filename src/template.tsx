@@ -21,7 +21,7 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 
 	if (!isAMP) {
 		// Load custom font if we aren't in AMP mode
-		fontURLs.push(`url("${siteMetadata.url}/fonts/Cascadia.ttf") format"ttf")`);
+		fontURLs.push(`url(${siteMetadata.url}/fonts/Cascadia.ttf) format('ttf')`);
 	}
 
 	const theme = useMemo(() => {
@@ -41,11 +41,11 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 						'@global': {
 							'@font-face': [
 								{
-									fontFamily: [...customFonts, 'monospace'].join(),
+									fontFamily: isAMP ? 'Fira Mono' : "'Cascadia Code Regular'",
 									fontStyle: 'normal',
 									fontDisplay: 'swap',
 									fontWeight: 400,
-									src: fontURLs.join(',\n')
+									src: isAMP ? undefined : `url(${siteMetadata.url}/fonts/Cascadia.ttf) format('ttf')`
 								}
 							]
 						}
