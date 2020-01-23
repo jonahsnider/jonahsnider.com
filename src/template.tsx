@@ -13,8 +13,7 @@ import {useAmp} from 'next/amp';
 import Head from 'next/head';
 import Link from 'next/link';
 import React, {useMemo} from 'react';
-import Seo, {generateFullTitle} from './components/seo';
-import siteMetadata from './config/site-metadata';
+import Seo from './components/seo';
 import {customFonts, dark, pink} from './config/theme';
 
 export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Element; title: string}): JSX.Element => {
@@ -37,7 +36,7 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 							'@font-face': [
 								{
 									// eslint-disable-next-line @typescript-eslint/quotes
-									fontFamily: isAMP ? 'Fira Mono' : "'Cascadia Code Regular'",
+									fontFamily: isAMP ? "'Fira Mono'" : "'Cascadia Code Regular'",
 									fontStyle: 'normal',
 									fontDisplay: 'swap',
 									fontWeight: 400,
