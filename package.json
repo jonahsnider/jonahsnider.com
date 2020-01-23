@@ -13,7 +13,7 @@
 	},
 	"devDependencies": {
 		"@types/classnames": "^2.2.9",
-		"@types/node": "^12.12.24",
+		"@types/node": "^13.1.8",
 		"@types/react": "^16.9.19",
 		"@typescript-eslint/eslint-plugin": "^2.17.0",
 		"@typescript-eslint/parser": "^2.17.0",
