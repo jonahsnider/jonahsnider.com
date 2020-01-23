@@ -3,7 +3,7 @@ import {Typography, makeStyles, createStyles, Theme} from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
-		h2: {
+		bottomMargin: {
 			marginBottom: theme.spacing(2)
 		}
 	})
@@ -15,13 +15,13 @@ function Header(props: {title?: string; subtitle?: string}): JSX.Element {
 	return (
 		<>
 			{props.title && (
-				<Typography variant='h1' color='primary'>
+				<Typography key='title' variant='h1' color='primary' className={props.subtitle ? '' : classes.bottomMargin}>
 					{props.title}
 				</Typography>
 			)}
 
 			{props.subtitle && (
-				<Typography variant='h2' className={classes.h2}>
+				<Typography key='subtitle' variant='h2' className={classes.bottomMargin}>
 					{props.subtitle}
 				</Typography>
 			)}

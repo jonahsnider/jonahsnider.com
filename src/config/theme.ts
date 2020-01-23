@@ -1,5 +1,6 @@
 import {SimplePaletteColorOptions, colors} from '@material-ui/core';
 
+// eslint-disable-next-line @typescript-eslint/quotes
 export const customFonts = ["'Cascadia Code Regular'", "'Cascadia Code'", "'Fira Code'", "'Fira Mono'"];
 
 export const pink: SimplePaletteColorOptions = {

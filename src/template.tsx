@@ -2,27 +2,24 @@ import {
 	Container,
 	createMuiTheme,
 	CssBaseline,
+	Fab,
+	Grid,
 	responsiveFontSizes,
 	ThemeProvider,
 	useMediaQuery
 } from '@material-ui/core';
+import {FlashOnRounded} from '@material-ui/icons';
 import {useAmp} from 'next/amp';
 import Head from 'next/head';
+import Link from 'next/link';
 import React, {useMemo} from 'react';
 import Seo from './components/seo';
 import siteMetadata from './config/site-metadata';
-import {dark, pink, customFonts} from './config/theme';
+import {customFonts, dark, pink} from './config/theme';
 
 export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Element}): JSX.Element => {
 	const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 	const isAMP = useAmp();
-
-	const fontURLs = customFonts.map(font => `local(${font})`);
-
-	if (!isAMP) {
-		// Load custom font if we aren't in AMP mode
-		fontURLs.push(`url(${siteMetadata.url}/fonts/Cascadia.ttf) format('ttf')`);
-	}
 
 	const theme = useMemo(() => {
 		return responsiveFontSizes(
@@ -30,9 +27,7 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 				spacing: 12,
 				palette: {
 					type: prefersDarkMode ? 'dark' : 'light',
-					background: prefersDarkMode
-						? {default: dark.main, paper: pink.main}
-						: {default: pink.main, paper: dark.light},
+					background: prefersDarkMode ? {default: dark.main, paper: pink.main} : {default: pink.main, paper: dark.main},
 					primary: prefersDarkMode ? pink : dark,
 					secondary: prefersDarkMode ? dark : pink
 				},
@@ -41,11 +36,13 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 						'@global': {
 							'@font-face': [
 								{
+									// eslint-disable-next-line @typescript-eslint/quotes
 									fontFamily: isAMP ? 'Fira Mono' : "'Cascadia Code Regular'",
 									fontStyle: 'normal',
 									fontDisplay: 'swap',
 									fontWeight: 400,
-									src: isAMP ? undefined : `url(${siteMetadata.url}/fonts/Cascadia.ttf) format('ttf')`
+									// eslint-disable-next-line @typescript-eslint/quotes
+									src: isAMP ? undefined : "url(/fonts/Cascadia.ttf) format('truetype')"
 								}
 							]
 						}
@@ -67,15 +64,28 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 		<ThemeProvider theme={theme}>
 			<Head>
 				<title>{siteMetadata.title}</title>
-				{isAMP ? (
-					<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira+Mono|Roboto:400,500&display=swap' />
-				) : (
-					<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap' />
-				)}
+				<link
+					rel='stylesheet'
+					href={`https://fonts.googleapis.com/css?family=${isAMP ? 'Fira+Mono|' : ''}Roboto:400,500&display=swap`}
+				/>
 			</Head>
 			<Seo theme={theme} />
 			<CssBaseline />
-			<Container>{props.children}</Container>
+			<Container>
+				{props.children}
+				{isAMP && (
+					<Grid container direction='row' justify='flex-end' alignItems='flex-end' spacing={1}>
+						<Grid item>
+							<Link passHref href='/'>
+								<Fab color='primary' aria-label='amp' variant='extended'>
+									<FlashOnRounded />
+									Disable AMP
+								</Fab>
+							</Link>
+						</Grid>
+					</Grid>
+				)}
+			</Container>
 		</ThemeProvider>
 	);
 };
