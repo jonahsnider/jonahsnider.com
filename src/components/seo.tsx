@@ -3,12 +3,19 @@ import {Theme} from '@material-ui/core';
 import Head from 'next/head';
 import siteMetadata from '../config/site-metadata';
 
+export function generateFullTitle(pageTitle: string) {
+	return `${siteMetadata.title} - ${pageTitle}`;
+}
+
 /**
  * A collection of SEO tags that use values from a site-wide or page specific config.
  */
-export default function Seo(props: {theme: Theme}): JSX.Element {
+export default function Seo(props: {theme: Theme; pageTitle: string}): JSX.Element {
+	const fullTitle = generateFullTitle(props.pageTitle);
+
 	return (
 		<Head>
+			<title key='page-title'>{fullTitle}</title>
 			<meta key='mobile-web-app-capable' name='mobile-web-app-capable' content='yes' />
 			<meta key='apple-mobile-web-app-capable' name='apple-mobile-web-app-capable' content='yes' />
 
@@ -60,13 +67,12 @@ export default function Seo(props: {theme: Theme}): JSX.Element {
 				href={`${siteMetadata.url}/images/js/${props.theme.palette.type}/icon-512.png`}
 			/>
 
-			<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
-
-			<meta key='title' name='title' content={siteMetadata.title} />
+			<meta key='meta-title' name='title' content={fullTitle} />
 			<meta key='application-name' name='application-name' content={siteMetadata.title} />
 			<meta key='apple-mobile-web-app-title' name='apple-mobile-web-app-title' content={siteMetadata.title} />
-			<meta key='twitter:title' name='twitter:title' content={siteMetadata.title} />
-			<meta key='og:title' property='og:title' content={siteMetadata.title} />
+			<meta key='twitter:title' name='twitter:title' content={fullTitle} />
+			<meta key='og:title' property='og:title' content={fullTitle} />
+			<meta key='og:site_name' property='og:site_name' content={siteMetadata.title} />
 
 			<meta key='og:url' property='og:url' content={siteMetadata.url} />
 
@@ -82,12 +88,14 @@ export default function Seo(props: {theme: Theme}): JSX.Element {
 
 			<meta key='twitter:card' name='twitter:card' content='summary' />
 
+			<meta key='color-scheme' name='color-scheme' content='light dark' />
 			<meta key='theme-color' name='theme-color' content={props.theme.palette.primary.main} />
 			<meta
 				key='msapplication-navbutton-color'
 				name='msapplication-navbutton-color'
 				content={props.theme.palette.primary.main}
 			/>
+			<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
 
 			<meta key='keywords' name='keywords' content={siteMetadata.keywords.join(', ')} />
 		</Head>

@@ -12,7 +12,7 @@ export const config = {amp: 'hybrid'};
  */
 function NotFoundPage(): JSX.Element {
 	return (
-		<JonahSniderTemplate>
+		<JonahSniderTemplate title='Not found'>
 			<Header title='404' subtitle="This page couldn't be found" />
 			<Grid container>
 				<Grid item xs={12} md={4}>

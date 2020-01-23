@@ -13,11 +13,11 @@ import {useAmp} from 'next/amp';
 import Head from 'next/head';
 import Link from 'next/link';
 import React, {useMemo} from 'react';
-import Seo from './components/seo';
+import Seo, {generateFullTitle} from './components/seo';
 import siteMetadata from './config/site-metadata';
 import {customFonts, dark, pink} from './config/theme';
 
-export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Element}): JSX.Element => {
+export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Element; title: string}): JSX.Element => {
 	const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 	const isAMP = useAmp();
 
@@ -63,13 +63,12 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 	return (
 		<ThemeProvider theme={theme}>
 			<Head>
-				<title>{siteMetadata.title}</title>
 				<link
 					rel='stylesheet'
 					href={`https://fonts.googleapis.com/css?family=${isAMP ? 'Fira+Mono|' : ''}Roboto:400,500&display=swap`}
 				/>
 			</Head>
-			<Seo theme={theme} />
+			<Seo theme={theme} pageTitle={props.title} />
 			<CssBaseline />
 			<Container>
 				{props.children}
