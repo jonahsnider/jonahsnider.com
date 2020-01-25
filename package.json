@@ -1,4 +1,9 @@
 {
+	"author": {
+		"email": "jonah@jonah.pw",
+		"name": "Jonah Snider",
+		"url": "https://jonah.pw"
+	},
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.26",
 		"@fortawesome/free-brands-svg-icons": "^5.12.0",
@@ -12,8 +17,7 @@
 		"react-dom": "16.12.0"
 	},
 	"devDependencies": {
-		"@types/classnames": "^2.2.9",
-		"@types/node": "^12.12.24",
+		"@types/node": "^12.12.25",
 		"@types/react": "^16.9.19",
 		"@typescript-eslint/eslint-plugin": "^2.17.0",
 		"@typescript-eslint/parser": "^2.17.0",
@@ -21,6 +25,7 @@
 		"eslint-config-xo-typescript": "^0.24.1",
 		"eslint-plugin-react": "^7.18.0",
 		"eslint-plugin-react-hooks": "^2.3.0",
+		"prettier": "^1.19.1",
 		"typescript": "^3.7.5",
 		"xo": "^0.25.3"
 	},
@@ -29,11 +34,12 @@
 	"scripts": {
 		"build": "next build",
 		"dev": "next dev",
-		"preexport": "rm -rf out",
 		"export": "next export",
+		"lint": "xo",
+		"preexport": "rm -rf out",
 		"prestart": "npm run build",
 		"start": "next start",
-		"test": "xo"
+		"style": "prettier --ignore-path .gitignore --check \"./**/*.{{j,t}{s,sx},flow,{sc,c,le}ss,json,m{d,dx},{y,ya}ml}\""
 	},
 	"version": "3.0.0",
 	"xo": {
