@@ -3,52 +3,130 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Git checkout
-        uses: actions/checkout@master
-        with:
-          fetch-depth: 0
-      - name: Set up Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12.x'
-      - name: Install dependencies
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install
-      - name: Run XO
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: test
   build:
+    name: Build
+
     runs-on: ubuntu-latest
 
     steps:
-      - name: Git checkout
-        uses: actions/checkout@master
+      - name: Checkout git repository
+        uses: actions/checkout@v1
         with:
           fetch-depth: 0
-      - name: Set up Node.js
+      - name: Setup Node.js for use with Actions
         uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
-      - name: Install dependencies
-        uses: borales/actions-yarn@v2.0.0
+          node-version: '12.14.1'
+      - name: Install Yarn
+        run: curl -o- -L https://yarnpkg.com/install.sh | bash
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Cache dependencies
+        uses: actions/cache@v1
         with:
-          cmd: install
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install dependencies with Yarn
+        run: yarn install
       - name: Build for production
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: run build
+        run: yarn run build
       - name: Export static site
-        uses: borales/actions-yarn@v2.0.0
+        run: yarn run export
+      - name: Upload compiled TypeScript
+        uses: actions/upload-artifact@v1
         with:
-          cmd: run export
-      - name: Upload exported site artifact
-        uses: actions/upload-artifact@master
-        with:
-          name: exported-site
+          name: exported_site
           path: out
+  compile:
+    name: Compile
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout git repository
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js for use with Actions
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.14.1'
+      - name: Install Yarn
+        run: curl -o- -L https://yarnpkg.com/install.sh | bash
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install dependencies with Yarn
+        run: yarn install
+      - name: Compile TypeScript
+        run: yarn run tsc
+  lint:
+    name: Lint
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout git repository
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js for use with Actions
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.14.1'
+      - name: Install Yarn
+        run: curl -o- -L https://yarnpkg.com/install.sh | bash
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install dependencies with Yarn
+        run: yarn install
+      - name: Lint with XO
+        run: yarn run xo
+  style:
+    name: Check style
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout git repository
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js for use with Actions
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.14.1'
+      - name: Install Yarn
+        run: curl -o- -L https://yarnpkg.com/install.sh | bash
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install dependencies with Yarn
+        run: yarn install
+      - name: Check style with Prettier
+        run: yarn run style
