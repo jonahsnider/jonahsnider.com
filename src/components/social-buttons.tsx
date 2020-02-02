@@ -4,19 +4,41 @@ import {social, SocialInfo} from '../config/personal-info';
 
 export function SocialButton(props: {social: SocialInfo}): JSX.Element {
 	return (
-		<Button
-			fullWidth
-			startIcon={props.social.icon}
-			href={props.social.link}
-			disableRipple={!props.social.link}
-			disableElevation={!props.social.link}
-			variant={props.social.link ? 'outlined' : 'text'}
-			component={props.social.link ? 'button' : 'div'}
-			color='primary'
-			size='large'
-		>
-			{props.social.text}
-		</Button>
+		<>
+			{/* FontAwesome React should be inserting these styles, but it isn't */}
+			{/* Previously it generated them only in dev mode, not in production export */}
+			{/* This appears to be a cross-platform issue, Nuxt.js users with the same bug https://github.com/nuxt/nuxt.js/issues/6565 */}
+			<style global jsx>
+				{`
+					svg:not(:root).svg-inline--fa {
+						overflow: visible;
+					}
+					.svg-inline--fa.fa-w-16 {
+						width: 1em;
+					}
+					.svg-inline--fa {
+						display: inline-block;
+						font-size: inherit;
+						height: 1em;
+						overflow: visible;
+						vertical-align: -0.125em;
+					}
+				`}
+			</style>
+			<Button
+				fullWidth
+				startIcon={props.social.icon}
+				href={props.social.link}
+				disableRipple={!props.social.link}
+				disableElevation={!props.social.link}
+				variant={props.social.link ? 'outlined' : 'text'}
+				component={props.social.link ? 'button' : 'div'}
+				color='primary'
+				size='large'
+			>
+				{props.social.text}
+			</Button>
+		</>
 	);
 }
 
