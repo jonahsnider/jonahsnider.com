@@ -63,7 +63,7 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 		<ThemeProvider theme={theme}>
 			<Head>
 				<link
-					rel='stylesheet'
+					rel='preconnect stylesheet'
 					href={`https://fonts.googleapis.com/css?family=${isAMP ? 'Fira+Mono|' : ''}Roboto:400,500&display=swap`}
 				/>
 			</Head>
