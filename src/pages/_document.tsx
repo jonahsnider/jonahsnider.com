@@ -4,14 +4,11 @@ import React from 'react';
 
 class MyDocument extends Document {
 	// This function has a colossal return type
-	/* eslint-disable @typescript-eslint/explicit-function-return-type */
-	/* eslint-disable @typescript-eslint/no-untyped-public-signature */
+	// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 	static async getInitialProps(ctx: DocumentContext) {
 		const initialProps = await Document.getInitialProps(ctx);
 		return {...initialProps};
 	}
-	/* eslint-enable @typescript-eslint/explicit-function-return-type */
-	/* eslint-enable @typescript-eslint/no-untyped-public-signature */
 
 	render(): JSX.Element {
 		return (
