@@ -50,7 +50,6 @@ const projects: Project[] = [
 	{
 		title: 'Various open source contributions',
 		description:
-			// eslint-disable-next-line @typescript-eslint/quotes
 			"I'm very passionate about giving back to the OSS community, and as such nearly all of my work is open-sourced on GitHub.",
 		url: 'https://github.com/pizzafox',
 		icon: <GitHub />

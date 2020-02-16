@@ -35,12 +35,10 @@ export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Elemen
 						'@global': {
 							'@font-face': [
 								{
-									// eslint-disable-next-line @typescript-eslint/quotes
 									fontFamily: isAMP ? "'Fira Mono'" : "'Cascadia Code Regular'",
 									fontStyle: 'normal',
 									fontDisplay: 'swap',
 									fontWeight: 400,
-									// eslint-disable-next-line @typescript-eslint/quotes
 									src: isAMP ? undefined : "url(/fonts/Cascadia.ttf) format('truetype')"
 								}
 							]
