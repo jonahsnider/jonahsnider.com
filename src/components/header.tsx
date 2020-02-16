@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme: Theme) =>
 	})
 );
 
-function Header(props: {title?: string; subtitle?: string}): JSX.Element {
+const Header = (props: {title?: string; subtitle?: string}): JSX.Element => {
 	const classes = useStyles();
 
 	return (
@@ -27,6 +27,6 @@ function Header(props: {title?: string; subtitle?: string}): JSX.Element {
 			)}
 		</>
 	);
-}
+};
 
 export default Header;

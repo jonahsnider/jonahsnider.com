@@ -10,7 +10,7 @@ export const config = {amp: 'hybrid'};
 /**
  * 404 page not found page.
  */
-function NotFoundPage(): JSX.Element {
+const NotFoundPage = (): JSX.Element => {
 	return (
 		<JonahSniderTemplate title='Not found'>
 			<Header title='404' subtitle="This page couldn't be found" />
@@ -25,6 +25,6 @@ function NotFoundPage(): JSX.Element {
 			</Grid>
 		</JonahSniderTemplate>
 	);
-}
+};
 
 export default NotFoundPage;

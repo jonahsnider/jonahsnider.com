@@ -6,7 +6,7 @@ import {url} from '../config/resume';
 /**
  * A button with a link to download my resumé.
  */
-function ResumeButton(): JSX.Element {
+const ResumeButton = (): JSX.Element => {
 	return (
 		<Button
 			fullWidth
@@ -20,6 +20,6 @@ function ResumeButton(): JSX.Element {
 			Resumé
 		</Button>
 	);
-}
+};
 
 export default ResumeButton;
