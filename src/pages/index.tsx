@@ -12,7 +12,7 @@ export const config = {amp: 'hybrid'};
 /**
  * Home page.
  */
-function Portfolio(): JSX.Element {
+const Portfolio = (): JSX.Element => {
 	return (
 		<JonahSniderTemplate title='Portfolio'>
 			<Header title={siteMetadata.title} subtitle='Full-stack developer' />
@@ -32,6 +32,6 @@ function Portfolio(): JSX.Element {
 			<Projects />
 		</JonahSniderTemplate>
 	);
-}
+};
 
 export default Portfolio;

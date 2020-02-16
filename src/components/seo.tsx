@@ -10,7 +10,7 @@ export function generateFullTitle(pageTitle: string): string {
 /**
  * A collection of SEO tags that use values from a site-wide or page specific config.
  */
-export default function Seo(props: {theme: Theme; pageTitle: string}): JSX.Element {
+const Seo = (props: {theme: Theme; pageTitle: string}): JSX.Element => {
 	const fullTitle = generateFullTitle(props.pageTitle);
 
 	return (
@@ -100,4 +100,6 @@ export default function Seo(props: {theme: Theme; pageTitle: string}): JSX.Eleme
 			<meta key='keywords' name='keywords' content={siteMetadata.keywords.join(', ')} />
 		</Head>
 	);
-}
+};
+
+export default Seo;

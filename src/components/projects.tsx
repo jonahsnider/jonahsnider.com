@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 	}
 }));
 
-export function ProjectCard(props: {project: Project}): JSX.Element {
+export const ProjectCard = (props: {project: Project}): JSX.Element => {
 	const classes = useStyles();
 	const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
@@ -56,9 +56,9 @@ export function ProjectCard(props: {project: Project}): JSX.Element {
 			)}
 		</Card>
 	);
-}
+};
 
-export function Projects(): JSX.Element {
+export const Projects = (): JSX.Element => {
 	return (
 		<Grid container spacing={1} direction='row' justify='flex-start' alignItems='stretch'>
 			{projects.map(project => (
@@ -68,4 +68,4 @@ export function Projects(): JSX.Element {
 			))}
 		</Grid>
 	);
-}
+};
