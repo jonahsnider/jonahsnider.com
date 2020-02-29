@@ -19,10 +19,7 @@
 	"devDependencies": {
 		"@types/node": "^12.12.29",
 		"@types/react": "^16.9.23",
-		"@typescript-eslint/eslint-plugin": "^2.19.2",
-		"@typescript-eslint/parser": "^2.19.2",
 		"eslint-config-xo-react": "^0.23.0",
-		"eslint-config-xo-typescript": "^0.26.0",
 		"eslint-plugin-react": "^7.18.3",
 		"eslint-plugin-react-hooks": "^2.3.0",
 		"prettier": "^1.19.1",
@@ -47,12 +44,7 @@
 			"xo",
 			"xo/esnext",
 			"xo/browser",
-			"xo-react",
-			"xo-typescript"
-		],
-		"extensions": [
-			"ts",
-			"tsx"
+			"xo-react"
 		],
 		"overrides": [
 			{
