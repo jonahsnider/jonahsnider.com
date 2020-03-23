@@ -18,3 +18,7 @@
   from = "https://jonahsnider.netlify.com/*"
   to = "https://jonah.pw/:splat"
   status = 301
+
+# Cache Next.js build folder between Netlify builds
+[[plugins]]
+package = "netlify-plugin-cache-nextjs"
