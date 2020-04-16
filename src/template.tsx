@@ -16,7 +16,12 @@ import React, {useMemo} from 'react';
 import Seo from './components/seo';
 import {customFonts, dark, pink} from './config/theme';
 
-export const JonahSniderTemplate = (props: {children: JSX.Element[] | JSX.Element; title: string}): JSX.Element => {
+export const JonahSniderTemplate = (
+	props: Readonly<{
+		children: JSX.Element[] | JSX.Element;
+		title: string;
+	}>
+): JSX.Element => {
 	const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 	const isAMP = useAmp();
 

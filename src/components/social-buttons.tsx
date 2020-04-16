@@ -1,8 +1,9 @@
 import {Button, Grid} from '@material-ui/core';
 import React from 'react';
+import {ReadonlyDeep} from 'type-fest';
 import {social, SocialInfo} from '../config/personal-info';
 
-export const SocialButton = (props: {social: SocialInfo}): JSX.Element => {
+export const SocialButton = (props: ReadonlyDeep<{social: SocialInfo}>): JSX.Element => {
 	return (
 		<>
 			{/* FontAwesome React should be inserting these styles, but it isn't */}
@@ -45,7 +46,7 @@ export const SocialButton = (props: {social: SocialInfo}): JSX.Element => {
 export const SocialButtons = (): JSX.Element => {
 	return (
 		<Grid container spacing={1} direction='row' justify='flex-start' alignItems='stretch'>
-			{social.map(info => (
+			{social.map((info: ReadonlyDeep<SocialInfo>) => (
 				<Grid key={info.text} item xs={12} sm={6} md={3}>
 					<SocialButton social={info} />
 				</Grid>

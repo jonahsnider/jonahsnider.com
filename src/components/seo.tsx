@@ -1,6 +1,6 @@
-import React from 'react';
 import {Theme} from '@material-ui/core';
 import Head from 'next/head';
+import React from 'react';
 import siteMetadata from '../config/site-metadata';
 
 export function generateFullTitle(pageTitle: string): string {
@@ -10,7 +10,8 @@ export function generateFullTitle(pageTitle: string): string {
 /**
  * A collection of SEO tags that use values from a site-wide or page specific config.
  */
-const Seo = (props: {theme: Theme; pageTitle: string}): JSX.Element => {
+// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
+const Seo = (props: Readonly<{theme: Theme; pageTitle: string}>): JSX.Element => {
 	const fullTitle = generateFullTitle(props.pageTitle);
 
 	return (
