@@ -4,10 +4,7 @@ import React from 'react';
 export default class MyApp extends App {
 	componentDidMount(): void {
 		// Remove the server-side injected CSS.
-		const jssStyles = document.querySelector('#jss-server-side');
-		if (jssStyles) {
-			jssStyles.remove();
-		}
+		document.querySelector('#jss-server-side')?.remove();
 	}
 
 	render(): JSX.Element {
