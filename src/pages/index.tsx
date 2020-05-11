@@ -1,11 +1,11 @@
-import {Grid, Box} from '@material-ui/core';
+import {Box, Grid, useTheme} from '@material-ui/core';
 import React from 'react';
 import Header from '../components/header';
 import {Projects} from '../components/projects';
 import ResumeButton from '../components/resume-button';
+import Seo from '../components/seo';
 import {SocialButtons} from '../components/social-buttons';
 import siteMetadata from '../config/site-metadata';
-import {JonahSniderTemplate} from '../template';
 
 export const config = {amp: 'hybrid'};
 
@@ -13,8 +13,10 @@ export const config = {amp: 'hybrid'};
  * Home page.
  */
 const Portfolio = (): JSX.Element => {
+	const theme = useTheme();
 	return (
-		<JonahSniderTemplate title='Portfolio'>
+		<>
+			<Seo theme={theme} pageTitle='Portfolio' />
 			<Header title={siteMetadata.title} subtitle='Full-stack developer' />
 
 			<SocialButtons />
@@ -30,7 +32,7 @@ const Portfolio = (): JSX.Element => {
 			<Header subtitle='Projects' />
 
 			<Projects />
-		</JonahSniderTemplate>
+		</>
 	);
 };
 

@@ -15,11 +15,11 @@ import Link from 'next/link';
 import React, {useMemo} from 'react';
 import Seo from './components/seo';
 import {customFonts, dark, pink} from './config/theme';
+import siteMetadata from './config/site-metadata';
 
 export const JonahSniderTemplate = (
 	props: Readonly<{
 		children: JSX.Element[] | JSX.Element;
-		title: string;
 	}>
 ): JSX.Element => {
 	const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
@@ -70,7 +70,7 @@ export const JonahSniderTemplate = (
 					href={`https://fonts.googleapis.com/css?family=${isAMP ? 'Fira+Mono|' : ''}Roboto:400,500&display=swap`}
 				/>
 			</Head>
-			<Seo theme={theme} pageTitle={props.title} />
+			<Seo theme={theme} pageTitle={siteMetadata.title} />
 			<CssBaseline />
 			<Container>
 				{props.children}

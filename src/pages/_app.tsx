@@ -1,5 +1,6 @@
 import App from 'next/app';
 import React from 'react';
+import {JonahSniderTemplate} from '../template';
 
 export default class MyApp extends App {
 	componentDidMount(): void {
@@ -16,6 +17,10 @@ export default class MyApp extends App {
 	render(): JSX.Element {
 		const {Component, pageProps} = this.props;
 
-		return <Component {...pageProps} />;
+		return (
+			<JonahSniderTemplate>
+				<Component {...pageProps} />
+			</JonahSniderTemplate>
+		);
 	}
 }

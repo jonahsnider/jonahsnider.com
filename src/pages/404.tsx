@@ -1,9 +1,9 @@
-import {Button, Grid} from '@material-ui/core';
+import {Button, Grid, useTheme} from '@material-ui/core';
 import {Home} from '@material-ui/icons';
 import Link from 'next/link';
 import React from 'react';
 import Header from '../components/header';
-import {JonahSniderTemplate} from '../template';
+import Seo from '../components/seo';
 
 export const config = {amp: 'hybrid'};
 
@@ -11,8 +11,10 @@ export const config = {amp: 'hybrid'};
  * 404 page not found page.
  */
 const NotFoundPage = (): JSX.Element => {
+	const theme = useTheme();
 	return (
-		<JonahSniderTemplate title='Not found'>
+		<>
+			<Seo theme={theme} pageTitle='Not found' />
 			<Header title='404' subtitle='This page couldn’t be found' />
 			<Grid container>
 				<Grid item xs={12} md={4}>
@@ -23,7 +25,7 @@ const NotFoundPage = (): JSX.Element => {
 					</Link>
 				</Grid>
 			</Grid>
-		</JonahSniderTemplate>
+		</>
 	);
 };
 
