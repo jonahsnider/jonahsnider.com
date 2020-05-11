@@ -55,6 +55,7 @@
 				"files": "*.config.js"
 			}
 		],
+		"prettier": true,
 		"rules": {
 			"import/no-unassigned-import": [
 				"error",
@@ -65,7 +66,6 @@
 					]
 				}
 			]
-		},
-		"prettier": true
+		}
 	}
 }
