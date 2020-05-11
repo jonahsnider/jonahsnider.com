@@ -7,8 +7,8 @@ export default class MyApp extends App {
 		document.querySelector('#jss-server-side')?.remove();
 
 		// Initialize Firebase
-		import('../util/firebase').catch(reason =>
-			console.error(['An error occurred while importing the Firebase util:', reason].join('\n'))
+		import('../util/firebase').catch(error =>
+			console.error(['An error occurred while importing the Firebase util:', error].join('\n'))
 		);
 	}
 
