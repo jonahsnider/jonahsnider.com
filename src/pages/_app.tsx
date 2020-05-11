@@ -5,6 +5,11 @@ export default class MyApp extends App {
 	componentDidMount(): void {
 		// Remove the server-side injected CSS.
 		document.querySelector('#jss-server-side')?.remove();
+
+		// Initialize Firebase
+		import('../util/firebase').catch(reason =>
+			console.error(['An error occurred while importing the Firebase util:', reason].join('\n'))
+		);
 	}
 
 	render(): JSX.Element {
