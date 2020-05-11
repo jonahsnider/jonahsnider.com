@@ -15,7 +15,8 @@
 		"next-compose-plugins": "2.2.0",
 		"next-offline": "5.0.2",
 		"react": "16.13.1",
-		"react-dom": "16.13.1"
+		"react-dom": "16.13.1",
+		"typescript": "3.8.3"
 	},
 	"devDependencies": {
 		"@types/node": "12.12.38",
@@ -24,7 +25,6 @@
 		"eslint-plugin-react": "7.19.0",
 		"eslint-plugin-react-hooks": "4.0.0",
 		"prettier": "2.0.4",
-		"typescript": "3.8.3",
 		"xo": "0.30.0"
 	},
 	"name": "jonah.pw",
