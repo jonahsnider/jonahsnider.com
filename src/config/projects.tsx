@@ -27,7 +27,7 @@ const projects: Project[] = [
 	{
 		title: 'Zero Width Shortener',
 		description:
-			'A URL shortener that uses zero-width characters. Built with the Firebase functions and Firestore stack. 600+ GitHub stars and over 30,000 URLs shortened.',
+			'A URL shortener that uses zero-width characters. Built with the Firebase functions and Firestore stack. 600+ GitHub stars and over 50,000 URLs shortened.',
 		url: 'https://zws.im',
 		stack: ['Firebase', 'Google Cloud', 'Serverless functions'],
 		icon: <Link />
@@ -37,14 +37,14 @@ const projects: Project[] = [
 		description:
 			'A general purpose utility bot for the Discord chat platform. More than 10,000 total users and over half a million commands run.',
 		url: 'https://dice.js.org',
-		stack: ['Node.js', 'MongoDB', 'Discord API'],
+		stack: ['Node.js + TypeScript', 'PostgreSQL', 'Prisma', 'Discord API'],
 		icon: <Chat />
 	},
 	{
 		title: 'Team 581',
 		description: 'A student-centered robotics club that participates in the FIRST Robotics Challenge.',
 		url: 'https://team581.club',
-		stack: ['Java', 'OpenCV', 'Robotics'],
+		stack: ['Java', 'OpenCV', 'robotics + integrated electronics'],
 		icon: <Build />
 	},
 	{
