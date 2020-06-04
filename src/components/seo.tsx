@@ -10,7 +10,6 @@ export function generateFullTitle(pageTitle: string): string {
 /**
  * A collection of SEO tags that use values from a site-wide or page specific config.
  */
-// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
 const Seo = (props: Readonly<{theme: Theme; pageTitle: string}>): JSX.Element => {
 	const fullTitle = generateFullTitle(props.pageTitle);
 

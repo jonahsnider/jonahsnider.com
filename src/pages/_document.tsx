@@ -4,7 +4,6 @@ import Document, {DocumentContext, Head, Html, Main, NextScript} from 'next/docu
 import React, {PropsWithChildren} from 'react';
 
 class MyDocument extends Document {
-	// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
 	static async getInitialProps(ctx: DocumentContext) {
 		// Resolution order
 		//
@@ -34,7 +33,6 @@ class MyDocument extends Document {
 
 		ctx.renderPage = () =>
 			originalRenderPage({
-				// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
 				enhanceApp: App => (props: Readonly<PropsWithChildren<AppPropsType>>) => sheets.collect(<App {...props} />)
 			});
 
