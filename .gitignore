@@ -177,8 +177,9 @@ $RECYCLE.BIN/
 
 # End of https://www.gitignore.io/api/node,linux,macos,windows,visualstudiocode
 
-# Next.js static files
-!public
-
 # Next.js static-site export folder
 out
+
+# Service worker
+public/sw.js
+public/workbox-*.js
