@@ -12,7 +12,7 @@ import {
 } from '@material-ui/core';
 import React from 'react';
 import {ReadonlyDeep} from 'type-fest';
-import projects, {Project} from '../config/projects';
+import {Project, projects} from '../config/projects';
 
 const useStyles = makeStyles((theme: ReadonlyDeep<Theme>) => ({
 	card: {

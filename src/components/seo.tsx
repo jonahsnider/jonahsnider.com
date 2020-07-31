@@ -1,7 +1,7 @@
 import {Theme} from '@material-ui/core';
 import Head from 'next/head';
 import React from 'react';
-import siteMetadata from '../config/site-metadata';
+import {siteMetadata} from '../config/site-metadata';
 
 export function generateFullTitle(pageTitle: string): string {
 	return `${siteMetadata.title} - ${pageTitle}`;

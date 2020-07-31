@@ -5,7 +5,7 @@ import {Projects} from '../components/projects';
 import ResumeButton from '../components/resume-button';
 import Seo from '../components/seo';
 import {SocialButtons} from '../components/social-buttons';
-import siteMetadata from '../config/site-metadata';
+import {siteMetadata} from '../config/site-metadata';
 
 export const config = {amp: 'hybrid'};
 

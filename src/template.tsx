@@ -15,7 +15,7 @@ import Link from 'next/link';
 import React, {useMemo} from 'react';
 import Seo from './components/seo';
 import {customFonts, dark, pink} from './config/theme';
-import siteMetadata from './config/site-metadata';
+import {siteMetadata} from './config/site-metadata';
 
 export const JonahSniderTemplate = (
 	props: Readonly<{

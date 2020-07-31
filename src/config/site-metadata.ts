@@ -1,4 +1,4 @@
-const siteMetadata = {
+export const siteMetadata = {
 	keywords: [
 		'portfolio',
 		'jonah snider',
@@ -16,5 +16,3 @@ const siteMetadata = {
 	description: 'Jonah Snider, full-stack developer. View my portfolio or get in touch.',
 	url: 'https://jonah.pw'
 };
-
-export default siteMetadata;

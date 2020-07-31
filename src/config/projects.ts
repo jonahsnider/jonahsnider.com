@@ -11,7 +11,7 @@ export interface Project {
 }
 
 /** Projects that I've worked on. */
-const projects: Project[] = [
+export const projects: Project[] = [
 	{
 		title: 'maroon',
 		description: 'A really simple web app to download YouTube videos.',
@@ -47,9 +47,7 @@ const projects: Project[] = [
 	{
 		title: 'Various open source contributions',
 		description:
-			'I’m very passionate about giving back to the OSS community, and as such nearly all of my work is open-sourced on GitHub.',
+			"I'm very passionate about giving back to the OSS community, and as such nearly all of my work is open-sourced on GitHub.",
 		url: 'https://github.com/pizzafox'
 	}
 ];
-
-export default projects;
