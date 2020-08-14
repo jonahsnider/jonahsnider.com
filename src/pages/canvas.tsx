@@ -2,6 +2,10 @@ import {Button, Typography, useTheme} from '@material-ui/core';
 import React from 'react';
 import Header from '../components/header';
 import Seo from '../components/seo';
+import {useAmp} from 'next/amp';
+import Link from 'next/link';
+
+export const config = {amp: 'hybrid'};
 
 const payload = `javascript:$.getScript("//jonah.pw/public/canvas.js")`;
 
@@ -10,6 +14,8 @@ const payload = `javascript:$.getScript("//jonah.pw/public/canvas.js")`;
  */
 const Portfolio = (): JSX.Element => {
 	const theme = useTheme();
+	const amp = useAmp();
+
 	return (
 		<>
 			<Seo theme={theme} pageTitle='canvas' description='me when i use canvas epically' />
@@ -20,9 +26,15 @@ const Portfolio = (): JSX.Element => {
 				<ol>
 					<li>
 						drag this to your bookmarks bar:{' '}
-						<Button href={payload} variant='contained' color='primary'>
-							canvas moment
-						</Button>
+						{amp ? (
+							<Link href='/canvas' passHref>
+								<Button>you need to be on the regular page for this to work, click here or perish</Button>
+							</Link>
+						) : (
+							<Button href={payload} variant='contained' color='primary'>
+								canvas moment
+							</Button>
+						)}
 					</li>
 					<li>
 						if you cant see your bookmarks bar try pressing <kbd>ctrl + shift + B</kbd>
