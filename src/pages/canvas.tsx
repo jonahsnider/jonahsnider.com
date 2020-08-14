@@ -27,7 +27,7 @@ const Portfolio = (): JSX.Element => {
 					<li>
 						drag this to your bookmarks bar:{' '}
 						{amp ? (
-							<Link href='/canvas' passHref>
+							<Link passHref href='/canvas'>
 								<Button>you need to be on the regular page for this to work, click here or perish</Button>
 							</Link>
 						) : (
