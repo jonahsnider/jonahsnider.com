@@ -11,3 +11,6 @@ insert_final_newline = true
 [**/*.{y,ya}ml]
 indent_style = space
 indent_size = 2
+
+[public/canvas.js]
+insert_final_newline = false

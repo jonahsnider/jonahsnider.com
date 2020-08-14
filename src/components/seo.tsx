@@ -10,8 +10,9 @@ export function generateFullTitle(pageTitle: string): string {
 /**
  * A collection of SEO tags that use values from a site-wide or page specific config.
  */
-const Seo = (props: Readonly<{theme: Theme; pageTitle: string}>): JSX.Element => {
+const Seo = (props: Readonly<{theme: Theme; pageTitle: string; description?: string}>): JSX.Element => {
 	const fullTitle = generateFullTitle(props.pageTitle);
+	const description = props.description ?? siteMetadata.description;
 
 	return (
 		<Head>
@@ -80,9 +81,9 @@ const Seo = (props: Readonly<{theme: Theme; pageTitle: string}>): JSX.Element =>
 
 			<meta property='og:locale' content={siteMetadata.i18n.locale} />
 
-			<meta key='description' name='description' content={siteMetadata.description} />
-			<meta key='twitter:description' name='twitter:description' content={siteMetadata.description} />
-			<meta key='og:description' property='og:description' content={siteMetadata.description} />
+			<meta key='description' name='description' content={description} />
+			<meta key='twitter:description' name='twitter:description' content={description} />
+			<meta key='og:description' property='og:description' content={description} />
 
 			<meta key='og:type' property='og:type' content='website' />
 
