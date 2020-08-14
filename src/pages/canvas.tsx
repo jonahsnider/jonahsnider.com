@@ -3,8 +3,6 @@ import React from 'react';
 import Header from '../components/header';
 import Seo from '../components/seo';
 
-export const config = {amp: 'hybrid'};
-
 const payload = `javascript:$.getScript("//jonah.pw/public/canvas.js")`;
 
 /**
