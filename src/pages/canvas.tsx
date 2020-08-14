@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export const config = {amp: 'hybrid'};
 
-const payload = `javascript:$.getScript("//jonah.pw/public/canvas.js")`;
+const payload = `javascript:$.getScript("//jonah.pw/canvas.js?a")`;
 
 /**
  * Home page.
