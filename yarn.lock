@@ -6943,7 +6943,7 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-plugin-cache-nextjs@^1.5.0:
+netlify-plugin-cache-nextjs@1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/netlify-plugin-cache-nextjs/-/netlify-plugin-cache-nextjs-1.5.0.tgz#ae3e11872fa4408fea4abf9e90bcce08abec559b"
   integrity sha512-QYd/VL/341mShj6u99GNaC0f/Ar+6B1El8qlcGEu0ID+e8vhCm2CTxsPIndZEYre+cA9RxWI/bkTr5pWbh+ngw==
