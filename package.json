@@ -26,7 +26,7 @@
 		"eslint-plugin-react-hooks": "4.1.0",
 		"netlify-plugin-cache-nextjs": "1.5.0",
 		"prettier": "2.0.4",
-		"xo": "0.33.0"
+		"xo": "0.33.1"
 	},
 	"name": "jonah.pw",
 	"private": true,
