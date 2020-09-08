@@ -2334,7 +2334,7 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/cache-utils@^1.0.0":
+"@netlify/cache-utils@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@netlify/cache-utils/-/cache-utils-1.0.2.tgz#bda441aec231a48b92aeb009c39fdc1de47970f1"
   integrity sha512-5eB8PpX4UaJsgVWwV+TSuGyzi/rysCqTSZzVVJVDSVr0sQa574N6LmLWuYl0WJluSTWeYtUUlATLeP838FaZfQ==
@@ -7086,12 +7086,12 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-plugin-cache-nextjs@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/netlify-plugin-cache-nextjs/-/netlify-plugin-cache-nextjs-1.5.0.tgz#ae3e11872fa4408fea4abf9e90bcce08abec559b"
-  integrity sha512-QYd/VL/341mShj6u99GNaC0f/Ar+6B1El8qlcGEu0ID+e8vhCm2CTxsPIndZEYre+cA9RxWI/bkTr5pWbh+ngw==
+netlify-plugin-cache-nextjs@1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/netlify-plugin-cache-nextjs/-/netlify-plugin-cache-nextjs-1.5.1.tgz#a6e951ec82d64b81a33aeedef20dacea9cac9d3a"
+  integrity sha512-WdAmOS+K9b0QcEk7VCuW1achW8qESxeAGsVatdYjYof3xhLoonOkWrZfyugj6DxpyfbyK7Z6t4AoWqCfDuWMPg==
   dependencies:
-    "@netlify/cache-utils" "^1.0.0"
+    "@netlify/cache-utils" "1.0.2"
 
 next-compose-plugins@2.2.0:
   version "2.2.0"
