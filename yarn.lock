@@ -7086,10 +7086,10 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-plugin-cache-nextjs@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/netlify-plugin-cache-nextjs/-/netlify-plugin-cache-nextjs-1.5.1.tgz#a6e951ec82d64b81a33aeedef20dacea9cac9d3a"
-  integrity sha512-WdAmOS+K9b0QcEk7VCuW1achW8qESxeAGsVatdYjYof3xhLoonOkWrZfyugj6DxpyfbyK7Z6t4AoWqCfDuWMPg==
+netlify-plugin-cache-nextjs@1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/netlify-plugin-cache-nextjs/-/netlify-plugin-cache-nextjs-1.5.2.tgz#3c206debc76b8cf19536ea8bde855f5d8a52ee5b"
+  integrity sha512-pOtc+ZsZmXFSz3db8OfaOr+5HTQNIxPUTDEC4mI2g0ikTv3pXMjYrd0J1GJ0fU6KfJlbZqSXbqi4bbA6QArp0A==
   dependencies:
     "@netlify/cache-utils" "1.0.2"
 
