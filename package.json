@@ -19,7 +19,7 @@
 		"typescript": "3.9.7"
 	},
 	"devDependencies": {
-		"@types/node": "12.12.57",
+		"@types/node": "12.12.58",
 		"@types/react": "16.9.49",
 		"eslint-config-xo-react": "0.23.0",
 		"eslint-plugin-react": "7.20.6",
