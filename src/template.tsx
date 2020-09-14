@@ -42,7 +42,12 @@ export const JonahSniderTemplate: FC<{
 									fontStyle: 'normal',
 									fontDisplay: 'swap',
 									fontWeight: 400,
-									src: isAMP ? undefined : "url(/fonts/Cascadia.ttf) format('truetype')"
+									src: isAMP
+										? undefined
+										: [
+												"url('/fonts/CascadiaCode.woff2') format('woff2')",
+												"url('/fonts/CascadiaCode.ttf') format('truetype')"
+										  ].join(', \n')
 								}
 							]
 						}
