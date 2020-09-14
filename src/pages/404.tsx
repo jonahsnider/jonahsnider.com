@@ -15,7 +15,7 @@ const NotFoundPage = (): JSX.Element => {
 	return (
 		<>
 			<Seo theme={theme} pageTitle='Not found' />
-			<Header title='404' subtitle='This page couldn’t be found' />
+			<Header title='404' subtitle="This page couldn't be found" />
 			<Grid container>
 				<Grid item xs={12} md={4}>
 					<Link passHref href='/'>
