@@ -12,16 +12,14 @@ import {FlashOnRounded} from '@material-ui/icons';
 import {useAmp} from 'next/amp';
 import Head from 'next/head';
 import Link from 'next/link';
-import React, {useMemo} from 'react';
+import React, {useMemo, ReactChild, FC} from 'react';
 import Seo from './components/seo';
 import {customFonts, dark, pink} from './config/theme';
 import {siteMetadata} from './config/site-metadata';
 
-export const JonahSniderTemplate = (
-	props: Readonly<{
-		children: JSX.Element[] | JSX.Element;
-	}>
-): JSX.Element => {
+export const JonahSniderTemplate: FC<{
+	children: ReactChild;
+}> = props => {
 	const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 	const isAMP = useAmp();
 
