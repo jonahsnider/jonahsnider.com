@@ -40,11 +40,11 @@ export const JonahSniderTemplate = (
 						'@global': {
 							'@font-face': [
 								{
-									fontFamily: isAMP ? '’Fira Mono’' : '’Cascadia Code Regular’',
+									fontFamily: isAMP ? "'Fira Mono'" : "'Cascadia Code Regular'",
 									fontStyle: 'normal',
 									fontDisplay: 'swap',
 									fontWeight: 400,
-									src: isAMP ? undefined : 'url(/fonts/Cascadia.ttf) format(’truetype’)'
+									src: isAMP ? undefined : "url(/fonts/Cascadia.ttf) format('truetype')"
 								}
 							]
 						}
