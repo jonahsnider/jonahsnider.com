@@ -22,7 +22,7 @@
 		"@types/node": "12.12.58",
 		"@types/react": "16.9.49",
 		"eslint-config-xo-react": "0.23.0",
-		"eslint-plugin-react": "7.20.6",
+		"eslint-plugin-react": "7.21.2",
 		"eslint-plugin-react-hooks": "4.1.2",
 		"netlify-plugin-cache-nextjs": "1.5.2",
 		"prettier": "2.0.4",
