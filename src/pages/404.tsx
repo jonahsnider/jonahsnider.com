@@ -1,7 +1,7 @@
 import {Button, Grid, useTheme} from '@material-ui/core';
 import {Home} from '@material-ui/icons';
 import Link from 'next/link';
-import React from 'react';
+import React, {FC} from 'react';
 import Header from '../components/header';
 import Seo from '../components/seo';
 
@@ -10,7 +10,7 @@ export const config = {amp: 'hybrid'};
 /**
  * 404 page not found page.
  */
-const NotFoundPage = (): JSX.Element => {
+const NotFoundPage: FC = () => {
 	const theme = useTheme();
 	return (
 		<>

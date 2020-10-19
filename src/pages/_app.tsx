@@ -13,7 +13,7 @@ export default class MyApp extends App {
 		);
 	}
 
-	render(): JSX.Element {
+	render() {
 		const {Component, pageProps} = this.props;
 
 		return (

@@ -1,5 +1,5 @@
 import {Box, Grid, useTheme} from '@material-ui/core';
-import React from 'react';
+import React, {FC} from 'react';
 import Header from '../components/header';
 import {Projects} from '../components/projects';
 import ResumeButton from '../components/resume-button';
@@ -12,7 +12,7 @@ export const config = {amp: 'hybrid'};
 /**
  * Home page.
  */
-const Portfolio = (): JSX.Element => {
+const Portfolio: FC = () => {
 	const theme = useTheme();
 	return (
 		<>

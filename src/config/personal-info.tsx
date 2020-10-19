@@ -1,10 +1,10 @@
-import {Email, GitHub} from '@material-ui/icons';
-import {faKeybase, faDiscord} from '@fortawesome/free-brands-svg-icons';
-import React from 'react';
+import {faDiscord, faKeybase} from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {Email, GitHub} from '@material-ui/icons';
+import React, {ReactChild} from 'react';
 
 export interface SocialInfo {
-	icon: JSX.Element;
+	icon: ReactChild;
 	text: string;
 	link?: string;
 }

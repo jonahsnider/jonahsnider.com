@@ -1,8 +1,7 @@
-import React from 'react';
-import {Typography, makeStyles, createStyles, Theme} from '@material-ui/core';
-import {ReadonlyDeep} from 'type-fest';
+import {createStyles, makeStyles, Theme, Typography} from '@material-ui/core';
+import React, {FC} from 'react';
 
-const useStyles = makeStyles((theme: ReadonlyDeep<Theme>) =>
+const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
 		bottomMargin: {
 			marginBottom: theme.spacing(2)
@@ -10,7 +9,7 @@ const useStyles = makeStyles((theme: ReadonlyDeep<Theme>) =>
 	})
 );
 
-const Header = (props: Readonly<{title?: string; subtitle?: string}>): JSX.Element => {
+const Header: FC<{title?: string; subtitle?: string}> = props => {
 	const classes = useStyles();
 
 	return (

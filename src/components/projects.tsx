@@ -10,11 +10,10 @@ import {
 	Typography,
 	useMediaQuery
 } from '@material-ui/core';
-import React from 'react';
-import {ReadonlyDeep} from 'type-fest';
+import React, {FC} from 'react';
 import {Project, projects} from '../config/projects';
 
-const useStyles = makeStyles((theme: ReadonlyDeep<Theme>) => ({
+const useStyles = makeStyles((theme: Theme) => ({
 	card: {
 		backgroundColor: theme.palette.primary.main,
 		color: theme.palette.primary.contrastText
@@ -24,7 +23,7 @@ const useStyles = makeStyles((theme: ReadonlyDeep<Theme>) => ({
 	}
 }));
 
-export const ProjectCard = (props: ReadonlyDeep<{project: Project}>): JSX.Element => {
+export const ProjectCard: FC<{project: Project}> = props => {
 	const classes = useStyles();
 	const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
@@ -59,10 +58,10 @@ export const ProjectCard = (props: ReadonlyDeep<{project: Project}>): JSX.Elemen
 	);
 };
 
-export const Projects = (): JSX.Element => {
+export const Projects: FC = () => {
 	return (
 		<Grid container spacing={1} direction='row' justify='flex-start' alignItems='stretch'>
-			{projects.map((project: ReadonlyDeep<Project>) => (
+			{projects.map((project: Project) => (
 				<Grid key={project.title} item xs={12} sm={6} md={4}>
 					<ProjectCard project={project} />
 				</Grid>
