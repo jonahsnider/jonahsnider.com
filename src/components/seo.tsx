@@ -33,12 +33,12 @@ const Seo: FC<{theme: Theme; pageTitle: string; description?: string}> = props =
 			<meta
 				key='og:image'
 				property='og:image'
-				content={`${siteMetadata.url}/images/js/${props.theme.palette.type}/icon-512.png`}
+				content={`${siteMetadata.url}/images/js/${props.theme.palette.type}/js-512x.png`}
 			/>
 			<meta
 				key='og:image:secure_url'
 				property='og:image:secure_url'
-				content={`${siteMetadata.url}/images/js/${props.theme.palette.type}/icon-512.png`}
+				content={`${siteMetadata.url}/images/js/${props.theme.palette.type}/js-512x.png`}
 			/>
 			<meta key='og:image:type' property='og:image:type' content='image/png' />
 			<meta key='og:image:width' property='og:image:width' content='512' />
@@ -51,21 +51,21 @@ const Seo: FC<{theme: Theme; pageTitle: string; description?: string}> = props =
 					rel='icon'
 					type='image/png'
 					sizes={`${dimension}x${dimension}`}
-					href={`${siteMetadata.url}/images/js/${props.theme.palette.type}/icon-${dimension}.png`}
+					href={`${siteMetadata.url}/images/js/${props.theme.palette.type}/js-${dimension}x.png`}
 				/>,
 				<link
 					key={`apple-touch-icon-${dimension}`}
 					rel='apple-touch-icon'
 					type='image/png'
 					sizes={`${dimension}x${dimension}`}
-					href={`${siteMetadata.url}/images/js/${props.theme.palette.type}/icon-${dimension}.png`}
+					href={`${siteMetadata.url}/images/js/${props.theme.palette.type}/js-${dimension}x.png`}
 				/>
 			])}
 
 			<link
 				key='apple-touch-startup-image'
 				rel='apple-touch-startup-image'
-				href={`${siteMetadata.url}/images/js/${props.theme.palette.type}/icon-512.png`}
+				href={`${siteMetadata.url}/images/js/${props.theme.palette.type}/js-512x.png`}
 			/>
 
 			<meta key='meta-title' name='title' content={fullTitle} />
