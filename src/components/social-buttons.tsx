@@ -1,4 +1,4 @@
-import {Button, Grid} from '@material-ui/core';
+import {Box, Button, Grid} from '@material-ui/core';
 import React, {FC} from 'react';
 import {social, SocialInfo} from '../config/personal-info';
 
@@ -44,12 +44,14 @@ export const SocialButton: FC<{social: SocialInfo}> = props => {
 
 export const SocialButtons: FC = () => {
 	return (
-		<Grid container spacing={1} direction='row' justify='flex-start' alignItems='stretch'>
-			{social.map((info: SocialInfo) => (
-				<Grid key={info.text} item xs={12} sm={6} md={3}>
-					<SocialButton social={info} />
-				</Grid>
-			))}
-		</Grid>
+		<Box marginY={3}>
+			<Grid container spacing={1} direction='row' justify='flex-start' alignItems='stretch'>
+				{social.map((info: SocialInfo) => (
+					<Grid key={info.text} item xs={12} sm={6} md={3}>
+						<SocialButton social={info} />
+					</Grid>
+				))}
+			</Grid>
+		</Box>
 	);
 };

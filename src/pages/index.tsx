@@ -5,6 +5,7 @@ import {Projects} from '../components/projects';
 import ResumeButton from '../components/resume-button';
 import Seo from '../components/seo';
 import {SocialButtons} from '../components/social-buttons';
+import { resumeDisplayed } from '../config/resume';
 import {siteMetadata} from '../config/site-metadata';
 
 export const config = {amp: 'hybrid'};
@@ -21,13 +22,15 @@ const Portfolio: FC = () => {
 
 			<SocialButtons />
 
-			<Box marginY={3}>
-				<Grid container spacing={1}>
-					<Grid item xs={12} md={4}>
-						<ResumeButton />
+			{resumeDisplayed && (
+				<Box marginY={3}>
+					<Grid container spacing={1}>
+						<Grid item xs={12} md={4}>
+							<ResumeButton />
+						</Grid>
 					</Grid>
-				</Grid>
-			</Box>
+				</Box>
+			)}
 
 			<Header subtitle='Projects' />
 
