@@ -11,9 +11,9 @@ jobs:
     steps:
       - name: Checkout git repository
         uses: actions/checkout@v2
-      - name: Get yarn cache
+      - name: Get Yarn cache
         id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
       - name: Cache dependencies
         uses: actions/cache@v2
         id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
@@ -23,7 +23,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: Install dependencies with Yarn
-        run: yarn install
+        run: yarn install --immutable
       - name: Build for production
         run: yarn run build
       - name: Export static site
@@ -41,9 +41,9 @@ jobs:
     steps:
       - name: Checkout git repository
         uses: actions/checkout@v2
-      - name: Get yarn cache
+      - name: Get Yarn cache
         id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
       - name: Cache dependencies
         uses: actions/cache@v2
         id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
@@ -53,7 +53,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: Install dependencies with Yarn
-        run: yarn install
+        run: yarn install --immutable
       - name: Compile TypeScript
         run: yarn run tsc
   lint:
@@ -64,9 +64,9 @@ jobs:
     steps:
       - name: Checkout git repository
         uses: actions/checkout@v2
-      - name: Get yarn cache
+      - name: Get Yarn cache
         id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
       - name: Cache dependencies
         uses: actions/cache@v2
         id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
@@ -76,7 +76,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: Install dependencies with Yarn
-        run: yarn install
+        run: yarn install --immutable
       - name: Lint with XO
         run: yarn run lint
   style:
@@ -87,9 +87,9 @@ jobs:
     steps:
       - name: Checkout git repository
         uses: actions/checkout@v2
-      - name: Get yarn cache
+      - name: Get Yarn cache
         id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
       - name: Cache dependencies
         uses: actions/cache@v2
         id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
@@ -99,6 +99,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: Install dependencies with Yarn
-        run: yarn install
+        run: yarn install --immutable
       - name: Check style with Prettier
         run: yarn run style

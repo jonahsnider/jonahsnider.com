@@ -38,7 +38,7 @@
 		"lint": "xo",
 		"preexport": "rm -rf out",
 		"start": "next start",
-		"style": "prettier --ignore-path .gitignore --check ."
+		"style": "prettier --check ."
 	},
 	"version": "3.0.0",
 	"xo": {
