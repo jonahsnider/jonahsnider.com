@@ -1,12 +1,4 @@
-import {
-	Container,
-	createMuiTheme,
-	CssBaseline,
-	Fab,
-	Grid,
-	responsiveFontSizes,
-	ThemeProvider as ThemeProvider
-} from '@material-ui/core';
+import {Container, createMuiTheme, CssBaseline, Fab, Grid, responsiveFontSizes, ThemeProvider} from '@material-ui/core';
 import {FlashOnRounded} from '@material-ui/icons';
 import {useTheme} from 'next-themes';
 import {useAmp} from 'next/amp';
