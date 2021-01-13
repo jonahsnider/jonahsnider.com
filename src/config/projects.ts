@@ -17,7 +17,7 @@ export const projects: Project[] = [
 		description:
 			'Currently working as a Discord bot developer for the integration with our tournament hosting platform.',
 		url: 'https://gamefaced.gg',
-		stack: ['Node.js + TypeScript']
+		stack: ['Node.js + TypeScript', 'Discord API', 'PostgreSQL']
 	},
 	{
 		title: 'maroon',
