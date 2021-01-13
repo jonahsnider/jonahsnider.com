@@ -1,4 +1,3 @@
-import {ThemeProvider} from 'next-themes';
 import App from 'next/app';
 import React from 'react';
 import {JonahSniderTemplate} from '../template';
@@ -18,11 +17,9 @@ export default class MyApp extends App {
 		const {Component, pageProps} = this.props;
 
 		return (
-			<ThemeProvider>
-				<JonahSniderTemplate>
-					<Component {...pageProps} />
-				</JonahSniderTemplate>
-			</ThemeProvider>
+			<JonahSniderTemplate>
+				<Component {...pageProps} />
+			</JonahSniderTemplate>
 		);
 	}
 }

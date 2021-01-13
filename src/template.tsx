@@ -1,6 +1,14 @@
-import {Container, createMuiTheme, CssBaseline, Fab, Grid, responsiveFontSizes, ThemeProvider} from '@material-ui/core';
+import {
+	Container,
+	createMuiTheme,
+	CssBaseline,
+	Fab,
+	Grid,
+	responsiveFontSizes,
+	ThemeProvider,
+	useMediaQuery
+} from '@material-ui/core';
 import {FlashOnRounded} from '@material-ui/icons';
-import {useTheme} from 'next-themes';
 import {useAmp} from 'next/amp';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -12,9 +20,8 @@ import {customFonts, dark, pink} from './config/theme';
 export const JonahSniderTemplate: FC<{
 	children: ReactChild;
 }> = props => {
+	const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 	const isAMP = useAmp();
-	const {theme: colorTheme} = useTheme();
-	const prefersDarkMode = colorTheme === 'dark';
 
 	const theme = useMemo(() => {
 		return responsiveFontSizes(
