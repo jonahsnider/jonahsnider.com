@@ -13,6 +13,13 @@ export interface Project {
 /** Projects that I've worked on. */
 export const projects: Project[] = [
 	{
+		title: 'GameFace',
+		description:
+			'Currently working as a Discord bot developer for the integration with our tournament hosting platform.',
+		url: 'https://gamefaced.gg',
+		stack: ['Node.js + TypeScript']
+	},
+	{
 		title: 'maroon',
 		description: 'A really simple web app to download YouTube videos.',
 		url: 'https://maroon.jonah.pw',
