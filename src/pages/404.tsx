@@ -1,7 +1,7 @@
-import {Button, Grid, useTheme} from '@material-ui/core';
+import {Button, Grid, useTheme, CircularProgress} from '@material-ui/core';
 import {Home} from '@material-ui/icons';
 import Link from 'next/link';
-import React, {FC} from 'react';
+import React, {FC, useState} from 'react';
 import Header from '../components/header';
 import Seo from '../components/seo';
 
@@ -12,6 +12,8 @@ export const config = {amp: 'hybrid'};
  */
 const NotFoundPage: FC = () => {
 	const theme = useTheme();
+	const [loading, setLoading] = useState(false);
+
 	return (
 		<>
 			<Seo theme={theme} pageTitle='Not found' />
@@ -19,7 +21,17 @@ const NotFoundPage: FC = () => {
 			<Grid container>
 				<Grid item xs={12} md={4}>
 					<Link passHref href='/'>
-						<Button fullWidth startIcon={<Home />} color='primary' size='large' variant='contained'>
+						<Button
+							fullWidth
+							disabled={loading}
+							startIcon={loading ? <CircularProgress /> : <Home />}
+							color='primary'
+							size='large'
+							variant='contained'
+							onClick={() => {
+								setLoading(true);
+							}}
+						>
 							Home
 						</Button>
 					</Link>
