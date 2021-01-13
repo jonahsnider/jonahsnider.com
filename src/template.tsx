@@ -5,23 +5,24 @@ import {
 	Fab,
 	Grid,
 	responsiveFontSizes,
-	ThemeProvider,
-	useMediaQuery
+	ThemeProvider as ThemeProvider
 } from '@material-ui/core';
 import {FlashOnRounded} from '@material-ui/icons';
+import {useTheme} from 'next-themes';
 import {useAmp} from 'next/amp';
 import Head from 'next/head';
 import Link from 'next/link';
-import React, {useMemo, ReactChild, FC} from 'react';
+import React, {FC, ReactChild, useMemo} from 'react';
 import Seo from './components/seo';
-import {customFonts, dark, pink} from './config/theme';
 import {siteMetadata} from './config/site-metadata';
+import {customFonts, dark, pink} from './config/theme';
 
 export const JonahSniderTemplate: FC<{
 	children: ReactChild;
 }> = props => {
-	const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 	const isAMP = useAmp();
+	const {theme: colorTheme} = useTheme();
+	const prefersDarkMode = colorTheme === 'dark';
 
 	const theme = useMemo(() => {
 		return responsiveFontSizes(

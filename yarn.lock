@@ -7331,6 +7331,7 @@ fsevents@~2.1.2:
     next: 10.0.5
     next-compose-plugins: 2.2.1
     next-pwa: 5.0.3
+    next-themes: 0.0.10
     prettier: 2.2.1
     react: 17.0.1
     react-dom: 17.0.1
@@ -8407,6 +8408,17 @@ fsevents@~2.1.2:
     next: ">=7.0.0"
     webpack: ">=4.0.0"
   checksum: f6ecca9a759b1454a1f161cd219c7726de6b647ca67425d35060ee9e3d1575d07b518a21727f2ca6af16cae97486db5389d2ccd38dde6eb83245a0746ad75efc
+  languageName: node
+  linkType: hard
+
+"next-themes@npm:0.0.10":
+  version: 0.0.10
+  resolution: "next-themes@npm:0.0.10"
+  peerDependencies:
+    next: ^9.5.5
+    react: ^16.13.1
+    react-dom: ^16.13.1
+  checksum: 9fef4511a86ab5255c2b17c3696558566bcfe9b401d710bb480c768c7bc660e6e07717c7d6127383d98733d5719ae1604990b195891685a064012f8c9dc4eb44
   languageName: node
   linkType: hard
 
