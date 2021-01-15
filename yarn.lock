@@ -1354,9 +1354,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@firebase/database@npm:0.8.2":
-  version: 0.8.2
-  resolution: "@firebase/database@npm:0.8.2"
+"@firebase/database@npm:0.8.3":
+  version: 0.8.3
+  resolution: "@firebase/database@npm:0.8.3"
   dependencies:
     "@firebase/auth-interop-types": 0.1.5
     "@firebase/component": 0.1.21
@@ -1365,7 +1365,7 @@ __metadata:
     "@firebase/util": 0.3.4
     faye-websocket: 0.11.3
     tslib: ^1.11.1
-  checksum: 41aa0bcfffa1de666e9d7e13845bbedc136ff1a67ae26b2bbb0b1247c2871fbb5f92d9a6d29466881bb862320381326e6e41c1ccdc364c5fdeaad4ea9c880046
+  checksum: 1a32a75f9ccfcbf6e94ed1d874d5a9a996ffa2476ab057a44490ed24787978872e596d6a4c1e3aaba99213bd556492cd59b1157cebffa52b934f57338147d7be
   languageName: node
   linkType: hard
 
@@ -5796,15 +5796,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase@npm:8.2.2":
-  version: 8.2.2
-  resolution: "firebase@npm:8.2.2"
+"firebase@npm:8.2.3":
+  version: 8.2.3
+  resolution: "firebase@npm:8.2.3"
   dependencies:
     "@firebase/analytics": 0.6.2
     "@firebase/app": 0.6.13
     "@firebase/app-types": 0.6.1
     "@firebase/auth": 0.16.1
-    "@firebase/database": 0.8.2
+    "@firebase/database": 0.8.3
     "@firebase/firestore": 2.1.2
     "@firebase/functions": 0.6.1
     "@firebase/installations": 0.4.19
@@ -5814,7 +5814,7 @@ __metadata:
     "@firebase/remote-config": 0.1.30
     "@firebase/storage": 0.4.2
     "@firebase/util": 0.3.4
-  checksum: 99418cbbed86d6b699eb61cb64dc925f312e9f14481b6737965d83c159ad4260230eec0bcf87af99243fcde00258f5a5897cd691b24489e9443f8ff41b1088b5
+  checksum: 58d8dc3ed5fbb023080578640c08ecfc3247b3dbc59df8b15031d4460d09a7f72ee36f9ee619f22ca6846617e29afa1b833c9d46e138d1ca189f07e4026f2ace
   languageName: node
   linkType: hard
 
@@ -7326,7 +7326,7 @@ fsevents@~2.1.2:
     eslint-plugin-prettier: 3.3.1
     eslint-plugin-react: 7.22.0
     eslint-plugin-react-hooks: 4.2.0
-    firebase: 8.2.2
+    firebase: 8.2.3
     netlify-plugin-cache-nextjs: 1.5.2
     next: 10.0.5
     next-compose-plugins: 2.2.1
