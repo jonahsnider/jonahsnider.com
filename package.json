@@ -26,6 +26,7 @@
 		"eslint-plugin-react": "7.22.0",
 		"eslint-plugin-react-hooks": "4.2.0",
 		"netlify-plugin-cache-nextjs": "1.5.2",
+		"netlify-plugin-cache-yarn2": "1.0.0",
 		"prettier": "2.2.1",
 		"xo": "0.37.1"
 	},

@@ -18,3 +18,7 @@
 # Cache Next.js build folder between Netlify builds
 [[plugins]]
 package = "netlify-plugin-cache-nextjs"
+
+# Cache Yarn 2 cache folder between Netlify builds
+[[plugins]]
+package = "netlify-plugin-cache-yarn2"
