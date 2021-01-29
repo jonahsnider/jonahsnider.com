@@ -1289,9 +1289,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@firebase/app@npm:0.6.13":
-  version: 0.6.13
-  resolution: "@firebase/app@npm:0.6.13"
+"@firebase/app@npm:0.6.14":
+  version: 0.6.14
+  resolution: "@firebase/app@npm:0.6.14"
   dependencies:
     "@firebase/app-types": 0.6.1
     "@firebase/component": 0.1.21
@@ -1300,7 +1300,7 @@ __metadata:
     dom-storage: 2.1.0
     tslib: ^1.11.1
     xmlhttprequest: 1.8.0
-  checksum: c7b85350f77a13f8c1d76b733e36ca5308c0b1fc98c88c2f01e7d631cec26b170192bff83757851744529096ef0d236a122776dd1e7c5fd20b085ad435c49f0e
+  checksum: 99d19733619a5687ede1a214c1f12cf22d481de04761f8120e97f960b6bbf2abea68f8b8c8e8a2ce57ba167df8cdb41c173e5b0e2d1446c6415cc98bb1aaf68c
   languageName: node
   linkType: hard
 
@@ -1354,9 +1354,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@firebase/database@npm:0.9.0":
-  version: 0.9.0
-  resolution: "@firebase/database@npm:0.9.0"
+"@firebase/database@npm:0.9.1":
+  version: 0.9.1
+  resolution: "@firebase/database@npm:0.9.1"
   dependencies:
     "@firebase/auth-interop-types": 0.1.5
     "@firebase/component": 0.1.21
@@ -1365,7 +1365,7 @@ __metadata:
     "@firebase/util": 0.3.4
     faye-websocket: 0.11.3
     tslib: ^1.11.1
-  checksum: a97dae6502bebf0f352f22276a0cfb011332d34b2377ec547b2eab3b9b8cea61ef9b220c4fbdd698bc23657472e3483895ef984d1012e98fcef28b77f7bb5a2f
+  checksum: f3b3839965a33165fa9f83211a5ebe02778fe6c0e335377266fec9d323c3276ea89bbc2e37e8bda7d4e3e2433cd8c71943323bf5f59dac02d1973593653464bb
   languageName: node
   linkType: hard
 
@@ -1378,9 +1378,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@firebase/firestore@npm:2.1.3":
-  version: 2.1.3
-  resolution: "@firebase/firestore@npm:2.1.3"
+"@firebase/firestore@npm:2.1.4":
+  version: 2.1.4
+  resolution: "@firebase/firestore@npm:2.1.4"
   dependencies:
     "@firebase/component": 0.1.21
     "@firebase/firestore-types": 2.1.0
@@ -1394,7 +1394,7 @@ __metadata:
   peerDependencies:
     "@firebase/app": 0.x
     "@firebase/app-types": 0.x
-  checksum: 094d62d4a9196bb2ca258f279e548f363ab5b8ae14e54cab6dba6ab2c6eeed28241c8e82e608e3d6d6568eeb6f7e2d2ef9d26b2c5895fa514bdc56752b4a011f
+  checksum: 91406b59f5d9fc61a33b08b24b10eebb3a1b1aaccec468c0819f39d525d1417283fffb62631901e9978d2913343a0226bd466b17ac63d22f79bd4cb83715e1dc
   languageName: node
   linkType: hard
 
@@ -5857,16 +5857,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase@npm:8.2.4":
-  version: 8.2.4
-  resolution: "firebase@npm:8.2.4"
+"firebase@npm:8.2.5":
+  version: 8.2.5
+  resolution: "firebase@npm:8.2.5"
   dependencies:
     "@firebase/analytics": 0.6.2
-    "@firebase/app": 0.6.13
+    "@firebase/app": 0.6.14
     "@firebase/app-types": 0.6.1
     "@firebase/auth": 0.16.2
-    "@firebase/database": 0.9.0
-    "@firebase/firestore": 2.1.3
+    "@firebase/database": 0.9.1
+    "@firebase/firestore": 2.1.4
     "@firebase/functions": 0.6.1
     "@firebase/installations": 0.4.19
     "@firebase/messaging": 0.7.3
@@ -5875,7 +5875,7 @@ __metadata:
     "@firebase/remote-config": 0.1.30
     "@firebase/storage": 0.4.2
     "@firebase/util": 0.3.4
-  checksum: 9c524cc8ec814bdba6af3a0b1d6a70f905018b123e27966aa192460de9bdfc409904070284680948b535e7634b3266581c290f035e22ecbfbcc2f05206185cfa
+  checksum: 97c578872411035dba84206fb9b596cd74b87372af69c7db63762bc33ac5905413ec1e626fb93ca4b1547e49efc0d6b54dbb35c67b2b77618d7ad9c4a17bd8f9
   languageName: node
   linkType: hard
 
@@ -7394,7 +7394,7 @@ fsevents@~2.1.2:
     eslint-plugin-prettier: 3.3.1
     eslint-plugin-react: 7.22.0
     eslint-plugin-react-hooks: 4.2.0
-    firebase: 8.2.4
+    firebase: 8.2.5
     netlify-plugin-cache-nextjs: 1.5.2
     netlify-plugin-cache-yarn2: 1.0.0
     next: 10.0.5
