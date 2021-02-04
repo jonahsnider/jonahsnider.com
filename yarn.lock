@@ -2219,10 +2219,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:12.19.15":
-  version: 12.19.15
-  resolution: "@types/node@npm:12.19.15"
-  checksum: 873f273c89dab44232a366b995a642aaed63c6be5ef9939b98f5beffeb301749afecd29c2ebfbd9dab4b10cb8a3c972752e902829e4515b0c9a5a166b895234c
+"@types/node@npm:12.19.16":
+  version: 12.19.16
+  resolution: "@types/node@npm:12.19.16"
+  checksum: 92a7e018059db994307fd52372437435be613ecd0f515569dd79e99aace61ec843ad7162bd533a660aef3ac767f9eea2e4c4352643c261e4d8eb87b4f8380c4d
   languageName: node
   linkType: hard
 
@@ -7398,7 +7398,7 @@ fsevents@~2.1.2:
     "@fortawesome/react-fontawesome": 0.1.14
     "@material-ui/core": 4.11.3
     "@material-ui/icons": 4.11.2
-    "@types/node": 12.19.15
+    "@types/node": 12.19.16
     "@types/react": 17.0.1
     eslint-config-xo-react: 0.23.0
     eslint-plugin-prettier: 3.3.1
