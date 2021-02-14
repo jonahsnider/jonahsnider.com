@@ -2221,10 +2221,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:12.20.0":
-  version: 12.20.0
-  resolution: "@types/node@npm:12.20.0"
-  checksum: fb0f92b1747be6a66eaa2b974cf8862f853f811dcafe1fa9ae6a594227750b4a8d22b611d8ab54041dd23e3dd466e9a215a0f0c97352bf157729080501305bb8
+"@types/node@npm:12.20.1":
+  version: 12.20.1
+  resolution: "@types/node@npm:12.20.1"
+  checksum: b812bc6ab5e676ad2c860019f1e983d23d208158f10983026da345643cc6fe59f289ff306d9f838ca46e2520d82fbd068b31ccc235f43b2090bf77f1402816f3
   languageName: node
   linkType: hard
 
@@ -7286,7 +7286,7 @@ fsevents@~2.3.1:
     "@fortawesome/react-fontawesome": 0.1.14
     "@material-ui/core": 4.11.3
     "@material-ui/icons": 4.11.2
-    "@types/node": 12.20.0
+    "@types/node": 12.20.1
     "@types/react": 17.0.2
     eslint-config-xo-react: 0.23.0
     eslint-plugin-prettier: 3.3.1
