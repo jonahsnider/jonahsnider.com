@@ -6,8 +6,8 @@ const black = '#000000';
 const white = '#ffffff';
 
 export const pink: SimplePaletteColorOptions = {
-	light: '#ffedff',
-	main: '#ffbacc',
+	light: '#ffeeff',
+	main: '#ffbbcc',
 	dark: '#cb8a9b',
 	contrastText: black
 };
