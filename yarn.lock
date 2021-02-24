@@ -4787,14 +4787,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-xo-react@npm:0.23.0":
-  version: 0.23.0
-  resolution: "eslint-config-xo-react@npm:0.23.0"
+"eslint-config-xo-react@npm:0.24.0":
+  version: 0.24.0
+  resolution: "eslint-config-xo-react@npm:0.24.0"
   peerDependencies:
-    eslint: ">=6"
-    eslint-plugin-react: ">=7.18.3"
-    eslint-plugin-react-hooks: ">=2.3.0"
-  checksum: b52f0015133da9b9dcffe3c993201fa58fae4fc6dfcdc25d8666c2188e7444bae81eebaf53b254e76e8a3b867dc88e79a18897b1ea71725861447719bd3ebda0
+    eslint: ">=7"
+    eslint-plugin-react: ">=7.22.0"
+    eslint-plugin-react-hooks: ">=4.2.0"
+  checksum: b8c0f245f8a1003a842a8318efe517bc7d9e384379f1884974cf73326d6ea0b4bd7c7d3d3a9d115d9e62dc5c4e645492e0e1ce6eb4f25287ed14d8c53a5881da
   languageName: node
   linkType: hard
 
@@ -7105,7 +7105,7 @@ fsevents@~2.3.1:
     "@material-ui/icons": 4.11.2
     "@types/node": 12.20.4
     "@types/react": 17.0.2
-    eslint-config-xo-react: 0.23.0
+    eslint-config-xo-react: 0.24.0
     eslint-plugin-prettier: 3.3.1
     eslint-plugin-react: 7.22.0
     eslint-plugin-react-hooks: 4.2.0
