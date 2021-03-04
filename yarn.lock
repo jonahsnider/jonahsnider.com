@@ -5582,9 +5582,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase@npm:8.2.9":
-  version: 8.2.9
-  resolution: "firebase@npm:8.2.9"
+"firebase@npm:8.2.10":
+  version: 8.2.10
+  resolution: "firebase@npm:8.2.10"
   dependencies:
     "@firebase/analytics": 0.6.4
     "@firebase/app": 0.6.15
@@ -5600,7 +5600,7 @@ __metadata:
     "@firebase/remote-config": 0.1.31
     "@firebase/storage": 0.4.3
     "@firebase/util": 0.3.4
-  checksum: bba5a355b6c041cce5d5a4b5b56c563df3ff38a50ff7451e1c24161ffb41fa31c8c73866347b19f75f4e420b356c51e2390221eb49ea27c27bc78e3bd03fc250
+  checksum: 4419296a925c9f11f8a2f94d832126a33a544c35cf992465c7d8948f268a241fafb74f5bc12b90ad965ef2bb124eb1600b42f41b6bbf7273721b22194e070be6
   languageName: node
   linkType: hard
 
@@ -7109,7 +7109,7 @@ fsevents@~2.3.1:
     eslint-plugin-prettier: 3.3.1
     eslint-plugin-react: 7.22.0
     eslint-plugin-react-hooks: 4.2.0
-    firebase: 8.2.9
+    firebase: 8.2.10
     netlify-plugin-cache-nextjs: 1.5.2
     netlify-plugin-cache-yarn2: 1.0.0
     next: 10.0.7
