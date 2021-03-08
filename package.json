@@ -5,7 +5,6 @@
 		"url": "https://jonah.pw"
 	},
 	"dependencies": {
-		"@babel/plugin-proposal-logical-assignment-operators": "7.13.8",
 		"@types/node": "12.20.4",
 		"@types/react": "17.0.3",
 		"next": "10.0.8",

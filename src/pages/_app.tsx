@@ -14,9 +14,7 @@ import '../styles/global.scss';
 const fontFamily = 'Inter:wght@300;400&family=Rubik:wght@700';
 
 const JonahSniderApp: FC = props => {
-	let {theme} = useTheme();
-
-	theme ??= 'light';
+	const theme = useTheme().theme ?? 'light';
 
 	return (
 		<>
