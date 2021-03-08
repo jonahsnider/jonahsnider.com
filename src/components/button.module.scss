@@ -36,7 +36,7 @@ $darken-amount: 25;
 		padding: 2.5rem 7rem;
 	}
 
-	transition: all 150ms linear;
+	transition: color, background-color 150ms linear;
 
 	color: $color-foreground;
 	border: 0.25rem solid $color-foreground;
