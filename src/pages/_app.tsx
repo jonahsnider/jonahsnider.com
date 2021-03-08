@@ -12,16 +12,15 @@ import {color, seo, url} from '../config';
 import '../styles/global.scss';
 
 const JonahSniderApp: FC = props => {
-	const {resolvedTheme} = useTheme();
-	const theme = resolvedTheme === 'system' ? 'light' : resolvedTheme;
+	const resolvedTheme = useTheme().resolvedTheme ?? 'light';
 
 	return (
 		<>
 			<Head>
-				<meta name='theme-color' content={theme === 'dark' ? color.background : color.foreground} />
-				<link rel='manifest' href={`/manifests/${theme}.webmanifest`} />
+				<meta name='theme-color' content={resolvedTheme === 'dark' ? color.background : color.foreground} />
+				<link rel='manifest' href={`/manifests/${resolvedTheme}.webmanifest`} />
 
-				<link rel='icon' href={`${url}/images/js/${theme}/favicon.ico`} type='image/x-icon' />
+				<link rel='icon' href={`${url}/images/js/${resolvedTheme}/favicon.ico`} type='image/x-icon' />
 
 				{[72, 96, 128, 144, 152, 192, 384, 512].map(dimension => [
 					<link
@@ -29,14 +28,14 @@ const JonahSniderApp: FC = props => {
 						rel='icon'
 						type='image/png'
 						sizes={`${dimension}x${dimension}`}
-						href={`${url}/images/js/${theme}/js-${dimension}x.png`}
+						href={`${url}/images/js/${resolvedTheme}/js-${dimension}x.png`}
 					/>,
 					<link
 						key={`apple-touch-icon-${dimension}`}
 						rel='apple-touch-icon'
 						type='image/png'
 						sizes={`${dimension}x${dimension}`}
-						href={`${url}/images/js/${theme}/js-${dimension}x.png`}
+						href={`${url}/images/js/${resolvedTheme}/js-${dimension}x.png`}
 					/>
 				])}
 			</Head>
@@ -47,7 +46,7 @@ const JonahSniderApp: FC = props => {
 				openGraph={{
 					images: [
 						{
-							url: `${url}/images/js/${theme}/js-512x.png`
+							url: `${url}/images/js/${resolvedTheme}/js-512x.png`
 						}
 					]
 				}}
@@ -63,7 +62,7 @@ const JonahSniderApp: FC = props => {
 };
 
 const ThemedApp: FC<AppProps> = ({Component, pageProps}) => (
-	<ThemeProvider defaultTheme='system'>
+	<ThemeProvider>
 		<JonahSniderApp>
 			<Component {...pageProps} />
 		</JonahSniderApp>

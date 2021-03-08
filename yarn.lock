@@ -6152,7 +6152,7 @@ fsevents@~2.3.1:
     next-compose-plugins: 2.2.1
     next-pwa: 5.0.6
     next-seo: 4.20.0
-    next-themes: 0.0.12
+    next-themes: beta
     normalize.css: 8.0.1
     prettier: 2.2.1
     react: 17.0.1
@@ -7070,14 +7070,14 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"next-themes@npm:0.0.12":
-  version: 0.0.12
-  resolution: "next-themes@npm:0.0.12"
+"next-themes@npm:beta":
+  version: 0.0.13-beta.2
+  resolution: "next-themes@npm:0.0.13-beta.2"
   peerDependencies:
     next: "*"
     react: "*"
     react-dom: "*"
-  checksum: a1a2621be7d5726a5676b5d3cfa1d70172163af89b1065b86de715cdee0b6be8158cf96f04564d572013f750458bd9d16f57584cc3f7a24e8cb2e333a5cab8d0
+  checksum: 1c9cadad6fe068c9071d39c99a5ab2089ab01d26748c4d3308ffb9440b99fb94da7db1328d9c619a93847c4134e235965a496c01240fab3737894f23ed672919
   languageName: node
   linkType: hard
 
