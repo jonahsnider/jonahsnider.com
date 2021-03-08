@@ -1,15 +1,18 @@
 const withPlugins = require('next-compose-plugins');
 const withPWA = require('next-pwa');
 
-module.exports = withPlugins([
+module.exports = withPlugins(
 	[
-		withPWA,
-		{
-			pwa: {
-				disable: process.env.NODE_ENV === 'development',
-				register: true,
-				dest: 'public'
+		[
+			withPWA,
+			{
+				pwa: {
+					disable: process.env.NODE_ENV === 'development',
+					register: true,
+					dest: 'public'
+				}
 			}
-		}
-	]
-], { experimental: { optimizeFonts: true } });
+		]
+	],
+	{experimental: {optimizeFonts: true}}
+);
