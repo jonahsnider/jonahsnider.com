@@ -1,0 +1,44 @@
+@import '../styles/theme.scss';
+@import '../styles/scaling.scss';
+@import '../styles/breakpoints.scss';
+
+$darken-amount: 25;
+
+.button {
+	appearance: button;
+	text-decoration: none;
+	text-align: center;
+
+	color: $color-background;
+	background-color: $color-foreground;
+
+	margin: spacer(1) 0;
+	padding: spacer(1) spacer(3);
+
+	font-family: 'Inter', sans-serif;
+
+	@include breakpoint-xs {
+		width: 100%;
+	}
+	@include breakpoint-sm {
+		width: auto;
+		margin: spacer(1) spacer(2);
+	}
+
+	transition: all 150ms linear;
+
+	&:hover {
+		background-color: darken($color-foreground, $darken-amount);
+	}
+}
+
+@include theme('dark') {
+	.button {
+		color: $color-foreground;
+		background-color: $color-background;
+
+		&:hover {
+			background-color: darken($color-background, $darken-amount);
+		}
+	}
+}

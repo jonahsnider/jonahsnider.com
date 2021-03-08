@@ -1,0 +1,11 @@
+@import '../styles/theme.scss';
+
+html {
+	background-color: $color-background;
+	color: $color-foreground;
+}
+
+@include theme('dark') {
+	background-color: $color-foreground;
+	color: $color-background;
+}

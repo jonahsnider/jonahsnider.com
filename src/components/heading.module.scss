@@ -1,0 +1,70 @@
+@import '../styles/breakpoints.scss';
+
+.heading {
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+}
+
+.h1 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: bold;
+
+	@include breakpoint-xs {
+		font-size: 4rem;
+	}
+
+	@include breakpoint-xl {
+		font-size: 6rem;
+	}
+
+	@include breakpoint-xxl {
+		font-size: 9rem;
+	}
+
+	@include breakpoint-xxxl {
+		font-size: 12rem;
+	}
+}
+
+.h2 {
+	font-weight: normal;
+
+	@include breakpoint-xs {
+		font-size: 2.5rem;
+	}
+
+	@include breakpoint-xl {
+		font-size: 4rem;
+	}
+
+	@include breakpoint-xxl {
+		font-size: 7rem;
+	}
+
+	@include breakpoint-xxxl {
+		font-size: 10rem;
+	}
+}
+
+.h3 {
+	font-weight: lighter;
+
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+
+	@include breakpoint-xs {
+		font-size: 2rem;
+	}
+
+	@include breakpoint-xl {
+		font-size: 3rem;
+	}
+
+	@include breakpoint-xxl {
+		font-size: 6rem;
+	}
+
+	@include breakpoint-xxxl {
+		font-size: 9rem;
+	}
+}

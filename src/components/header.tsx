@@ -1,32 +1,21 @@
-import {createStyles, makeStyles, Theme, Typography} from '@material-ui/core';
-import React, {FC} from 'react';
+import {FC} from 'react';
+import Heading from './heading';
+import styles from './header.module.scss';
 
-const useStyles = makeStyles((theme: Theme) =>
-	createStyles({
-		bottomMargin: {
-			marginBottom: theme.spacing(2)
-		}
-	})
+export interface Props {
+	title?: string;
+	subtitle?: string;
+}
+
+const Header: FC<Props> = props => (
+	<header id='header' className={styles.header}>
+		{props.title && <Heading size={1}>{props.title}</Heading>}
+		{props.subtitle && (
+			<Heading size={2} as='p'>
+				{props.subtitle}
+			</Heading>
+		)}
+	</header>
 );
-
-const Header: FC<{title?: string; subtitle?: string}> = props => {
-	const classes = useStyles();
-
-	return (
-		<>
-			{props.title && (
-				<Typography key='title' variant='h1' color='primary' className={props.subtitle ? '' : classes.bottomMargin}>
-					{props.title}
-				</Typography>
-			)}
-
-			{props.subtitle && (
-				<Typography key='subtitle' variant='h2' className={classes.bottomMargin}>
-					{props.subtitle}
-				</Typography>
-			)}
-		</>
-	);
-};
 
 export default Header;

@@ -1,0 +1,5 @@
+$scale: 16px;
+
+@function spacer($factor) {
+	@return $scale * $factor
+}

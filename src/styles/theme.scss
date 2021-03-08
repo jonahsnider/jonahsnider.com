@@ -1,0 +1,10 @@
+$color-primary: #ffbbcc;
+
+$color-foreground: black;
+$color-background: white;
+
+@mixin theme($theme) {
+	[data-theme=#{$theme}] {
+		@content;
+	}
+}
