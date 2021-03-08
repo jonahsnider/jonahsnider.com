@@ -1,0 +1,24 @@
+@import '../styles/scaling.scss';
+@import '../styles/breakpoints.scss';
+
+.container {
+	@include breakpoint-xs {
+		padding: spacer(2) spacer(2);
+	}
+
+	@include breakpoint-md {
+		padding: spacer(2) spacer(4);
+	}
+
+	@include breakpoint-lg {
+		padding: spacer(4) spacer(12);
+	}
+
+	@include breakpoint-xl {
+		padding: spacer(4) spacer(16);
+	}
+
+	@include breakpoint-xxxl {
+		padding: spacer(8) spacer(48);
+	}
+}
