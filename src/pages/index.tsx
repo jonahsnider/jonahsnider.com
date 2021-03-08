@@ -6,7 +6,7 @@ import styles from '../components/button-group.module.scss';
 
 const Home: FC = () => (
 	<>
-		<NextSeo title='Home' />
+		<NextSeo title='Home' openGraph={{title: 'Home'}} />
 
 		<main id='links' className={styles['button-group']}>
 			{Object.entries(links).map(([name, link]) => (

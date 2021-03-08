@@ -7,7 +7,7 @@ import styles from '../components/button-group.module.scss';
 
 const NotFound: FC = () => (
 	<>
-		<NextSeo title='404' />
+		<NextSeo title='404' openGraph={{title: '404'}} />
 
 		<main id='links'>
 			<Text kind='h3'>Page not found</Text>
