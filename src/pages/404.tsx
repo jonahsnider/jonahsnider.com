@@ -13,10 +13,7 @@ const NotFound: FC = () => (
 			<Text kind='h3'>Page not found</Text>
 			<div className={styles['button-group']}>
 				<Link passHref href='/'>
-					{/* Passing <Button> directly causes <Link> to error, known Next.js issue */}
-					<span>
-						<Button href='/'>Home</Button>
-					</span>
+					<Button href='/'>Home</Button>
 				</Link>
 			</div>
 		</main>
