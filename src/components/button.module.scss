@@ -1,4 +1,3 @@
-@import '../styles/theme.scss';
 @import '../styles/scaling.scss';
 @import '../styles/breakpoints.scss';
 
@@ -36,23 +35,11 @@
 
 	transition: color, background-color 150ms linear;
 
-	color: $color-foreground;
-	border: 0.25rem solid $color-foreground;
+	color: var(--color-foreground);
+	border: 0.25rem solid var(--color-foreground);
 
 	&:hover {
-		color: $color-background;
-		background-color: $color-foreground;
-	}
-}
-
-@include theme('dark') {
-	.button {
-		color: $color-background;
-		border: 0.25rem solid $color-background;
-
-		&:hover {
-			color: $color-foreground;
-			background-color: $color-background;
-		}
+		color: var(--color-background);
+		background-color: var(--color-foreground);
 	}
 }
