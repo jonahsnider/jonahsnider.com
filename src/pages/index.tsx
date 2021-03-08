@@ -1,8 +1,8 @@
 import {NextSeo} from 'next-seo';
 import {FC} from 'react';
 import Button from '../components/button';
-import {links} from '../config';
 import styles from '../components/button-group.module.scss';
+import {links} from '../config';
 
 const Home: FC = () => (
 	<>

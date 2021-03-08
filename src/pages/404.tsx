@@ -2,8 +2,8 @@ import {NextSeo} from 'next-seo';
 import Link from 'next/link';
 import {FC} from 'react';
 import Button from '../components/button';
-import Text from '../components/text';
 import styles from '../components/button-group.module.scss';
+import Text from '../components/text';
 
 const NotFound: FC = () => (
 	<>
