@@ -13,12 +13,12 @@ export const gitHub: Link = {
 	url: 'https://github.com/pizzafox/'
 };
 
-export const keybase: Link = {
-	text: 'Keybase',
-	url: 'https://keybase.io/pizzafox/'
-};
-
 export const resume: Link = {
 	text: 'Resumé',
 	url: 'https://drive.google.com/file/d/11FOwQyPz1Qy8vxHyJjN_Oaxh2rHGRTzW/view?usp=sharing'
+};
+
+export const keybase: Link = {
+	text: 'Keybase',
+	url: 'https://keybase.io/pizzafox/'
 };

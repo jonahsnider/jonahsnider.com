@@ -6,39 +6,55 @@ $darken-amount: 25;
 
 .button {
 	appearance: button;
+
 	text-decoration: none;
 	text-align: center;
-
-	color: $color-background;
-	background-color: $color-foreground;
-
-	margin: spacer(1) 0;
-	padding: spacer(1) spacer(3);
-
 	font-family: 'Inter', sans-serif;
 
 	@include breakpoint-xs {
-		width: 100%;
+		padding: spacer(1) spacer(3);
+		margin: spacer(1) 0;
 	}
+
 	@include breakpoint-sm {
-		width: auto;
-		margin: spacer(1) spacer(2);
+		margin: spacer(1) spacer(1);
+		flex: 0 0 25%;
+	}
+
+	@include breakpoint-md {
+		flex: inherit;
+		margin: 0 $button-margin;
+		padding: spacer(1) spacer(3);
+	}
+
+	@include breakpoint-xl {
+		padding: 2rem 6rem;
+	}
+
+	@include breakpoint-xxxl {
+		margin: 0 $button-margin;
+		padding: 2.5rem 7rem;
 	}
 
 	transition: all 150ms linear;
 
+	color: $color-foreground;
+	border: 0.25rem solid $color-foreground;
+
 	&:hover {
-		background-color: darken($color-foreground, $darken-amount);
+		color: $color-background;
+		background-color: $color-foreground;
 	}
 }
 
 @include theme('dark') {
 	.button {
-		color: $color-foreground;
-		background-color: $color-background;
+		color: $color-background;
+		border: 0.25rem solid $color-background;
 
 		&:hover {
-			background-color: darken($color-background, $darken-amount);
+			color: $color-foreground;
+			background-color: $color-background;
 		}
 	}
 }

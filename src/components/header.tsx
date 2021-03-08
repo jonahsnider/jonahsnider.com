@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import Heading from './heading';
+import Text from './text';
 import styles from './header.module.scss';
 
 export interface Props {
@@ -9,11 +9,11 @@ export interface Props {
 
 const Header: FC<Props> = props => (
 	<header id='header' className={styles.header}>
-		{props.title && <Heading size={1}>{props.title}</Heading>}
+		{props.title && <Text kind='h1'>{props.title}</Text>}
 		{props.subtitle && (
-			<Heading size={2} as='p'>
+			<Text kind='h2' as='p'>
 				{props.subtitle}
-			</Heading>
+			</Text>
 		)}
 	</header>
 );

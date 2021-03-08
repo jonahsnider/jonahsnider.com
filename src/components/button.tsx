@@ -1,5 +1,6 @@
 import {FC} from 'react';
 import styles from './button.module.scss';
+import Text from './text';
 
 interface Props {
 	href?: string;
@@ -7,7 +8,7 @@ interface Props {
 
 const Button: FC<Props> = props => (
 	<a href={props.href} className={styles.button}>
-		{props.children}
+		<Text kind='p'>{props.children}</Text>
 	</a>
 );
 

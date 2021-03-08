@@ -1,6 +1,9 @@
 @import '../styles/breakpoints.scss';
 
-.heading {
+.h1,
+.h2,
+.h3,
+.p {
 	font-family: 'Inter', sans-serif;
 	margin: 0;
 }
@@ -10,7 +13,15 @@
 	font-weight: bold;
 
 	@include breakpoint-xs {
+		font-size: 2rem;
+	}
+
+	@include breakpoint-sm {
 		font-size: 4rem;
+	}
+
+	@include breakpoint-md {
+		font-size: 5rem;
 	}
 
 	@include breakpoint-xl {
@@ -30,7 +41,15 @@
 	font-weight: normal;
 
 	@include breakpoint-xs {
-		font-size: 2.5rem;
+		font-size: 1.5rem;
+	}
+
+	@include breakpoint-sm {
+		font-size: 2rem;
+	}
+
+	@include breakpoint-md {
+		font-size: 3rem;
 	}
 
 	@include breakpoint-xl {
@@ -49,10 +68,15 @@
 .h3 {
 	font-weight: lighter;
 
-	margin-top: 1rem;
-	margin-bottom: 2rem;
-
 	@include breakpoint-xs {
+		font-size: 1.25rem;
+	}
+
+	@include breakpoint-sm {
+		font-size: 1.5rem;
+	}
+
+	@include breakpoint-md {
 		font-size: 2rem;
 	}
 
@@ -66,5 +90,23 @@
 
 	@include breakpoint-xxxl {
 		font-size: 9rem;
+	}
+}
+
+.p {
+	@include breakpoint-xs {
+		font-size: 1rem;
+	}
+
+	@include breakpoint-xl {
+		font-size: 1.25rem;
+	}
+
+	@include breakpoint-xxl {
+		font-size: 1.5rem;
+	}
+
+	@include breakpoint-xxxl {
+		font-size: 2.25rem;
 	}
 }

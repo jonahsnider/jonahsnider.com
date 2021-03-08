@@ -2,8 +2,6 @@
 @import '../styles/breakpoints.scss';
 
 .header {
-	width: 100%;
-
 	@include breakpoint-xs {
 		margin-bottom: spacer(4);
 	}
