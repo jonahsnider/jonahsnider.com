@@ -12,7 +12,8 @@ import {color, seo, url} from '../config';
 import '../styles/global.scss';
 
 const JonahSniderApp: FC = props => {
-	const theme = useTheme().resolvedTheme ?? 'light';
+	const {resolvedTheme} = useTheme();
+	const theme = resolvedTheme === 'system' ? 'light' : resolvedTheme;
 
 	return (
 		<>
