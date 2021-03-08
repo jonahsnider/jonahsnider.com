@@ -12,4 +12,4 @@ module.exports = withPlugins([
 			}
 		}
 	]
-]);
+], { experimental: { optimizeFonts: true } });
