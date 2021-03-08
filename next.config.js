@@ -11,10 +11,5 @@ module.exports = withPlugins([
 				dest: 'public'
 			}
 		}
-	],
-	{
-		experimental: {
-			optimizeFonts: true
-		}
-	}
+	]
 ]);
