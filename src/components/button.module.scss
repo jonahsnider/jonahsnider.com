@@ -1,4 +1,3 @@
-@import '../styles/scaling.scss';
 @import '../styles/breakpoints.scss';
 
 .button {
@@ -8,29 +7,17 @@
 	text-align: center;
 	font-family: 'Inter', sans-serif;
 
-	@include breakpoint-xs {
-		padding: spacer(1) spacer(3);
-		margin: spacer(1) 0;
-	}
+	padding: 1em 2.5em;
+	margin: 1em 0;
 
-	@include breakpoint-sm {
-		margin: spacer(1) spacer(1);
+	@include breakpoint-phone {
+		margin: 1em;
 		flex: 0 0 25%;
 	}
 
-	@include breakpoint-md {
+	@include breakpoint-laptop {
 		flex: inherit;
-		margin: 0 $button-margin;
-		padding: spacer(1) spacer(3);
-	}
-
-	@include breakpoint-xl {
-		padding: 2rem 6rem;
-	}
-
-	@include breakpoint-xxxl {
-		margin: 0 $button-margin;
-		padding: 2.5rem 7rem;
+		margin: 0 1em;
 	}
 
 	transition: color, background-color 150ms linear;

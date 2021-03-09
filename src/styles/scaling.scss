@@ -1,8 +1,0 @@
-$scale: 16px;
-
-@function spacer($factor) {
-	@return $scale * $factor;
-}
-
-// Reused in button-group and button
-$button-margin: spacer(1);

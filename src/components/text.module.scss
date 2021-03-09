@@ -1,116 +1,66 @@
 @import '../styles/breakpoints.scss';
 
+$base-font-size: 1em;
+
+$base-line-height: 1.5em;
+$header-line-height: 1em;
+
+.h1,
+.h2,
+.h3 {
+	line-height: $header-line-height;
+
+	@include breakpoint-tablet {
+		line-height: $header-line-height * 1.2;
+	}
+}
+
 .h1,
 .h2,
 .h3,
 .p {
 	font-family: 'Inter', sans-serif;
 	margin: 0;
+	font-size: $base-font-size;
+
+	@include breakpoint-tablet {
+		font-size: $base-font-size * 1.2;
+	}
+
+	@include breakpoint-laptop {
+		font-size: $base-font-size * 1.3;
+	}
+
+	@include breakpoint-desktop {
+		font-size: $base-font-size * 1.4;
+	}
 }
 
 .h1 {
 	font-family: 'Rubik', sans-serif;
 	font-weight: bold;
 
-	@include breakpoint-xs {
-		font-size: 2rem;
-	}
+	font-size: 3em;
+}
 
-	@include breakpoint-sm {
-		font-size: 4rem;
-	}
-
-	@include breakpoint-md {
-		font-size: 5rem;
-	}
-
-	@include breakpoint-xl {
-		font-size: 6rem;
-	}
-
-	@include breakpoint-xxl {
-		font-size: 9rem;
-	}
-
-	@include breakpoint-xxxl {
-		font-size: 12rem;
-	}
+.h2,
+.h3 {
+	font-weight: normal;
 }
 
 .h2 {
-	font-weight: normal;
-
-	@include breakpoint-xs {
-		font-size: 1.5rem;
-	}
-
-	@include breakpoint-sm {
-		font-size: 2rem;
-	}
-
-	@include breakpoint-md {
-		font-size: 3rem;
-	}
-
-	@include breakpoint-xl {
-		font-size: 4rem;
-	}
-
-	@include breakpoint-xxl {
-		font-size: 7rem;
-	}
-
-	@include breakpoint-xxxl {
-		font-size: 10rem;
-	}
+	font-size: 1.75em;
 }
 
 .h3 {
-	font-weight: lighter;
-
-	@include breakpoint-xs {
-		font-size: 1.25rem;
-	}
-
-	@include breakpoint-sm {
-		font-size: 1.5rem;
-	}
-
-	@include breakpoint-md {
-		font-size: 2rem;
-	}
-
-	@include breakpoint-xl {
-		font-size: 3rem;
-	}
-
-	@include breakpoint-xxl {
-		font-size: 6rem;
-	}
-
-	@include breakpoint-xxxl {
-		font-size: 9rem;
-	}
+	font-size: 1.5em;
 }
 
 .p {
-	@include breakpoint-xs {
-		font-size: 1rem;
-	}
+	line-height: $base-line-height;
+	font-size: 1em;
 
-	@include breakpoint-xs {
-		font-size: 1.25rem;
-	}
-
-	@include breakpoint-xl {
-		font-size: 2rem;
-	}
-
-	@include breakpoint-xxl {
-		font-size: 2.5rem;
-	}
-
-	@include breakpoint-xxxl {
-		font-size: 3rem;
+	@include breakpoint-tablet {
+		line-height: $base-line-height * 1.2;
 	}
 }

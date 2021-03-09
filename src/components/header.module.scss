@@ -1,12 +1,5 @@
-@import '../styles/scaling.scss';
 @import '../styles/breakpoints.scss';
 
 .header {
-	@include breakpoint-xs {
-		margin-bottom: spacer(4);
-	}
-
-	@include breakpoint-lg {
-		margin-bottom: spacer(6);
-	}
+	margin-bottom: 3em;
 }

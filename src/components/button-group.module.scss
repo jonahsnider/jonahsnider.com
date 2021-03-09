@@ -1,25 +1,17 @@
 @import '../styles/breakpoints.scss';
-@import '../styles/scaling.scss';
 
 .button-group {
 	display: flex;
 
-	margin: spacer(1) 0;
+	flex-flow: column nowrap;
 
-	@include breakpoint-xs {
-		flex-flow: column nowrap;
+	margin: 1em 0;
+
+	@include breakpoint-phone {
+		margin-left: -1em;
 	}
 
-	@include breakpoint-sm {
+	@include breakpoint-tablet {
 		flex-flow: row wrap;
-		margin-left: -$button-margin;
-	}
-
-	@include breakpoint-xxl {
-		margin: spacer(2) 0;
-	}
-
-	@include breakpoint-xxxl {
-		margin: spacer(4) 0;
 	}
 }

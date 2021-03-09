@@ -1,24 +1,21 @@
-@import '../styles/scaling.scss';
 @import '../styles/breakpoints.scss';
 
 .container {
-	@include breakpoint-xs {
-		padding: spacer(2) spacer(2);
+	padding: 4%;
+
+	@include breakpoint-tablet {
+		padding: 8%;
 	}
 
-	@include breakpoint-md {
-		padding: spacer(2) spacer(4);
+	@include breakpoint-laptop {
+		padding: 0 12%;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
-	@include breakpoint-lg {
-		padding: spacer(4) spacer(12);
-	}
-
-	@include breakpoint-xl {
-		padding: spacer(4) spacer(16);
-	}
-
-	@include breakpoint-xxxl {
-		padding: spacer(8) spacer(48);
+	@include breakpoint-desktop {
+		padding: 0 18%;
 	}
 }
