@@ -53,7 +53,7 @@ const JonahSniderApp: FC = props => {
 			/>
 
 			<Container>
-				<Header title='Jonah Snider' subtitle='Software developer' />
+				<Header title='Jonah Snider' subtitle='Full-stack developer' />
 
 				{props.children}
 			</Container>
