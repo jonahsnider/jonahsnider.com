@@ -3,3 +3,41 @@
 .header {
 	margin-bottom: 3em;
 }
+
+.underline {
+	position: relative;
+
+	@keyframes slide {
+		0% {
+			width: 0%;
+		}
+
+		50% {
+			width: 100%;
+
+			margin-left: 0%;
+		}
+
+		100% {
+			width: 0%;
+
+			margin-left: 100%;
+		}
+	}
+
+	&::before {
+		animation: {
+			duration: 350ms;
+			name: slide;
+			timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+		}
+
+		content: '';
+		height: 2px;
+		background-color: var(--color-foreground);
+
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
