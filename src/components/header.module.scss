@@ -4,6 +4,13 @@
 	margin-bottom: 3em;
 }
 
+$underline-animation-duration: 0.7s;
+$fade-animation-duration: 1s;
+$total-animation-duration: $underline-animation-duration + $fade-animation-duration;
+// Calculate the start time for the subtitle fade animation
+// This is required instead of just delaying the animation to avoid a period of $underline-animation-duration where the subtitle is visible
+$wait-for-underline-animation-percentage: '#{100 * $underline-animation-duration/$total-animation-duration}%';
+
 .underline {
 	position: relative;
 
@@ -27,7 +34,7 @@
 
 	&::before {
 		animation: {
-			duration: 350ms;
+			duration: $underline-animation-duration;
 			name: slide;
 			timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
 		}
@@ -39,5 +46,29 @@
 		position: absolute;
 		bottom: 0;
 		left: 0;
+	}
+}
+
+.subtitle {
+	@keyframes fade {
+		0% {
+			opacity: 0;
+		}
+
+		#{$wait-for-underline-animation-percentage} {
+			opacity: 0;
+			transform: translate3d(0, 0.75em, 0);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+		}
+	}
+
+	animation: {
+		duration: $total-animation-duration;
+		name: fade;
+		timing-function: ease;
 	}
 }
