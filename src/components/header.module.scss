@@ -1,15 +1,12 @@
-@import '../styles/breakpoints.scss';
+@use '../styles/animations.scss';
 
 .header {
 	margin-bottom: 3em;
 }
 
-$underline-animation-duration: 0.7s;
-$fade-animation-duration: 1s;
-$total-animation-duration: $underline-animation-duration + $fade-animation-duration;
 // Calculate the start time for the subtitle fade animation
-// This is required instead of just delaying the animation to avoid a period of $underline-animation-duration where the subtitle is visible
-$wait-for-underline-animation-percentage: '#{100 * $underline-animation-duration/$total-animation-duration}%';
+// This is required instead of just delaying the animation to avoid a period of animations.$header-underline-duration where the subtitle is visible
+$wait-for-underline-animation-percentage: '#{100 * animations.$header-underline-duration/animations.$all-header-duration}%';
 
 .underline {
 	position: relative;
@@ -34,7 +31,7 @@ $wait-for-underline-animation-percentage: '#{100 * $underline-animation-duration
 
 	&::before {
 		animation: {
-			duration: $underline-animation-duration;
+			duration: animations.$header-underline-duration;
 			name: slide;
 			timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
 		}
@@ -67,7 +64,7 @@ $wait-for-underline-animation-percentage: '#{100 * $underline-animation-duration
 	}
 
 	animation: {
-		duration: $total-animation-duration;
+		duration: animations.$header-subtitle-duration;
 		name: fade;
 		timing-function: ease;
 	}

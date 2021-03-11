@@ -8,7 +8,7 @@ const Home: FC = () => (
 	<>
 		<NextSeo title='Home' openGraph={{title: 'Home'}} />
 
-		<main id='links' className={styles['button-group']}>
+		<main id='links' className={`${styles['button-group']} ${styles.animated}`}>
 			{Object.entries(links).map(([name, link]) => (
 				<Button key={name} href={link.url}>
 					{link.text}

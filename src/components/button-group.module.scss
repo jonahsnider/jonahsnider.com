@@ -1,4 +1,9 @@
+@use '../styles/animations.scss';
 @import '../styles/breakpoints.scss';
+
+$total-animation-duration: animations.$all-button-duration + animations.$all-header-duration;
+$total-animation-delay: animations.$all-header-duration - 0.75s;
+$header-animation-delay-percentage: '#{100 * $total-animation-delay/$total-animation-duration}%';
 
 .button-group {
 	display: flex;
@@ -13,5 +18,35 @@
 
 	@include breakpoint-tablet {
 		flex-flow: row wrap;
+	}
+}
+
+.animated {
+	@keyframes fade {
+		0% {
+			opacity: 0;
+		}
+
+		#{$header-animation-delay-percentage} {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	> a {
+		animation: {
+			name: fade;
+		}
+	}
+
+	@for $i from 1 through 4 {
+		> :nth-child(#{$i}) {
+			animation: {
+				duration: $total-animation-duration + (0.25s * $i - 1);
+			}
+		}
 	}
 }
