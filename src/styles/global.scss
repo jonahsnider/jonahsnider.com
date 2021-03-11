@@ -1,13 +1,16 @@
 @import '../styles/theme.scss';
 
+$color-foreground: #000000;
+$color-background: #ffbbcc;
+
 :root {
-	--color-foreground: #000000;
-	--color-background: #ffbbcc;
+	--color-foreground: #{$color-foreground};
+	--color-background: #{$color-background};
 }
 
 @include theme('dark') {
-	--color-foreground: #ffbbcc;
-	--color-background: #000000;
+	--color-foreground: #{$color-background};
+	--color-background: #{$color-foreground};
 }
 
 html {
