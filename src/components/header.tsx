@@ -15,9 +15,11 @@ const Header: FC<Props> = props => (
 			</Text>
 		)}
 		{props.subtitle && (
-			<Text kind='h2' as='p'>
-				<div className={styles.subtitle}>{props.subtitle}</div>
-			</Text>
+			<div className={styles.subtitle}>
+				<Text kind='h2' as='p'>
+					{props.subtitle}
+				</Text>
+			</div>
 		)}
 	</header>
 );
