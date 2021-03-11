@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import {NextSeo} from 'next-seo';
 import {FC} from 'react';
 import Button from '../components/button';
@@ -8,7 +9,7 @@ const Home: FC = () => (
 	<>
 		<NextSeo title='Home' openGraph={{title: 'Home'}} />
 
-		<main id='links' className={`${styles['button-group']} ${styles.animated}`}>
+		<main id='links' className={clsx(styles['button-group'], styles.animated)}>
 			{Object.entries(links).map(([name, link]) => (
 				<Button key={name} href={link.url}>
 					{link.text}

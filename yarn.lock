@@ -3077,6 +3077,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"clsx@npm:1.1.1":
+  version: 1.1.1
+  resolution: "clsx@npm:1.1.1"
+  checksum: d8ae10ac0546da19fe8c9516886f6582a64a382cf4d09ea7d36d5287cafbdab1192ab249adc2cdf0310e0b0aeac4f4142cf7c738c98d9cb68c19ba24b6f673d5
+  languageName: node
+  linkType: hard
+
 "code-point-at@npm:^1.0.0":
   version: 1.1.0
   resolution: "code-point-at@npm:1.1.0"
@@ -6142,6 +6149,7 @@ fsevents@~2.3.1:
   dependencies:
     "@types/node": 12.20.5
     "@types/react": 17.0.3
+    clsx: 1.1.1
     eslint-config-xo-react: 0.24.0
     eslint-plugin-prettier: 3.3.1
     eslint-plugin-react: 7.22.0
