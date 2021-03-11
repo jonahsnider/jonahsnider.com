@@ -10,16 +10,14 @@ export interface Props {
 const Header: FC<Props> = props => (
 	<header id='header' className={styles.header}>
 		{props.title && (
-			<Text kind='h1'>
-				<span className={styles.underline}>{props.title}</span>
+			<Text kind='h1' animation='underline'>
+				{props.title}
 			</Text>
 		)}
 		{props.subtitle && (
-			<span className={styles.subtitle}>
-				<Text kind='h2' as='p'>
-					{props.subtitle}
-				</Text>
-			</span>
+			<Text kind='h2' as='p' animation='fade'>
+				{props.subtitle}
+			</Text>
 		)}
 	</header>
 );
