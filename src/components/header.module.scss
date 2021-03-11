@@ -68,4 +68,6 @@ $wait-for-underline-animation-percentage: '#{100 * animations.$header-underline-
 		name: fade;
 		timing-function: ease;
 	}
+
+	display: block;
 }

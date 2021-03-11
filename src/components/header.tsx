@@ -15,11 +15,11 @@ const Header: FC<Props> = props => (
 			</Text>
 		)}
 		{props.subtitle && (
-			<div className={styles.subtitle}>
+			<span className={styles.subtitle}>
 				<Text kind='h2' as='p'>
 					{props.subtitle}
 				</Text>
-			</div>
+			</span>
 		)}
 	</header>
 );
