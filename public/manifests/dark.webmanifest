@@ -1,6 +1,6 @@
 {
 	"background_color": "#000000",
-	"description": "Jonah Snider portfolio",
+	"description": "Jonah Snider",
 	"display": "standalone",
 	"icons": [
 		{
@@ -104,7 +104,7 @@
 		}
 	],
 	"lang": "en-US",
-	"name": "Jonah Snider Portfolio",
+	"name": "Jonah Snider",
 	"orientation": "any",
 	"short_name": "Jonah Snider",
 	"start_url": "/",
