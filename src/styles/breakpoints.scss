@@ -1,22 +1,22 @@
-@mixin breakpoint-phone {
+@mixin phone {
 	@media (min-width: 425px) {
 		@content;
 	}
 }
 
-@mixin breakpoint-tablet {
+@mixin tablet {
 	@media (min-width: 768px) {
 		@content;
 	}
 }
 
-@mixin breakpoint-laptop {
+@mixin laptop {
 	@media (min-width: 1024px) {
 		@content;
 	}
 }
 
-@mixin breakpoint-desktop {
+@mixin desktop {
 	@media (min-width: 1920px) {
 		@content;
 	}

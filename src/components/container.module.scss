@@ -1,13 +1,13 @@
-@import '../styles/breakpoints.scss';
+@use'../styles/breakpoints.scss';
 
 .container {
 	padding: 4%;
 
-	@include breakpoint-tablet {
+	@include breakpoints.tablet {
 		padding: 8%;
 	}
 
-	@include breakpoint-laptop {
+	@include breakpoints.laptop {
 		padding: 0 12%;
 		height: 100vh;
 		display: flex;
@@ -15,7 +15,7 @@
 		justify-content: center;
 	}
 
-	@include breakpoint-desktop {
+	@include breakpoints.desktop {
 		padding: 0 18%;
 	}
 }

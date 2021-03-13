@@ -1,4 +1,4 @@
-@import '../styles/breakpoints.scss';
+@use'../styles/breakpoints.scss';
 
 .button {
 	appearance: button;
@@ -10,12 +10,12 @@
 	padding: 1em 2.5em;
 	margin: 1em 0;
 
-	@include breakpoint-phone {
+	@include breakpoints.phone {
 		margin: 1em;
 		flex: 0 0 25%;
 	}
 
-	@include breakpoint-laptop {
+	@include breakpoints.laptop {
 		flex: inherit;
 		margin: 0 1em;
 	}

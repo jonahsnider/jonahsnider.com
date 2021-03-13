@@ -1,4 +1,4 @@
-@import '../styles/theme.scss';
+@use '../styles/theme.scss';
 
 $color-foreground: #000000;
 $color-background: #ffbbcc;
@@ -8,7 +8,7 @@ $color-background: #ffbbcc;
 	--color-background: #{$color-background};
 }
 
-@include theme('dark') {
+@include theme.theme('dark') {
 	--color-foreground: #{$color-background};
 	--color-background: #{$color-foreground};
 }

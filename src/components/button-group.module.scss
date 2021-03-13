@@ -1,5 +1,5 @@
 @use '../styles/animations.scss';
-@import '../styles/breakpoints.scss';
+@use'../styles/breakpoints.scss';
 
 $total-animation-duration: animations.$all-button-duration + animations.$all-header-duration;
 $total-animation-delay: animations.$all-header-duration - 0.75s;
@@ -12,11 +12,11 @@ $header-animation-delay-percentage: '#{100 * $total-animation-delay/$total-anima
 
 	margin: 1em 0;
 
-	@include breakpoint-phone {
+	@include breakpoints.phone {
 		margin-left: -1em;
 	}
 
-	@include breakpoint-tablet {
+	@include breakpoints.tablet {
 		flex-flow: row wrap;
 	}
 }
