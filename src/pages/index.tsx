@@ -31,11 +31,12 @@ const Home: FC = () => (
 			</Text>
 
 			<Experience id='gameface' date={{start: 'November 2020', end: 'present'}} title='GameFace'>
-				Junior developer position working on integrating our Discord bot with the GameFace platform.
+				Esports tournament host. Junior developer position working on integrating our Discord bot with the GameFace
+				platform.
 			</Experience>
 
 			<Experience id='team581' date={{start: 'October 2017', end: 'present'}} title='Team 581'>
-				Worked pirmarily on software, specializing in image recognition and autonomous routines.
+				FIRST robotics team. Worked primarily on software, specializing in image recognition and autonomous routines.
 			</Experience>
 		</Container>
 	</>
