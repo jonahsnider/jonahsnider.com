@@ -10,9 +10,7 @@ import {color, seo, url} from '../config';
 import '../styles/global.scss';
 
 const JonahSniderApp: FC = props => {
-	const resolvedTheme = useTheme().resolvedTheme as undefined | 'light' | 'dark' | 'system';
-
-	const theme = resolvedTheme === 'dark' ? 'dark' : 'light';
+	const theme = (useTheme().resolvedTheme as undefined | 'dark' | 'light') ?? 'light';
 
 	return (
 		<>

@@ -7079,13 +7079,13 @@ fsevents@~2.3.1:
   linkType: hard
 
 "next-themes@npm:beta":
-  version: 0.0.13-beta.2
-  resolution: "next-themes@npm:0.0.13-beta.2"
+  version: 0.0.13-beta.3
+  resolution: "next-themes@npm:0.0.13-beta.3"
   peerDependencies:
     next: "*"
     react: "*"
     react-dom: "*"
-  checksum: 1c9cadad6fe068c9071d39c99a5ab2089ab01d26748c4d3308ffb9440b99fb94da7db1328d9c619a93847c4134e235965a496c01240fab3737894f23ed672919
+  checksum: 025f8a93cac7ef9b16ae072f5ffc65256d0722d9635df79394bf2dd9a76f3204d94e81113ed865f5f9f3ae2208619803e29e4eae115b61bcdf19db97ae703ce8
   languageName: node
   linkType: hard
 
