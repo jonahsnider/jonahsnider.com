@@ -17,7 +17,9 @@ const NotFound: FC = () => (
 			<Header {...header} />
 
 			<main id='links'>
-				<Text kind='h3' animation='fade'>Page not found</Text>
+				<Text kind='h3' animation='fade'>
+					Page not found
+				</Text>
 				<div className={clsx(styles['button-group'], styles.animated)}>
 					<Link passHref href='/'>
 						<Button href='/'>Home</Button>
