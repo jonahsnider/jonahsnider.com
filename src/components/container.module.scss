@@ -9,13 +9,18 @@
 
 	@include breakpoints.laptop {
 		padding: 0 12%;
-		height: 100vh;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 	}
 
 	@include breakpoints.desktop {
 		padding: 0 18%;
+	}
+}
+
+.main {
+	@include breakpoints.laptop {
+		min-height: 100vh;
+		justify-content: center;
 	}
 }
