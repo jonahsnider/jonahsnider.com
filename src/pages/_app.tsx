@@ -5,16 +5,12 @@ import Head from 'next/head';
 // eslint-disable-next-line import/no-unassigned-import
 import 'normalize.css';
 import {FC} from 'react';
-import Container from '../components/container';
-import Header from '../components/header';
 import {color, seo, url} from '../config';
 // eslint-disable-next-line import/no-unassigned-import
 import '../styles/global.scss';
 
 const JonahSniderApp: FC = props => {
-	const resolvedTheme = useTheme().resolvedTheme as undefined | 'light' | 'dark' | 'system';
-
-	const theme = resolvedTheme === 'dark' ? 'dark' : 'light';
+	const theme = (useTheme().resolvedTheme as undefined | 'dark' | 'light') ?? 'light';
 
 	return (
 		<>
@@ -54,11 +50,7 @@ const JonahSniderApp: FC = props => {
 				}}
 			/>
 
-			<Container>
-				<Header title='Jonah Snider' subtitle='Full-stack developer' />
-
-				{props.children}
-			</Container>
+			{props.children}
 		</>
 	);
 };

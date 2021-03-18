@@ -1,6 +1,13 @@
+import clsx from 'clsx';
 import {FC} from 'react';
 import styles from './container.module.scss';
 
-const Container: FC = props => <section className={styles.container}>{props.children}</section>;
+export interface Props {
+	main?: boolean;
+}
+
+const Container: FC<Props> = props => (
+	<section className={clsx(styles.container, {[styles.main]: props.main})}>{props.children}</section>
+);
 
 export default Container;
