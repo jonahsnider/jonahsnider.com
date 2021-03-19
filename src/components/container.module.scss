@@ -19,8 +19,9 @@
 }
 
 .main {
+	min-height: 100vh;
+
 	@include breakpoints.laptop {
-		min-height: 100vh;
 		justify-content: center;
 	}
 }
