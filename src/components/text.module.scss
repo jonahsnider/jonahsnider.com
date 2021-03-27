@@ -10,6 +10,7 @@ $header-line-height: 1em;
 .h2,
 .h3 {
 	line-height: $header-line-height;
+	color: var(--color-foreground);
 
 	@include breakpoints.tablet {
 		line-height: $header-line-height * 1.2;
@@ -52,6 +53,7 @@ $header-line-height: 1em;
 
 .h2 {
 	font-size: 1.75em;
+	color: var(--color-text);
 }
 
 .h3 {

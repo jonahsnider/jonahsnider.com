@@ -6,14 +6,16 @@ $color-background: #ffbbcc;
 :root {
 	--color-foreground: #{$color-foreground};
 	--color-background: #{$color-background};
+	--color-text: black;
 }
 
 @include theme.theme('dark') {
 	--color-foreground: #{$color-background};
 	--color-background: #{$color-foreground};
+	--color-text: white;
 }
 
 html {
 	background-color: var(--color-background);
-	color: var(--color-foreground);
+	color: var(--color-text);
 }
