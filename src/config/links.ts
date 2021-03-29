@@ -15,7 +15,7 @@ export const gitHub: Link = {
 
 export const resume: Link = {
 	text: 'Resumé',
-	url: 'https://drive.google.com/file/d/11FOwQyPz1Qy8vxHyJjN_Oaxh2rHGRTzW/view?usp=sharing'
+	url: 'https://jonah.pw/resume/'
 };
 
 export const keybase: Link = {

@@ -9,6 +9,12 @@
   to = "https://jonah.pw/:splat"
   status = 301
 
+# Resume Google Drive link
+[[redirects]]
+  from = "/resume"
+  to = "https://drive.google.com/file/d/11FOwQyPz1Qy8vxHyJjN_Oaxh2rHGRTzW/view?usp=sharing"
+  status = 301
+
 # GitHub redirect for my repositories
 [[redirects]]
   from = "https://jonah.pw/gh/*"
