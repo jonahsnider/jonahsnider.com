@@ -2,13 +2,16 @@
 
 .container {
 	padding: 4%;
+	margin-bottom: 8%;
 
 	@include breakpoints.tablet {
 		padding: 8%;
+		margin-bottom: 0;
 	}
 
 	@include breakpoints.laptop {
 		padding: 0 12%;
+		margin-bottom: 4%;
 	}
 
 	@include breakpoints.desktop {
