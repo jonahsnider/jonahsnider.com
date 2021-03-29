@@ -19,3 +19,8 @@ html {
 	background-color: var(--color-background);
 	color: var(--color-text);
 }
+
+*::selection {
+	background-color: var(--color-foreground);
+	color: var(--color-background);
+}
