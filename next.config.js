@@ -14,5 +14,5 @@ module.exports = withPlugins(
 			}
 		]
 	],
-	{experimental: {optimizeFonts: true}}
+	{experimental: {optimizeFonts: true}, future: {webpack5: true}}
 );
