@@ -4318,14 +4318,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-xo-react@npm:0.24.0":
-  version: 0.24.0
-  resolution: "eslint-config-xo-react@npm:0.24.0"
+"eslint-config-xo-react@npm:0.25.0":
+  version: 0.25.0
+  resolution: "eslint-config-xo-react@npm:0.25.0"
   peerDependencies:
     eslint: ">=7"
     eslint-plugin-react: ">=7.22.0"
     eslint-plugin-react-hooks: ">=4.2.0"
-  checksum: b8c0f245f8a1003a842a8318efe517bc7d9e384379f1884974cf73326d6ea0b4bd7c7d3d3a9d115d9e62dc5c4e645492e0e1ce6eb4f25287ed14d8c53a5881da
+  checksum: 2be0c8a98b09e62dcf9f71e629302d3b622f4b1972f312c31a420c1ce819d55ea96417fc4787e117046087b06f66b1ee708ab7ddce194e9c42d14b459f343f7d
   languageName: node
   linkType: hard
 
@@ -6611,7 +6611,7 @@ fsevents@~2.3.1:
     "@types/node": 12.20.7
     "@types/react": 17.0.3
     clsx: 1.1.1
-    eslint-config-xo-react: 0.24.0
+    eslint-config-xo-react: 0.25.0
     eslint-plugin-prettier: 3.3.1
     eslint-plugin-react: 7.23.1
     eslint-plugin-react-hooks: 4.2.0
