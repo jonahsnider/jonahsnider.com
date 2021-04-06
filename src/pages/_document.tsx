@@ -22,6 +22,12 @@ class MyDocument extends Document {
 				<body>
 					<Main />
 					<NextScript />
+					{/* Cloudflare Web Analytics */}
+					<script
+						defer
+						src='https://static.cloudflareinsights.com/beacon.min.js'
+						data-cf-beacon='{"token": "1c4767bb9b5e4c17b8eea06329b3553c"}'
+					/>
 				</body>
 			</Html>
 		);
