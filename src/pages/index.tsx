@@ -11,7 +11,7 @@ import {header, links} from '../config';
 
 const Home: FC = () => (
 	<>
-		<NextSeo titleTemplate='%s' title='Jonah Snider' openGraph={{title: 'Jonah Snider'}} />
+		<NextSeo titleTemplate='Jonah Snider | %s' title={header.subtitle} openGraph={{title: header.subtitle}} />
 
 		<Container main>
 			<Header {...header} />
