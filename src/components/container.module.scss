@@ -4,18 +4,35 @@
 	padding: 4%;
 	margin-bottom: 8%;
 
+	&.alone {
+		margin-bottom: 0;
+	}
+
 	@include breakpoints.tablet {
 		padding: 8%;
 		margin-bottom: 0;
+
+		&.alone {
+			padding: 0 8%;
+		}
 	}
 
 	@include breakpoints.laptop {
 		padding: 0 12%;
 		margin-bottom: 4%;
+
+		&.alone {
+			padding: 0 12%;
+			margin-bottom: 0;
+		}
 	}
 
 	@include breakpoints.desktop {
 		padding: 0 18%;
+
+		&.alone {
+			padding: 0 18%;
+		}
 	}
 }
 
