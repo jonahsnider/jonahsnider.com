@@ -16,7 +16,7 @@ const JonahSniderApp: FC = props => {
 		<>
 			<Head>
 				<meta name='theme-color' content={theme === 'dark' ? color.foreground : color.background} />
-				<link rel='manifest' href={`/manifests/${theme}.webmanifest`} />
+				<link rel='manifest' href={`${url}/manifests/${theme}.webmanifest`} />
 
 				<link rel='icon' href={`${url}/images/js/${theme}/favicon.ico`} type='image/x-icon' />
 
