@@ -6619,7 +6619,7 @@ fsevents@~2.3.1:
     netlify-plugin-cache-yarn2: 1.0.0
     next: 10.1.3
     next-compose-plugins: 2.2.1
-    next-pwa: 5.1.2
+    next-pwa: 5.1.4
     next-seo: 4.23.0
     next-themes: beta
     normalize.css: 8.0.1
@@ -7517,9 +7517,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"next-pwa@npm:5.1.2":
-  version: 5.1.2
-  resolution: "next-pwa@npm:5.1.2"
+"next-pwa@npm:5.1.4":
+  version: 5.1.4
+  resolution: "next-pwa@npm:5.1.4"
   dependencies:
     babel-loader: ^8.2.2
     clean-webpack-plugin: ^3.0.0
@@ -7528,8 +7528,8 @@ fsevents@~2.3.1:
     workbox-window: ^6.1.2
   peerDependencies:
     next: ">=7.0.0"
-    webpack: ">=4.0.0 <5.0.0"
-  checksum: 8fbb1a2a6b3495224cd683459d16e95d9abcd7293e7a9eb3f6d4d7c920b801fc7eab33d47ab110a11cb2f9af7d2f8ce5e42ad3da26cf203a62fba3c3f038ed2b
+    webpack: ">=4.0.0"
+  checksum: 968f8d072bd7b4ea0d72b3ab3789cbe0a0dcd52525ac5719f74eae677c0df45c9d078318555eadceb4ceb10a051a82b532dd43e21386aab34b555921c5cbf80b
   languageName: node
   linkType: hard
 
