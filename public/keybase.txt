@@ -1,11 +1,11 @@
 ==================================================================
-https://keybase.io/pizzafox
+https://keybase.io/jonahsnider
 --------------------------------------------------------------------
 
 I hereby claim:
 
-  * I am an admin of https://jonahsnider.ninja
-  * I am pizzafox (https://keybase.io/pizzafox) on keybase.
+  * I am an admin of https://jonah.pw
+  * I am jonahsnider (https://keybase.io/jonahsnider) on keybase.
   * I have a public key with fingerprint E3D7 8B8F 4596 CD63 5F30  4439 E85C E1D3 1913 2409
 
 To do so, I am signing this object:
@@ -13,134 +13,63 @@ To do so, I am signing this object:
 {
   "body": {
     "key": {
-      "eldest_kid": "012078d8478babc3fbf624787afc6ae06c180e8bfbfa9a5a3b2e56a7beac7b030bf80a",
+      "eldest_kid": "010125bea4ef2c8046840f48e0a54c87d7547fb439088e149a439d7616f177ebea9b0a",
       "fingerprint": "e3d78b8f4596cd635f304439e85ce1d319132409",
       "host": "keybase.io",
       "key_id": "e85ce1d319132409",
       "kid": "010125bea4ef2c8046840f48e0a54c87d7547fb439088e149a439d7616f177ebea9b0a",
-      "uid": "45f53f29517c3f06292153689754c219",
-      "username": "pizzafox"
-    },
-    "merkle_root": {
-      "ctime": 1578788751,
-      "hash_meta": "95ad0f02d6c0e469b883cd04a0ae5e091138c5f8bbbb1c7710d35dd38eb406f5",
-      "seqno": 14188336
-    },
-    "revoke": {
-      "sig_ids": [
-        "733cafa7d1e2932c25c7e1c8fecdf96b03f80262900e94398388894d80f8c6860f"
-      ]
+      "uid": "d087a62d4fc3ca345a0a666cc93bc019",
+      "username": "jonahsnider"
     },
     "service": {
-      "hostname": "jonahsnider.ninja",
+      "hostname": "jonah.pw",
       "protocol": "https:"
     },
     "type": "web_service_binding",
     "version": 1
   },
-  "ctime": 1578788750,
+  "ctime": 1618346122,
   "expire_in": 157680000,
-  "prev": "999f6df9c3f9489df361a6d4d4738e6fbb4793e0d7618b8c17ca07d78c752ef0",
-  "seqno": 130,
+  "prev": "d4932985320b0e204b05a9ea0f28c4cec2c64964db74008b9807552bd05fc940",
+  "seqno": 4,
   "tag": "signature"
 }
 
 which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.1.3
+Version: Keybase OpenPGP v2.1.13
 Comment: https://keybase.io/crypto
 
-yMQFAnicbZN7bBVFFMbvRR62ASxekJcILBYSUprZ1+xsIa1aBEJBYxAbK3KZ3Z1p
-t4/dy+7e0lJuNQaFUkUiDxuF0FIQUERSKARaA5SnbSmCpJLaVoggCkhSWggEFWcb
-SIxx/9md2XO+853fmTk+6IlAfPC3BZd/GBl6Pi7Y1BCLBhaOyl5dwmm2UcyllHB5
-pPdF8g3ieuE80+BSOMALQEEGkhSkYU0XqUahwBYKpjrEBECdR4Agje1jFctY1AQi
-Q6xoBOuKBkSgUQQwl8RR08omTsQxLY/JEtFggohKsgp1A4oyFYEkiSpBsk54Q+RV
-XhQkoLLEHNv1M5g5Dbsk2bTZHluEe+39T/xj38y5zFxIhAo6AhJEEqASIgDLko4U
-Q5ElhWqsJECI8JKK2aehQB5SXlEIS1S1Xt/RXjlJprJIBVXmFcYAQEEVeFmESGUy
-usD7daMucSxcQFh0xFy6FFO7iIslcQXEycsnYce2PR+u7pl+CC8zhAgpMs8axG5O
-uIB4mGWqMjYABYIBdUAkqGoIiboBJAwwkQlQeV5EukyRxh5eVxQeGKJsGCIimgQg
-lZkPlyy2bFZB4lmuCJkFhxTaecSv7prZjJvLpbzFKaKoY4oVgyeCKgq6IOsK4XVE
-iW5QFbLRscEJrFEAiMrYIBEhpEoGAhTpEEFAubdjfjWn0NR7xf1BPQKQa1s4x7VM
-gzjJlmnl+iAjju3Zup3Pfud4XsRN8el4xRE/fgnRwo+UwpppGeyssIxC4rimbbFe
-WOR/wYEkjhRFTIeETat3GyLAHr8OKfRJqiqFrBM2LlVCqkFFyGNoSIakMFqQapqk
-qCIB/szZSdTZYDFgxwLpiiwQCv5FUmSqHs5mooyfhb2oQ7hYw9EFfQPB+ED/fn38
-WxSIj0t4fLcG44TA9tEPC37aVl6/taMHrSor+iZzKz2X/yPasZV0CPKm1ODI01+u
-n9SU+uHBhrPrxkcuvT56XI9yo+/Kjq7n7qoH9+0p3jlwV1XGkvgB2oDSP9ZW15vD
-dnbL9bPSplVeXnQeVMxe3lnTvzLj0obyI+LhzEGXV2HY78TQa/ebEtKK2nrKsuru
-bIZ96qZcObXj9uYJL8yomtaqpJdXdV1Y88Wlwc/UZ84Lnkiv/bP81f212975ds+s
-xhktf/389PTMA427QhkbP1PWn2vLyJi7a93MhgPRwbnv3Zj6MiwbG125M/PXwjGL
-7taIL674NL9pdX5kYdWcuP7dXM+p7lGt1+uqAstzh+6/fbV5Vvr8WOIbF6aUzSvF
-ZzJwn5rj2SXD2ypJe/Gg83k77lW7keqlr4VOt8w5tKXv6tHBixOH5YYqv2t+ad/Y
-ybcmt9ZtzrR+r7CSYVu792bWyawRD5Kab6b+ItaG2u8YBcMnHeW4ZEF9qjyc/W6c
-8PfAwtRXomsqZl95svPh2SHty9smjS24Q7avTd/98Fysq5U7E5rfVRLdlHv/yqgP
-5t38eG9eTDn84P2LJ0tbvYTvbyz5fPzcI/EPZg9bkVO9eIOpnW9cdSxHLftq3NX2
-jdta0iYktNjCsiN7Gys2eisSj30ED9cWJXZeb60ZMHFtR6i7c8iyLd2H7o0xvx4y
-YubUT067A6dnObubg4nPXrt15h/mkwWe
-=ZytP
+yMNAAnicrVJtUFRVGL4EywRM8jU6gc5UV4VggM6999yvBVM0d8LRAoFxVGT3fpyF
+C+zeZXcBGWbBIUmDygZZSCXHHEcXBwE/CguRwIAgrUF/BARTDDlBWSNgpcJk9zI1
+049+dv6c877neZ73ed95P3/GHwv2m8mZuhMVuS7I78vexhLMUorVVuCiKpfjxgq8
+EC1fqEhGLre5UJFxIw4IQJC0iASIrKTEAchwEFghh4BAQ4ljZZaGrFWEFA84DhGQ
+F7SnzDIEYyVYFmlEXgQCnoBbFXsecjqcit2tySJKZjmRs0KaZySZoWgrBaDGRBwt
+IUKmCJ6gSAh4jZivunSGZk4UXChJUbWcFpiX7f0H/n/2XbIsJwOOFRhShlaJkgQK
+0gIQGIaRJJ4SJUDodUtcyGkXbEhDF6h2Id9lV2TkxD0JuPZRqkhIn63ezL9BSY4y
+jepwqm5VUou0bL7b7XAZdZa73KHDypBo/lvALCp2WRujxihFTpei2nEjoSElt6Ir
+EgzBUZAhSDIBR/sdihOZFR1BswwHtKPXQaV6M5CnSJ6jKRKIAJEAioAWeCQAK8lJ
+UEISKTGQZ6AsshAATuQ5wNI0KcqAtko8BLjeUrFdxY1QsynkaZIuJc8uuEucCPf0
+9eYEYH7BWKDhKX29sOCgsH+W7hUh9IllLnnwm/sI/+5GRUtqTOm+tWGVjVUfqEPe
+09ySyXAza2wLv7v/3cQQPLhEUg6u2ZQ7+Xz0mTcic1OYjSvDEnMsv2Zvn8t4M/eG
+zI0ebI9J3lWT6R588OzWuO15wwHeazNHjUBaHHkSjdLGX7Ip3GUuc8/q7v31m8Zf
+958Pj0ptWlW7ZAJJrb4DC0XDp75mH1YZjm3uq1Nqmz8OxiaODPyy3ofF23YMe50v
+BMpdRyzb9oR2fHj35eOH7lZPjHSNztXv7b6QsvjHF1uyQzK6r3QE9NdkE5+ezDqt
++rlm/B+9g48MXPrW3DTWe+u4aai/fywtbh4bZ67WtdatrWzH7mf+HmFzbSgfzZxs
+iUuvNozx6S+mVgtHa6bYqiY6vW3FFZuh5fC05/zqMuPU2djOO/knmotfXYhJSXvw
+FYCm38KrAgs6De9Xxp9Uv5/NiOXbJrKusthC5eHs+HMdxzZG7XqUuviY+jH2YgXd
+diC3/fzQz4fOhW+gLhVMf7KjVxSWzvTc+uj62wGFl2+rJirorZ7EwbPD1df2Xt/m
+y/5s1NLn2Tm/ecXsn5men6bnZ3/oSQPrQu+lYDXPRVyY6R9N6Ik+kdcW0rDeu+bm
+a1uX/N0ZY76L3ftWdvjMtrJI8nGDp/H2QEPt7nvND3fWJ3a2erHU97Cn66YmuyzF
+LasGe2MiCjq7U04lO/4CtFC5XA==
+=8r/u
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
 
-View my publicly-auditable identity here: https://keybase.io/pizzafox
+View my publicly-auditable identity here: https://keybase.io/jonahsnider
 
 ==================================================================
 
-
-==================================================================
-https://keybase.io/pizzafox
---------------------------------------------------------------------
-
-I hereby claim:
-
-  * I am an admin of https://jonah.pw
-  * I am pizzafox (https://keybase.io/pizzafox) on keybase.
-  * I have a public key ASBmBwRNGSL4QXx7G3vcQDj_BNQ1K3YL1215h0X89NALlQo
-
-To do so, I am signing this object:
-
-{
-  "body": {
-    "key": {
-      "eldest_kid": "012078d8478babc3fbf624787afc6ae06c180e8bfbfa9a5a3b2e56a7beac7b030bf80a",
-      "host": "keybase.io",
-      "kid": "01206607044d1922f8417c7b1b7bdc4038ff04d4352b760bd76d798745fcf4d00b950a",
-      "uid": "45f53f29517c3f06292153689754c219",
-      "username": "pizzafox"
-    },
-    "merkle_root": {
-      "ctime": 1573515924,
-      "hash": "f1376f1acdc1ce38e482844742afd17876a1cf74307b33e351b1cdd0e17dc113064a2f7d2d3094035cd158250a14843491296b72dfa4bb0aaf18998faa94f7d2",
-      "hash_meta": "0be39eb7a18bc1262cd265626b1874015c03b8eb06ee8cb84aa0381aaddcb47b",
-      "seqno": 9192573
-    },
-    "service": {
-      "entropy": "9uxol0j4W/FBRjFCUTFWxf1j",
-      "hostname": "jonah.pw",
-      "protocol": "https:"
-    },
-    "type": "web_service_binding",
-    "version": 2
-  },
-  "client": {
-    "name": "keybase.io go client",
-    "version": "4.7.2"
-  },
-  "ctime": 1573515933,
-  "expire_in": 504576000,
-  "prev": "26ce0dc71b187e5a6a8cbeeb8ff71c896fbed3134bfe3ca79a95b20817102b60",
-  "seqno": 110,
-  "tag": "signature"
-}
-
-which yields the signature:
-
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgZgcETRki+EF8ext73EA4/wTUNSt2C9dteYdF/PTQC5UKp3BheWxvYWTESpcCbsQgJs4NxxsYflpqjL7rj/cciW++0xNL/jynmpWyCBcQK2DEIFszFv//+zE15I3VJxlsCi2tR6egjfpbce2MuFyvp8n0AgHCo3NpZ8RAoZNfg7w7IHqQe2oahvqaueFCERHh4cu9o9y+lHP2RT18E6sMyAuoFlRMvQlKLSbiFtkM52fH2S4KHLrXPJtmBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIK+6A/cD9/XYYCpZs/DAFljO8UNt+MvkNDuPaUejTajgo3RhZ80CAqd2ZXJzaW9uAQ==
-
-And finally, I am proving ownership of this host by posting or
-appending to this document.
-
-View my publicly-auditable identity here: https://keybase.io/pizzafox
-
-==================================================================
