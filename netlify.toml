@@ -18,7 +18,7 @@
 # GitHub redirect for my repositories
 [[redirects]]
   from = "/gh/*"
-  to = "https://github.com/pizzafox/:splat"
+  to = "https://github.com/jonahsnider/:splat"
   status = 301
 
 # Temporary fix for https://answers.netlify.com/t/web-application-manifest-mime-type/34110

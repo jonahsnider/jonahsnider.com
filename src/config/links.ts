@@ -10,7 +10,7 @@ export const email: Link = {
 
 export const gitHub: Link = {
 	text: 'GitHub',
-	url: 'https://github.com/pizzafox/'
+	url: 'https://github.com/jonahsnider/'
 };
 
 export const resume: Link = {
