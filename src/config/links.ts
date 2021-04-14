@@ -20,5 +20,5 @@ export const resume: Link = {
 
 export const keybase: Link = {
 	text: 'Keybase',
-	url: 'https://keybase.io/pizzafox/'
+	url: 'https://keybase.io/jonahsnider/'
 };
