@@ -1317,34 +1317,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@netlify/cache-utils@npm:1.0.6":
-  version: 1.0.6
-  resolution: "@netlify/cache-utils@npm:1.0.6"
-  dependencies:
-    array-flat-polyfill: ^1.0.1
-    cpy: ^8.1.0
-    del: ^5.1.0
-    get-stream: ^5.1.0
-    global-cache-dir: ^1.0.1
-    globby: ^10.0.2
-    locate-path: ^5.0.0
-    make-dir: ^3.1.0
-    move-file: ^1.2.0
-    path-exists: ^4.0.0
-    readdirp: ^3.4.0
-  checksum: 8ec8383dbd954c5e0392c6b8eb78d903da37cb55e1dc5a4dfea26d86a9cb19d4a56350d9de77a0198ef35ad79750a9d5ed84c1caf815166a4d6e188819c758bc
-  languageName: node
-  linkType: hard
-
-"@netlify/run-utils@npm:1.0.5":
-  version: 1.0.5
-  resolution: "@netlify/run-utils@npm:1.0.5"
-  dependencies:
-    execa: ^3.4.0
-  checksum: cfe9c4f1d58ed51a454854e8ac19814c790a201952de7068a58551b94cb5be784412fe41fe17d7b72056461cdea59ec08984c3d7166001b2ef7257e962f56192
-  languageName: node
-  linkType: hard
-
 "@next/env@npm:10.1.3":
   version: 10.1.3
   resolution: "@next/env@npm:10.1.3"
@@ -3457,7 +3429,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
+"cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
   dependencies:
@@ -4524,24 +4496,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^3.4.0":
-  version: 3.4.0
-  resolution: "execa@npm:3.4.0"
-  dependencies:
-    cross-spawn: ^7.0.0
-    get-stream: ^5.0.0
-    human-signals: ^1.1.1
-    is-stream: ^2.0.0
-    merge-stream: ^2.0.0
-    npm-run-path: ^4.0.0
-    onetime: ^5.1.0
-    p-finally: ^2.0.0
-    signal-exit: ^3.0.2
-    strip-final-newline: ^2.0.0
-  checksum: 6f1eb2d6012ba061f9daee5cd0ba775dae71a5b18ab4003c4edc5f0b85047f98b982b71e731b237dde1ea3348b4a09deafa988eca5d1f1b6a9925f74c9907777
-  languageName: node
-  linkType: hard
-
 "execa@npm:^5.0.0":
   version: 5.0.0
   resolution: "execa@npm:5.0.0"
@@ -5010,7 +4964,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"get-stream@npm:^5.0.0, get-stream@npm:^5.1.0":
+"get-stream@npm:^5.1.0":
   version: 5.2.0
   resolution: "get-stream@npm:5.2.0"
   dependencies:
@@ -5418,13 +5372,6 @@ fsevents@~2.3.1:
     agent-base: 6
     debug: 4
   checksum: 18aa04ea08cc069fa0c83d03475d1bc43e13bfa43d5cffc0c3a07430f755e1ac914049570302775adac82aa5a779643ef2c6c270c057d7a8523a7f6f46b4866a
-  languageName: node
-  linkType: hard
-
-"human-signals@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "human-signals@npm:1.1.1"
-  checksum: cac115f635090055427bbd9d066781b17de3a2d8bbf839d920ae2fa52c3eab4efc63b4c8abc10e9a8b979233fa932c43a83a48864003a8c684ed9fb78135dd45
   languageName: node
   linkType: hard
 
@@ -6216,7 +6163,6 @@ fsevents@~2.3.1:
     eslint-plugin-react: 7.23.2
     eslint-plugin-react-hooks: 4.2.0
     netlify-plugin-cache-nextjs: 1.5.2
-    netlify-plugin-cache-yarn2: 1.0.0
     next: 10.1.3
     next-compose-plugins: 2.2.1
     next-pwa: 5.2.9
@@ -7143,16 +7089,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"netlify-plugin-cache-yarn2@npm:1.0.0":
-  version: 1.0.0
-  resolution: "netlify-plugin-cache-yarn2@npm:1.0.0"
-  dependencies:
-    "@netlify/cache-utils": 1.0.6
-    "@netlify/run-utils": 1.0.5
-  checksum: af2b358506474b23bddab499402a2a554d0954791114856f7a725040e91b8fb8927ca90cdb8bb44c6e9921344f41f0a75495e0e0524c6376f43732b584aa6c0c
-  languageName: node
-  linkType: hard
-
 "next-compose-plugins@npm:2.2.1":
   version: 2.2.1
   resolution: "next-compose-plugins@npm:2.2.1"
@@ -7410,7 +7346,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"npm-run-path@npm:^4.0.0, npm-run-path@npm:^4.0.1":
+"npm-run-path@npm:^4.0.1":
   version: 4.0.1
   resolution: "npm-run-path@npm:4.0.1"
   dependencies:
@@ -7562,7 +7498,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"onetime@npm:^5.1.0, onetime@npm:^5.1.2":
+"onetime@npm:^5.1.2":
   version: 5.1.2
   resolution: "onetime@npm:5.1.2"
   dependencies:
@@ -7652,13 +7588,6 @@ fsevents@~2.3.1:
   version: 1.0.0
   resolution: "p-finally@npm:1.0.0"
   checksum: 01f49b2d9c67573b3a1cb253cd9e1ecf5c912b6ba5de8824118bbc8d647bfa6296820b5a536e91ec68a54395d4e1c58de9a381ded3b688074fb446a8fe351931
-  languageName: node
-  linkType: hard
-
-"p-finally@npm:^2.0.0":
-  version: 2.0.1
-  resolution: "p-finally@npm:2.0.1"
-  checksum: d90a9b6b51e2cee60131564b279e4ebaf92c2b05f1afb35477b8a1b7eb77b9c4d6d8c5dac329b45fc85b0efcfdf3a2047279dedb4c1e83fd3fd24eefa3439cfe
   languageName: node
   linkType: hard
 
