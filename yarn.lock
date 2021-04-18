@@ -1298,9 +1298,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@netlify/cache-utils@npm:1.0.2":
-  version: 1.0.2
-  resolution: "@netlify/cache-utils@npm:1.0.2"
+"@netlify/cache-utils@npm:1.0.7":
+  version: 1.0.7
+  resolution: "@netlify/cache-utils@npm:1.0.7"
   dependencies:
     array-flat-polyfill: ^1.0.1
     cpy: ^8.1.0
@@ -1313,7 +1313,7 @@ __metadata:
     move-file: ^1.2.0
     path-exists: ^4.0.0
     readdirp: ^3.4.0
-  checksum: a8c12a4477d6f880ee80fadfe3fe82a20ca79766ea87100b41f188c9c4e7c98d088186f1a75895d310bfe74941d439b492bdb2f8dc8a0f6e1be5bde51bcfc26c
+  checksum: 3199dad44184e4edbef4c8d97cb6e54956d3291889037a4f19c7ec0b1ec6e935e2c961259a96abff3fa012ee1d2f486d3b978b45a2ab837032335da102d5f60d
   languageName: node
   linkType: hard
 
@@ -6177,7 +6177,7 @@ fsevents@~2.3.1:
     eslint-plugin-prettier: 3.4.0
     eslint-plugin-react: 7.23.2
     eslint-plugin-react-hooks: 4.2.0
-    netlify-plugin-cache-nextjs: 1.5.2
+    netlify-plugin-cache-nextjs: 1.6.0
     next: 10.1.3
     next-compose-plugins: 2.2.1
     next-pwa: 5.2.13
@@ -7095,12 +7095,12 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"netlify-plugin-cache-nextjs@npm:1.5.2":
-  version: 1.5.2
-  resolution: "netlify-plugin-cache-nextjs@npm:1.5.2"
+"netlify-plugin-cache-nextjs@npm:1.6.0":
+  version: 1.6.0
+  resolution: "netlify-plugin-cache-nextjs@npm:1.6.0"
   dependencies:
-    "@netlify/cache-utils": 1.0.2
-  checksum: 341b30ed08ee8daaca83a365d1bd6cc97be7e380bc8880362f99abf98c6c1c04943ff082561fabf3ce49ffffad60e59946d9dfb20ba2b2c4f65e5fbc7a3af9a5
+    "@netlify/cache-utils": 1.0.7
+  checksum: b87a96a9d7a588b2227cacb5888c9d36092915eec0a4851b80a2709df475360931264422f66a85beb58127cee8547db131f6752c76188c9f03cf37d05d1e09df
   languageName: node
   linkType: hard
 
