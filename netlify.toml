@@ -21,6 +21,12 @@
   to = "https://github.com/jonahsnider/:splat"
   status = 301
 
+# Disable FLoC tracking https://plausible.io/blog/google-floc#how-to-opt-out-of-floc-as-a-web-developer-set-a-permissions-policy
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Permissions-Policy = "interest-cohort=()"
+
 # Temporary fix for https://answers.netlify.com/t/web-application-manifest-mime-type/34110
 [[headers]]
   for = "/*.webmanifest"
