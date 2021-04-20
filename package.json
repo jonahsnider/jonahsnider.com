@@ -44,7 +44,6 @@
 	"xo": {
 		"extends": [
 			"xo",
-			"xo/esnext",
 			"xo/browser",
 			"xo-react"
 		],
