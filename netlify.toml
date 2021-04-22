@@ -3,7 +3,10 @@
   publish = "./out"
 	command = "npm run build; npm run export"
 
-# Optional: Redirect default Netlify subdomain to primary domain
+[[redirects]]
+  from = "https://jonahsnider.netlify.app/"
+  to = "https://jonah.pw/"
+  status = 301
 [[redirects]]
   from = "https://jonahsnider.netlify.app/*"
   to = "https://jonah.pw/:splat"
