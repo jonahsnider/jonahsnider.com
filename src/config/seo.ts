@@ -3,7 +3,7 @@ import {NextSeoProps} from 'next-seo';
 
 const description = 'Jonah Snider, full-stack developer. View my resume or get in touch.';
 
-export const url = process.env.URL ?? 'https://jonah.pw';
+export const url = process.env.URL ?? 'http://localhost:3000';
 
 export const seo: NextSeoProps = {
 	titleTemplate: '%s | Jonah Snider',
