@@ -18,7 +18,24 @@ from = "/resume"
 status = 301
 to = "https://drive.google.com/file/d/11FOwQyPz1Qy8vxHyJjN_Oaxh2rHGRTzW/view?usp=sharing"
 
+# Keybase link
+[[redirects]]
+from = "/keybase"
+status = 301
+to = "https://keybase.io/jonahsnider/"
+
+# Email link
+[[redirects]]
+from = "/email"
+status = 301
+to = "mailto:jonah@jonah.pw"
+
 # GitHub redirect for my repositories
+[[redirects]]
+from = "/github/*"
+status = 301
+to = "https://github.com/jonahsnider/:splat"
+
 [[redirects]]
 from = "/gh/*"
 status = 301
