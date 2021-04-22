@@ -49,63 +49,81 @@
 			"type": "image/xml+svg"
 		},
 		{
+			"purpose": "maskable",
 			"sizes": "72x72",
 			"src": "/images/js/dark/maskable-72x.png",
-			"type": "image/png",
-			"purpose": "maskable"
+			"type": "image/png"
 		},
 		{
+			"purpose": "maskable",
 			"sizes": "96x96",
 			"src": "/images/js/dark/maskable-96x.png",
-			"type": "image/png",
-			"purpose": "maskable"
+			"type": "image/png"
 		},
 		{
+			"purpose": "maskable",
 			"sizes": "128x128",
 			"src": "/images/js/dark/maskable-128x.png",
-			"type": "image/png",
-			"purpose": "maskable"
+			"type": "image/png"
 		},
 		{
+			"purpose": "maskable",
 			"sizes": "144x144",
 			"src": "/images/js/dark/maskable-144x.png",
-			"type": "image/png",
-			"purpose": "maskable"
+			"type": "image/png"
 		},
 		{
+			"purpose": "maskable",
 			"sizes": "152x152",
 			"src": "/images/js/dark/maskable-152x.png",
-			"type": "image/png",
-			"purpose": "maskable"
+			"type": "image/png"
 		},
 		{
+			"purpose": "maskable",
 			"sizes": "192x192",
 			"src": "/images/js/dark/maskable-192x.png",
-			"type": "image/png",
-			"purpose": "maskable"
+			"type": "image/png"
 		},
 		{
+			"purpose": "maskable",
 			"sizes": "384x384",
 			"src": "/images/js/dark/maskable-384x.png",
-			"type": "image/png",
-			"purpose": "maskable"
+			"type": "image/png"
 		},
 		{
+			"purpose": "maskable",
 			"sizes": "512x512",
 			"src": "/images/js/dark/maskable-512x.png",
-			"type": "image/png",
-			"purpose": "maskable"
+			"type": "image/png"
 		},
 		{
+			"purpose": "maskable",
 			"sizes": "512x512",
 			"src": "/images/js/dark/maskable.svg",
-			"type": "image/xml+svg",
-			"purpose": "maskable"
+			"type": "image/xml+svg"
 		}
 	],
 	"lang": "en-US",
 	"name": "Jonah Snider",
 	"short_name": "Jonah Snider",
+	"shortcuts": [
+		{
+			"name": "Resumé",
+			"url": "/resume"
+		},
+		{
+			"name": "GitHub",
+			"url": "/gh"
+		},
+		{
+			"name": "Keybase",
+			"url": "/keybase"
+		},
+		{
+			"name": "Email",
+			"url": "/email"
+		}
+	],
 	"start_url": "/",
 	"theme_color": "#ffbbcc"
 }
