@@ -1,40 +1,40 @@
 [build]
-	base = "./"
-  publish = "./out"
-	command = "npm run build; npm run export"
+base = "./"
+command = "npm run build; npm run export"
+publish = "./out"
 
 [[redirects]]
-  from = "https://jonahsnider.netlify.app/"
-  to = "https://jonah.pw/"
-  status = 301
+from = "https://jonahsnider.netlify.app/"
+status = 301
+to = "https://jonah.pw/"
 [[redirects]]
-  from = "https://jonahsnider.netlify.app/*"
-  to = "https://jonah.pw/:splat"
-  status = 301
+from = "https://jonahsnider.netlify.app/*"
+status = 301
+to = "https://jonah.pw/:splat"
 
 # Resume Google Drive link
 [[redirects]]
-  from = "/resume"
-  to = "https://drive.google.com/file/d/11FOwQyPz1Qy8vxHyJjN_Oaxh2rHGRTzW/view?usp=sharing"
-  status = 301
+from = "/resume"
+status = 301
+to = "https://drive.google.com/file/d/11FOwQyPz1Qy8vxHyJjN_Oaxh2rHGRTzW/view?usp=sharing"
 
 # GitHub redirect for my repositories
 [[redirects]]
-  from = "/gh/*"
-  to = "https://github.com/jonahsnider/:splat"
-  status = 301
+from = "/gh/*"
+status = 301
+to = "https://github.com/jonahsnider/:splat"
 
 # Disable FLoC tracking https://plausible.io/blog/google-floc#how-to-opt-out-of-floc-as-a-web-developer-set-a-permissions-policy
 [[headers]]
-  for = "/*"
-  [headers.values]
-    Permissions-Policy = "interest-cohort=()"
+for = "/*"
+[headers.values]
+Permissions-Policy = "interest-cohort=()"
 
 # Temporary fix for https://answers.netlify.com/t/web-application-manifest-mime-type/34110
 [[headers]]
-  for = "/*.webmanifest"
-  [headers.values]
-    Content-Type = "application/manifest+json"
+for = "/*.webmanifest"
+[headers.values]
+Content-Type = "application/manifest+json"
 
 # Cache Next.js build folder between Netlify builds
 [[plugins]]
