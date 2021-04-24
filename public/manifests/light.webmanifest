@@ -108,18 +108,50 @@
 	"short_name": "Jonah Snider",
 	"shortcuts": [
 		{
+			"icons": [
+				{
+					"purpose": "maskable",
+					"sizes": "96x96",
+					"src": "/images/shortcuts/light/resume-96x.png",
+					"type": "image/png"
+				}
+			],
 			"name": "Resumé",
 			"url": "/resume"
 		},
 		{
+			"icons": [
+				{
+					"purpose": "maskable",
+					"sizes": "96x96",
+					"src": "/images/shortcuts/light/github-96x.png",
+					"type": "image/png"
+				}
+			],
 			"name": "GitHub",
 			"url": "/gh"
 		},
 		{
+			"icons": [
+				{
+					"purpose": "maskable",
+					"sizes": "96x96",
+					"src": "/images/shortcuts/light/keybase-96x.png",
+					"type": "image/png"
+				}
+			],
 			"name": "Keybase",
 			"url": "/keybase"
 		},
 		{
+			"icons": [
+				{
+					"purpose": "maskable",
+					"sizes": "96x96",
+					"src": "/images/shortcuts/light/email-96x.png",
+					"type": "image/png"
+				}
+			],
 			"name": "Email",
 			"url": "/email"
 		}
