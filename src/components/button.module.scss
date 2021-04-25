@@ -32,4 +32,10 @@
 			color: var(--color-foreground);
 		}
 	}
+
+	&:focus {
+		background-color: var(--color-foreground-light);
+		color: var(--color-foreground);
+		outline: none;
+	}
 }

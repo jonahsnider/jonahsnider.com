@@ -1,3 +1,4 @@
+@use "sass:color";
 @use '../styles/theme.scss';
 
 $color-foreground: #000000;
@@ -6,12 +7,14 @@ $color-background: #ffbbcc;
 :root {
 	--color-foreground: #{$color-foreground};
 	--color-background: #{$color-background};
+	--color-foreground-light: #{color.adjust($color-foreground, $alpha: -0.75)};
 	--color-text: black;
 }
 
 @include theme.theme('dark') {
 	--color-foreground: #{$color-background};
 	--color-background: #{$color-foreground};
+	--color-foreground-light: #{color.adjust($color-background, $alpha: -0.85)};
 	--color-text: white;
 }
 
