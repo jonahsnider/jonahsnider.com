@@ -8,6 +8,8 @@
 	padding: 1em 2.5em;
 	margin: 1em 0;
 
+	outline: none;
+
 	@include breakpoints.phone {
 		margin: 1em;
 		flex: 0 0 25%;
@@ -36,6 +38,5 @@
 	&:focus:not(:hover) {
 		background-color: var(--color-foreground-light);
 		color: var(--color-foreground);
-		outline: none;
 	}
 }
