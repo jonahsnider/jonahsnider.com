@@ -6,11 +6,19 @@ publish = "./out"
 [[redirects]]
 from = "https://jonahsnider.netlify.app/"
 status = 301
-to = "https://jonah.pw/"
+to = "https://jonahsnider.com/"
 [[redirects]]
 from = "https://jonahsnider.netlify.app/*"
 status = 301
-to = "https://jonah.pw/:splat"
+to = "https://jonahsnider.com/:splat"
+[[redirects]]
+from = "https://jonah.pw/"
+status = 301
+to = "https://jonahsnider.com/"
+[[redirects]]
+from = "https://jonah.pw/*"
+status = 301
+to = "https://jonahsnider.com/:splat"
 
 # Resume Google Drive link
 [[redirects]]
@@ -28,7 +36,7 @@ to = "https://keybase.io/jonahsnider/"
 [[redirects]]
 from = "/email"
 status = 301
-to = "mailto:jonah@jonah.pw"
+to = "mailto:jonah@jonahsnider.com"
 
 # GitHub redirect for my repositories
 [[redirects]]

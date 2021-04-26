@@ -5,7 +5,7 @@ interface Link {
 
 export const email: Link = {
 	text: 'Email',
-	url: 'mailto:jonah@jonah.pw'
+	url: 'mailto:jonah@jonahsnider.com'
 };
 
 export const gitHub: Link = {
@@ -15,7 +15,7 @@ export const gitHub: Link = {
 
 export const resume: Link = {
 	text: 'Resumé',
-	url: 'https://jonah.pw/resume/'
+	url: 'https://jonahsnider.com/resume/'
 };
 
 export const keybase: Link = {
