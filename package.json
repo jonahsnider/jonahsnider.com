@@ -29,7 +29,7 @@
 		"prettier": "2.2.1",
 		"xo": "0.39.1"
 	},
-	"name": "jonah.pw",
+	"name": "jonahsnider.com",
 	"private": true,
 	"scripts": {
 		"build": "next build",

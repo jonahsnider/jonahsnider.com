@@ -6160,9 +6160,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"jonah.pw@workspace:.":
+"jonahsnider.com@workspace:.":
   version: 0.0.0-use.local
-  resolution: "jonah.pw@workspace:."
+  resolution: "jonahsnider.com@workspace:."
   dependencies:
     "@types/node": 12.20.10
     "@types/react": 17.0.4
