@@ -14,7 +14,7 @@ $color-background: #ffbbcc;
 @include theme.theme('dark') {
 	--color-foreground: #{$color-background};
 	--color-background: #{$color-foreground};
-	--color-foreground-light: #{color.adjust($color-background, $alpha: -0.85)};
+	--color-foreground-light: #{color.adjust($color-background, $alpha: -0.75)};
 	--color-text: white;
 }
 
