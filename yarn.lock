@@ -6171,7 +6171,7 @@ fsevents@~2.3.1:
     eslint-plugin-prettier: 3.4.0
     eslint-plugin-react: 7.23.2
     eslint-plugin-react-hooks: 4.2.0
-    netlify-plugin-cache-nextjs: 1.6.1
+    netlify-plugin-cache-nextjs: 1.6.0
     next: 10.1.3
     next-compose-plugins: 2.2.1
     next-pwa: 5.2.15
@@ -7099,12 +7099,12 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"netlify-plugin-cache-nextjs@npm:1.6.1":
-  version: 1.6.1
-  resolution: "netlify-plugin-cache-nextjs@npm:1.6.1"
+"netlify-plugin-cache-nextjs@npm:1.6.0":
+  version: 1.6.0
+  resolution: "netlify-plugin-cache-nextjs@npm:1.6.0"
   dependencies:
     "@netlify/cache-utils": 1.0.7
-  checksum: fd2d5794fd35aadc36986fb58311a43419fccdbd10b50213b1dd0361eb3ead9ab14194d94ca4f8615488d5043f95ff3752965777dbd33427089c6dcb10be8c31
+  checksum: b87a96a9d7a588b2227cacb5888c9d36092915eec0a4851b80a2709df475360931264422f66a85beb58127cee8547db131f6752c76188c9f03cf37d05d1e09df
   languageName: node
   linkType: hard
 
