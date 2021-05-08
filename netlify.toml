@@ -23,6 +23,16 @@ force = true
 from = "https://jonah.pw/*"
 status = 301
 to = "https://jonahsnider.com/:splat"
+[[redirects]]
+force = true
+from = "https://jonahsnider.ninja/"
+status = 301
+to = "https://jonahsnider.com/"
+[[redirects]]
+force = true
+from = "https://jonahsnider.ninja/*"
+status = 301
+to = "https://jonahsnider.com/:splat"
 
 # Resume Google Drive link
 [[redirects]]
