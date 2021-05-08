@@ -34,16 +34,32 @@ const Home: FC = () => (
 				Experience
 			</Text>
 
-			<Experience id='voiceflow' date={{start: 'May 2021', end: 'present'}} title='Voiceflow' link='https://voiceflow.com'>
-				Design, prototype, and launch voice/chat assistants. Full-time junior backend developer position working on the Voiceflow runtime team.
+			<Experience
+				id='voiceflow'
+				date={{start: 'May 2021', end: 'present'}}
+				title='Voiceflow'
+				link='https://voiceflow.com'
+			>
+				Design, prototype, and launch voice/chat assistants. Full-time junior backend developer position working on the
+				Voiceflow runtime team.
 			</Experience>
 
-			<Experience id='gameface' date={{start: 'November 2020', end: 'May 2021'}} title='GameFace' link='https://gamefaced.gg'>
-				Esports tournament host. Part-time software developer position working on integrating our Discord bot with the GameFace
-				platform.
+			<Experience
+				id='gameface'
+				date={{start: 'November 2020', end: 'May 2021'}}
+				title='GameFace'
+				link='https://gamefaced.gg'
+			>
+				Esports tournament host. Part-time software developer position working on integrating our Discord bot with the
+				GameFace platform.
 			</Experience>
 
-			<Experience id='team581' date={{start: 'October 2017', end: 'present'}} title='Team 581' link='https://team581.club'>
+			<Experience
+				id='team581'
+				date={{start: 'October 2017', end: 'present'}}
+				title='Team 581'
+				link='https://team581.club'
+			>
 				FIRST robotics team. Worked primarily on software, specializing in image recognition and autonomous routines.
 			</Experience>
 		</Container>

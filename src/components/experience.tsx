@@ -14,7 +14,7 @@ const Experience: FC<Props> = props => (
 		<Text kind='h3'>
 			{props.title}
 			{props.link && (
-				<a rel='noopener noreferrer' target="_blank" className={styles.link} href={props.link}>
+				<a rel='noopener noreferrer' target='_blank' className={styles.link} href={props.link}>
 					(link)
 				</a>
 			)}
