@@ -7,7 +7,7 @@ import Container from '../components/container';
 import Experience from '../components/experience';
 import Header from '../components/header';
 import Text from '../components/text';
-import {header, links} from '../config';
+import {header, links, url} from '../config';
 
 const Home: FC = () => (
 	<>
@@ -15,6 +15,7 @@ const Home: FC = () => (
 			titleTemplate='Jonah Snider | %s'
 			title={header.subtitle}
 			openGraph={{title: `Jonah Snider | ${header.subtitle}`}}
+			canonical={url}
 		/>
 
 		<Container main>
