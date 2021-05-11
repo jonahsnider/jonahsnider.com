@@ -7,12 +7,12 @@
 
 	padding: 1em 2.5em;
 	margin: 1em 0;
+	flex: 0 0 25%;
 
 	outline: none;
 
-	@include breakpoints.phone {
+	@include breakpoints.tablet {
 		margin: 1em;
-		flex: 0 0 25%;
 	}
 
 	@include breakpoints.laptop {
