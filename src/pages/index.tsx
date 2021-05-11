@@ -22,8 +22,8 @@ const Home: FC = () => (
 			<Header {...header} />
 
 			<main id='links' className={clsx(styles['button-group'], styles.animated)}>
-				{Object.entries(links).map(([name, link]) => (
-					<Button key={name} href={link.url}>
+				{links.map(({id, content: link}) => (
+					<Button key={id} href={link.url}>
 						{link.text}
 					</Button>
 				))}

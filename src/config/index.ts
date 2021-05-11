@@ -1,4 +1,12 @@
+import * as rawLinks from './links';
+
 export * from './color';
 export * as header from './header';
-export * as links from './links';
 export * from './seo';
+
+export const links = [
+	{id: 'email', content: rawLinks.email},
+	{id: 'github', content: rawLinks.gitHub},
+	{id: 'resume', content: rawLinks.resume},
+	{id: 'keybase', content: rawLinks.keybase}
+];
