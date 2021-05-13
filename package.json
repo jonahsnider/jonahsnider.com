@@ -1,46 +1,21 @@
 {
+	"name": "jonahsnider.com",
+	"version": "4.0.0",
+	"private": true,
 	"author": {
-		"email": "jonah@jonahsnider.com",
 		"name": "Jonah Snider",
+		"email": "jonah@jonahsnider.com",
 		"url": "https://jonahsnider.com"
 	},
-	"dependencies": {
-		"@types/node": "15.0.3",
-		"@types/react": "17.0.5",
-		"clsx": "1.1.1",
-		"next": "10.2.0",
-		"next-compose-plugins": "2.2.1",
-		"next-pwa": "5.2.21",
-		"next-seo": "4.24.0",
-		"next-themes": "beta",
-		"normalize.css": "8.0.1",
-		"react": "17.0.2",
-		"react-dom": "17.0.2",
-		"sass": "1.32.13",
-		"typescript": "4.2.4",
-		"webpack": "webpack-4"
-	},
-	"devDependencies": {
-		"eslint-config-xo-react": "0.25.0",
-		"eslint-plugin-prettier": "3.4.0",
-		"eslint-plugin-react": "7.23.2",
-		"eslint-plugin-react-hooks": "4.2.0",
-		"netlify-plugin-cache-nextjs": "1.6.1",
-		"prettier": "2.3.0",
-		"xo": "0.39.1"
-	},
-	"name": "jonahsnider.com",
-	"private": true,
 	"scripts": {
 		"build": "next build",
 		"dev": "next dev",
+		"preexport": "rm -rf out",
 		"export": "next export",
 		"lint": "xo",
-		"preexport": "rm -rf out",
 		"start": "next start",
 		"style": "prettier --check ."
 	},
-	"version": "4.0.0",
 	"xo": {
 		"extends": [
 			"xo",
@@ -76,5 +51,30 @@
 			"react/prop-types": "off",
 			"react/react-in-jsx-scope": "off"
 		}
+	},
+	"dependencies": {
+		"@types/node": "15.0.3",
+		"@types/react": "17.0.5",
+		"clsx": "1.1.1",
+		"next": "10.2.0",
+		"next-compose-plugins": "2.2.1",
+		"next-pwa": "5.2.21",
+		"next-seo": "4.24.0",
+		"next-themes": "beta",
+		"normalize.css": "8.0.1",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"sass": "1.32.13",
+		"typescript": "4.2.4",
+		"webpack": "webpack-4"
+	},
+	"devDependencies": {
+		"eslint-config-xo-react": "0.25.0",
+		"eslint-plugin-prettier": "3.4.0",
+		"eslint-plugin-react": "7.23.2",
+		"eslint-plugin-react-hooks": "4.2.0",
+		"netlify-plugin-cache-nextjs": "1.6.1",
+		"prettier": "2.3.0",
+		"xo": "0.39.1"
 	}
 }
