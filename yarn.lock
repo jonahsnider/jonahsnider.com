@@ -1585,10 +1585,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:12.20.13":
-  version: 12.20.13
-  resolution: "@types/node@npm:12.20.13"
-  checksum: 4e0f02ec78b8d911595b20b9a7c3ac6c8e5f77ab5c57d0c14197fa021dec2c791469e1597b890f0d443f3809c908952e9ea56a2866d3cccf6076ff8a4579d969
+"@types/node@npm:15.0.3":
+  version: 15.0.3
+  resolution: "@types/node@npm:15.0.3"
+  checksum: 72bfbac4282443a7b5d5b43c7c39fe855aa1687b5fa5629b735fd2ceacf371b711ccfc956c8af1b1cbd9c74c79be845a801a4c7275048f340aa0df3beec6b10f
   languageName: node
   linkType: hard
 
@@ -6173,7 +6173,7 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "jonahsnider.com@workspace:."
   dependencies:
-    "@types/node": 12.20.13
+    "@types/node": 15.0.3
     "@types/react": 17.0.5
     clsx: 1.1.1
     eslint-config-xo-react: 0.25.0
