@@ -5,101 +5,101 @@
 	"icons": [
 		{
 			"sizes": "72x72",
-			"src": "/images/js/dark/js-72x.png",
+			"src": "https://jonahsnider.com/images/js/dark/js-72x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "96x96",
-			"src": "/images/js/dark/js-96x.png",
+			"src": "https://jonahsnider.com/images/js/dark/js-96x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "128x128",
-			"src": "/images/js/dark/js-128x.png",
+			"src": "https://jonahsnider.com/images/js/dark/js-128x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "144x144",
-			"src": "/images/js/dark/js-144x.png",
+			"src": "https://jonahsnider.com/images/js/dark/js-144x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "152x152",
-			"src": "/images/js/dark/js-152x.png",
+			"src": "https://jonahsnider.com/images/js/dark/js-152x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "192x192",
-			"src": "/images/js/dark/js-192x.png",
+			"src": "https://jonahsnider.com/images/js/dark/js-192x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "384x384",
-			"src": "/images/js/dark/js-384x.png",
+			"src": "https://jonahsnider.com/images/js/dark/js-384x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "512x512",
-			"src": "/images/js/dark/js-512x.png",
+			"src": "https://jonahsnider.com/images/js/dark/js-512x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "512x512",
-			"src": "/images/js/dark/js.svg",
+			"src": "https://jonahsnider.com/images/js/dark/js.svg",
 			"type": "image/xml+svg"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "72x72",
-			"src": "/images/js/dark/maskable-72x.png",
+			"src": "https://jonahsnider.com/images/js/dark/maskable-72x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "96x96",
-			"src": "/images/js/dark/maskable-96x.png",
+			"src": "https://jonahsnider.com/images/js/dark/maskable-96x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "128x128",
-			"src": "/images/js/dark/maskable-128x.png",
+			"src": "https://jonahsnider.com/images/js/dark/maskable-128x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "144x144",
-			"src": "/images/js/dark/maskable-144x.png",
+			"src": "https://jonahsnider.com/images/js/dark/maskable-144x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "152x152",
-			"src": "/images/js/dark/maskable-152x.png",
+			"src": "https://jonahsnider.com/images/js/dark/maskable-152x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "192x192",
-			"src": "/images/js/dark/maskable-192x.png",
+			"src": "https://jonahsnider.com/images/js/dark/maskable-192x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "384x384",
-			"src": "/images/js/dark/maskable-384x.png",
+			"src": "https://jonahsnider.com/images/js/dark/maskable-384x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "512x512",
-			"src": "/images/js/dark/maskable-512x.png",
+			"src": "https://jonahsnider.com/images/js/dark/maskable-512x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "512x512",
-			"src": "/images/js/dark/maskable.svg",
+			"src": "https://jonahsnider.com/images/js/dark/maskable.svg",
 			"type": "image/xml+svg"
 		}
 	],
@@ -112,7 +112,7 @@
 				{
 					"purpose": "maskable",
 					"sizes": "96x96",
-					"src": "/images/shortcuts/dark/resume-96x.png",
+					"src": "https://jonahsnider.com/images/shortcuts/dark/resume-96x.png",
 					"type": "image/png"
 				}
 			],
@@ -124,7 +124,7 @@
 				{
 					"purpose": "maskable",
 					"sizes": "96x96",
-					"src": "/images/shortcuts/dark/github-96x.png",
+					"src": "https://jonahsnider.com/images/shortcuts/dark/github-96x.png",
 					"type": "image/png"
 				}
 			],
@@ -136,7 +136,7 @@
 				{
 					"purpose": "maskable",
 					"sizes": "96x96",
-					"src": "/images/shortcuts/dark/keybase-96x.png",
+					"src": "https://jonahsnider.com/images/shortcuts/dark/keybase-96x.png",
 					"type": "image/png"
 				}
 			],
@@ -148,7 +148,7 @@
 				{
 					"purpose": "maskable",
 					"sizes": "96x96",
-					"src": "/images/shortcuts/dark/email-96x.png",
+					"src": "https://jonahsnider.com/images/shortcuts/dark/email-96x.png",
 					"type": "image/png"
 				}
 			],
