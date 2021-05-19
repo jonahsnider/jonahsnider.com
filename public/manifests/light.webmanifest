@@ -5,101 +5,101 @@
 	"icons": [
 		{
 			"sizes": "72x72",
-			"src": "https://jonahsnider.com/images/js/light/js-72x.png",
+			"src": "/images/js/light/js-72x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "96x96",
-			"src": "https://jonahsnider.com/images/js/light/js-96x.png",
+			"src": "/images/js/light/js-96x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "128x128",
-			"src": "https://jonahsnider.com/images/js/light/js-128x.png",
+			"src": "/images/js/light/js-128x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "144x144",
-			"src": "https://jonahsnider.com/images/js/light/js-144x.png",
+			"src": "/images/js/light/js-144x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "152x152",
-			"src": "https://jonahsnider.com/images/js/light/js-152x.png",
+			"src": "/images/js/light/js-152x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "192x192",
-			"src": "https://jonahsnider.com/images/js/light/js-192x.png",
+			"src": "/images/js/light/js-192x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "384x384",
-			"src": "https://jonahsnider.com/images/js/light/js-384x.png",
+			"src": "/images/js/light/js-384x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "512x512",
-			"src": "https://jonahsnider.com/images/js/light/js-512x.png",
+			"src": "/images/js/light/js-512x.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "512x512",
-			"src": "https://jonahsnider.com/images/js/light/js.svg",
+			"src": "/images/js/light/js.svg",
 			"type": "image/xml+svg"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "72x72",
-			"src": "https://jonahsnider.com/images/js/light/maskable-72x.png",
+			"src": "/images/js/light/maskable-72x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "96x96",
-			"src": "https://jonahsnider.com/images/js/light/maskable-96x.png",
+			"src": "/images/js/light/maskable-96x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "128x128",
-			"src": "https://jonahsnider.com/images/js/light/maskable-128x.png",
+			"src": "/images/js/light/maskable-128x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "144x144",
-			"src": "https://jonahsnider.com/images/js/light/maskable-144x.png",
+			"src": "/images/js/light/maskable-144x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "152x152",
-			"src": "https://jonahsnider.com/images/js/light/maskable-152x.png",
+			"src": "/images/js/light/maskable-152x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "192x192",
-			"src": "https://jonahsnider.com/images/js/light/maskable-192x.png",
+			"src": "/images/js/light/maskable-192x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "384x384",
-			"src": "https://jonahsnider.com/images/js/light/maskable-384x.png",
+			"src": "/images/js/light/maskable-384x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "512x512",
-			"src": "https://jonahsnider.com/images/js/light/maskable-512x.png",
+			"src": "/images/js/light/maskable-512x.png",
 			"type": "image/png"
 		},
 		{
 			"purpose": "maskable",
 			"sizes": "512x512",
-			"src": "https://jonahsnider.com/images/js/light/maskable.svg",
+			"src": "/images/js/light/maskable.svg",
 			"type": "image/xml+svg"
 		}
 	],
