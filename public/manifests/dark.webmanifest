@@ -110,21 +110,19 @@
 		{
 			"icons": [
 				{
-					"purpose": "maskable",
-					"sizes": "96x96",
-					"src": "https://jonahsnider.com/images/shortcuts/dark/resume-96x.png",
+					"sizes": "192x192",
+					"src": "/images/shortcuts/dark/email-192x.png",
 					"type": "image/png"
 				}
 			],
-			"name": "Resumé",
-			"url": "/resume"
+			"name": "Email",
+			"url": "/email"
 		},
 		{
 			"icons": [
 				{
-					"purpose": "maskable",
-					"sizes": "96x96",
-					"src": "https://jonahsnider.com/images/shortcuts/dark/github-96x.png",
+					"sizes": "192x192",
+					"src": "/images/shortcuts/dark/github-192x.png",
 					"type": "image/png"
 				}
 			],
@@ -134,26 +132,24 @@
 		{
 			"icons": [
 				{
-					"purpose": "maskable",
-					"sizes": "96x96",
-					"src": "https://jonahsnider.com/images/shortcuts/dark/keybase-96x.png",
+					"sizes": "192x192",
+					"src": "/images/shortcuts/dark/resume-192x.png",
+					"type": "image/png"
+				}
+			],
+			"name": "Resumé",
+			"url": "/resume"
+		},
+		{
+			"icons": [
+				{
+					"sizes": "192x192",
+					"src": "/images/shortcuts/dark/keybase-192x.png",
 					"type": "image/png"
 				}
 			],
 			"name": "Keybase",
 			"url": "/keybase"
-		},
-		{
-			"icons": [
-				{
-					"purpose": "maskable",
-					"sizes": "96x96",
-					"src": "https://jonahsnider.com/images/shortcuts/dark/email-96x.png",
-					"type": "image/png"
-				}
-			],
-			"name": "Email",
-			"url": "/email"
 		}
 	],
 	"start_url": "/",
