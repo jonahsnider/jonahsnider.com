@@ -73,7 +73,7 @@ $header-line-height: 1em;
 
 // Calculate the start time for the subtitle fade animation
 // This is required instead of just delaying the animation to avoid a period of animations.$header-underline-duration where the subtitle is visible
-$wait-for-underline-animation-percentage: '#{math.div(100 * animations.$header-underline-duration, animations.$all-header-duration)}%';
+$wait-for-underline-animation-percentage: '#{100 * math.div(animations.$header-underline-duration, animations.$all-header-duration)}%';
 
 .underline {
 	position: relative;
