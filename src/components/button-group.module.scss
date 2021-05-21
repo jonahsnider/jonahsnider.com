@@ -45,7 +45,7 @@ $header-animation-delay-percentage: '#{100 * $total-animation-delay/$total-anima
 	@for $i from 1 through 4 {
 		> :nth-child(#{$i}) {
 			animation: {
-				duration: $total-animation-duration + (0.25s * $i - 1);
+				duration: $total-animation-duration + (0.15s * $i - 1);
 			}
 		}
 	}
