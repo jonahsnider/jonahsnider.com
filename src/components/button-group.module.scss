@@ -1,9 +1,11 @@
+@use "sass:math";
+
 @use '../styles/animations.scss';
 @use '../styles/breakpoints.scss';
 
 $total-animation-duration: animations.$all-button-duration + animations.$all-header-duration;
 $total-animation-delay: animations.$all-header-duration - 0.75s;
-$header-animation-delay-percentage: '#{100 * $total-animation-delay/$total-animation-duration}%';
+$header-animation-delay-percentage: '#{math.div(100 * $total-animation-delay, $total-animation-duration)}%';
 
 .button-group {
 	display: flex;
