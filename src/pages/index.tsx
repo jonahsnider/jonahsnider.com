@@ -18,7 +18,7 @@ const Home: FC = () => (
 			canonical={url}
 		/>
 
-		<Container main>
+		<Container id='main' main>
 			<Header {...header} />
 
 			<main id='links' className={clsx(styles['button-group'], styles.animated)}>
@@ -30,7 +30,7 @@ const Home: FC = () => (
 			</main>
 		</Container>
 
-		<Container>
+		<Container id='experience'>
 			<Text kind='h1' as='h2'>
 				Experience
 			</Text>

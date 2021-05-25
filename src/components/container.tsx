@@ -4,10 +4,13 @@ import styles from './container.module.scss';
 
 export interface Props {
 	main?: boolean;
+	id: string;
 }
 
 const Container: FC<Props> = props => (
-	<section className={clsx(styles.container, {[styles.main]: props.main})}>{props.children}</section>
+	<section id={props.id} className={clsx(styles.container, {[styles.main]: props.main})}>
+		{props.children}
+	</section>
 );
 
 export default Container;
