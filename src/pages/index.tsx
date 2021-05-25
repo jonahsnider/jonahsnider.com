@@ -18,7 +18,7 @@ const Home: FC = () => (
 			canonical={url}
 		/>
 
-		<Container id='main' main>
+		<Container main id='main'>
 			<Header {...header} />
 
 			<main id='links' className={clsx(styles['button-group'], styles.animated)}>

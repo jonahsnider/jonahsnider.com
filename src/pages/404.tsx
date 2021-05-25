@@ -13,7 +13,7 @@ const NotFound: FC = () => (
 	<>
 		<NextSeo title='404' openGraph={{title: '404'}} />
 
-		<Container id='main' main>
+		<Container main id='main'>
 			<Header {...header} />
 
 			<main id='links'>
