@@ -24,7 +24,7 @@ $color-background: #ffbbcc;
 	--color-text-muted: #{color.adjust($color-text, $alpha: -0.2)};
 }
 
-html {
+body {
 	background-color: var(--color-background);
 	color: var(--color-text);
 }
