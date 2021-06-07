@@ -27,6 +27,15 @@ $color-background: #ffbbcc;
 body {
 	background-color: var(--color-background);
 	color: var(--color-text);
+
+	&::-webkit-scrollbar-track,
+	&::-webkit-scrollbar {
+		background-color: var(--color-background);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--color-foreground);
+	}
 }
 
 *::selection {
