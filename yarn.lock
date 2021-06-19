@@ -5779,7 +5779,7 @@ fsevents@~2.3.1:
     next: 11.0.0
     next-compose-plugins: 2.2.1
     next-pwa: 5.2.21
-    next-seo: 4.25.1
+    next-seo: 4.26.0
     next-themes: beta
     normalize.css: 8.0.1
     prettier: 2.3.1
@@ -6612,14 +6612,14 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"next-seo@npm:4.25.1":
-  version: 4.25.1
-  resolution: "next-seo@npm:4.25.1"
+"next-seo@npm:4.26.0":
+  version: 4.26.0
+  resolution: "next-seo@npm:4.26.0"
   peerDependencies:
     next: ^8.1.1-canary.54 || >=9.0.0
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
-  checksum: b03c6ed2eb64e86d0a1b195de4e4dd556a4b25506d060d1691c1c07c7e26ac50fc26af18a1cc5ea05a0fc6ce0a50d9034a571d6a1fa702e10667c42db7c59156
+  checksum: 5276a4a69ecc85c4ead7436d4df25b01380dfa23185f7e32c82f88b2d69191f4753eec0114bc9d7e2a97b1c724abc0501190c2d90213b8b79bc4884e550d41af
   languageName: node
   linkType: hard
 
