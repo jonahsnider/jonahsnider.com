@@ -42,7 +42,7 @@ const Home: FC = () => (
 				link='https://voiceflow.com'
 			>
 				Design, prototype, and launch voice/chat assistants. Full-time junior backend developer position working on the
-				Voiceflow runtime team.
+				Voiceflow integrations team.
 			</Experience>
 
 			<Experience
