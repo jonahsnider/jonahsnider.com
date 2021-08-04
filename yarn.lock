@@ -5610,7 +5610,7 @@ fsevents@~2.3.1:
     prettier: 2.3.2
     react: 17.0.2
     react-dom: 17.0.2
-    sass: 1.37.2
+    sass: 1.37.4
     typescript: 4.3.5
     xo: 0.42.0
   languageName: unknown
@@ -7976,14 +7976,14 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sass@npm:1.37.2":
-  version: 1.37.2
-  resolution: "sass@npm:1.37.2"
+"sass@npm:1.37.4":
+  version: 1.37.4
+  resolution: "sass@npm:1.37.4"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
   bin:
     sass: sass.js
-  checksum: dbeb640565442badb54e4a79a85f3db3a0493409ad5e44e6dd6133d37ccc2bd53af1c8022a1573aa81e94b00b639849fb8cc5da1c978e9c746799d04bde1b639
+  checksum: 4a6f1634514e1768212971369899f4915d8caf79c1561d2a40cc3c059029be2376f626f4cfa92934f457317fee384f19a68c7d1f58644b00ba686918a8997f6f
   languageName: node
   linkType: hard
 
