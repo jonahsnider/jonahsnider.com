@@ -14,7 +14,7 @@ export const gitHub: Link = {
 };
 
 export const resume: Link = {
-	text: 'Resumé',
+	text: 'Résumé',
 	url: 'https://jonahsnider.com/resume/'
 };
 
