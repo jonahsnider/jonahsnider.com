@@ -75,5 +75,6 @@
 		"netlify-plugin-cache-nextjs": "1.6.1",
 		"prettier": "2.3.2",
 		"xo": "0.42.0"
-	}
+	},
+	"packageManager": "yarn@3.0.0"
 }
