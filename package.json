@@ -49,7 +49,8 @@
 			],
 			"react/no-unescaped-entities": "off",
 			"react/prop-types": "off",
-			"react/react-in-jsx-scope": "off"
+			"react/react-in-jsx-scope": "off",
+			"unicorn/prefer-node-protocol": "off"
 		}
 	},
 	"dependencies": {
