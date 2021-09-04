@@ -146,3 +146,77 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/jonahsnider
 
 ==================================================================
+==================================================================
+https://keybase.io/jonahsnider
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jonahsnider.dev
+  * I am jonahsnider (https://keybase.io/jonahsnider) on keybase.
+  * I have a public key with fingerprint E3D7 8B8F 4596 CD63 5F30  4439 E85C E1D3 1913 2409
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010125bea4ef2c8046840f48e0a54c87d7547fb439088e149a439d7616f177ebea9b0a",
+      "fingerprint": "e3d78b8f4596cd635f304439e85ce1d319132409",
+      "host": "keybase.io",
+      "key_id": "e85ce1d319132409",
+      "kid": "010125bea4ef2c8046840f48e0a54c87d7547fb439088e149a439d7616f177ebea9b0a",
+      "uid": "d087a62d4fc3ca345a0a666cc93bc019",
+      "username": "jonahsnider"
+    },
+    "service": {
+      "hostname": "jonahsnider.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1630731529,
+  "expire_in": 157680000,
+  "prev": "73597edd96b30e90007f8614d25a8b7267d191a4a611e629792d5c3a6acc6af5",
+  "seqno": 45,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMNDAnicrVJtUFRVGN5FQGCVMDRRcZouEhKw3bv3ewdEyJgYzKl0bLKt5X6cC1fo
+7nLv7gIS6U5IE7iOgziSH1RQUiGlpCSl2KJZjmApjB/hoAQRjWOQrXwIfZzL1K/6
+2flzznve53ne533nPTt/jiHCOGIb6FkSvSLceMFf7zZwlt/DyxDeIZYi1jKkAMxe
+oFAEmsteIIuIFUExFLOQPOAIIFkEBiUohkAlggEoRxICQ4s0SdAST+AsyjAAI1gO
+PkWawigJo2kAiSyPckgyIslKHlCdqqy4oCzARZrhGYkgWUoQKZyUcJSATMCQAsBE
+HGMx3EKgLCTmOzSdAc3xnAbMsgP+wcA+a+8/8P+zb/esnIgyNEdZREIScIHDCZJD
+OYqiBIHFeQHF9LpuDagK9wqA6M0OhcvXFFkEKlKejMCERxaAPlu9mX+DzCLwQAWn
+6nA5BEchTOa7XE7NqpNdpU4dXQx4+986dl5WRDhNyPAAVZMdCmLFIFJwybowRuEo
+jWOkhU1GQIlTVoFd1hEkTTEoPHodWM6K0DjJ0kAUWYrHUcDCFC0xFEaIFpJjeNpC
+0SIcK0dwFIYBysLSrEUkBZyjOEGgOIlE9M6KFAdiJUjok8uDmpqcp3AutwqQ8k6/
+LdhgjDCEhgTpa2aICI/6Z/nQvVGGg2vnNN/hi7TST/wm/qmGsLo/N7x/Bfew3i/f
+7E9s+zXw2fbHrg0y3wd2R0U9XGVIXXW4kxnwdhyvqbjcG7IvZ9nWk4vvr6TmDWzI
+9r7k++HEpld7Ui+Vpz1+vLLqw4N4dGP2phBh2S83Vl+5Iy5cv2NRfCA9+hBZ19/A
+xPzYmxOshndn7ZxoTpl2j/W3qvuih+8p1btAxqGFQ31P+zLbL5+L9ceVdH1Xs+Nz
+5+K0u8b11rj3Dvy84NP7TTUPVD17wzdU2BHUGJSmTu2MyJg7mBslxWx9xCCfw7Om
+67qaVs9PP4V/fTSzOGX7tbKU4cngR1fujv9mdFtGbnJruj++Pq0giwmbS9zc+EGq
+aZ1psKiqwt/wE7On+o8elyHhdlAOm7ulMXA+myu6vTx2c+3065Pv+q1HOxtGieHD
+vkvbvPtH62+Nv/Dk9UqPOXomcmKBNvha7a6Zb09UtES+nCluYVPRSjduT5yIfDtn
+JOlW97z0M+CIPPVGyYU1K0zPDw3cG8Pf6UN87WGlI9fJRnNB7938NUOnNRu2tMN0
++iPCui7GPWO0RTzoX9v6ceixFuShVdUX9/hrE4rNg1Nveby/3aQSm7P3Rp4Ks8eO
+ec6mbDySpODL8wJtV5u+irwot/ctaStOiJu+uv/8c5PdocdeNI1nPTHWd6C1raXr
+i3HbycCIzetreeZM0lLPor8A5P++0Q==
+=WsCY
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jonahsnider
+
+==================================================================
