@@ -3,6 +3,13 @@ base = "./"
 command = "yarn run build; yarn run export"
 publish = "./out"
 
+# Keybase redirects
+[[redirects]]
+force = true
+from = "https://jonahsnider.dev/keybase.txt"
+status = 200
+to = "https://jonahsnider.com/keybase.txt"
+
 [[redirects]]
 force = true
 from = "https://jonahsnider.netlify.app/*"
