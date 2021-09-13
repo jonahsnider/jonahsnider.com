@@ -18,7 +18,13 @@ export const seo: NextSeoProps = {
 		url,
 		locale: 'en_US',
 
-		defaultImageWidth: 512,
-		defaultImageHeight: 512
+		images: [
+			{
+				url: `${url}/images/js/banner.png`,
+				width: 1280,
+				height: 640,
+				alt: 'JS'
+			}
+		]
 	}
 };

@@ -40,16 +40,6 @@ const JonahSniderApp: FC = props => {
 
 			<DefaultSeo {...seo} />
 
-			<NextSeo
-				openGraph={{
-					images: [
-						{
-							url: `${url}/images/js/${theme}/js-512x.png`
-						}
-					]
-				}}
-			/>
-
 			{props.children}
 		</>
 	);
