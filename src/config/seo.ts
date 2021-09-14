@@ -26,5 +26,9 @@ export const seo: NextSeoProps = {
 				alt: 'JS'
 			}
 		]
+	},
+	twitter: {
+		handle: '@jonahsnider0',
+		cardType: 'summary_large_image'
 	}
 };
