@@ -1,4 +1,4 @@
-import {DefaultSeo, NextSeo} from 'next-seo';
+import {DefaultSeo} from 'next-seo';
 import {ThemeProvider, useTheme} from 'next-themes';
 import {AppProps} from 'next/app';
 import Head from 'next/head';
