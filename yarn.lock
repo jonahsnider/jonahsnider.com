@@ -1655,14 +1655,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.22":
-  version: 17.0.22
-  resolution: "@types/react@npm:17.0.22"
+"@types/react@npm:17.0.24":
+  version: 17.0.24
+  resolution: "@types/react@npm:17.0.24"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 691c7abda8f5b16d26f6b9940f75e6a9831f12d5ca070e62391454c26fd1a3d0dbe64e0199655773e0389e35e7c7984fa8a06c4561d3164562cd167f60c759e6
+  checksum: 99383e2cbaa85831984cc17ec4a5fe7fd091aa21ef023855570440d8d0b5038efb8159701e8e2a0f6ddff3efae655922ded690190e7d172653608cbde016cb66
   languageName: node
   linkType: hard
 
@@ -5786,7 +5786,7 @@ fsevents@~2.3.1:
   resolution: "jonahsnider.com@workspace:."
   dependencies:
     "@types/node": 16.4.13
-    "@types/react": 17.0.22
+    "@types/react": 17.0.24
     clsx: 1.1.1
     eslint-config-xo-react: 0.25.0
     eslint-plugin-prettier: 4.0.0
