@@ -57,7 +57,7 @@ const Home: FC = () => (
 
 			<Experience
 				id='team581'
-				date={{start: 'October 2017', end: 'present'}}
+				date={{start: 'October 2017', end: 'May 2021'}}
 				title='Team 581'
 				link='https://team581.club'
 			>
