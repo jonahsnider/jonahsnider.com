@@ -3,7 +3,12 @@ import process from 'process';
 // eslint-env node
 import {NextSeoProps} from 'next-seo';
 
-const description = 'Jonah Snider, full-stack developer. View my resume or get in touch.';
+const description = [
+	"Hi, I'm Jonah.",
+	'I work as a backend developer at Voiceflow writing Node.js & TypeScript apps for our integrations team.',
+	'I also do a lot of open source full-stack work which you can view on my GitHub.',
+	'Visit my site to view my résumé or get in touch.'
+].join(' ');
 
 export const url =
 	process.env.URL ?? process.env.NODE_ENV === 'production' ? 'https://jonahsnider.com' : 'http://localhost:3000';
