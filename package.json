@@ -63,7 +63,7 @@
 	},
 	"dependencies": {
 		"@types/node": "16.4.13",
-		"@types/react": "17.0.25",
+		"@types/react": "17.0.26",
 		"clsx": "1.1.1",
 		"next": "11.1.2",
 		"next-compose-plugins": "2.2.1",
