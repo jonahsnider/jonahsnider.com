@@ -7,6 +7,7 @@ export interface Props {
 	id: string;
 }
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
 const Container: FC<Props> = props => (
 	<section id={props.id} className={clsx(styles.container, {[styles.main]: props.main})}>
 		{props.children}

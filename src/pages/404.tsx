@@ -9,6 +9,7 @@ import Header from '../components/header';
 import Text from '../components/text';
 import {header} from '../config';
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
 const NotFound: FC = () => (
 	<>
 		<NextSeo title='404' openGraph={{title: '404'}} />

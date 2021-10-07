@@ -2,13 +2,12 @@ import {DefaultSeo} from 'next-seo';
 import {ThemeProvider, useTheme} from 'next-themes';
 import {AppProps} from 'next/app';
 import Head from 'next/head';
-// eslint-disable-next-line import/no-unassigned-import
 import 'normalize.css';
 import {FC} from 'react';
 import {color, seo, url} from '../config';
-// eslint-disable-next-line import/no-unassigned-import
 import '../styles/global.scss';
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
 const JonahSniderApp: FC = props => {
 	const theme = (useTheme().resolvedTheme as undefined | 'dark' | 'light') ?? 'light';
 
@@ -34,7 +33,7 @@ const JonahSniderApp: FC = props => {
 						type='image/png'
 						sizes={`${dimension}x${dimension}`}
 						href={`${url}/images/js/${theme}/js-${dimension}x.png`}
-					/>
+					/>,
 				])}
 			</Head>
 
@@ -45,6 +44,7 @@ const JonahSniderApp: FC = props => {
 	);
 };
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
 const ThemedApp: FC<AppProps> = ({Component, pageProps}) => (
 	<ThemeProvider>
 		<JonahSniderApp>
