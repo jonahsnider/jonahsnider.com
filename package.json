@@ -16,51 +16,7 @@
 		"start": "next start",
 		"style": "prettier --check ."
 	},
-	"xo": {
-		"extends": [
-			"xo",
-			"xo/browser",
-			"xo-react"
-		],
-		"ignores": [
-			"public"
-		],
-		"overrides": [
-			{
-				"extends": [
-					"xo"
-				],
-				"files": [
-					"*.config.js",
-					"src/config/*.ts"
-				]
-			},
-			{
-				"rules": {
-					"@typescript-eslint/triple-slash-reference": "off"
-				},
-				"files": [
-					"next-env.d.ts"
-				]
-			}
-		],
-		"prettier": true,
-		"rules": {
-			"import/no-unassigned-import": [
-				"error",
-				{
-					"allow": [
-						"firebase/*",
-						"firebase"
-					]
-				}
-			],
-			"react/no-unescaped-entities": "off",
-			"react/prop-types": "off",
-			"react/react-in-jsx-scope": "off",
-			"unicorn/prefer-node-protocol": "off"
-		}
-	},
+	"prettier": "@jonahsnider/prettier-config",
 	"dependencies": {
 		"@types/node": "16.4.13",
 		"@types/react": "17.0.27",
@@ -74,16 +30,19 @@
 		"react": "17.0.2",
 		"react-dom": "17.0.2",
 		"sass": "1.42.1",
-		"typescript": "4.3.5"
+		"typescript": "4.4.3"
 	},
 	"devDependencies": {
+		"@jonahsnider/prettier-config": "1.0.0",
+		"@jonahsnider/xo-config": "2.0.0",
+		"@types/xo": "^0",
 		"eslint-config-xo-react": "0.25.0",
 		"eslint-plugin-prettier": "4.0.0",
 		"eslint-plugin-react": "7.26.1",
 		"eslint-plugin-react-hooks": "4.2.0",
 		"netlify-plugin-cache-nextjs": "1.6.1",
-		"prettier": "2.3.2",
-		"xo": "0.44.0"
+		"prettier": "2.4.1",
+		"xo": "0.45.0"
 	},
 	"packageManager": "yarn@3.0.2"
 }

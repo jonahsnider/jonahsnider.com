@@ -9,6 +9,7 @@ export interface Props {
 	link?: string;
 }
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
 const Experience: FC<Props> = props => (
 	<section id={props.id} className={styles.experience}>
 		<Text kind='h3'>

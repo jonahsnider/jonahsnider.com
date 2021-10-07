@@ -10,10 +10,10 @@ module.exports = withPlugins(
 			{
 				pwa: {
 					register: true,
-					dest: 'public'
-				}
-			}
-		]
+					dest: 'public',
+				},
+			},
+		],
 	],
-	{webpack5: true}
+	{webpack5: true},
 );

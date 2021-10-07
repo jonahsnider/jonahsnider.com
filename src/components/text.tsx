@@ -11,14 +11,16 @@ export interface Props {
 	animation?: 'underline' | 'fade';
 }
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
 const Text: FC<Props> = props => {
+	// eslint-disable-next-line @typescript-eslint/naming-convention
 	const Element = props.as ?? props.kind;
 
 	return (
 		<Element
 			className={clsx(styles[props.kind], {
 				[styles.underline]: props.animation === 'underline',
-				[styles.fade]: props.animation === 'fade'
+				[styles.fade]: props.animation === 'fade',
 			})}
 		>
 			{props.children}
