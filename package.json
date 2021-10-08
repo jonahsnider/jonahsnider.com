@@ -35,7 +35,7 @@
 	"devDependencies": {
 		"@jonahsnider/prettier-config": "1.0.0",
 		"@jonahsnider/xo-config": "2.0.0",
-		"@types/xo": "^0",
+		"@types/xo": "0.39.1",
 		"eslint-config-xo-react": "0.25.0",
 		"eslint-plugin-prettier": "4.0.0",
 		"eslint-plugin-react": "7.26.1",
