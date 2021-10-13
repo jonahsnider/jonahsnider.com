@@ -1935,14 +1935,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.27":
-  version: 17.0.27
-  resolution: "@types/react@npm:17.0.27"
+"@types/react@npm:17.0.29":
+  version: 17.0.29
+  resolution: "@types/react@npm:17.0.29"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 3a1147d963c16dc9bbea5afb20c4be94f2389cf4eca4c5fbe9b02f3406bd9957602c0459ea017c95f8c3d523221f572e8bd842f94654835776d4c2923357f9dc
+  checksum: 39280743f6fec1bbc5c8e705976c1738a5526aaa0e693052badf5cd2dd599b6536dd815b651017737a533bf1c03db6a5738498796ff44f806e55324dc7867723
   languageName: node
   linkType: hard
 
@@ -6104,7 +6104,7 @@ fsevents@~2.3.1:
     "@jonahsnider/prettier-config": 1.0.0
     "@jonahsnider/xo-config": 2.0.0
     "@types/node": 16.4.13
-    "@types/react": 17.0.27
+    "@types/react": 17.0.29
     "@types/xo": 0.39.1
     clsx: 1.1.1
     eslint-config-xo-react: 0.25.0
