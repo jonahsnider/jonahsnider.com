@@ -1893,10 +1893,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.4.14":
-  version: 16.4.14
-  resolution: "@types/node@npm:16.4.14"
-  checksum: cc459a213f0d9401628356ec3c98c6826698dae663393cec1c67e1a4d799eb7e45c6d521a9fdf63e59cae60dda51069306aed51978ac5e740909e34a41ed66c1
+"@types/node@npm:16.11.6":
+  version: 16.11.6
+  resolution: "@types/node@npm:16.11.6"
+  checksum: 6e19634766ff589d3d2f361c2196b671f8f133cdadc5ad347a621c360d8994b6c4fbccfb2ad9c60c588c593831a96497c9c6b77d2b7e91be723384b94f6368e7
   languageName: node
   linkType: hard
 
@@ -6047,7 +6047,7 @@ fsevents@~2.3.1:
   dependencies:
     "@jonahsnider/prettier-config": 1.0.0
     "@jonahsnider/xo-config": 2.0.0
-    "@types/node": 16.4.14
+    "@types/node": 16.11.6
     "@types/react": 17.0.33
     "@types/xo": 0.39.1
     clsx: 1.1.1
