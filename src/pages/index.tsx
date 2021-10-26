@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import {NextSeo} from 'next-seo';
-import {FC} from 'react';
+import type {FC} from 'react';
 import Button from '../components/button';
 import styles from '../components/button-group.module.scss';
 import Container from '../components/container';

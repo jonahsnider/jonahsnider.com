@@ -1,9 +1,9 @@
 import {DefaultSeo} from 'next-seo';
 import {ThemeProvider, useTheme} from 'next-themes';
-import {AppProps} from 'next/app';
+import type {AppProps} from 'next/app';
 import Head from 'next/head';
 import 'normalize.css';
-import {FC} from 'react';
+import type {FC} from 'react';
 import {color, seo, url} from '../config';
 import '../styles/global.scss';
 
