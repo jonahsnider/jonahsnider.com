@@ -1,5 +1,3 @@
-/* eslint-disable unicorn/prefer-module */
-
 const withPlugins = require('next-compose-plugins');
 const withPWA = require('next-pwa');
 
@@ -15,5 +13,10 @@ module.exports = withPlugins(
 			},
 		],
 	],
-	{webpack5: true},
+	{
+		experimental: {
+			concurrentFeatures: true,
+			serverComponents: true,
+		},
+	},
 );
