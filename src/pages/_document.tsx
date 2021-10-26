@@ -1,4 +1,5 @@
-import Document, {Html, Head, Main, NextScript, DocumentContext} from 'next/document.js';
+import type {DocumentContext} from 'next/document.js';
+import Document, {Html, Head, Main, NextScript} from 'next/document.js';
 
 class MyDocument extends Document {
 	static async getInitialProps(ctx: DocumentContext) {

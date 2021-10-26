@@ -1,4 +1,4 @@
-import {FC} from 'react';
+import type {FC} from 'react';
 import styles from './button.module.scss';
 import Text from './text';
 

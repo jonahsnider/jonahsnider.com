@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import {FC} from 'react';
+import type {FC} from 'react';
 import styles from './container.module.scss';
 
 export interface Props {
