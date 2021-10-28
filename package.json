@@ -42,7 +42,7 @@
 		"eslint-plugin-react-hooks": "4.2.0",
 		"netlify-plugin-cache-nextjs": "1.6.1",
 		"prettier": "2.4.1",
-		"xo": "0.45.0"
+		"xo": "0.46.1"
 	},
 	"packageManager": "yarn@3.0.2"
 }
