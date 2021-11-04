@@ -44,5 +44,5 @@
 		"prettier": "2.4.1",
 		"xo": "0.46.4"
 	},
-	"packageManager": "yarn@3.0.2"
+	"packageManager": "yarn@3.1.0"
 }
