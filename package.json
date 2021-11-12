@@ -39,7 +39,7 @@
 		"eslint-config-xo-react": "0.25.0",
 		"eslint-plugin-prettier": "4.0.0",
 		"eslint-plugin-react": "7.27.0",
-		"eslint-plugin-react-hooks": "4.2.0",
+		"eslint-plugin-react-hooks": "4.3.0",
 		"netlify-plugin-cache-nextjs": "1.6.1",
 		"prettier": "2.4.1",
 		"xo": "0.46.4"
