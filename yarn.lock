@@ -2034,15 +2034,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/xo@npm:0.39.2":
-  version: 0.39.2
-  resolution: "@types/xo@npm:0.39.2"
-  dependencies:
-    "@types/eslint": "*"
-  checksum: a3bc56539ab1af2c0132d4b9735ac48bb95740fd6d2c8315477709d7c564deb4c4b4684bf2631961d080a4f14a28920838a9d9f031e0b21001c88619a41fcd58
-  languageName: node
-  linkType: hard
-
 "@typescript-eslint/eslint-plugin@npm:*":
   version: 5.2.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.2.0"
@@ -6082,7 +6073,6 @@ fsevents@~2.3.1:
     "@jonahsnider/xo-config": 5.0.0
     "@types/node": 16.11.10
     "@types/react": 17.0.36
-    "@types/xo": 0.39.2
     clsx: 1.1.1
     eslint-config-xo-react: 0.25.0
     eslint-plugin-prettier: 4.0.0
