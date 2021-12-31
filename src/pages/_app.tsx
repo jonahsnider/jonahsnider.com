@@ -7,7 +7,6 @@ import type {FC} from 'react';
 import {color, seo, url} from '../config';
 import '../styles/global.scss';
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 const JonahSniderApp: FC = props => {
 	const theme = (useTheme().resolvedTheme as undefined | 'dark' | 'light') ?? 'light';
 
@@ -44,7 +43,6 @@ const JonahSniderApp: FC = props => {
 	);
 };
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 const ThemedApp: FC<AppProps> = ({Component, pageProps}) => (
 	<ThemeProvider>
 		<JonahSniderApp>

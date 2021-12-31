@@ -1,6 +1,5 @@
 import {Head, Html, Main, NextScript} from 'next/document.js';
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 const Document = () => (
 	<Html lang='en'>
 		<Head>

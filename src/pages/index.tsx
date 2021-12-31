@@ -9,7 +9,6 @@ import Header from '../components/header';
 import Text from '../components/text';
 import {header, links, url} from '../config';
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 const Home: FC = () => (
 	<>
 		<NextSeo titleTemplate='Jonah Snider | %s' title={header.subtitle} openGraph={{title: `Jonah Snider | ${header.subtitle}`}} canonical={url} />
