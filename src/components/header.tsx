@@ -7,7 +7,6 @@ export interface Props {
 	subtitle?: string;
 }
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 const Header: FC<Props> = props => (
 	<header id='header' className={styles.header}>
 		{props.title && (
