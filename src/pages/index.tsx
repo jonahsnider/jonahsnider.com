@@ -31,7 +31,7 @@ const Home: FC = () => (
 			</Text>
 
 			<Experience id='voiceflow' date={{start: 'May 2021', end: 'present'}} title='Voiceflow' link='https://voiceflow.com'>
-				Design, prototype, and launch voice/chat assistants. Full-time backend developer position working on the Voiceflow integrations team.
+				Design, prototype, and launch voice/chat assistants. Full-time backend developer position working on the Voiceflow platform team.
 			</Experience>
 
 			<Experience id='gameface' date={{start: 'November 2020', end: 'May 2021'}} title='GameFace' link='https://gamefaced.gg'>

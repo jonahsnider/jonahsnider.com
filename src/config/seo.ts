@@ -4,7 +4,7 @@ import type {NextSeoProps} from 'next-seo';
 
 const description = [
 	"Hi, I'm Jonah.",
-	'I work as a backend developer at Voiceflow writing Node.js & TypeScript apps for our integrations team.',
+	'I work as a backend developer at Voiceflow writing Node.js & TypeScript apps for our platform team.',
 	'I also do a lot of open source full-stack work which you can view on my GitHub.',
 	'Visit my site to view my résumé or get in touch.',
 ].join(' ');
