@@ -30,16 +30,25 @@ const Home: FC = () => (
 				Experience
 			</Text>
 
+			<Text kind='p'>
+				You may also be interested in <a href='https://www.linkedin.com/in/jonahsnider/'>my LinkedIn profile</a>.
+			</Text>
+
 			<Experience id='voiceflow' date={{start: 'May 2021', end: 'present'}} title='Voiceflow' link='https://voiceflow.com'>
-				Design, prototype, and launch voice/chat assistants. Full-time backend developer position working on the Voiceflow platform team.
+				Design, prototype, and launch voice/chat assistants. Full-time backend developer position working on the Voiceflow platform team. Adding features to our
+				publish &amp; export system, developing internal tools, and working with customers using our runtimes.
+			</Experience>
+
+			<Experience id='team581' date={{start: 'October 2017', end: 'present'}} title='Team 581' link='https://team581.club'>
+				<a href='https://www.firstinspires.org/robotics/frc' target='_blank' rel='noopener noreferrer'>
+					FIRST robotics (FRC)
+				</a>{' '}
+				team. Started as a student, worked primarily on software, specializing in image recognition and autonomous routines. Graduated 2021 and then returned as
+				a volunteer mentor in the 2022 season to help train new students on the software team.
 			</Experience>
 
 			<Experience id='gameface' date={{start: 'November 2020', end: 'May 2021'}} title='GameFace' link='https://gamefaced.gg'>
-				Esports tournament host. Part-time software developer position working on integrating our Discord bot with the GameFace platform.
-			</Experience>
-
-			<Experience id='team581' date={{start: 'October 2017', end: 'May 2021'}} title='Team 581' link='https://team581.club'>
-				FIRST robotics team. Worked primarily on software, specializing in image recognition and autonomous routines.
+				Esports tournament host. Part-time software developer position, took over development of their Discord integration with the GameFace platform.
 			</Experience>
 		</Container>
 	</>
