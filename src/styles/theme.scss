@@ -1,5 +1,9 @@
 @mixin theme($theme) {
-	[data-theme='#{$theme}'] {
+	@if $theme == light {
 		@content;
+	} @else {
+		@media (prefers-color-scheme: dark) {
+			@content;
+		}
 	}
 }

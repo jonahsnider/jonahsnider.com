@@ -1,0 +1,81 @@
+<script lang="ts">
+	export let main = false;
+	export let id: string;
+</script>
+
+<section {id} class="container" class:main><slot /></section>
+
+<style lang="scss">
+	@use '../../styles/breakpoints.scss';
+
+	.container {
+		padding: {
+			top: 4%;
+			bottom: 0;
+			left: 4%;
+			right: 4%;
+		}
+
+		margin: {
+			bottom: 8%;
+		}
+	}
+
+	.main {
+		min-height: 100vh;
+
+		margin: {
+			bottom: 0;
+		}
+	}
+
+	@include breakpoints.tablet {
+		.container {
+			padding: {
+				top: 0;
+				bottom: 8%;
+				left: 8%;
+				right: 8%;
+			}
+
+			margin: {
+				bottom: 0;
+			}
+
+			display: flex;
+			flex-direction: column;
+		}
+
+		.main {
+			padding: {
+				top: 0;
+				bottom: 0;
+				left: 8%;
+				right: 8%;
+			}
+
+			justify-content: center;
+		}
+	}
+
+	@include breakpoints.laptop {
+		.container {
+			padding: 0 12%;
+			margin: {
+				bottom: 4%;
+			}
+		}
+
+		.main {
+			margin: {
+				bottom: 0;
+			}
+		}
+	}
+
+	@include breakpoints.desktop {
+		.container {
+			padding: 0 18%;
+		}
+	}
+</style>

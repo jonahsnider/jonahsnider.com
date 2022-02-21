@@ -203,3 +203,7 @@ public/workbox-*.js
 # Yarn
 .yarn/*
 .pnp.*
+
+# Svelte
+.svelte-kit
+# build

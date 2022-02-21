@@ -1,0 +1,164 @@
+<script lang="ts">
+	type HeadingSize = 1 | 2 | 3;
+	type HeadingElement = `h${HeadingSize}` | 'p';
+
+	export let kind: HeadingElement;
+	export let as: HeadingElement = kind;
+	export let animation: 'underline' | 'fade' | undefined = undefined;
+</script>
+
+<!-- https://github.com/sveltejs/svelte/issues/2324#issuecomment-589460021 -->
+
+{#if as === 'h1'}
+	<h1 class={kind} class:underline={animation === 'underline'} class:fade={animation === 'fade'}><slot /></h1>
+{:else if as === 'h2'}
+	<h2 class={kind} class:underline={animation === 'underline'} class:fade={animation === 'fade'}><slot /></h2>
+{:else if as === 'h3'}
+	<h3 class={kind} class:underline={animation === 'underline'} class:fade={animation === 'fade'}><slot /></h3>
+{:else if as === 'p'}
+	<p class={kind} class:underline={animation === 'underline'} class:fade={animation === 'fade'}><slot /></p>
+{/if}
+
+<style lang="scss">
+	@use 'sass:math';
+
+	@use '../../styles/animations.scss';
+	@use '../../styles/breakpoints.scss';
+
+	$base-font-size: 1em;
+
+	$base-line-height: 1.5em;
+	$header-line-height: 1em;
+
+	.h1,
+	.h2,
+	.h3 {
+		line-height: $header-line-height;
+		color: var(--color-foreground);
+
+		@include breakpoints.tablet {
+			line-height: $header-line-height * 1.2;
+		}
+	}
+
+	.h1,
+	.h2,
+	.h3,
+	.p {
+		font-family: 'Inter', sans-serif;
+		margin: 0;
+		font-size: $base-font-size;
+
+		@include breakpoints.tablet {
+			font-size: $base-font-size * 1.2;
+		}
+
+		@include breakpoints.laptop {
+			font-size: $base-font-size * 1.3;
+		}
+
+		@include breakpoints.desktop {
+			font-size: $base-font-size * 1.4;
+		}
+	}
+
+	.h1 {
+		font-family: 'Rubik', sans-serif;
+		font-weight: 700;
+
+		font-size: 3em;
+		margin-bottom: 0.25em;
+	}
+
+	.h2,
+	.h3 {
+		font-weight: 400;
+	}
+
+	.h2 {
+		font-size: 1.75em;
+		color: var(--color-text);
+	}
+
+	.h3 {
+		font-size: 1.5em;
+	}
+
+	.p {
+		line-height: $base-line-height;
+		font-size: 1em;
+
+		@include breakpoints.tablet {
+			line-height: $base-line-height * 1.2;
+		}
+	}
+
+	// Calculate the start time for the subtitle fade animation
+	// This is required instead of just delaying the animation to avoid a period of animations.$header-underline-duration where the subtitle is visible
+	$wait-for-underline-animation-percentage: '#{100 * math.div(animations.$header-underline-duration, animations.$all-header-duration)}%';
+
+	.underline {
+		position: relative;
+		display: inline-block;
+
+		@keyframes slide {
+			0% {
+				width: 0%;
+			}
+
+			50% {
+				width: 100%;
+
+				margin-left: 0%;
+			}
+
+			100% {
+				width: 0%;
+
+				margin-left: 100%;
+			}
+		}
+
+		&::before {
+			animation: {
+				duration: animations.$header-underline-duration;
+				name: slide;
+				timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+			}
+
+			content: '';
+			height: 2px;
+			background-color: var(--color-foreground);
+
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	.fade {
+		@keyframes fade {
+			0% {
+				opacity: 0;
+			}
+
+			#{$wait-for-underline-animation-percentage} {
+				opacity: 0;
+				transform: translate3d(0, 0.75em, 0);
+			}
+
+			100% {
+				opacity: 1;
+				transform: translate3d(0, 0, 0);
+			}
+		}
+
+		animation: {
+			duration: animations.$header-subtitle-duration;
+			name: fade;
+			timing-function: ease;
+		}
+
+		display: block;
+	}
+</style>
