@@ -25,26 +25,9 @@
 	@use '../../styles/animations.scss';
 	@use '../../styles/breakpoints.scss';
 
-	$base-font-size: 1em;
+	* {
+		$base-font-size: 1em;
 
-	$base-line-height: 1.5em;
-	$header-line-height: 1em;
-
-	.h1,
-	.h2,
-	.h3 {
-		line-height: $header-line-height;
-		color: var(--color-foreground);
-
-		@include breakpoints.tablet {
-			line-height: $header-line-height * 1.2;
-		}
-	}
-
-	.h1,
-	.h2,
-	.h3,
-	.p {
 		font-family: 'Inter', sans-serif;
 		margin: 0;
 		font-size: $base-font-size;
@@ -59,6 +42,19 @@
 
 		@include breakpoints.desktop {
 			font-size: $base-font-size * 1.4;
+		}
+	}
+
+	.h1,
+	.h2,
+	.h3 {
+		$header-line-height: 1em;
+
+		line-height: $header-line-height;
+		color: var(--color-foreground);
+
+		@include breakpoints.tablet {
+			line-height: $header-line-height * 1.2;
 		}
 	}
 
@@ -85,6 +81,8 @@
 	}
 
 	.p {
+		$base-line-height: 1.5em;
+
 		line-height: $base-line-height;
 		font-size: 1em;
 
@@ -92,10 +90,6 @@
 			line-height: $base-line-height * 1.2;
 		}
 	}
-
-	// Calculate the start time for the subtitle fade animation
-	// This is required instead of just delaying the animation to avoid a period of animations.$header-underline-duration where the subtitle is visible
-	$wait-for-underline-animation-percentage: '#{100 * math.div(animations.$header-underline-duration, animations.$all-header-duration)}%';
 
 	.underline {
 		position: relative;
@@ -137,6 +131,10 @@
 	}
 
 	.fade {
+		// Calculate the start time for the subtitle fade animation
+		// This is required instead of just delaying the animation to avoid a period of animations.$header-underline-duration where the subtitle is visible
+		$wait-for-underline-animation-percentage: '#{100 * math.div(animations.$header-underline-duration, animations.$all-header-duration)}%';
+
 		@keyframes fade {
 			0% {
 				opacity: 0;
