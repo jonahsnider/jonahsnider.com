@@ -16,6 +16,7 @@
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
 		"@types/node": "17.0.18",
+		"html-minifier": "4.0.0",
 		"modern-normalize": "1.1.0",
 		"sass": "1.49.8",
 		"svelte": "^3.44.0",
@@ -28,6 +29,7 @@
 	"devDependencies": {
 		"@jonahsnider/prettier-config": "1.1.0",
 		"@jonahsnider/xo-config": "5.0.3",
+		"@types/html-minifier": "^4",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.2.1",
 		"prettier": "2.5.1",
