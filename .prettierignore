@@ -206,4 +206,4 @@ public/workbox-*.js
 
 # Svelte
 .svelte-kit
-# build
+build
