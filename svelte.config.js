@@ -1,4 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
+import path from 'path';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -11,6 +12,12 @@ const config = {
 		adapter: adapter(),
 		browser: {
 			hydrate: false,
+		},
+		files: {
+			serviceWorker: path.join('src', 'sw'),
+		},
+		serviceWorker: {
+			register: false,
 		},
 		...(process.env.DEPLOY_ID ? {version: {name: process.env.DEPLOY_ID}} : {}),
 	},

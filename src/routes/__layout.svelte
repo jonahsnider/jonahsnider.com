@@ -1,6 +1,9 @@
 <script lang="ts">
+	import {browser} from '$app/env';
+
 	import TemplateSeo from '$lib/components/TemplateSeo.svelte';
 	import {preferredTheme} from '$lib/stores/theme';
+	import {registerServiceWorker} from '$lib/utils/service-worker';
 	import type {Theme} from '$lib/utils/theme';
 	import 'modern-normalize/modern-normalize.css';
 	import {onMount} from 'svelte';
@@ -8,12 +11,17 @@
 
 	let theme: Theme = get(preferredTheme);
 
-	// TODO: This never seems to run
-	onMount(() => {
+	// TODO: This never runs
+	onMount(async () => {
 		preferredTheme.subscribe(newTheme => {
 			theme = newTheme;
 		});
 	});
+
+	// TODO: This also never runs
+	if (browser) {
+		registerServiceWorker();
+	}
 </script>
 
 <svelte:head>
