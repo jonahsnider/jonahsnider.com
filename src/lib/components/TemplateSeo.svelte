@@ -9,7 +9,6 @@
 	let themeColor = theme === Theme.Light ? '#ffbbcc' : '#000000';
 </script>
 
-<!-- TODO: Svelte is prone to duplicating these tags after rehydration, even though this was apparently fixed: https://github.com/sveltejs/svelte/issues/1607 -->
 <svelte:head>
 	<meta name="theme-color" content={themeColor} />
 	<link rel="manifest" href={`${url}/manifests/${theme}.webmanifest`} />
