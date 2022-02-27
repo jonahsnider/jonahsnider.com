@@ -21,7 +21,7 @@
 		"@types/node": "16.11.26",
 		"@types/react": "17.0.39",
 		"clsx": "1.1.1",
-		"next": "12.0.10",
+		"next": "12.1.0",
 		"next-compose-plugins": "2.2.1",
 		"next-pwa": "5.4.4",
 		"next-seo": "5.1.0",
