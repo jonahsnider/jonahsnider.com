@@ -5111,7 +5111,7 @@ fsevents@~2.3.1:
     next-seo: 5.1.0
     next-themes: beta
     normalize.css: 8.0.1
-    prettier: 2.5.1
+    prettier: 2.6.0
     react: 17.0.2
     react-dom: 17.0.2
     sass: 1.49.9
@@ -6613,7 +6613,16 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.5.1, prettier@npm:^2.5.1":
+"prettier@npm:2.6.0":
+  version: 2.6.0
+  resolution: "prettier@npm:2.6.0"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 3e527ad62279676778a8404d18174d7ca2365ada4caba6eebbcdd9907d1187afd3bc6ade5b4e5f5d4549bb9fb71e45ca8930d71500017635524f8fc05bc52e93
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.5.1":
   version: 2.5.1
   resolution: "prettier@npm:2.5.1"
   bin:
