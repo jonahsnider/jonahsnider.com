@@ -1595,10 +1595,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.11.29":
-  version: 16.11.29
-  resolution: "@types/node@npm:16.11.29"
-  checksum: efb3a716a638baa7bf8f281d8f91102a7df452804f4cfbdd3a0f36d581cddc56446eac6b1ed041e27841f316de5d858080f98516ccf306fda9d6f8c3c68c2e17
+"@types/node@npm:16.11.32":
+  version: 16.11.32
+  resolution: "@types/node@npm:16.11.32"
+  checksum: 21f1bcd4f47a443f8a78a58b6ca3488dd9418c71b1185ba067d02222047fb194a3bfba244c32259bcb0cae4d55870b43a908b1f2832ec4aa4f31158f809625fe
   languageName: node
   linkType: hard
 
@@ -5104,7 +5104,7 @@ fsevents@~2.3.1:
   dependencies:
     "@jonahsnider/prettier-config": 1.1.1
     "@jonahsnider/xo-config": 5.1.0
-    "@types/node": 16.11.29
+    "@types/node": 16.11.32
     "@types/react": 17.0.44
     clsx: 1.1.1
     eslint-config-xo-react: 0.27.0
