@@ -1,4 +1,4 @@
-import type {FC} from 'react';
+import type {FC, PropsWithChildren} from 'react';
 import Text from './text';
 import styles from './header.module.scss';
 
@@ -7,7 +7,7 @@ export interface Props {
 	subtitle?: string;
 }
 
-const Header: FC<Props> = props => (
+const Header: FC<PropsWithChildren<Props>> = props => (
 	<header id='header' className={styles.header}>
 		{props.title && (
 			<Text kind='h1' animation='underline'>

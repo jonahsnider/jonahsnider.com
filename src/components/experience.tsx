@@ -1,4 +1,4 @@
-import type {FC} from 'react';
+import type {FC, PropsWithChildren} from 'react';
 import styles from './experience.module.scss';
 import Text from './text';
 
@@ -9,7 +9,7 @@ export interface Props {
 	link?: string;
 }
 
-const Experience: FC<Props> = props => (
+const Experience: FC<PropsWithChildren<Props>> = props => (
 	<section id={props.id} className={styles.experience}>
 		<Text kind='h3'>
 			{props.title}

@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import type {FC} from 'react';
+import type {FC, PropsWithChildren} from 'react';
 import styles from './text.module.scss';
 
 type HeadingSize = 1 | 2 | 3;
@@ -11,7 +11,7 @@ export interface Props {
 	animation?: 'underline' | 'fade';
 }
 
-const Text: FC<Props> = props => {
+const Text: FC<PropsWithChildren<Props>> = props => {
 	const Element = props.as ?? props.kind;
 
 	return (

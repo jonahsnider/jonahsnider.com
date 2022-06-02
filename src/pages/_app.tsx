@@ -3,11 +3,11 @@ import {ThemeProvider, useTheme} from 'next-themes';
 import type {AppProps} from 'next/app';
 import Head from 'next/head';
 import 'normalize.css';
-import type {FC} from 'react';
+import type {FC, PropsWithChildren} from 'react';
 import {color, seo, url} from '../config';
 import '../styles/global.scss';
 
-const JonahSniderApp: FC = props => {
+const JonahSniderApp: FC<PropsWithChildren<Record<never, never>>> = props => {
 	const theme = (useTheme().resolvedTheme as undefined | 'dark' | 'light') ?? 'light';
 
 	return (
@@ -44,6 +44,7 @@ const JonahSniderApp: FC = props => {
 };
 
 const ThemedApp: FC<AppProps> = ({Component, pageProps}) => (
+	// @ts-expect-error See https://github.com/pacocoursey/next-themes/issues/122
 	<ThemeProvider>
 		<JonahSniderApp>
 			<Component {...pageProps} />
