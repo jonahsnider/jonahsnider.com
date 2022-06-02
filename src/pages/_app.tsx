@@ -7,7 +7,7 @@ import type {FC, PropsWithChildren} from 'react';
 import {color, seo, url} from '../config';
 import '../styles/global.scss';
 
-const JonahSniderApp: FC<PropsWithChildren<{}>> = props => {
+const JonahSniderApp: FC<PropsWithChildren<Record<never, never>>> = props => {
 	const theme = (useTheme().resolvedTheme as undefined | 'dark' | 'light') ?? 'light';
 
 	return (
@@ -46,9 +46,7 @@ const JonahSniderApp: FC<PropsWithChildren<{}>> = props => {
 const ThemedApp: FC<AppProps> = ({Component, pageProps}) => (
 	// @ts-expect-error See https://github.com/pacocoursey/next-themes/issues/122
 	<ThemeProvider>
-		<JonahSniderApp>
-			<Component {...pageProps} />
-		</JonahSniderApp>
+		<JonahSniderApp children={1} />
 	</ThemeProvider>
 );
 
