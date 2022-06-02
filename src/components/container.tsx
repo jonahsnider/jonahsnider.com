@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import type {FC} from 'react';
+import type {FC, PropsWithChildren} from 'react';
 import styles from './container.module.scss';
 
 export interface Props {
@@ -7,7 +7,7 @@ export interface Props {
 	id: string;
 }
 
-const Container: FC<Props> = props => (
+const Container: FC<PropsWithChildren<Props>> = props => (
 	<section id={props.id} className={clsx(styles.container, {[styles.main]: props.main})}>
 		{props.children}
 	</section>
