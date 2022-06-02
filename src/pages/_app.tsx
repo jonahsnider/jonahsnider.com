@@ -46,7 +46,9 @@ const JonahSniderApp: FC<PropsWithChildren<Record<never, never>>> = props => {
 const ThemedApp: FC<AppProps> = ({Component, pageProps}) => (
 	// @ts-expect-error See https://github.com/pacocoursey/next-themes/issues/122
 	<ThemeProvider>
-		<JonahSniderApp children={1} />
+		<JonahSniderApp>
+			<Component {...pageProps} />
+		</JonahSniderApp>
 	</ThemeProvider>
 );
 
