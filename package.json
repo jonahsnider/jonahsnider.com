@@ -36,7 +36,7 @@
 		"@jonahsnider/prettier-config": "1.1.2",
 		"@jonahsnider/xo-config": "5.1.0",
 		"eslint-config-xo-react": "0.27.0",
-		"eslint-plugin-prettier": "4.1.0",
+		"eslint-plugin-prettier": "4.2.1",
 		"eslint-plugin-react": "7.30.1",
 		"eslint-plugin-react-hooks": "4.6.0",
 		"netlify-plugin-cache-nextjs": "1.6.1",
