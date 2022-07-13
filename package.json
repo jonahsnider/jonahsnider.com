@@ -18,7 +18,7 @@
 	},
 	"prettier": "@jonahsnider/prettier-config",
 	"dependencies": {
-		"@types/node": "16.11.43",
+		"@types/node": "16.11.44",
 		"@types/react": "18.0.15",
 		"clsx": "1.2.1",
 		"next": "12.2.2",
