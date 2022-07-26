@@ -4,55 +4,55 @@
 	"display": "standalone",
 	"icons": [
 		{
-			"purpose": "maskable",
+			"purpose": "any maskable",
 			"sizes": "72x72",
 			"src": "/images/logomark/light/logomark-72x.png",
 			"type": "image/png"
 		},
 		{
-			"purpose": "maskable",
+			"purpose": "any maskable",
 			"sizes": "96x96",
 			"src": "/images/logomark/light/logomark-96x.png",
 			"type": "image/png"
 		},
 		{
-			"purpose": "maskable",
+			"purpose": "any maskable",
 			"sizes": "128x128",
 			"src": "/images/logomark/light/logomark-128x.png",
 			"type": "image/png"
 		},
 		{
-			"purpose": "maskable",
+			"purpose": "any maskable",
 			"sizes": "144x144",
 			"src": "/images/logomark/light/logomark-144x.png",
 			"type": "image/png"
 		},
 		{
-			"purpose": "maskable",
+			"purpose": "any maskable",
 			"sizes": "152x152",
 			"src": "/images/logomark/light/logomark-152x.png",
 			"type": "image/png"
 		},
 		{
-			"purpose": "maskable",
+			"purpose": "any maskable",
 			"sizes": "192x192",
 			"src": "/images/logomark/light/logomark-192px.png",
 			"type": "image/png"
 		},
 		{
-			"purpose": "maskable",
+			"purpose": "any maskable",
 			"sizes": "384x384",
 			"src": "/images/logomark/light/logomark-384x.png",
 			"type": "image/png"
 		},
 		{
-			"purpose": "maskable",
+			"purpose": "any maskable",
 			"sizes": "512x512",
 			"src": "/images/logomark/light/logomark-512x.png",
 			"type": "image/png"
 		},
 		{
-			"purpose": "maskable",
+			"purpose": "any maskable",
 			"sizes": "512x512",
 			"src": "/images/logomark/light/logomark.svg",
 			"type": "image/xml+svg"
