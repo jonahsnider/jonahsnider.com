@@ -23,7 +23,8 @@
 	transition: color, background-color 150ms linear;
 
 	color: var(--color-foreground);
-	border: 0.25rem solid var(--color-foreground);
+	border: 0.125rem solid var(--color-foreground);
+	border-radius: 4px;
 
 	&:hover {
 		color: var(--color-background);

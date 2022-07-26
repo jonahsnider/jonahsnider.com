@@ -3,17 +3,5 @@
 }
 
 .link {
-	transition: opacity 150ms ease;
-
-	font-weight: 200;
-
-	color: var(--color-text-muted);
-	margin: {
-		left: 0.5rem;
-	}
-	opacity: 0;
-
-	.experience:hover & {
-		opacity: initial;
-	}
+	color: inherit;
 }

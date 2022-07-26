@@ -1,17 +1,16 @@
 @use 'sass:color';
 @use '../styles/theme.scss';
 
-$color-foreground: #000000;
+$color-foreground: #17171c;
 $color-background: #ffbbcc;
 
 :root {
-	$color-text: black;
+	$color-text: $color-foreground;
 
 	--color-foreground: #{$color-foreground};
 	--color-background: #{$color-background};
 	--color-foreground-light: #{color.adjust($color-foreground, $alpha: -0.75)};
 	--color-text: #{$color-text};
-	--color-text-muted: #{color.adjust($color-text, $alpha: -0.4)};
 }
 
 @include theme.theme('dark') {
@@ -21,7 +20,6 @@ $color-background: #ffbbcc;
 	--color-background: #{$color-foreground};
 	--color-foreground-light: #{color.adjust($color-background, $alpha: -0.75)};
 	--color-text: #{$color-text};
-	--color-text-muted: #{color.adjust($color-text, $alpha: -0.2)};
 }
 
 body {

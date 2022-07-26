@@ -12,11 +12,12 @@ export interface Props {
 const Experience: FC<PropsWithChildren<Props>> = props => (
 	<section id={props.id} className={styles.experience}>
 		<Text kind='h3'>
-			{props.title}
-			{props.link && (
+			{props.link ? (
 				<a rel='noopener noreferrer' target='_blank' className={styles.link} href={props.link}>
-					(link)
+					{props.title}
 				</a>
+			) : (
+				props.title
 			)}
 		</Text>
 		<Text kind='p'>

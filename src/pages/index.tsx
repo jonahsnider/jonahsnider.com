@@ -39,12 +39,12 @@ const Home: FC = () => (
 				publish &amp; export system, developing internal tools, and working with customers using our runtimes.
 			</Experience>
 
-			<Experience id='team581' date={{start: 'October 2017', end: 'present'}} title='Team 581' link='https://team581.club'>
+			<Experience id='team581' date={{start: 'October 2017', end: 'present'}} title='Team 581' link='https://team581.com'>
 				<a href='https://www.firstinspires.org/robotics/frc' target='_blank' rel='noopener noreferrer'>
 					FIRST robotics (FRC)
 				</a>{' '}
-				team. Started as a student, worked primarily on software, specializing in image recognition and autonomous routines. Graduated 2021 and then returned as
-				a volunteer mentor in the 2022 season to help train new students on the software team.
+				team. Started as a student, worked primarily on software, specializing in image recognition and autonomous routines. I graduated 2021 and then returned
+				as a volunteer mentor in the 2022 season. I've been mentoring the team since then.
 			</Experience>
 
 			<Experience id='gameface' date={{start: 'November 2020', end: 'May 2021'}} title='GameFace' link='https://gamefaced.gg'>
