@@ -16,7 +16,7 @@ const JonahSniderApp: FC<PropsWithChildren<Record<never, never>>> = props => {
 				<meta name='theme-color' content={theme === 'dark' ? color.foreground : color.background} />
 				<link rel='manifest' href={`${url}/manifests/${theme}.webmanifest`} />
 
-				<link rel='icon' href={`${url}/images/js/${theme}/favicon.ico`} type='image/x-icon' />
+				<link rel='icon' href={`${url}/images/logomark/${theme}/favicon.ico`} type='image/x-icon' />
 
 				{[72, 96, 128, 144, 152, 192, 384, 512].map(dimension => [
 					<link
@@ -24,14 +24,14 @@ const JonahSniderApp: FC<PropsWithChildren<Record<never, never>>> = props => {
 						rel='icon'
 						type='image/png'
 						sizes={`${dimension}x${dimension}`}
-						href={`${url}/images/js/${theme}/js-${dimension}x.png`}
+						href={`${url}/images/logomark/${theme}/logomark-${dimension}px.png`}
 					/>,
 					<link
 						key={`apple-touch-icon-${dimension}`}
 						rel='apple-touch-icon'
 						type='image/png'
 						sizes={`${dimension}x${dimension}`}
-						href={`${url}/images/js/${theme}/js-${dimension}x.png`}
+						href={`${url}/images/logomark/${theme}/logomark-${dimension}px.png`}
 					/>,
 				])}
 			</Head>

@@ -23,10 +23,10 @@ export const seo: NextSeoProps = {
 
 		images: [
 			{
-				url: `${url}/images/js/banner.png`,
+				url: `${url}/images/logomark/banner.png`,
 				width: 1280,
 				height: 640,
-				alt: 'JS',
+				alt: 'J',
 			},
 		],
 	},
