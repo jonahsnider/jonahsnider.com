@@ -1,8 +1,6 @@
 @use 'sass:color';
 @use '../styles/theme.scss';
-
-$color-foreground: #17171c;
-$color-background: #ffbbcc;
+@import '../styles/theme.scss';
 
 :root {
 	$color-text: $color-foreground;
