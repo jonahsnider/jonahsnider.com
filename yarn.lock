@@ -5333,7 +5333,6 @@ fsevents@~2.3.1:
     eslint-plugin-react-hooks: 4.6.0
     netlify-plugin-cache-nextjs: 1.6.1
     next: 12.2.5
-    next-compose-plugins: 2.2.1
     next-pwa: 5.6.0
     next-seo: 5.5.0
     next-themes: 0.2.0
@@ -6091,13 +6090,6 @@ fsevents@~2.3.1:
   dependencies:
     "@netlify/cache-utils": 1.0.7
   checksum: eb63568424f99a7ee89dd1e4e4d768c6db7900a83c8a03f117764c3b894be9a312186117f9b779401649702117b0758ca6b4a15969eacf088f0289982e17f40e
-  languageName: node
-  linkType: hard
-
-"next-compose-plugins@npm:2.2.1":
-  version: 2.2.1
-  resolution: "next-compose-plugins@npm:2.2.1"
-  checksum: 771762fda2b12b81daf10431cbb494816cff96be02b44009692c6c0eefbacd62cbf51ddb93af8d3380ec00254c6a95d64d10f744d4b9ddadefc21efee7dc69fc
   languageName: node
   linkType: hard
 
