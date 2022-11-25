@@ -1,7 +1,7 @@
-interface Link {
+type Link = {
 	url: string;
 	text: string;
-}
+};
 
 export const email: Link = {
 	text: 'Email',

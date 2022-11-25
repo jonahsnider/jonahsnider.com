@@ -5,11 +5,11 @@ import styles from './text.module.scss';
 type HeadingSize = 1 | 2 | 3;
 type HeadingElement = `h${HeadingSize}` | 'p';
 
-export interface Props {
+export type Props = {
 	kind: HeadingElement;
 	as?: HeadingElement;
 	animation?: 'underline' | 'fade';
-}
+};
 
 const Text: FC<PropsWithChildren<Props>> = props => {
 	const Element = props.as ?? props.kind;

@@ -2,9 +2,9 @@ import type {FC, PropsWithChildren} from 'react';
 import styles from './button.module.scss';
 import Text from './text';
 
-interface Props {
+type Props = {
 	href?: string;
-}
+};
 
 const Button: FC<PropsWithChildren<Props>> = props => (
 	<a href={props.href} className={styles.button}>
