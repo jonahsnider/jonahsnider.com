@@ -2,10 +2,10 @@ import type {FC, PropsWithChildren} from 'react';
 import Text from './text';
 import styles from './header.module.scss';
 
-export interface Props {
+export type Props = {
 	title?: string;
 	subtitle?: string;
-}
+};
 
 const Header: FC<PropsWithChildren<Props>> = props => (
 	<header id='header' className={styles.header}>
