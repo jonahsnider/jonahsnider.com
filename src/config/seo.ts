@@ -30,9 +30,5 @@ export const seo: NextSeoProps = {
 			},
 		],
 	},
-	twitter: {
-		handle: '@jonahsnider0',
-		cardType: 'summary_large_image',
-	},
 	/* eslint-enable camelcase, @typescript-eslint/naming-convention */
 };
