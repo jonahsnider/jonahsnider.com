@@ -37,6 +37,12 @@ from = "/resume"
 status = 301
 to = "https://drive.google.com/file/d/11FOwQyPz1Qy8vxHyJjN_Oaxh2rHGRTzW/view?usp=sharing"
 
+# LinkedIn link
+[[redirects]]
+from = "/linkedin"
+status = 301
+to = "https://linkedin.com/in/jonahsnider/"
+
 # Keybase link
 [[redirects]]
 from = "/keybase"
