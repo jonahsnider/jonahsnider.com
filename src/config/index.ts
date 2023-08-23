@@ -8,5 +8,5 @@ export const links = [
 	{id: 'email', content: rawLinks.email},
 	{id: 'github', content: rawLinks.gitHub},
 	{id: 'resume', content: rawLinks.resume},
-	{id: 'keybase', content: rawLinks.keybase},
+	{id: 'linkedin', content: rawLinks.linkedin},
 ];

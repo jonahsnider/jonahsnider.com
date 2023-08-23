@@ -18,7 +18,7 @@ export const resume: Link = {
 	url: 'https://jonahsnider.com/resume/',
 };
 
-export const keybase: Link = {
-	text: 'Keybase',
-	url: 'https://keybase.io/jonahsnider/',
+export const linkedin: Link = {
+	text: 'LinkedIn',
+	url: 'https://linkedin.com/in/jonahsnider/',
 };

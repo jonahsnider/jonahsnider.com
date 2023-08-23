@@ -30,10 +30,6 @@ const Home: FC = () => (
 				Experience
 			</Text>
 
-			<Text kind='p'>
-				You may also be interested in <a href='https://www.linkedin.com/in/jonahsnider/'>my LinkedIn profile</a>.
-			</Text>
-
 			<Experience id='voiceflow' date={{start: 'May 2021', end: 'August 2023'}} title='Voiceflow' link='https://voiceflow.com'>
 				Design, prototype, and launch voice/chat assistants. Full-time backend developer position working on the Voiceflow platform team. Adding features to our
 				publish & export system, developing internal tools, and working with customers using our runtimes.
