@@ -99,12 +99,12 @@
 			"icons": [
 				{
 					"sizes": "192x192",
-					"src": "/images/shortcuts/dark/keybase-192px.png",
+					"src": "/images/shortcuts/dark/linkedin-192px.png",
 					"type": "image/png"
 				}
 			],
-			"name": "Keybase",
-			"url": "/keybase"
+			"name": "LinkedIn",
+			"url": "/linkedin"
 		}
 	],
 	"start_url": "/",
