@@ -1,6 +1,6 @@
 [build]
 base = "./"
-command = "yarn run build; yarn run export"
+command = "yarn run build"
 publish = "./out"
 
 # Keybase redirects

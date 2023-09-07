@@ -1,0 +1,31 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"files": {
+		"ignore": [".next", "out/", "node_modules"]
+	},
+	"formatter": {
+		"lineWidth": 120,
+		"formatWithErrors": true
+	},
+	"javascript": {
+		"formatter": {
+			"jsxQuoteStyle": "single",
+			"quoteStyle": "single"
+		},
+		"globals": ["React"]
+	},
+	"json": {
+		"parser": {
+			"allowComments": true
+		}
+	},
+	"linter": {
+		"rules": {
+			"all": true,
+			"style": {
+				"all": true,
+				"noParameterProperties": "off"
+			}
+		}
+	}
+}

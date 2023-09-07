@@ -1,4 +1,9 @@
-/* eslint-disable unicorn/prefer-module */
-const withPWA = require('next-pwa');
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+	output: 'export',
+	env: {
+		NEXT_PUBLIC_URL: process.env.URL || process.env.DEPLOY_URL || 'http://localhost:3000',
+	},
+};
 
-module.exports = withPWA({dest: 'public'});
+module.exports = nextConfig;
