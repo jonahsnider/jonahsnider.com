@@ -113,6 +113,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jonahsnider/prettier-config@npm:1.1.2":
+  version: 1.1.2
+  resolution: "@jonahsnider/prettier-config@npm:1.1.2"
+  dependencies:
+    "@types/prettier": ^2.6.3
+    prettier-config-xo: 2.0.0
+  checksum: df2c7d49fbf99a731d877648d09bf2ead56d4e3366fcf99ff8a7c4f2017c73a9311d11d4b96c7bde0ede223177601693e821783cb7767cc71b32c92dc5b968d7
+  languageName: node
+  linkType: hard
+
 "@jridgewell/gen-mapping@npm:^0.3.2":
   version: 0.3.3
   resolution: "@jridgewell/gen-mapping@npm:0.3.3"
@@ -288,6 +298,13 @@ __metadata:
   version: 20.5.9
   resolution: "@types/node@npm:20.5.9"
   checksum: 717490e94131722144878b4ca1a963ede1673bb8f2ef78c2f5b50b918df6dc9b35e7f8283e5c2a7a9f137730f7c08dc6228e53d4494a94c9ee16881e6ce6caed
+  languageName: node
+  linkType: hard
+
+"@types/prettier@npm:^2.6.3":
+  version: 2.7.3
+  resolution: "@types/prettier@npm:2.7.3"
+  checksum: 705384209cea6d1433ff6c187c80dcc0b95d99d5c5ce21a46a9a58060c527973506822e428789d842761e0280d25e3359300f017fbe77b9755bc772ab3dc2f83
   languageName: node
   linkType: hard
 
@@ -1166,6 +1183,7 @@ __metadata:
   resolution: "jonahsnider.com@workspace:."
   dependencies:
     "@biomejs/biome": 1.1.0
+    "@jonahsnider/prettier-config": 1.1.2
     "@types/node": 20.5.9
     "@types/react": 18.2.21
     "@types/react-dom": 18.2.7
@@ -1729,6 +1747,13 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: dd6daa25e781db9ae5b651d9b7bfde0ec6e60e86a37da69a18eb4773d5ddd51e28fc4ff054fbdc04636a31462e6bf09a1e50986f69ac52b10d46b7457cd36d12
+  languageName: node
+  linkType: hard
+
+"prettier-config-xo@npm:2.0.0":
+  version: 2.0.0
+  resolution: "prettier-config-xo@npm:2.0.0"
+  checksum: f5dc2760ee7991b98177789ac080aa720a38f49fcedd01f02acb281f02ecaf2dc9bc604d13ba804f750127df5913d396b8deae661cc8f7e2d422dded6a9b950f
   languageName: node
   linkType: hard
 
