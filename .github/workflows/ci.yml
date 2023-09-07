@@ -16,6 +16,8 @@ jobs:
         with:
           node-version: "18"
           cache: "yarn"
+      - name: Install dependencies with Yarn
+        run: yarn install --immutable
       - name: Build for production
         run: yarn run build
       - name: Upload static site
