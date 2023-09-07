@@ -1,5 +1,5 @@
-import colors from 'tailwindcss/colors';
 import type { Config } from 'tailwindcss';
+import colors from 'tailwindcss/colors';
 
 const config: Config = {
 	content: [
@@ -16,13 +16,13 @@ const config: Config = {
 			},
 			dark: {
 				200: '#17171c35',
-				500: '#17171c'
-			}
+				500: '#17171c',
+			},
 		},
 		fontFamily: {
 			display: ['var(--font-rubik)', 'sans-serif'],
 			body: ['var(--font-inter)', 'sans-serif'],
-		}
+		},
 	},
 	plugins: [],
 };
