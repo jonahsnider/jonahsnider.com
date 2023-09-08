@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 	},
 	description: siteDescription,
 	themeColor: '#ffbbcc',
+	colorScheme: 'light dark',
 	openGraph,
 };
 
