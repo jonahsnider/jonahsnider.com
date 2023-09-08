@@ -43,7 +43,7 @@ const buttonContainerVariants: Variants = {
 	visible: {
 		transition: {
 			staggerChildren: 0.1,
-			delayChildren: (animationDurations.underline + animationDurations.subtitle) * 0.4,
+			delayChildren: (animationDurations.underline + animationDurations.subtitle) * 0.35,
 			bounce: 0,
 		},
 	},
