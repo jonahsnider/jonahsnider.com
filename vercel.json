@@ -28,7 +28,11 @@
 			"destination": "mailto:jonah@jonahsnider.com"
 		},
 		{
-			"source": "/(github|gh)/:path*",
+			"source": "/gh/:path*",
+			"destination": "https://github.com/jonahsnider/:path*"
+		},
+		{
+			"source": "/github/:path*",
 			"destination": "https://github.com/jonahsnider/:path*"
 		}
 	]
