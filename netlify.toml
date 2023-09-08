@@ -1,6 +1,6 @@
 [build]
 base = "./"
-command = "yarn run build; yarn run export"
+command = "yarn run build"
 publish = "./out"
 
 # Keybase redirects
@@ -77,7 +77,3 @@ Permissions-Policy = "interest-cohort=()"
 for = "/*.webmanifest"
 [headers.values]
 Content-Type = "application/manifest+json"
-
-# Cache Next.js build folder between Netlify builds
-[[plugins]]
-package = "netlify-plugin-cache-nextjs"
