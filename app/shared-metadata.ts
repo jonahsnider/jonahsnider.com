@@ -10,7 +10,7 @@ export const siteDescription = [
 
 export const siteName = 'Jonah Snider';
 
-export const metadataBase = process.env.NEXT_PUBLIC_URL;
+export const metadataBase = process.env.URL || process.env.DEPLOY_URL;
 
 export const openGraph = {
 	title: {
