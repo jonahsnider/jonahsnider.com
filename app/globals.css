@@ -9,6 +9,6 @@
 	}
 
 	&::-webkit-scrollbar-thumb {
-		@apply rounded bg-dark-500 dark:bg-pink-500;
+		@apply rounded-l-md bg-dark-500 dark:bg-pink-500;
 	}
 }
