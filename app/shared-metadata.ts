@@ -12,7 +12,7 @@ export const siteName = 'Jonah Snider';
 
 export const metadataBase = process.env.NEXT_PUBLIC_URL;
 
-export const openGraph: OpenGraph = {
+export const openGraph = {
 	title: {
 		default: `${siteName} | Backend developer`,
 		template: `%s | ${siteName}`,
@@ -20,4 +20,4 @@ export const openGraph: OpenGraph = {
 	siteName,
 	description: siteDescription,
 	type: 'website',
-};
+} satisfies OpenGraph;
