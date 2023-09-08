@@ -1,16 +1,6 @@
 {
 	"$schema": "https://openapi.vercel.sh/vercel.json",
-	"rewrites": [
-		{
-			"source": "https://jonahsnider.dev/keybase.txt",
-			"destination": "/keybase.txt"
-		}
-	],
 	"redirects": [
-		{
-			"source": "https://jonahsnider.dev/:path*",
-			"destination": "https://github.com/jonahsnider/:path*"
-		},
 		{
 			"source": "/resume",
 			"destination": "https://drive.google.com/file/d/11FOwQyPz1Qy8vxHyJjN_Oaxh2rHGRTzW/view?usp=sharing"
