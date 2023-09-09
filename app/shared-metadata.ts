@@ -10,8 +10,9 @@ export const siteDescription = [
 
 export const siteName = 'Jonah Snider';
 
-export const metadataBase =
-	process.env.VERCEL_ENV === 'production' ? 'https://jonahsnider.com' : process.env.VERCEL_URL;
+export const metadataBase = new URL(
+	process.env.VERCEL_ENV === 'production' ? 'https://jonahsnider.com' : `https://${process.env.VERCEL_URL}`,
+);
 
 export const openGraph = {
 	title: {

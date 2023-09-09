@@ -3,12 +3,13 @@ import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Inter, Rubik } from 'next/font/google';
 import './globals.css';
-import { openGraph, siteDescription, siteName } from './shared-metadata';
+import { metadataBase, openGraph, siteDescription, siteName } from './shared-metadata';
 
 const inter = Inter({ subsets: ['latin'], weight: 'variable', display: 'swap', variable: '--font-inter' });
 const rubik = Rubik({ subsets: ['latin'], weight: '700', display: 'swap', variable: '--font-rubik' });
 
 export const metadata: Metadata = {
+	metadataBase,
 	title: {
 		default: `${siteName} | Backend developer`,
 		template: `%s | ${siteName}`,
