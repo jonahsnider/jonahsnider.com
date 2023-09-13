@@ -73,7 +73,7 @@ export default function Home() {
 					initial='hidden'
 					animate='visible'
 				>
-					<Button href='jonah@jonahsnider.com'>Email</Button>
+					<Button href='mailto:jonah@jonahsnider.com'>Email</Button>
 					<Button href='https://github.com/jonahsnider'>GitHub</Button>
 					<Button href='https://linkedin.com/in/jonahsnider'>LinkedIn</Button>
 					<Button href='https://jonahsnider.com/resume/'>Résumé</Button>
