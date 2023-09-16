@@ -80,55 +80,64 @@ export default function Home() {
 				</motion.div>
 			</section>
 
-			<section id='experience' className='space-y-1'>
-				<h2 className='text-5xl font-display font-bold dark:text-pink-500'>Experience</h2>
+			<div className='space-y-12'>
+				<section id='experience' className='space-y-1'>
+					<h2 className='text-4xl font-display font-bold dark:text-pink-500'>Experience</h2>
 
-				<div className='space-y-8'>
-					<Experience
-						id='voiceflow'
-						role='Backend developer'
-						date={{ start: 'May 2021', end: 'August 2023' }}
-						title='Voiceflow'
-						link={{ href: 'https://voiceflow.com', display: 'voiceflow.com' }}
-					>
-						Voiceflow is the best way for conversation design (CXD) teams to build, prototype, and deploy AI assistants.
-						I worked on the platform team designing & building an incredible developer platform for our customers.
-					</Experience>
-
-					<Experience
-						id='team581'
-						role='Mentor'
-						date={{ start: 'October 2017', end: 'present' }}
-						title='Team 581'
-						link={{ href: 'https://team581.com', display: 'team581.com' }}
-					>
-						Team 581 is a{' '}
-						<a
-							href='https://www.firstinspires.org/robotics/frc'
-							target='_blank'
-							rel='noopener noreferrer'
-							className='underline'
+					<div className='space-y-8'>
+						<Experience
+							id='voiceflow'
+							role='Backend developer'
+							date={{ start: 'May 2021', end: 'August 2023' }}
+							title='Voiceflow'
+							link={{ href: 'https://voiceflow.com', display: 'voiceflow.com' }}
 						>
-							FIRST robotics (FRC)
-						</a>{' '}
-						team based out of San Jose High School, a Title 1 school located in downtown San Jose, CA. We bring STEM and
-						career opportunities to our school and community by leveraging a combination of hands-on, project-based
-						education and competitiveness to perform at a high level on and off the field. In the 2023 season, we were
-						ranked 22nd worldwide, out of 3,352 other teams.
-					</Experience>
+							Voiceflow is the best way for conversation design (CXD) teams to build, prototype, and deploy AI
+							assistants. I worked on the platform team designing & building an incredible developer platform for our
+							customers.
+						</Experience>
 
-					<Experience
-						id='gameface'
-						role='Junior backend developer (contract)'
-						date={{ start: 'November 2020', end: 'May 2021' }}
-						title='GameFace'
-						link={{ href: 'https://gamefaced.gg', display: 'gamefaced.gg' }}
-					>
-						GameFace is an esports business, which hosts tournaments users can pay to enter, for a chance to win cash
-						prizes. I took full ownership of GameFace's Discord integration as the sole developer maintaining it.
-					</Experience>
-				</div>
-			</section>
+						<Experience
+							id='gameface'
+							role='Junior backend developer (contract)'
+							date={{ start: 'November 2020', end: 'May 2021' }}
+							title='GameFace'
+							link={{ href: 'https://gamefaced.gg', display: 'gamefaced.gg' }}
+						>
+							GameFace is an esports business, which hosts tournaments users can pay to enter, for a chance to win cash
+							prizes. I took full ownership of GameFace's Discord integration as the sole developer maintaining it.
+						</Experience>
+					</div>
+				</section>
+
+				<section id='volunteering' className='space-y-1'>
+					<h2 className='text-4xl font-display font-bold dark:text-pink-500'>Volunteering</h2>
+
+					<div className='space-y-8'>
+						<Experience
+							id='team581'
+							role='Mentor'
+							date={{ start: 'October 2017', end: 'present' }}
+							title='Team 581'
+							link={{ href: 'https://team581.com', display: 'team581.com' }}
+						>
+							Team 581 is a{' '}
+							<a
+								href='https://www.firstinspires.org/robotics/frc'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='underline'
+							>
+								FIRST robotics (FRC)
+							</a>{' '}
+							team based out of San Jose High School, a Title 1 school located in downtown San Jose, CA. We bring STEM
+							and career opportunities to our school and community by leveraging a combination of hands-on,
+							project-based education and competitiveness to perform at a high level on and off the field. In the 2023
+							season, we were ranked 22nd worldwide, out of 3,352 other teams.
+						</Experience>
+					</div>
+				</section>
+			</div>
 		</main>
 	);
 }
