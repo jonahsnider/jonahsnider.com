@@ -17,8 +17,8 @@
 	"prettier": "@jonahsnider/prettier-config",
 	"dependencies": {
 		"@types/node": "20.8.4",
-		"@types/react": "18.2.25",
-		"@types/react-dom": "18.2.11",
+		"@types/react": "18.2.27",
+		"@types/react-dom": "18.2.12",
 		"@vercel/analytics": "1.1.0",
 		"autoprefixer": "10.4.16",
 		"clsx": "2.0.0",
