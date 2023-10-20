@@ -12,16 +12,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@biomejs/biome@npm:1.3.0":
-  version: 1.3.0
-  resolution: "@biomejs/biome@npm:1.3.0"
+"@biomejs/biome@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@biomejs/biome@npm:1.3.1"
   dependencies:
-    "@biomejs/cli-darwin-arm64": 1.3.0
-    "@biomejs/cli-darwin-x64": 1.3.0
-    "@biomejs/cli-linux-arm64": 1.3.0
-    "@biomejs/cli-linux-x64": 1.3.0
-    "@biomejs/cli-win32-arm64": 1.3.0
-    "@biomejs/cli-win32-x64": 1.3.0
+    "@biomejs/cli-darwin-arm64": 1.3.1
+    "@biomejs/cli-darwin-x64": 1.3.1
+    "@biomejs/cli-linux-arm64": 1.3.1
+    "@biomejs/cli-linux-x64": 1.3.1
+    "@biomejs/cli-win32-arm64": 1.3.1
+    "@biomejs/cli-win32-x64": 1.3.1
   dependenciesMeta:
     "@biomejs/cli-darwin-arm64":
       optional: true
@@ -37,48 +37,48 @@ __metadata:
       optional: true
   bin:
     biome: bin/biome
-  checksum: 64f0b8c7969e447989a5421005d4bde919752914ddc21cc6a20bb374fa121d7ea234ffe2acebb448c327b53854b223a9d0fa64624b26f91e7226b7d4e4b9b78c
+  checksum: d650ab977b3b4cb53105f528f89e4e92f92fb89ffe0ec18629c2061858540ac3f294b507231d6ef19314c22df818e06690629186e739312964b32c54151ee1b5
   languageName: node
   linkType: hard
 
-"@biomejs/cli-darwin-arm64@npm:1.3.0":
-  version: 1.3.0
-  resolution: "@biomejs/cli-darwin-arm64@npm:1.3.0"
+"@biomejs/cli-darwin-arm64@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@biomejs/cli-darwin-arm64@npm:1.3.1"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-darwin-x64@npm:1.3.0":
-  version: 1.3.0
-  resolution: "@biomejs/cli-darwin-x64@npm:1.3.0"
+"@biomejs/cli-darwin-x64@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@biomejs/cli-darwin-x64@npm:1.3.1"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-linux-arm64@npm:1.3.0":
-  version: 1.3.0
-  resolution: "@biomejs/cli-linux-arm64@npm:1.3.0"
+"@biomejs/cli-linux-arm64@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@biomejs/cli-linux-arm64@npm:1.3.1"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-linux-x64@npm:1.3.0":
-  version: 1.3.0
-  resolution: "@biomejs/cli-linux-x64@npm:1.3.0"
+"@biomejs/cli-linux-x64@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@biomejs/cli-linux-x64@npm:1.3.1"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-win32-arm64@npm:1.3.0":
-  version: 1.3.0
-  resolution: "@biomejs/cli-win32-arm64@npm:1.3.0"
+"@biomejs/cli-win32-arm64@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@biomejs/cli-win32-arm64@npm:1.3.1"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-win32-x64@npm:1.3.0":
-  version: 1.3.0
-  resolution: "@biomejs/cli-win32-x64@npm:1.3.0"
+"@biomejs/cli-win32-x64@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@biomejs/cli-win32-x64@npm:1.3.1"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -1211,7 +1211,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "jonahsnider.com@workspace:."
   dependencies:
-    "@biomejs/biome": 1.3.0
+    "@biomejs/biome": 1.3.1
     "@jonahsnider/prettier-config": 1.1.2
     "@types/node": 20.8.7
     "@types/react": 18.2.30
