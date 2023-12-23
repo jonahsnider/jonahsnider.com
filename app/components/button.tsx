@@ -24,8 +24,8 @@ const motionVariants: Variants = {
 
 const styles = clsx(
 	'transition-colors outline-none text-center px-8 py-4 rounded border-2',
-	'border-dark-500 focus:bg-dark-500 focus:hover:bg-dark-500 hover:bg-dark-500 hover:text-white focus:bg-opacity-30 active:bg-opacity-80',
-	'dark:focus:text-white dark:border-pink-500 dark:focus:bg-pink-500 dark:focus:hover:bg-pink-500 dark:hover:bg-pink-500 dark:hover:text-black dark:hover:focus:text-black dark:focus:bg-opacity-30 dark:active:bg-opacity-80',
+	'border-dark-500 focus:bg-dark-500 focus:hover:bg-dark-500 hover:bg-dark-500 hover:text-white focus:bg-opacity-30 active:bg-opacity-80 active:focus:text-white',
+	'dark:focus:text-white dark:border-pink-500 dark:focus:bg-pink-500 dark:focus:hover:bg-pink-500 dark:hover:bg-pink-500 dark:hover:text-black dark:hover:focus:text-black dark:focus:bg-opacity-30 dark:active:bg-opacity-80 active:focus:text-black',
 );
 
 export default function Button({ children, href, relative }: Props) {
