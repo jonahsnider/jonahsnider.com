@@ -12,6 +12,7 @@
 		"dev": "next dev",
 		"lint": "biome check .",
 		"lint:fix": "biome check . --apply-unsafe",
+		"style": "prettier --check .",
 		"start": "next start"
 	},
 	"prettier": "@jonahsnider/prettier-config",
@@ -32,6 +33,8 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.3.3",
-		"@jonahsnider/prettier-config": "1.1.2"
+		"@jonahsnider/prettier-config": "1.1.2",
+		"prettier": "3.1.1",
+		"prettier-plugin-tailwindcss": "0.5.9"
 	}
 }

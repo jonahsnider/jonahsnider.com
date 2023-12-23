@@ -10,12 +10,11 @@ const config: Config = {
 	theme: {
 		colors: {
 			white: colors.zinc[100],
+			black: colors.zinc[900],
 			pink: {
-				200: '#ffbbcc35',
 				500: '#ffbbcc',
 			},
 			dark: {
-				200: '#17171c35',
 				500: '#17171c',
 			},
 		},
