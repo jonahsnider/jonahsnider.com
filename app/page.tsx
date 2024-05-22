@@ -116,7 +116,7 @@ export default function Home() {
 					<div className='space-y-8'>
 						<Experience
 							id='team581'
-							role='Mentor'
+							role='Coach'
 							date={{ start: 'October 2017', end: 'present' }}
 							title='Team 581'
 							link={{ href: 'https://team581.com', display: 'team581.com' }}
