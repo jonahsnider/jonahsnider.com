@@ -1,7 +1,9 @@
 import clsx from 'clsx';
-import { Variants } from 'framer-motion';
-import { Metadata } from 'next';
-import { Button, Experience } from './components';
+import type { Variants } from 'framer-motion';
+import type { Metadata } from 'next';
+import { Button } from './components/button';
+import { Experience } from './components/experience';
+// biome-ignore lint/style/noNamespaceImport: This is needed until https://github.com/framer/motion/issues/1924 is fixed
 import * as motion from './motion';
 import { openGraph } from './shared-metadata';
 
@@ -49,6 +51,7 @@ const buttonContainerVariants: Variants = {
 	},
 };
 
+// biome-ignore lint/style/noDefaultExport: This must be a default export
 export default function Home() {
 	return (
 		<main id='main'>
@@ -85,6 +88,7 @@ export default function Home() {
 					<h2 className='text-4xl font-display font-bold dark:text-pink-500'>Experience</h2>
 
 					<div className='space-y-8'>
+						{/* biome-ignore lint/a11y/useValidAriaRole: This is not an ARIA role attribute */}
 						<Experience
 							id='voiceflow'
 							role='Backend developer'
@@ -97,6 +101,7 @@ export default function Home() {
 							customers.
 						</Experience>
 
+						{/* biome-ignore lint/a11y/useValidAriaRole: This is not an ARIA role attribute */}
 						<Experience
 							id='gameface'
 							role='Junior backend developer (contract)'
@@ -114,6 +119,7 @@ export default function Home() {
 					<h2 className='text-4xl font-display font-bold dark:text-pink-500'>Volunteering</h2>
 
 					<div className='space-y-8'>
+						{/* biome-ignore lint/a11y/useValidAriaRole: This is not an ARIA role attribute */}
 						<Experience
 							id='team581'
 							role='Coach'
