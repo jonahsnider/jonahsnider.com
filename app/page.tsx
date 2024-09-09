@@ -55,7 +55,7 @@ const buttonContainerVariants: Variants = {
 export default function Home() {
 	return (
 		<main id='main'>
-			<section id='header' className='min-h-[97vh] flex flex-col justify-center space-y-12'>
+			<section id='header' className='min-h-[97vh] flex flex-col justify-center gap-12'>
 				<div className='max-w-fit'>
 					<h1 className='text-5xl font-display font-bold dark:text-pink-500'>Jonah Snider</h1>
 					<motion.div
@@ -83,11 +83,11 @@ export default function Home() {
 				</motion.div>
 			</section>
 
-			<div className='space-y-12'>
-				<section id='experience' className='space-y-1'>
+			<div className='flex flex-col gap-12'>
+				<section id='experience' className='flex flex-col gap-1'>
 					<h2 className='text-4xl font-display font-bold dark:text-pink-500'>Experience</h2>
 
-					<div className='space-y-8'>
+					<div className='flex flex-col gap-8'>
 						{/* biome-ignore lint/a11y/useValidAriaRole: This is not an ARIA role attribute */}
 						<Experience
 							id='voiceflow'
@@ -115,10 +115,10 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section id='volunteering' className='space-y-1'>
+				<section id='volunteering' className='flex flex-col gap-1'>
 					<h2 className='text-4xl font-display font-bold dark:text-pink-500'>Volunteering</h2>
 
-					<div className='space-y-8'>
+					<div className='flex flex-col gap-8'>
 						{/* biome-ignore lint/a11y/useValidAriaRole: This is not an ARIA role attribute */}
 						<Experience
 							id='team581'
