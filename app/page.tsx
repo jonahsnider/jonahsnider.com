@@ -55,7 +55,7 @@ const buttonContainerVariants: Variants = {
 export default function Home() {
 	return (
 		<main id='main'>
-			<section id='header' className='h-screen flex flex-col justify-center space-y-12'>
+			<section id='header' className='min-h-[97vh] flex flex-col justify-center space-y-12'>
 				<div className='max-w-fit'>
 					<h1 className='text-5xl font-display font-bold dark:text-pink-500'>Jonah Snider</h1>
 					<motion.div
