@@ -6,7 +6,7 @@ import './globals.css';
 import { metadataBase, openGraph, siteDescription, siteName } from './shared-metadata';
 
 const inter = Inter({ subsets: ['latin'], weight: 'variable', display: 'swap', variable: '--font-inter' });
-const rubik = Rubik({ subsets: ['latin'], weight: '700', display: 'swap', variable: '--font-rubik' });
+const rubik = Rubik({ subsets: ['latin'], weight: 'variable', display: 'swap', variable: '--font-rubik' });
 
 export const metadata: Metadata = {
 	metadataBase,
