@@ -1,9 +1,9 @@
 'use client';
 
 import clsx from 'clsx';
-import { Variants, motion } from 'framer-motion';
+import { type Variants, motion } from 'framer-motion';
 import Link from 'next/link';
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 
 type Props = PropsWithChildren<{
 	href?: string;
@@ -28,7 +28,7 @@ const styles = clsx(
 	'dark:focus:text-white dark:border-pink-500 dark:focus:bg-pink-500 dark:focus:hover:bg-pink-500 dark:hover:bg-pink-500 dark:hover:text-black dark:hover:focus:text-black dark:focus:bg-opacity-30 dark:active:bg-opacity-80 active:focus:text-black',
 );
 
-export default function Button({ children, href, relative }: Props) {
+export function Button({ children, href, relative }: Props) {
 	if (href) {
 		if (relative) {
 			return (

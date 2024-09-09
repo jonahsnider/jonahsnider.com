@@ -1,4 +1,4 @@
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 
 type Props = PropsWithChildren<{
 	id: string;
@@ -14,7 +14,7 @@ type Props = PropsWithChildren<{
 	};
 }>;
 
-export default function Experience({ id, title, children, date, link, role }: Props) {
+export function Experience({ id, title, children, date, link, role }: Props) {
 	return (
 		<div id={id}>
 			<div className='w-full flex justify-between items-baseline dark:text-pink-500'>

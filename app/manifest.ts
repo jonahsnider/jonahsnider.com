@@ -1,6 +1,7 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 import { openGraph, siteName } from './shared-metadata';
 
+// biome-ignore lint/style/noDefaultExport: This must be a default export
 export default function manifest(): MetadataRoute.Manifest {
 	return {
 		// biome-ignore lint/style/useNamingConvention: Can't use camelcase here

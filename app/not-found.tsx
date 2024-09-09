@@ -1,5 +1,5 @@
-import { Metadata } from 'next';
-import { Button } from './components';
+import type { Metadata } from 'next';
+import { Button } from './components/button';
 import { openGraph } from './shared-metadata';
 
 export const metadata: Metadata = {
@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 	},
 };
 
+// biome-ignore lint/style/noDefaultExport: This must be a default export
 export default function NotFound() {
 	return (
 		<main>
