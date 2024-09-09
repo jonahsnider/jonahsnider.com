@@ -132,8 +132,7 @@ export default function Home() {
 							</a>{' '}
 							team based out of San Jose High School, a Title 1 school located in downtown San Jose, CA. We bring STEM
 							and career opportunities to our school and community by leveraging a combination of hands-on,
-							project-based education and competitiveness to perform at a high level on and off the field. In the 2023
-							season, we were ranked 22nd worldwide, out of 3,352 other teams.
+							project-based education and competitiveness to perform at a high level on and off the field.
 						</Experience>
 					</div>
 				</section>
