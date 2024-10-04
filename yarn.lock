@@ -879,9 +879,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:11.11.0":
-  version: 11.11.0
-  resolution: "framer-motion@npm:11.11.0"
+"framer-motion@npm:11.11.1":
+  version: 11.11.1
+  resolution: "framer-motion@npm:11.11.1"
   dependencies:
     tslib: "npm:^2.4.0"
   peerDependencies:
@@ -895,7 +895,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10/62e103aa4b4a77b801dbbe581f422ae269b657c7ea5d9ee9a43ae0f8296ef685e06f8a85baf5a0ae83efc8715bfb29befface0f75f73c18163bf71ee1cb3966b
+  checksum: 10/acf1219d4400e3d08ed37caabb601cb6f79512d1add4288e50359635723a454ad5b620a9feeba5137673d2f71e9b51c9b0bee796fe64533c73b82fa9ba76e254
   languageName: node
   linkType: hard
 
@@ -1230,7 +1230,7 @@ __metadata:
     "@vercel/analytics": "npm:1.3.1"
     autoprefixer: "npm:10.4.20"
     clsx: "npm:2.1.1"
-    framer-motion: "npm:11.11.0"
+    framer-motion: "npm:11.11.1"
     next: "npm:14.2.14"
     postcss: "npm:8.4.47"
     prettier: "npm:3.3.3"
