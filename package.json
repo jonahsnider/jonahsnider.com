@@ -23,7 +23,7 @@
 		"@vercel/analytics": "1.4.1",
 		"autoprefixer": "10.4.20",
 		"clsx": "2.1.1",
-		"framer-motion": "11.12.0",
+		"framer-motion": "11.13.1",
 		"next": "14.2.19",
 		"postcss": "8.4.49",
 		"react": "18.3.1",
