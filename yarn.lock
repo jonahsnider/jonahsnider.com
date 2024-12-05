@@ -329,40 +329,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.3.1":
-  version: 18.3.1
-  resolution: "@types/react-dom@npm:18.3.1"
+"@types/react-dom@npm:18.3.2":
+  version: 18.3.2
+  resolution: "@types/react-dom@npm:18.3.2"
   dependencies:
-    "@types/react": "npm:*"
-  checksum: 10/33f9ba79b26641ddf00a8699c30066b7e3573ab254e97475bf08f82fab83a6d3ce8d4ebad86afeb49bb8df3374390a9ba93125cece33badc4b3e8f7eac3c84d8
+    "@types/react": "npm:^18"
+  checksum: 10/29337fe650ec49178121a815f0c5b7f6081e63b216a29bd6f90bb5e5b0367d60a95b50a25b1848031c82458de2dfb62f78b18e72d0e6fed6f77951e64e3897d1
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 18.2.21
-  resolution: "@types/react@npm:18.2.21"
-  dependencies:
-    "@types/prop-types": "npm:*"
-    "@types/scheduler": "npm:*"
-    csstype: "npm:^3.0.2"
-  checksum: 10/7b315e2b14da1cd895719ba957fd71a0a8a35300fd76689d0268ed9afd8065a56b4fdcd1306871e3e16706dd3ecd706a846af74caca8fcad88052469cf0d83a1
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:18.3.13":
-  version: 18.3.13
-  resolution: "@types/react@npm:18.3.13"
+"@types/react@npm:18.3.14, @types/react@npm:^18":
+  version: 18.3.14
+  resolution: "@types/react@npm:18.3.14"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10/4f2b851cabdb68430b50998ad18f206edaea5b3c651d92e3573d86b7ac740224a91b7ca63176fa70e1defc78459faf518e5d2f58e1ba2839b1f12365dab70de2
-  languageName: node
-  linkType: hard
-
-"@types/scheduler@npm:*":
-  version: 0.16.3
-  resolution: "@types/scheduler@npm:0.16.3"
-  checksum: 10/2b0aec39c24268e3ce938c5db2f2e77f5c3dd280e05c262d9c2fe7d890929e4632a6b8e94334017b66b45e4f92a5aa42ba3356640c2a1175fa37bef2f5200767
+  checksum: 10/683927b1e24293276cf62f60f1baa666b7f1053c87ec8d8c79d2d4bc105b99e0492482f801ffce7cdef9d656c11294faa423051807a500c7475f4fbd7661bd8d
   languageName: node
   linkType: hard
 
@@ -1273,8 +1255,8 @@ __metadata:
     "@biomejs/biome": "npm:1.9.4"
     "@jonahsnider/prettier-config": "npm:1.1.2"
     "@types/node": "npm:20.17.9"
-    "@types/react": "npm:18.3.13"
-    "@types/react-dom": "npm:18.3.1"
+    "@types/react": "npm:18.3.14"
+    "@types/react-dom": "npm:18.3.2"
     "@vercel/analytics": "npm:1.4.1"
     autoprefixer: "npm:10.4.20"
     clsx: "npm:2.1.1"
