@@ -892,12 +892,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:11.14.1":
-  version: 11.14.1
-  resolution: "framer-motion@npm:11.14.1"
+"framer-motion@npm:11.14.3":
+  version: 11.14.3
+  resolution: "framer-motion@npm:11.14.3"
   dependencies:
-    motion-dom: "npm:^11.14.1"
-    motion-utils: "npm:^11.14.1"
+    motion-dom: "npm:^11.14.3"
+    motion-utils: "npm:^11.14.3"
     tslib: "npm:^2.4.0"
   peerDependencies:
     "@emotion/is-prop-valid": "*"
@@ -910,7 +910,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10/178f422c71e8feed70a822356c0b80f1c3094ef3b357a14a31c348e57efc47d8260f5b6cc0a4e474c01c90baf82dc4097b5e35d5f86ed99d9315edad35d822a6
+  checksum: 10/86e49899f22e146c78cb5e89ed97682d914499ee53688974247b8132944f2ce1297084f42c013c10739998ab72abb3fe0624f903917504aa0a1ad5c47095efb4
   languageName: node
   linkType: hard
 
@@ -1260,7 +1260,7 @@ __metadata:
     "@vercel/analytics": "npm:1.4.1"
     autoprefixer: "npm:10.4.20"
     clsx: "npm:2.1.1"
-    framer-motion: "npm:11.14.1"
+    framer-motion: "npm:11.14.3"
     next: "npm:14.2.20"
     postcss: "npm:8.4.49"
     prettier: "npm:3.4.2"
@@ -1518,17 +1518,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"motion-dom@npm:^11.14.1":
-  version: 11.14.1
-  resolution: "motion-dom@npm:11.14.1"
-  checksum: 10/75f0afaee0507b3b4143572a2b4fa6566a818de7622e9e3e72a9e9a3a6469baea920fd8b9285587841a21a9f60f4d9eaa09f017a8addee5d655fc421cde4e1a8
+"motion-dom@npm:^11.14.3":
+  version: 11.14.3
+  resolution: "motion-dom@npm:11.14.3"
+  checksum: 10/24bd9a78c278e7622dd9347da3cb0f0e356ae72b9ef5ecba71a5b8dce9b5df05ee190d862b59d793e3d6b65756683689e7c2f96b0add72f40c2bb8268c037c8c
   languageName: node
   linkType: hard
 
-"motion-utils@npm:^11.14.1":
-  version: 11.14.1
-  resolution: "motion-utils@npm:11.14.1"
-  checksum: 10/99d757af2f9b6f2cf009e867bda47fba0923d9036f30f17c52ebfa04fddcc5e17e4ff09abee959e6dae00153caba6c015975d78135b6daad0b4783801165ec35
+"motion-utils@npm:^11.14.3":
+  version: 11.14.3
+  resolution: "motion-utils@npm:11.14.3"
+  checksum: 10/594b69d60a4cabea823a7ebf0f1e2fa13df9128ee2db9c6385ab23c6d1224dcd0d09fab67c361000d8f0288d75c56cb94d00c431023d22c052c5496a4757c5e5
   languageName: node
   linkType: hard
 
