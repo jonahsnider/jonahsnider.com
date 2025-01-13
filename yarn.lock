@@ -1262,7 +1262,7 @@ __metadata:
     clsx: "npm:2.1.1"
     framer-motion: "npm:11.17.0"
     next: "npm:14.2.23"
-    postcss: "npm:8.4.49"
+    postcss: "npm:8.5.0"
     prettier: "npm:3.4.2"
     prettier-plugin-tailwindcss: "npm:0.6.9"
     react: "npm:18.3.1"
@@ -1574,6 +1574,15 @@ __metadata:
   bin:
     nanoid: bin/nanoid.cjs
   checksum: 10/ac1eb60f615b272bccb0e2b9cd933720dad30bf9708424f691b8113826bb91aca7e9d14ef5d9415a6ba15c266b37817256f58d8ce980c82b0ba3185352565679
+  languageName: node
+  linkType: hard
+
+"nanoid@npm:^3.3.8":
+  version: 3.3.8
+  resolution: "nanoid@npm:3.3.8"
+  bin:
+    nanoid: bin/nanoid.cjs
+  checksum: 10/2d1766606cf0d6f47b6f0fdab91761bb81609b2e3d367027aff45e6ee7006f660fb7e7781f4a34799fe6734f1268eeed2e37a5fdee809ade0c2d4eb11b0f9c40
   languageName: node
   linkType: hard
 
@@ -1910,7 +1919,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.49, postcss@npm:^8.4.47":
+"postcss@npm:8.5.0":
+  version: 8.5.0
+  resolution: "postcss@npm:8.5.0"
+  dependencies:
+    nanoid: "npm:^3.3.8"
+    picocolors: "npm:^1.1.1"
+    source-map-js: "npm:^1.2.1"
+  checksum: 10/608c77ae01eeece1c5dfa46637823f7957bd124c183faafa98944ba383e16f25747e91da83bc197d963e03cc1cc0b72a8d49c3e08822a174a9eb4ecda6b7a487
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.4.47":
   version: 8.4.49
   resolution: "postcss@npm:8.4.49"
   dependencies:
