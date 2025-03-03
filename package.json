@@ -34,7 +34,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"@jonahsnider/prettier-config": "1.1.2",
-		"prettier": "3.5.2",
+		"prettier": "3.5.3",
 		"prettier-plugin-tailwindcss": "0.6.11"
 	},
 	"packageManager": "yarn@4.7.0"
