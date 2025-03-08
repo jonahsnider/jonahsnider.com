@@ -306,12 +306,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.17.22":
-  version: 20.17.22
-  resolution: "@types/node@npm:20.17.22"
+"@types/node@npm:20.17.24":
+  version: 20.17.24
+  resolution: "@types/node@npm:20.17.24"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10/6cfdae8bb1ec6f2cd9655de3107e08352556d1eec1cae894d1e14ed938b7f96d4b3c24fb2fc7009b43733730f3d80d41432a70be15c5a3bd6a9bf20bbb25ebf3
+  checksum: 10/0c5fe294b003656b0f95ffce295c08e7ed3fa814ba9bf891e146dced90322d186e63837db9d9bb14d4f294fbe1a6fa1c89ced0b173380c8aaeb90de6c3eddb3b
   languageName: node
   linkType: hard
 
@@ -1254,7 +1254,7 @@ __metadata:
   dependencies:
     "@biomejs/biome": "npm:1.9.4"
     "@jonahsnider/prettier-config": "npm:1.1.2"
-    "@types/node": "npm:20.17.22"
+    "@types/node": "npm:20.17.24"
     "@types/react": "npm:18.3.18"
     "@types/react-dom": "npm:18.3.5"
     "@vercel/analytics": "npm:1.5.0"
