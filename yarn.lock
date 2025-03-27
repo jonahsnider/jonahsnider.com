@@ -306,12 +306,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.17.28":
-  version: 20.17.28
-  resolution: "@types/node@npm:20.17.28"
+"@types/node@npm:22.13.14":
+  version: 22.13.14
+  resolution: "@types/node@npm:22.13.14"
   dependencies:
-    undici-types: "npm:~6.19.2"
-  checksum: 10/eda2517544666c7b7f020f8fbea0fe32b66b1e70e0f63ee83bb2deb6615748491ebd8dab5cc98d86d436e604faf440de420f565d7a542287b3be47a254a76468
+    undici-types: "npm:~6.20.0"
+  checksum: 10/5fafad441c7bb27f963aa8fdfa0787ffb1142b27f4dd2047a2cc27a39f981b432acc71a9b5a428a258f93daeb72f12b7468ab9163a41fe4f98584bc5d42ade6e
   languageName: node
   linkType: hard
 
@@ -1254,7 +1254,7 @@ __metadata:
   dependencies:
     "@biomejs/biome": "npm:1.9.4"
     "@jonahsnider/prettier-config": "npm:1.1.2"
-    "@types/node": "npm:20.17.28"
+    "@types/node": "npm:22.13.14"
     "@types/react": "npm:18.3.20"
     "@types/react-dom": "npm:18.3.5"
     "@vercel/analytics": "npm:1.5.0"
@@ -2488,10 +2488,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~6.19.2":
-  version: 6.19.6
-  resolution: "undici-types@npm:6.19.6"
-  checksum: 10/0ea9bc25762a86597d095b3772f6cec0bcabb796c339f7dfa2bd601c745a480289eb2939848dc285a56d4f94f50c475868160d8d6d3f54e823f1faf7ea9e9468
+"undici-types@npm:~6.20.0":
+  version: 6.20.0
+  resolution: "undici-types@npm:6.20.0"
+  checksum: 10/583ac7bbf4ff69931d3985f4762cde2690bb607844c16a5e2fbb92ed312fe4fa1b365e953032d469fa28ba8b224e88a595f0b10a449332f83fa77c695e567dbe
   languageName: node
   linkType: hard
 
