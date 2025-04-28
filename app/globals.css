@@ -1,6 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme inline {
+	--color-white: var(--color-zinc-100);
+	--color-black: var(--color-zinc-900);
+
+	--color-pink-500: #ffbbcc;
+
+	--color-dark-500: #17171c;
+
+	--font-display: var(--font-rubik), sans-serif;
+	--font-body: var(--font-inter), sans-serif;
+}
 
 :root {
 	&::-webkit-scrollbar,
