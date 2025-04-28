@@ -8,8 +8,8 @@
 		"url": "https://jonahsnider.com"
 	},
 	"scripts": {
-		"build": "next build",
-		"dev": "next dev",
+		"build": "NODE_ENV=production next build",
+		"dev": "next dev --turbopack",
 		"lint": "biome check .",
 		"lint:fix": "biome check . --write --unsafe",
 		"style": "prettier --check .",
