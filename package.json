@@ -8,8 +8,8 @@
 		"url": "https://jonahsnider.com"
 	},
 	"scripts": {
-		"build": "next build",
-		"dev": "next dev",
+		"build": "NODE_ENV=production next build",
+		"dev": "next dev --turbopack",
 		"lint": "biome check .",
 		"lint:fix": "biome check . --write --unsafe",
 		"style": "prettier --check .",
@@ -24,7 +24,7 @@
 		"autoprefixer": "10.4.21",
 		"clsx": "2.1.1",
 		"framer-motion": "12.9.2",
-		"next": "14.2.28",
+		"next": "15.3.1",
 		"postcss": "8.5.3",
 		"react": "19.1.0",
 		"react-dom": "19.1.0",
