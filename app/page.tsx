@@ -3,7 +3,6 @@ import type { Variants } from 'framer-motion';
 import type { Metadata } from 'next';
 import { Button } from './components/button';
 import { Experience } from './components/experience';
-// biome-ignore lint/style/noNamespaceImport: This is needed until https://github.com/framer/motion/issues/1924 is fixed
 import * as motion from './motion';
 import { openGraph } from './shared-metadata';
 
@@ -51,7 +50,6 @@ const buttonContainerVariants: Variants = {
 	},
 };
 
-// biome-ignore lint/style/noDefaultExport: This must be a default export
 export default function Home() {
 	return (
 		<main id='main'>

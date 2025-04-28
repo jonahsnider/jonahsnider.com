@@ -20,7 +20,6 @@ export const metadata: Metadata = {
 	openGraph,
 };
 
-// biome-ignore lint/style/noDefaultExport: This must be a default export
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en'>

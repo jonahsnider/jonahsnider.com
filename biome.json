@@ -1,5 +1,4 @@
 {
-	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"files": {
 		"ignore": [".next", "out/", "node_modules"]
 	},
@@ -21,9 +20,7 @@
 	},
 	"linter": {
 		"rules": {
-			"all": true,
 			"style": {
-				"all": true,
 				"noParameterProperties": "off"
 			}
 		}

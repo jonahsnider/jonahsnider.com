@@ -10,7 +10,6 @@ export const metadata: Metadata = {
 	},
 };
 
-// biome-ignore lint/style/noDefaultExport: This must be a default export
 export default function NotFound() {
 	return (
 		<main>

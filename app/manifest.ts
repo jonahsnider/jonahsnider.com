@@ -3,20 +3,15 @@ import { openGraph, siteName } from './shared-metadata';
 
 export const dynamic = 'force-static';
 
-// biome-ignore lint/style/noDefaultExport: This must be a default export
 export default function manifest(): MetadataRoute.Manifest {
 	return {
-		// biome-ignore lint/style/useNamingConvention: Can't use camelcase here
 		background_color: '#ffbbcc',
 		description: 'Jonah Snider',
 		display: 'standalone',
 		lang: 'en-US',
 		name: openGraph.title.default,
-		// biome-ignore lint/style/useNamingConvention: Can't use camelcase here
 		short_name: siteName,
-		// biome-ignore lint/style/useNamingConvention: Can't use camelcase here
 		start_url: '/',
-		// biome-ignore lint/style/useNamingConvention: Can't use camelcase here
 		theme_color: '#17171c',
 		icons: [
 			{
