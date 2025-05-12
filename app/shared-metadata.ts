@@ -2,8 +2,8 @@ import type { OpenGraph } from 'next/dist/lib/metadata/types/opengraph-types';
 
 export const siteDescription = [
 	"Hi, I'm Jonah.",
-	"I'm a backend developer with extensive experience in the Node.js & TypeScript ecosystem.",
-	'Previously, I worked at Voiceflow on the platform team.',
+	"I'm a software engineer with extensive experience in the Node.js & TypeScript ecosystem.",
+	'Currently I work at Uptool, building an AI operating system for manufacturing.',
 	'I also do a lot of open source full-stack work which you can view on my GitHub.',
 	'Visit my site to view my résumé or get in touch.',
 ].join(' ');
@@ -16,7 +16,7 @@ export const metadataBase = new URL(
 
 export const openGraph = {
 	title: {
-		default: `${siteName} | Backend developer`,
+		default: `${siteName} | Senior software engineer`,
 		template: `%s | ${siteName}`,
 	},
 	siteName,

@@ -65,7 +65,7 @@ export default function Home() {
 						transition={{ ease: [0.65, 0.05, 0.36, 1], duration: animationDurations.underline }}
 					/>
 					<motion.p className='mt-1 text-2xl' variants={subtitleVariants} initial='hidden' animate='visible'>
-						Backend developer
+						Senior software engineer
 					</motion.p>
 				</div>
 				<motion.div
@@ -86,6 +86,17 @@ export default function Home() {
 					<h2 className='text-4xl font-display font-bold dark:text-pink-500'>Experience</h2>
 
 					<div className='flex flex-col gap-8'>
+						{/* biome-ignore lint/a11y/useValidAriaRole: This is not an ARIA role attribute */}
+						<Experience
+							id='uptool'
+							role='Senior software engineer'
+							date={{ start: 'May 2025', end: 'present' }}
+							title='Uptool'
+							link={{ href: 'https://www.uptool.com/', display: 'uptool.com' }}
+						>
+							Uptool is an AI operating system for manufacturing.
+						</Experience>
+
 						{/* biome-ignore lint/a11y/useValidAriaRole: This is not an ARIA role attribute */}
 						<Experience
 							id='voiceflow'
