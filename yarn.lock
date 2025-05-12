@@ -810,11 +810,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:12.10.5":
-  version: 12.10.5
-  resolution: "framer-motion@npm:12.10.5"
+"framer-motion@npm:12.11.0":
+  version: 12.11.0
+  resolution: "framer-motion@npm:12.11.0"
   dependencies:
-    motion-dom: "npm:^12.10.5"
+    motion-dom: "npm:^12.11.0"
     motion-utils: "npm:^12.9.4"
     tslib: "npm:^2.4.0"
   peerDependencies:
@@ -828,7 +828,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10/e2bf12d5e7149a48610765faeed586bece720ba78f6af363b762cc6cb9ea949015dd5a074838d337f708ae84f6751b732c096679733fc3a070997af04cc39355
+  checksum: 10/47af466bfb3795c8bb33094e9a73e1931a9d3bf15c74ef50a5623b46f1411ebfed85453b9c4b91c7b2c16d992a97d0959f20d039f576cbe9e1caa277af4ef3d5
   languageName: node
   linkType: hard
 
@@ -867,7 +867,7 @@ __metadata:
     "@types/react-dom": "npm:19.1.4"
     "@vercel/analytics": "npm:1.5.0"
     clsx: "npm:2.1.1"
-    framer-motion: "npm:12.10.5"
+    framer-motion: "npm:12.11.0"
     next: "npm:15.3.2"
     prettier: "npm:3.5.3"
     prettier-plugin-tailwindcss: "npm:^0.6.11"
@@ -1022,12 +1022,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"motion-dom@npm:^12.10.5":
-  version: 12.10.5
-  resolution: "motion-dom@npm:12.10.5"
+"motion-dom@npm:^12.11.0":
+  version: 12.11.0
+  resolution: "motion-dom@npm:12.11.0"
   dependencies:
     motion-utils: "npm:^12.9.4"
-  checksum: 10/a7399bcd4cca322453f66abc1ff131d144183e28bfcce605f6f245ce541835eee7d0f457d8568afebe0491100030324c8f7512cb0338d69238cae7af20f6ddc8
+  checksum: 10/ed923399bb46a9bf828d72d54f520504bbd887417ca651cfccf99cfbf1445cc313facae96dc55a5bd8491b8de10a7c8216afd40737f4d1f6b62023ab7ade0af4
   languageName: node
   linkType: hard
 
