@@ -31,7 +31,7 @@
 		"typescript": "5.8.3"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
+		"@biomejs/biome": "2.0.4",
 		"@jonahsnider/prettier-config": "1.1.2",
 		"prettier": "3.5.3",
 		"prettier-plugin-tailwindcss": "^0.6.11"
