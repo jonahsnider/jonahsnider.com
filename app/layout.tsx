@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/react';
 import clsx from 'clsx';
 import type { Metadata, Viewport } from 'next';
 import { Inter, Rubik } from 'next/font/google';
@@ -37,7 +36,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				)}
 			>
 				<div className='mx-4'>{children}</div>
-				<Analytics />
 			</body>
 		</html>
 	);
