@@ -1,10 +1,11 @@
 {
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"files": {
-		"ignore": [".next", "out/", "node_modules"]
+		"includes": ["**", "!**/.next", "!**/out", "!**/node_modules"]
 	},
 	"formatter": {
-		"lineWidth": 120,
-		"formatWithErrors": true
+		"formatWithErrors": true,
+		"lineWidth": 120
 	},
 	"javascript": {
 		"formatter": {

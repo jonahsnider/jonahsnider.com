@@ -1,7 +1,7 @@
 'use client';
 
 import clsx from 'clsx';
-import { type Variants, motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import Link from 'next/link';
 import type { PropsWithChildren } from 'react';
 
