@@ -65,7 +65,7 @@ export default function Home() {
 						transition={{ ease: [0.65, 0.05, 0.36, 1], duration: animationDurations.underline }}
 					/>
 					<motion.p className='mt-1 text-2xl' variants={subtitleVariants} initial='hidden' animate='visible'>
-						Senior software engineer
+						Software engineer
 					</motion.p>
 				</div>
 				<motion.div
@@ -88,9 +88,21 @@ export default function Home() {
 					<div className='flex flex-col gap-8'>
 						{/* biome-ignore lint/a11y/useValidAriaRole: This is not an ARIA role attribute */}
 						<Experience
+							id='sanity'
+							role='Software engineer 2'
+							date={{ start: 'July 2025', end: 'present' }}
+							title='Sanity'
+							link={{ href: 'https://sanity.com/', display: 'sanity.com' }}
+						>
+							Sanity is a fully customizable all-code backend for AI, automations, and applications to author and render
+							content.
+						</Experience>
+
+						{/* biome-ignore lint/a11y/useValidAriaRole: This is not an ARIA role attribute */}
+						<Experience
 							id='uptool'
 							role='Senior software engineer'
-							date={{ start: 'May 2025', end: 'present' }}
+							date={{ start: 'May 2025', end: 'July 2025' }}
 							title='Uptool'
 							link={{ href: 'https://www.uptool.com/', display: 'uptool.com' }}
 						>
