@@ -92,7 +92,7 @@ export default function Home() {
 							role='Software engineer 2'
 							date={{ start: 'July 2025', end: 'present' }}
 							title='Sanity'
-							link={{ href: 'https://sanity.com/', display: 'sanity.com' }}
+							link={{ href: 'https://sanity.io/', display: 'sanity.io' }}
 						>
 							Sanity is a fully customizable all-code backend for AI, automations, and applications to author and render
 							content.
