@@ -1824,7 +1824,7 @@ __metadata:
     react-dom: "npm:19.1.1"
     tailwindcss: "npm:4.1.11"
     typescript: "npm:5.9.2"
-    wrangler: "npm:4.28.0"
+    wrangler: "npm:4.28.1"
   languageName: unknown
   linkType: soft
 
@@ -2969,9 +2969,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:4.28.0":
-  version: 4.28.0
-  resolution: "wrangler@npm:4.28.0"
+"wrangler@npm:4.28.1":
+  version: 4.28.1
+  resolution: "wrangler@npm:4.28.1"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.4.0"
     "@cloudflare/unenv-preset": "npm:2.6.0"
@@ -2993,7 +2993,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/45a829d3148a8f4e12f3f29d3d2d72db93920704d56c0293cfa27593cbe8bb0be44587fcc304580c795130ef8f02f69ae179974449291383ebeb4c1590955bb8
+  checksum: 10/b8abf4a2d72e937178d4cfc1880f690a92dd006a2fcbfb521b66e8974a2ad60657b3d0ed5d00ea5207e42ea047d8266573a0c3e518846f944cda2c45fc498432
   languageName: node
   linkType: hard
 
