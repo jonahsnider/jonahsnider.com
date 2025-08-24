@@ -1852,7 +1852,7 @@ __metadata:
     react-dom: "npm:19.1.1"
     tailwindcss: "npm:4.1.12"
     typescript: "npm:5.9.2"
-    wrangler: "npm:4.31.0"
+    wrangler: "npm:4.32.0"
   languageName: unknown
   linkType: soft
 
@@ -2024,9 +2024,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:4.20250816.0":
-  version: 4.20250816.0
-  resolution: "miniflare@npm:4.20250816.0"
+"miniflare@npm:4.20250816.1":
+  version: 4.20250816.1
+  resolution: "miniflare@npm:4.20250816.1"
   dependencies:
     "@cspotcode/source-map-support": "npm:0.8.1"
     acorn: "npm:8.14.0"
@@ -2042,7 +2042,7 @@ __metadata:
     zod: "npm:3.22.3"
   bin:
     miniflare: bootstrap.js
-  checksum: 10/467d1a9fe4ea5ec6023e7a7d646fa4564826b5c7f6165b406641ce22943481dc4aedeff8be9ed00c8e558eabb081831c2c60433be01f5d3b98a78b5366a00560
+  checksum: 10/a2606e814776217956b975096ec1466a9386a5ecf2962a58de5da2d697e25492a82b36d5dcc76d53203dfd16a4982054c5d086cf1c78999f886bf32794787cff
   languageName: node
   linkType: hard
 
@@ -2997,16 +2997,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:4.31.0":
-  version: 4.31.0
-  resolution: "wrangler@npm:4.31.0"
+"wrangler@npm:4.32.0":
+  version: 4.32.0
+  resolution: "wrangler@npm:4.32.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.4.0"
     "@cloudflare/unenv-preset": "npm:2.6.2"
     blake3-wasm: "npm:2.1.5"
     esbuild: "npm:0.25.4"
     fsevents: "npm:~2.3.2"
-    miniflare: "npm:4.20250816.0"
+    miniflare: "npm:4.20250816.1"
     path-to-regexp: "npm:6.3.0"
     unenv: "npm:2.0.0-rc.19"
     workerd: "npm:1.20250816.0"
@@ -3021,7 +3021,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/e6bcbb5cc3bac94b78895bcf2452b806cabdbe9e206b35483809a4a57bebf91d31068491ba5ce8f203944d3ecc4347bf93dd772a1451cca9c8886f4a7d86564a
+  checksum: 10/749ea5edd02674562320df9459b516ed900411cfcace6f1e4475f771ff97bfd358aae1f656ba94a98f35d1fc8c7436277250ac328f57b7d2065d4a18f5e7b981
   languageName: node
   linkType: hard
 
