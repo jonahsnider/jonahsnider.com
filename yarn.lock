@@ -1224,12 +1224,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:19.1.8":
-  version: 19.1.8
-  resolution: "@types/react-dom@npm:19.1.8"
+"@types/react-dom@npm:19.1.9":
+  version: 19.1.9
+  resolution: "@types/react-dom@npm:19.1.9"
   peerDependencies:
     "@types/react": ^19.0.0
-  checksum: 10/61aa2b9c159deba3787183688d3fe70c9f9196aab464f76bbe0a965cd35c485c7158e903631ff89803b19c707e93f8dd632e63fb9bd1ddd430359bd402a2018e
+  checksum: 10/207acb79f6c3c9704938138960e21429efdf2db2184f17c166e8ec3f3180dfe6445b282c5302f559a71b2d09ab2fafef7735f3d24fd01cda4e5c7bf0cea1d5b9
   languageName: node
   linkType: hard
 
@@ -1842,7 +1842,7 @@ __metadata:
     "@tailwindcss/postcss": "npm:4.1.12"
     "@types/node": "npm:22.18.0"
     "@types/react": "npm:19.1.12"
-    "@types/react-dom": "npm:19.1.8"
+    "@types/react-dom": "npm:19.1.9"
     clsx: "npm:2.1.1"
     framer-motion: "npm:12.23.12"
     next: "npm:15.5.2"
