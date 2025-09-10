@@ -1,7 +1,15 @@
 {
-	"name": "jonahsnider-com",
-	"compatibility_date": "2025-07-10",
+	"$schema": "./node_modules/wrangler/config-schema.json",
 	"assets": {
-		"directory": "./out"
-	}
+		"directory": "./out",
+		"html_handling": "drop-trailing-slash",
+		"not_found_handling": "404-page"
+	},
+	"compatibility_date": "2025-07-10",
+	"name": "jonahsnider-com",
+	"route": {
+		"custom_domain": true,
+		"pattern": "jonahsnider.com"
+	},
+	"workers_dev": false
 }
