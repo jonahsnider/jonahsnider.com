@@ -77,7 +77,7 @@ export default function Home() {
 					<Button href='mailto:jonah@jonahsnider.com'>Email</Button>
 					<Button href='https://github.com/jonahsnider'>GitHub</Button>
 					<Button href='https://linkedin.com/in/jonahsnider'>LinkedIn</Button>
-					<Button href='https://jonahsnider.com/resume/'>Résumé</Button>
+					<Button href='https://jonahsnider.com/resume'>Résumé</Button>
 				</motion.div>
 			</section>
 
