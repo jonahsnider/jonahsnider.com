@@ -1203,21 +1203,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:19.2.0":
-  version: 19.2.0
-  resolution: "@types/react-dom@npm:19.2.0"
+"@types/react-dom@npm:19.2.1":
+  version: 19.2.1
+  resolution: "@types/react-dom@npm:19.2.1"
   peerDependencies:
     "@types/react": ^19.2.0
-  checksum: 10/e1e2e71214af67e1aa433a25b5f193d8bc98bfc16e108783c2c45c520623737af3c91ee929124c1f7adf2c3988bbd493cdc4ff64af69731245a3a758fde82291
+  checksum: 10/273730069d34e8ba6e5261b968cc24c148cac98a017241aa8e87186a5d446c3afd4d98ceffa6be8ea2c2e96e9d2fb6450fbae5094ee2221d2a0b40f4b58cfb53
   languageName: node
   linkType: hard
 
-"@types/react@npm:19.2.1":
-  version: 19.2.1
-  resolution: "@types/react@npm:19.2.1"
+"@types/react@npm:19.2.2":
+  version: 19.2.2
+  resolution: "@types/react@npm:19.2.2"
   dependencies:
     csstype: "npm:^3.0.2"
-  checksum: 10/0654b07e6469afd2c442702f3d74e37def457a52c5b68d67f6eafcd882981780e67456072bc3b6dc0b87b00aff6e7d694450a8b162bc940fae78b96995beeddc
+  checksum: 10/d6adf8fd4bb23a7e04da5700d96b15dc0f59653727a9c6e940c151d7232fa1dbbab98417d5ac830dcfb6cba3f206efbd4cd83647e6f9a688d7363a90e607f6bf
   languageName: node
   linkType: hard
 
@@ -1820,8 +1820,8 @@ __metadata:
     "@jonahsnider/prettier-config": "npm:1.1.2"
     "@tailwindcss/postcss": "npm:4.1.14"
     "@types/node": "npm:22.18.8"
-    "@types/react": "npm:19.2.1"
-    "@types/react-dom": "npm:19.2.0"
+    "@types/react": "npm:19.2.2"
+    "@types/react-dom": "npm:19.2.1"
     clsx: "npm:2.1.1"
     framer-motion: "npm:12.23.22"
     next: "npm:15.5.4"
