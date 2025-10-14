@@ -28,7 +28,7 @@
 		"typescript": "5.9.3"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.1.4",
+		"@biomejs/biome": "2.2.6",
 		"wrangler": "4.42.2"
 	},
 	"packageManager": "yarn@4.10.3"
