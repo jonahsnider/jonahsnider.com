@@ -21,6 +21,9 @@
 	},
 	"linter": {
 		"rules": {
+			"nursery": {
+				"useSortedClasses": "error"
+			},
 			"style": {
 				"noParameterProperties": "off"
 			}

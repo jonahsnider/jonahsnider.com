@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				className={clsx(
 					inter.variable,
 					rubik.variable,
-					'container max-w-4xl mx-auto my-4',
+					'container mx-auto my-4 max-w-4xl',
 					'font-body',
 					'bg-pink-500 text-dark-500 selection:bg-dark-500 selection:text-pink-500',
 					'dark:bg-dark-500 dark:text-white dark:selection:bg-pink-500 dark:selection:text-dark-500',

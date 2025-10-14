@@ -53,11 +53,11 @@ const buttonContainerVariants: Variants = {
 export default function Home() {
 	return (
 		<main id='main'>
-			<section id='header' className='min-h-[97vh] flex flex-col justify-center gap-12'>
+			<section id='header' className='flex min-h-[97vh] flex-col justify-center gap-12'>
 				<div className='max-w-fit'>
-					<h1 className='text-5xl font-display font-bold dark:text-pink-500'>Jonah Snider</h1>
+					<h1 className='font-bold font-display text-5xl dark:text-pink-500'>Jonah Snider</h1>
 					<motion.div
-						className='h-[2px] bg-dark-500 dark:bg-pink-500 w-0'
+						className='h-[2px] w-0 bg-dark-500 dark:bg-pink-500'
 						animate={{
 							width: ['0%', '100%', '0%'],
 							marginLeft: ['0%', '0%', '100%'],
@@ -69,7 +69,7 @@ export default function Home() {
 					</motion.p>
 				</div>
 				<motion.div
-					className={clsx('gap-4', 'grid grid-rows-2 grid-cols-2', 'sm:flex')}
+					className={clsx('gap-4', 'grid grid-cols-2 grid-rows-2', 'sm:flex')}
 					variants={buttonContainerVariants}
 					initial='hidden'
 					animate='visible'
@@ -83,7 +83,7 @@ export default function Home() {
 
 			<div className='flex flex-col gap-12'>
 				<section id='experience' className='flex flex-col gap-1'>
-					<h2 className='text-4xl font-display font-bold dark:text-pink-500'>Experience</h2>
+					<h2 className='font-bold font-display text-4xl dark:text-pink-500'>Experience</h2>
 
 					<div className='flex flex-col gap-8'>
 						{/* biome-ignore lint/a11y/useValidAriaRole: This is not an ARIA role attribute */}
@@ -137,7 +137,7 @@ export default function Home() {
 				</section>
 
 				<section id='volunteering' className='flex flex-col gap-1'>
-					<h2 className='text-4xl font-display font-bold dark:text-pink-500'>Volunteering</h2>
+					<h2 className='font-bold font-display text-4xl dark:text-pink-500'>Volunteering</h2>
 
 					<div className='flex flex-col gap-8'>
 						{/* biome-ignore lint/a11y/useValidAriaRole: This is not an ARIA role attribute */}

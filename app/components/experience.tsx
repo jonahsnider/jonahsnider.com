@@ -17,13 +17,13 @@ type Props = PropsWithChildren<{
 export function Experience({ id, title, children, date, link, role }: Props) {
 	return (
 		<div id={id}>
-			<div className='w-full flex justify-between items-baseline dark:text-pink-500'>
-				<h3 className='text-2xl font-medium'>{title}</h3>
-				<a href={link.href} target='_blank' rel='noreferrer noopener' className='text-xl font-light underline'>
+			<div className='flex w-full items-baseline justify-between dark:text-pink-500'>
+				<h3 className='font-medium text-2xl'>{title}</h3>
+				<a href={link.href} target='_blank' rel='noreferrer noopener' className='font-light text-xl underline'>
 					{link.display}
 				</a>
 			</div>
-			<div className='w-full flex justify-between mb-2'>
+			<div className='mb-2 flex w-full justify-between'>
 				<p>{role}</p>
 				<p>
 					{date.start} - {date.end}
