@@ -1,7 +1,13 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"files": {
-		"includes": ["**", "!**/.next", "!**/out", "!**/node_modules", "!**/.wrangler"]
+		"includes": [
+			"**",
+			"!**/.next",
+			"!**/out",
+			"!**/node_modules",
+			"!**/.wrangler"
+		]
 	},
 	"formatter": {
 		"formatWithErrors": true,
@@ -21,11 +27,17 @@
 	},
 	"linter": {
 		"rules": {
+			"correctness": {
+				"useUniqueElementIds": "off"
+			},
 			"nursery": {
 				"useSortedClasses": "error"
 			},
 			"style": {
 				"noParameterProperties": "off"
+			},
+			"suspicious": {
+				"noUnknownAtRules": "off"
 			}
 		}
 	}
