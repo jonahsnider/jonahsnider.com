@@ -780,16 +780,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jonahsnider/prettier-config@npm:1.1.2":
-  version: 1.1.2
-  resolution: "@jonahsnider/prettier-config@npm:1.1.2"
-  dependencies:
-    "@types/prettier": "npm:^2.6.3"
-    prettier-config-xo: "npm:2.0.0"
-  checksum: 10/7e066edb8615a13a2bbd931a66f3616e947da5b1740a77305458ec4896019c582730140dc5036985e1f56e6f697fa43b013ff69b68f63afe5010428ed601d86f
-  languageName: node
-  linkType: hard
-
 "@jridgewell/gen-mapping@npm:^0.3.5":
   version: 0.3.8
   resolution: "@jridgewell/gen-mapping@npm:0.3.8"
@@ -1193,13 +1183,6 @@ __metadata:
   dependencies:
     undici-types: "npm:~6.21.0"
   checksum: 10/07e9ce07767c48fc4860c78d2d9c90a87ef6fa30fa065beb2fd838ae1ba6fe787218f344a01cb14b4bf0a97cdfea5488fcbfbd343ccd07ab97154bceeb394f2f
-  languageName: node
-  linkType: hard
-
-"@types/prettier@npm:^2.6.3":
-  version: 2.7.3
-  resolution: "@types/prettier@npm:2.7.3"
-  checksum: 10/cda84c19acc3bf327545b1ce71114a7d08efbd67b5030b9e8277b347fa57b05178045f70debe1d363ff7efdae62f237260713aafc2d7217e06fc99b048a88497
   languageName: node
   linkType: hard
 
@@ -1817,7 +1800,6 @@ __metadata:
   resolution: "jonahsnider.com@workspace:."
   dependencies:
     "@biomejs/biome": "npm:2.1.4"
-    "@jonahsnider/prettier-config": "npm:1.1.2"
     "@tailwindcss/postcss": "npm:4.1.14"
     "@types/node": "npm:22.18.10"
     "@types/react": "npm:19.2.2"
@@ -1825,8 +1807,6 @@ __metadata:
     clsx: "npm:2.1.1"
     framer-motion: "npm:12.23.24"
     next: "npm:15.5.5"
-    prettier: "npm:3.6.2"
-    prettier-plugin-tailwindcss: "npm:^0.6.11"
     react: "npm:19.2.0"
     react-dom: "npm:19.2.0"
     tailwindcss: "npm:4.1.14"
@@ -2358,86 +2338,6 @@ __metadata:
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
   checksum: 10/6d7e21a772e8b05bf102636918654dac097bac013f0dc8346b72ac3604fc16829646f94ea862acccd8f82e910b00e2c11c1f0ea276543565d278c7ca35516a7c
-  languageName: node
-  linkType: hard
-
-"prettier-config-xo@npm:2.0.0":
-  version: 2.0.0
-  resolution: "prettier-config-xo@npm:2.0.0"
-  checksum: 10/066ec0eb29f671d6c2f17570230c4348542af9eacd37c3e060b9e64cb55cddd00137cf66319210488358585bfbb6577f4adfac5dddb65ed7f43cea5668329841
-  languageName: node
-  linkType: hard
-
-"prettier-plugin-tailwindcss@npm:^0.6.11":
-  version: 0.6.14
-  resolution: "prettier-plugin-tailwindcss@npm:0.6.14"
-  peerDependencies:
-    "@ianvs/prettier-plugin-sort-imports": "*"
-    "@prettier/plugin-hermes": "*"
-    "@prettier/plugin-oxc": "*"
-    "@prettier/plugin-pug": "*"
-    "@shopify/prettier-plugin-liquid": "*"
-    "@trivago/prettier-plugin-sort-imports": "*"
-    "@zackad/prettier-plugin-twig": "*"
-    prettier: ^3.0
-    prettier-plugin-astro: "*"
-    prettier-plugin-css-order: "*"
-    prettier-plugin-import-sort: "*"
-    prettier-plugin-jsdoc: "*"
-    prettier-plugin-marko: "*"
-    prettier-plugin-multiline-arrays: "*"
-    prettier-plugin-organize-attributes: "*"
-    prettier-plugin-organize-imports: "*"
-    prettier-plugin-sort-imports: "*"
-    prettier-plugin-style-order: "*"
-    prettier-plugin-svelte: "*"
-  peerDependenciesMeta:
-    "@ianvs/prettier-plugin-sort-imports":
-      optional: true
-    "@prettier/plugin-hermes":
-      optional: true
-    "@prettier/plugin-oxc":
-      optional: true
-    "@prettier/plugin-pug":
-      optional: true
-    "@shopify/prettier-plugin-liquid":
-      optional: true
-    "@trivago/prettier-plugin-sort-imports":
-      optional: true
-    "@zackad/prettier-plugin-twig":
-      optional: true
-    prettier-plugin-astro:
-      optional: true
-    prettier-plugin-css-order:
-      optional: true
-    prettier-plugin-import-sort:
-      optional: true
-    prettier-plugin-jsdoc:
-      optional: true
-    prettier-plugin-marko:
-      optional: true
-    prettier-plugin-multiline-arrays:
-      optional: true
-    prettier-plugin-organize-attributes:
-      optional: true
-    prettier-plugin-organize-imports:
-      optional: true
-    prettier-plugin-sort-imports:
-      optional: true
-    prettier-plugin-style-order:
-      optional: true
-    prettier-plugin-svelte:
-      optional: true
-  checksum: 10/84235df312878176f7019272d921923943895f08120393e40f518c4c5f572e6adf11fdd9fbe9c92b9d7210ed1f9c6605e89de1b627b6ac2cf8480e199ee80e26
-  languageName: node
-  linkType: hard
-
-"prettier@npm:3.6.2":
-  version: 3.6.2
-  resolution: "prettier@npm:3.6.2"
-  bin:
-    prettier: bin/prettier.cjs
-  checksum: 10/1213691706bcef1371d16ef72773c8111106c3533b660b1cc8ec158bd109cdf1462804125f87f981f23c4a3dba053b6efafda30ab0114cc5b4a725606bb9ff26
   languageName: node
   linkType: hard
 
