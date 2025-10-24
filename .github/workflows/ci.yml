@@ -21,7 +21,7 @@ jobs:
       - name: Build for production
         run: yarn run build
       - name: Upload static site
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: exported_site
           path: out
