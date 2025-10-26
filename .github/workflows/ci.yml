@@ -20,11 +20,6 @@ jobs:
         run: yarn install --immutable
       - name: Build for production
         run: yarn run build
-      - name: Upload static site
-        uses: actions/upload-artifact@v4
-        with:
-          name: exported_site
-          path: out
   lint:
     name: Lint
 
