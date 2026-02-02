@@ -1671,9 +1671,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:12.29.2":
-  version: 12.29.2
-  resolution: "framer-motion@npm:12.29.2"
+"framer-motion@npm:12.29.3":
+  version: 12.29.3
+  resolution: "framer-motion@npm:12.29.3"
   dependencies:
     motion-dom: "npm:^12.29.2"
     motion-utils: "npm:^12.29.2"
@@ -1689,7 +1689,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10/13ea43efa814e4df1f3a0bf7ee6c1736f3f01b96cb677e560b62d58db8768f00a53c17156bb5bf6bf06b786370468495dbb6b0a83e3b5b5289e5235046ccb03b
+  checksum: 10/e3d857330e3f8ca9c5816e3b5e583c79499795f7b10687489233546dfcf355c6288195e11808629ea0a7862067e5e24fbe079d91e676ff813f399180e01aa47c
   languageName: node
   linkType: hard
 
@@ -1851,7 +1851,7 @@ __metadata:
     "@types/react-dom": "npm:19.2.3"
     babel-plugin-react-compiler: "npm:1.0.0"
     clsx: "npm:2.1.1"
-    framer-motion: "npm:12.29.2"
+    framer-motion: "npm:12.29.3"
     next: "npm:16.1.6"
     react: "npm:19.2.4"
     react-dom: "npm:19.2.4"
