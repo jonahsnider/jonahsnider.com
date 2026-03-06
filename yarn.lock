@@ -134,16 +134,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/unenv-preset@npm:2.14.0":
-  version: 2.14.0
-  resolution: "@cloudflare/unenv-preset@npm:2.14.0"
+"@cloudflare/unenv-preset@npm:2.15.0":
+  version: 2.15.0
+  resolution: "@cloudflare/unenv-preset@npm:2.15.0"
   peerDependencies:
     unenv: 2.0.0-rc.24
-    workerd: ^1.20260218.0
+    workerd: 1.20260301.1 || ~1.20260302.1 || ~1.20260303.1 || ~1.20260304.1 || >1.20260305.0 <2.0.0-0
   peerDependenciesMeta:
     workerd:
       optional: true
-  checksum: 10/7cd0d782f33b18f1bc59d1a3cad5c423fbacb76437e5b485e9edc37ae2f6ce46832932708c9c51d3e5510915cc9a43b910bde9869762ccd27195674b8b2d2bf6
+  checksum: 10/b6f9ffbc5f97031f71de93f743ceaf350a7f08e1e8eb65952006b6eab20b52025a59976bca520e2ef0f838c01cb6f448b10df2761018dd042b08ca6acbfbb1da
   languageName: node
   linkType: hard
 
@@ -1867,7 +1867,7 @@ __metadata:
     react-dom: "npm:19.2.4"
     tailwindcss: "npm:4.2.1"
     typescript: "npm:5.9.3"
-    wrangler: "npm:4.70.0"
+    wrangler: "npm:4.71.0"
   languageName: unknown
   linkType: soft
 
@@ -2918,12 +2918,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:4.70.0":
-  version: 4.70.0
-  resolution: "wrangler@npm:4.70.0"
+"wrangler@npm:4.71.0":
+  version: 4.71.0
+  resolution: "wrangler@npm:4.71.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.4.2"
-    "@cloudflare/unenv-preset": "npm:2.14.0"
+    "@cloudflare/unenv-preset": "npm:2.15.0"
     blake3-wasm: "npm:2.1.5"
     esbuild: "npm:0.27.3"
     fsevents: "npm:~2.3.2"
@@ -2942,7 +2942,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/f4cb63fdcfda5dea36a2c0bee1f1f39bc11db5ae30b01cb572f529ff3e79a835898809114518eb480951d5fd42da538e5765f4591abe5aba267e75ae3ece1613
+  checksum: 10/1ff158734307465b7b9b2b610426f6163f4a184c5b8c0c2d06f011f3a663e45dcc1dd37142f45c69c0254ad0da11b391307efa6acba1e68135012329d247e9b2
   languageName: node
   linkType: hard
 
