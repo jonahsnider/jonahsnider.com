@@ -30,7 +30,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.4.15",
-		"wrangler": "4.93.1"
+		"wrangler": "4.94.0"
 	},
 	"packageManager": "yarn@4.15.0"
 }
