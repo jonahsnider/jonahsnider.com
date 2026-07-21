@@ -22,7 +22,11 @@ jobs:
           cache: 'yarn'
       - name: Install dependencies
         run: yarn install --immutable
+      - name: Migrate Biome schema
+        continue-on-error: true
+        run: yarn biome migrate --write
       - name: Format with Biome
+        continue-on-error: true
         run: yarn lint:fix
       - name: Run autofix.ci
         uses: autofix-ci/action@v1
