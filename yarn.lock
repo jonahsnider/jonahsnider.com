@@ -1902,7 +1902,7 @@ __metadata:
     react-dom: "npm:19.2.8"
     tailwindcss: "npm:4.3.3"
     typescript: "npm:6.0.3"
-    wrangler: "npm:4.119.0"
+    wrangler: "npm:4.120.0"
   languageName: unknown
   linkType: soft
 
@@ -2075,17 +2075,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:5.20260801.0-alpha":
-  version: 5.20260801.0-alpha
-  resolution: "miniflare@npm:5.20260801.0-alpha"
+"miniflare@npm:5.20260801.1-alpha":
+  version: 5.20260801.1-alpha
+  resolution: "miniflare@npm:5.20260801.1-alpha"
   dependencies:
     "@cspotcode/source-map-support": "npm:0.8.1"
     sharp: "npm:0.35.2"
-    undici: "npm:7.28.0"
+    undici: "npm:7.29.0"
     workerd: "npm:1.20260801.1"
     ws: "npm:8.21.0"
     youch: "npm:4.1.0-beta.10"
-  checksum: 10/8d6e03395f1d4506ac49481d58c27b50bd8ac8fccefb3650a3c8936cad8009fce7e4cea6fa57b92d32535cf0d6da58e3a48b5ca8887302c5e418919de625d195
+  checksum: 10/8bc5effcc0e18c1a526dc890834621adfdd7553a53f979837323c21180cd2e698e4fa49f23fb805869f79dd7ae74434ecfcd52372034d989a85c6d5468e0ef45
   languageName: node
   linkType: hard
 
@@ -2887,10 +2887,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:7.28.0":
-  version: 7.28.0
-  resolution: "undici@npm:7.28.0"
-  checksum: 10/154423b280d623278a61decb437f8a7e581fb18b8c95556ef956b32a58cd668eadbb812d28e20678cb2dc545a566f35a3afc0962307ca801da30f4741117986d
+"undici@npm:7.29.0":
+  version: 7.29.0
+  resolution: "undici@npm:7.29.0"
+  checksum: 10/ca73639071bdcbc41e57be1800847fa18f86f8fbf7a5641ff9899f7bbb6f5cecdd593e225f5fd94e31703dcbfaea4a722a3b81cab90c5c4e2b406aec1ae55732
   languageName: node
   linkType: hard
 
@@ -2969,16 +2969,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:4.119.0":
-  version: 4.119.0
-  resolution: "wrangler@npm:4.119.0"
+"wrangler@npm:4.120.0":
+  version: 4.120.0
+  resolution: "wrangler@npm:4.120.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.5.0"
     "@cloudflare/unenv-preset": "npm:2.16.1"
     blake3-wasm: "npm:2.1.5"
     esbuild: "npm:0.28.1"
     fsevents: "npm:2.3.3"
-    miniflare: "npm:5.20260801.0-alpha"
+    miniflare: "npm:5.20260801.1-alpha"
     path-to-regexp: "npm:6.3.0"
     unenv: "npm:2.0.0-rc.24"
     workerd: "npm:1.20260801.1"
@@ -2994,7 +2994,7 @@ __metadata:
     cf-wrangler: bin/cf-wrangler.js
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/a26c0d6dceed29553dbc4ab5986cd98063ed625d6f4bee332e9b99faa5622d64d743dbe391348d3b567183cc7758b47e38972e5419a5fd3bce375ab0fc70dd47
+  checksum: 10/02e2adffaff25a0aa4623d8ed8151aa67442ea53f0bc611bf89feedab94d222e33059357a5e4b9f1ec06d5eaed8049f6cea58ee7305ceb02bf319d0351007303
   languageName: node
   linkType: hard
 
