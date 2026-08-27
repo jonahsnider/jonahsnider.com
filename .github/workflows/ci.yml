@@ -11,15 +11,12 @@ jobs:
     steps:
       - name: Checkout git repository
         uses: actions/checkout@v7
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
+      - name: Setup pnpm
+        uses: pnpm/setup@v2
         with:
-          node-version: 'lts/*'
-          cache: 'yarn'
-      - name: Install dependencies with Yarn
-        run: yarn install --immutable
+          cache: true
       - name: Build for production
-        run: yarn run build
+        run: pnpm run build
   lint:
     name: Lint
 
@@ -28,12 +25,9 @@ jobs:
     steps:
       - name: Checkout git repository
         uses: actions/checkout@v7
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
+      - name: Setup pnpm
+        uses: pnpm/setup@v2
         with:
-          node-version: 'lts/*'
-          cache: 'yarn'
-      - name: Install dependencies with Yarn
-        run: yarn install --immutable
+          cache: true
       - name: Lint
-        run: yarn run lint
+        run: pnpm run lint

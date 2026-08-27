@@ -21,7 +21,6 @@
 		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"search.exclude": {
-		".yarn/**": true,
 		"**/*.code-search": true,
 		"**/bower_components": true,
 		"**/node_modules": true
