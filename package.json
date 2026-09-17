@@ -30,7 +30,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.5.14",
-		"wrangler": "4.132.0"
+		"wrangler": "4.133.0"
 	},
 	"packageManager": "pnpm@12.4.2",
 	"devEngines": {
