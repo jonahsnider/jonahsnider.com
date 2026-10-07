@@ -32,7 +32,7 @@
 		"@biomejs/biome": "2.5.15",
 		"wrangler": "4.147.0"
 	},
-	"packageManager": "pnpm@12.9.1",
+	"packageManager": "pnpm@12.10.0",
 	"devEngines": {
 		"runtime": {
 			"name": "node",
