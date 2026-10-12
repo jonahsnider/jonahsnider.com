@@ -16,10 +16,10 @@ jobs:
         uses: pnpm/setup@v3
         with:
           cache: true
-      - name: Migrate Biome schema
+      - name: Format
         continue-on-error: true
-        run: pnpm exec biome migrate --write
-      - name: Format with Biome
+        run: pnpm run format:fix
+      - name: Lint
         continue-on-error: true
         run: pnpm run lint:fix
       - name: Run autofix.ci

@@ -1,5 +1,3 @@
-import type { OpenGraph } from 'next/dist/lib/metadata/types/opengraph-types';
-
 export const siteDescription = [
 	"Hi, I'm Jonah.",
 	"I'm a software engineer with extensive experience in the Node.js & TypeScript ecosystem.",
@@ -9,15 +7,3 @@ export const siteDescription = [
 ].join(' ');
 
 export const siteName = 'Jonah Snider';
-
-export const metadataBase = new URL(process.env.CF_PAGES_URL ?? 'https://jonahsnider.com');
-
-export const openGraph = {
-	title: {
-		default: `${siteName} | Software engineer`,
-		template: `%s | ${siteName}`,
-	},
-	siteName,
-	description: siteDescription,
-	type: 'website',
-} satisfies OpenGraph;

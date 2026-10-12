@@ -247,5 +247,5 @@ $RECYCLE.BIN/
 # Wrangler
 .wrangler
 
-# Next.js
-next-env.d.ts
+# Astro
+.astro/

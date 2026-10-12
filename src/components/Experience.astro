@@ -1,0 +1,29 @@
+---
+interface Props {
+	id: string;
+	title: string;
+	role: string;
+	link: { href: string; display: string };
+	date: { start: string; end: string };
+}
+
+const { id, title, date, link, role } = Astro.props;
+---
+
+<div id={id}>
+	<div class="flex w-full items-baseline justify-between dark:text-pink-500">
+		<h3 class="font-medium text-2xl">{title}</h3>
+		<a href={link.href} target="_blank" rel="noreferrer noopener" class="font-light text-xl underline">
+			{link.display}
+		</a>
+	</div>
+	<div class="mb-2 flex w-full justify-between">
+		<p>{role}</p>
+		<p>
+			{date.start} - {date.end}
+		</p>
+	</div>
+	<p>
+		<slot />
+	</p>
+</div>

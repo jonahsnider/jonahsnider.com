@@ -3,9 +3,9 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  build:
-    name: Build
-
+  build-and-check:
+    name: Build and check
+    timeout-minutes: 5
     runs-on: ubuntu-latest
 
     steps:
@@ -15,19 +15,11 @@ jobs:
         uses: pnpm/setup@v3
         with:
           cache: true
-      - name: Build for production
-        run: pnpm run build
-  lint:
-    name: Lint
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout git repository
-        uses: actions/checkout@v7
-      - name: Setup pnpm
-        uses: pnpm/setup@v3
-        with:
-          cache: true
+      - name: Check formatting
+        run: pnpm run format
       - name: Lint
         run: pnpm run lint
+      - name: Check unused code and dependencies
+        run: pnpm run knip
+      - name: Type check and build for production
+        run: pnpm run build

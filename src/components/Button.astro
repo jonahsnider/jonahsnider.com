@@ -1,0 +1,21 @@
+---
+interface Props {
+	href: string;
+	relative?: boolean;
+}
+
+const { href, relative = false } = Astro.props;
+---
+
+<a
+	href={href}
+	target={relative ? undefined : '_blank'}
+	rel={relative ? undefined : 'noopener noreferrer'}
+	class:list={[
+		'button inline-block rounded-sm border-2 px-8 py-4 text-center outline-hidden transition-colors',
+		'border-dark-500 focus:bg-dark-500 focus:hover:bg-dark-500 hover:bg-dark-500 hover:text-white focus:bg-opacity-30 active:bg-opacity-80 active:focus:text-white',
+		'dark:focus:text-white dark:border-pink-500 dark:focus:bg-pink-500 dark:focus:hover:bg-pink-500 dark:hover:bg-pink-500 dark:hover:text-black dark:hover:focus:text-black dark:focus:bg-opacity-30 dark:active:bg-opacity-80 active:focus:text-black',
+	]}
+>
+	<slot />
+</a>

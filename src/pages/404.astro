@@ -1,0 +1,20 @@
+---
+import Button from '../components/Button.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Not found" canonical="/404">
+	<main>
+		<section id="header" class="flex h-screen flex-col justify-center gap-12">
+			<div class="flex flex-col gap-1">
+				<h1 class="font-bold font-display text-5xl dark:text-pink-500">Jonah Snider</h1>
+				<p class="text-2xl">404 - Page not found</p>
+			</div>
+			<div>
+				<Button relative href="/">
+					Home
+				</Button>
+			</div>
+		</section>
+	</main>
+</Layout>

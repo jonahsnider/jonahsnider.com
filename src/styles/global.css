@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@font-face {
+	font-family: 'Inter Variable';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 900;
+	src: url('@fontsource-variable/inter/files/inter-latin-wght-normal.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Rubik Variable';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 300 900;
+	src: url('@fontsource-variable/rubik/files/rubik-latin-wght-normal.woff2') format('woff2');
+}
+
+@theme inline {
+	--color-white: var(--color-zinc-100);
+	--color-black: var(--color-zinc-900);
+
+	--color-pink-500: #ffbbcc;
+
+	--color-dark-500: #17171c;
+
+	--font-display: 'Rubik Variable', sans-serif;
+	--font-body: 'Inter Variable', sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	@view-transition {
+		navigation: auto;
+	}
+}
+
+:root {
+	&::-webkit-scrollbar,
+	&::-webkit-scrollbar-track {
+		@apply bg-pink-500 dark:bg-dark-500;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		@apply rounded-l-md bg-dark-500 dark:bg-pink-500;
+	}
+}
