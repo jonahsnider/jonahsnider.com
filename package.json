@@ -29,7 +29,7 @@
 		"@astrojs/check": "0.9.10",
 		"@types/node": "24.19.2",
 		"knip": "6.41.0",
-		"oxfmt": "0.72.0",
+		"oxfmt": "0.73.0",
 		"oxlint": "1.87.0",
 		"oxlint-tsgolint": "7.0.2004",
 		"prettier": "3.9.10",
