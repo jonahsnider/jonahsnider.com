@@ -34,7 +34,7 @@
 		"oxlint-tsgolint": "7.0.2005",
 		"prettier": "3.9.10",
 		"prettier-plugin-astro": "1.1.2",
-		"typescript": "6.0.3",
+		"typescript": "7.0.2",
 		"wrangler": "4.152.0"
 	},
 	"devEngines": {
