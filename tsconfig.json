@@ -1,5 +1,11 @@
 {
 	"extends": "astro/tsconfigs/strictest",
+	"contentMappers": [
+		{
+			"package": "@astrojs/ts-content-mapper",
+			"extensions": [".astro"]
+		}
+	],
 	"include": [".astro/types.d.ts", "src/**/*", "*.ts"],
 	"exclude": ["dist", "node_modules"]
 }
