@@ -35,7 +35,7 @@
 		"prettier": "3.9.10",
 		"prettier-plugin-astro": "1.1.2",
 		"typescript": "7.1.0-dev.20261029.1",
-		"wrangler": "4.155.0"
+		"wrangler": "4.156.0"
 	},
 	"devEngines": {
 		"runtime": {
