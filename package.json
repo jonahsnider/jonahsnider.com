@@ -30,7 +30,7 @@
 		"@types/node": "26.6.6",
 		"knip": "6.44.2",
 		"oxfmt": "0.78.0",
-		"oxlint": "1.92.0",
+		"oxlint": "1.93.0",
 		"oxlint-tsgolint": "7.0.2006",
 		"prettier": "3.9.10",
 		"prettier-plugin-astro": "1.1.2",
