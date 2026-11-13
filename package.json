@@ -32,7 +32,7 @@
 		"oxfmt": "0.78.0",
 		"oxlint": "1.93.0",
 		"oxlint-tsgolint": "7.0.2006",
-		"prettier": "3.10.0",
+		"prettier": "3.10.1",
 		"prettier-plugin-astro": "1.1.2",
 		"typescript": "7.1.0-dev.20261111.1",
 		"wrangler": "4.160.1"
